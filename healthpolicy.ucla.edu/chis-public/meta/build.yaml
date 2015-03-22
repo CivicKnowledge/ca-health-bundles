@@ -1,0 +1,29 @@
+build:
+    issue: http://redmine.civicknowledge.com/issues/104
+    requirements:
+        sas7bdat: sas7bdat
+        xport: xport
+dependencies: {}
+extract: {}
+sources:
+    chis12d:
+        comment: Using the SAS version for the Imputation because the Stata version
+            doesn't load in the stata module.
+        description: CHIS 2011-2012 Adult Public Use File. SAS Version, Release 1.
+        file: ^.*adult\.sas7bdat$
+        url: s3://ds.civicknowledge.org/healthpolicy.ucla.edu/chis-public/2012/chis11-12_adult_sas.zip
+    chis12f:
+        comment: Using the SAS version for the Imputation because the Stata version
+            doesn't load in the stata module.
+        description: CHIS 2011-2012 Adult Public Use File. Imputation Flags, SAS Version,
+            Release 1.
+        file: ^.*adultf\.sas7bdat$
+        url: s3://ds.civicknowledge.org/healthpolicy.ucla.edu/chis-public/2012/chis11-12_adult_sas.zip
+    chis12l:
+        comment: Using the Stata version for main file because stat module can extract
+            labels
+        description: CHIS 2011-2012 Adult Public Use File. Stata version, Release
+            1.
+        file: ^.*ADULT\.dta$
+        url: s3://ds.civicknowledge.org/healthpolicy.ucla.edu/chis-public/2012/chis11-12_adult_stata.zip
+views: {}

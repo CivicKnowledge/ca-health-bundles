@@ -1,0 +1,20 @@
+build: {}
+dependencies: {}
+extract: {}
+sources:
+    dental:
+        description: Dental Designation
+        url: http://www.oshpd.ca.gov/HWDD/MSSA/GIS/HPSADentalv201407.zip
+    mental:
+        description: Mental Health Designation
+        url: http://www.oshpd.ca.gov/HWDD/MSSA/GIS/HPSAMentalHealthv201407.zip
+    nurse:
+        description: Registered Nurse Shortage Areas
+        url: http://www.oshpd.ca.gov/HWDD/MSSA/GIS/RNSAv13.zip
+    primarycare:
+        description: Primary Care Professional Designation
+        url: http://www.oshpd.ca.gov/HWDD/MSSA/GIS/PCSAv13.zip
+    primarypro:
+        description: Primary Care Professional Designation
+        url: http://www.oshpd.ca.gov/HWDD/MSSA/GIS/HPSAPrimaryCarev201407.zip
+views: {}

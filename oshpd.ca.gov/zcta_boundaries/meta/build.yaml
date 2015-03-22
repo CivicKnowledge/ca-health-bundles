@@ -1,0 +1,11 @@
+build: {}
+dependencies: {}
+extract: {}
+sources:
+    zcta:
+        description: MSSA boundary shapefile
+        url: http://www.oshpd.ca.gov/HWDD/MSSA/GIS/GIS-Shapefile-ZCTA.zip
+    zcta_tracts:
+        description: Census tracts boundaries, with assocaitions to MSSA
+        url: http://www.oshpd.ca.gov/HWDD/MSSA/GIS/MSSA_ACS_Detailv2.zip
+views: {}

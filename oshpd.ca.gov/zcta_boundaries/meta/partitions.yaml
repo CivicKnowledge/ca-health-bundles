@@ -1,0 +1,6 @@
+-   format: geo
+    name: oshpd.ca.gov-zcta_boundaries-zcta_tracts-geo
+    table: zcta_tracts
+-   format: geo
+    name: oshpd.ca.gov-zcta_boundaries-zcta-geo
+    table: zcta

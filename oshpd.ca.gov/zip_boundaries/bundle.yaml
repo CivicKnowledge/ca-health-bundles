@@ -1,0 +1,63 @@
+about:
+    groups: []
+    license: null
+    rights: null
+    subject: zip codes
+    summary: Boundaries of Zip codes in California
+    tags:
+    - zip
+    title: Zip Code Boundaries
+contact_bundle:
+    creator:
+        email: eric@sandiegodata.org
+        name: Eric Busboom
+        url: http://www.sandiegodata.org
+    maintainer:
+        email: eric@sandiegodata.org
+        name: Eric Busboom
+        url: http://www.sandiegodata.org
+contact_source:
+    creator:
+        email: null
+        name: Office of Statewide Health Planning and Development
+        url: http://www.oshpd.ca.gov/HWDD/Research_Policy_Planning_GIS.html
+    maintainer:
+        email: null
+        name: null
+        url: null
+external_documentation:
+    download_page:
+        description: The web page that links to the file.
+        source: source
+        title: Download Page
+        url: http://www.oshpd.ca.gov/HWDD/Research_Policy_Planning_GIS.html
+identity:
+    bspace: null
+    btime: null
+    dataset: zip_boundaries
+    id: d031
+    revision: 3
+    source: oshpd.ca.gov
+    subset: null
+    type: null
+    variation: null
+    version: 0.0.3
+names:
+    fqname: oshpd.ca.gov-zip_boundaries-0.0.3~d031003
+    name: oshpd.ca.gov-zip_boundaries
+    vid: d031003
+    vname: oshpd.ca.gov-zip_boundaries-0.0.3
+process: {}
+versions:
+    1:
+        date: null
+        description: null
+        version: 0.0.1
+    2:
+        date: null
+        description: Improved documentation, schema
+        version: 0.0.2
+    3:
+        date: '2014-12-30T16:31:14.004935'
+        description: 'Updating for new shapfile import '
+        version: 0.0.3

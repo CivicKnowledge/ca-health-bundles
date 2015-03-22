@@ -1,0 +1,52 @@
+about:
+    access: null
+    grain: hospital
+    groups: []
+    license: null
+    rights: null
+    space: null
+    subject: null
+    summary: The files display the total number of discharges, average charge per
+        stay, average charge per day and average length of stay for the top 25 Medicare-Severity
+        Diagnosis Related Groups (MS-DRGs) for each hospital and for the state as
+        a whole.
+    tags: []
+    time: null
+    title: Top 25 MS-DRGs
+contact_bundle:
+    creator:
+        email: eric@sandiegodata.org
+        name: Eric Busboom
+        url: http://www.sandiegodata.org
+    maintainer:
+        email: eric@sandiegodata.org
+        name: Eric Busboom
+        url: http://www.sandiegodata.org
+contact_source:
+    creator:
+        name: Office of Statewide Health Planning and Development, State of California
+        url: http://www.oshpd.ca.gov/
+    maintainer: {}
+external_documentation:
+    dataset:
+        description: Main webpage for the dataset.
+        source: null
+        title: Dataset Page
+        url: http://www.oshpd.ca.gov/HID/Products/PatDischargeData/PivotTables/Top25DRGs/
+identity:
+    bspace: null
+    btime: null
+    dataset: msdgr
+    id: d03P
+    revision: 1
+    source: oshpd.ca.gov
+    subset: null
+    type: null
+    variation: null
+    version: 0.0.1
+names:
+    fqname: oshpd.ca.gov-msdgr-0.0.1~d03P001
+    name: oshpd.ca.gov-msdgr
+    vid: d03P001
+    vname: oshpd.ca.gov-msdgr-0.0.1
+process: {}

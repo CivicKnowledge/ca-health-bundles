@@ -1,0 +1,65 @@
+build:
+    requirements:
+        openpyxl: openpyxl
+        unidecode: unidecode
+        xlrd: xlrd
+dependencies:
+    counties: census.gov-index-counties
+    facilities: civicknowledge.com-index-health_facilities-ca-facility_index
+extract: {}
+sources:
+    2005Util:
+        description: 2005 Utilization
+        url: http://www.oshpd.ca.gov/HID/Products/PatDischargeData/ResearchReports/HospIPQualInd/Vol-Util_IndicatorsRpt/2005Util.xls
+    2005Vol:
+        description: 2005 Volume
+        url: http://www.oshpd.ca.gov/HID/Products/PatDischargeData/ResearchReports/HospIPQualInd/Vol-Util_IndicatorsRpt/2005Vol.xls
+    2006Util:
+        description: 2006 Utilization
+        url: http://www.oshpd.ca.gov/HID/Products/PatDischargeData/ResearchReports/HospIPQualInd/Vol-Util_IndicatorsRpt/2006Util.xls
+    2006Vol:
+        description: 2006 Volume
+        url: http://www.oshpd.ca.gov/HID/Products/PatDischargeData/ResearchReports/HospIPQualInd/Vol-Util_IndicatorsRpt/2006Vol.xls
+    2007Util:
+        description: 2007 Utilization
+        url: http://www.oshpd.ca.gov/HID/Products/PatDischargeData/ResearchReports/HospIPQualInd/Vol-Util_IndicatorsRpt/2007Util.xls
+    2007Vol:
+        description: 2007 Volume
+        url: http://www.oshpd.ca.gov/HID/Products/PatDischargeData/ResearchReports/HospIPQualInd/Vol-Util_IndicatorsRpt/2007Vol.xls
+    2008Util:
+        description: 2008 Utilization
+        url: http://www.oshpd.ca.gov/HID/Products/PatDischargeData/ResearchReports/HospIPQualInd/Vol-Util_IndicatorsRpt/2008Util.xls
+    2008Vol:
+        description: 2008 Volume
+        url: http://www.oshpd.ca.gov/HID/Products/PatDischargeData/ResearchReports/HospIPQualInd/Vol-Util_IndicatorsRpt/2008Vol.xls
+    2009Util:
+        description: 2009 Utilization
+        url: http://www.oshpd.ca.gov/HID/Products/PatDischargeData/ResearchReports/HospIPQualInd/Vol-Util_IndicatorsRpt/2009Util.xls
+    2009Vol:
+        description: 2009 Volume
+        url: http://www.oshpd.ca.gov/HID/Products/PatDischargeData/ResearchReports/HospIPQualInd/Vol-Util_IndicatorsRpt/2009Vol.xls
+    2010Util:
+        description: 2010 Utilization
+        url: http://www.oshpd.ca.gov/HID/Products/PatDischargeData/ResearchReports/HospIPQualInd/Vol-Util_IndicatorsRpt/2010Util.xls
+    2010Vol:
+        description: 2010 Volume
+        url: http://www.oshpd.ca.gov/HID/Products/PatDischargeData/ResearchReports/HospIPQualInd/Vol-Util_IndicatorsRpt/2010Vol.xls
+    2011Util:
+        description: 2011 Utilization
+        url: http://www.oshpd.ca.gov/HID/Products/PatDischargeData/ResearchReports/HospIPQualInd/Vol-Util_IndicatorsRpt/2011Util.xls
+    2011Vol:
+        description: 2011 Volume
+        url: http://www.oshpd.ca.gov/HID/Products/PatDischargeData/ResearchReports/HospIPQualInd/Vol-Util_IndicatorsRpt/2011Vol.xls
+    2012Util:
+        description: 2012 Utilization
+        url: http://www.oshpd.ca.gov/HID/Products/PatDischargeData/ResearchReports/HospIPQualInd/Vol-Util_IndicatorsRpt/2012Util.xls
+    2012Vol:
+        description: 2012 Volume
+        url: http://www.oshpd.ca.gov/HID/Products/PatDischargeData/ResearchReports/HospIPQualInd/Vol-Util_IndicatorsRpt/2012Vol.xls
+    2013Util:
+        description: 2013 Utilization
+        url: http://www.oshpd.ca.gov/HID/Products/PatDischargeData/ResearchReports/HospIPQualInd/Vol-Util_IndicatorsRpt/2013Util.xls
+    2013Vol:
+        description: 2013 Volume
+        url: http://www.oshpd.ca.gov/HID/Products/PatDischargeData/ResearchReports/HospIPQualInd/Vol-Util_IndicatorsRpt/2013Vol.xls
+views: {}

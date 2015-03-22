@@ -1,0 +1,66 @@
+about:
+    access: null
+    grain: null
+    groups:
+    - health
+    license: public
+    rights: null
+    space: null
+    subject: Healthcare Facliities
+    summary: List of California healthcare facilities, including Hospitals, long-term
+        care facilities, clinics and hospices
+    tags: []
+    time: null
+    title: California Healthcare Facilities
+contact_bundle:
+    creator:
+        email: eric@sandiegodata.org
+        name: Eric Busboom
+        url: http://www.sandiegodata.org
+    maintainer:
+        email: eric@sandiegodata.org
+        name: Eric Busboom
+        url: http://www.sandiegodata.org
+contact_source:
+    creator: {}
+    maintainer: {}
+external_documentation:
+    download:
+        description: Web page that links to the source files.
+        source: null
+        title: Download Page
+        url: http://www.oshpd.ca.gov/HID/Products/Listings.html
+identity:
+    bspace: null
+    btime: null
+    dataset: facilities
+    id: d03j
+    revision: 5
+    source: oshpd.ca.gov
+    subset: null
+    type: null
+    variation: null
+    version: 0.0.5
+names:
+    fqname: oshpd.ca.gov-facilities-0.0.5~d03j005
+    name: oshpd.ca.gov-facilities
+    vid: d03j005
+    vname: oshpd.ca.gov-facilities-0.0.5
+process: {}
+versions:
+    2:
+        date: '2014-12-26T11:58:27.712012'
+        description: Adding crosswalks
+        version: 0.0.2
+    3:
+        date: '2015-02-24T13:10:04.105081'
+        description: 'New Vewsion. No Idea. '
+        version: 0.0.3
+    4:
+        date: '2015-03-13T09:43:58.093286'
+        description: 'Added counties and tracts to fecilities blockgroups table. '
+        version: 0.0.4
+    5:
+        date: '2015-03-20T12:19:55.946618'
+        description: Moved to new RowGen code, added facilities index table
+        version: 0.0.5

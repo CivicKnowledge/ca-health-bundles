@@ -1,0 +1,39 @@
+build:
+    requirements:
+        xlrd: xlrd
+dependencies: {}
+extract: {}
+sources:
+    conditions_2012:
+        description: '2012 Inpatient Mortality Indicators: Conditions'
+        time: '2012'
+        url: http://www.oshpd.ca.gov/HID/Products/PatDischargeData/AHRQ/IQI/2012/AHRQ_IMI_VER4.5_Conditions2012Revised.xls
+    indicators_2006:
+        description: 2006 Inpatient Mortality Indicators
+        time: '2006'
+        url: http://www.oshpd.ca.gov/HID/Products/PatDischargeData/AHRQ/IQI/AHRQ_version3.2_IQI_MORT_2006.xls
+    indicators_2007:
+        description: 2007 Inpatient Mortality Indicators
+        time: '2007'
+        url: http://www.oshpd.ca.gov/HID/Products/PatDischargeData/AHRQ/IQI/AHRQ_version3.2_IQI_MORT_2007.xls
+    indicators_2008:
+        description: 2008 Inpatient Mortality Indicators
+        time: '2008'
+        url: http://www.oshpd.ca.gov/HID/Products/PatDischargeData/AHRQ/IQI/AHRQ_IMI_2008.xls
+    indicators_2009:
+        description: 2009 Inpatient Mortality Indicators
+        time: '2009'
+        url: http://www.oshpd.ca.gov/HID/Products/PatDischargeData/AHRQ/IQI/AHRQ_IMI_2009.xls
+    indicators_2010:
+        description: 2010 Inpatient Mortality Indicators
+        time: '2010'
+        url: http://www.oshpd.ca.gov/HID/Products/PatDischargeData/AHRQ/IQI/AHRQ_IMI_2010.xls
+    indicators_2011:
+        description: 2011 Inpatient Mortality Indicators
+        time: '2011'
+        url: http://www.oshpd.ca.gov/HID/Products/PatDischargeData/AHRQ/IQI/AHRQ_IMI_2011.xls
+    procedures_2012:
+        description: '2012 Inpatient Mortality Indicators: Procedures'
+        time: '2012'
+        url: http://www.oshpd.ca.gov/HID/Products/PatDischargeData/AHRQ/IQI/2012/AHRQ_IMI_VER4.5_Procedures2012Revised.xls
+views: {}

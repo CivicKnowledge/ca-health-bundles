@@ -1,0 +1,345 @@
+build:
+    requirements:
+        xlrd: xlrd
+dependencies:
+    counties: census.gov-index-counties
+    districts: cde.ca.gov-schools-school_index
+    schools: cde.ca.gov-schools-dist_index
+sources:
+    2000-2001_kinder:
+        description: xls
+        row_spec:
+            data_end_line: 7423
+            data_start_line: 5
+            header_comment_lines:
+            - 0
+            - 1
+            header_lines:
+            - 3
+            - 4
+        segment: 0
+        table: kinder
+        url: http://www.cdph.ca.gov/programs/immunize/Documents/2000-2001%20CA%20Kindergarten%20Data.xls
+    2001-2002_kinder:
+        description: xls
+        row_spec:
+            data_end_line: 7507
+            data_start_line: 5
+            header_comment_lines:
+            - 0
+            - 1
+            header_lines:
+            - 3
+            - 4
+        segment: 0
+        table: kinder
+        url: http://www.cdph.ca.gov/programs/immunize/Documents/2001-2002CAKindergartenData.xls
+    2002-2003_kinder:
+        description: xls
+        row_spec:
+            data_end_line: 7433
+            data_start_line: 5
+            header_comment_lines:
+            - 0
+            - 1
+            header_lines:
+            - 3
+            - 4
+        segment: 0
+        table: kinder
+        url: http://www.cdph.ca.gov/programs/immunize/Documents/2002-2003CAKindergartenData.xls
+    2003-2004_kinder:
+        description: xls
+        row_spec:
+            data_end_line: 7357
+            data_start_line: 5
+            header_comment_lines:
+            - 0
+            - 1
+            header_lines:
+            - 3
+            - 4
+        segment: 0
+        table: kinder
+        url: http://www.cdph.ca.gov/programs/immunize/Documents/2003-2004CAKindergartenData.xls
+    2004-2005_kinder:
+        description: xls
+        row_spec:
+            data_end_line: 7366
+            data_start_line: 5
+            header_comment_lines:
+            - 0
+            - 1
+            header_lines:
+            - 3
+            - 4
+        segment: 0
+        table: kinder
+        url: http://www.cdph.ca.gov/programs/immunize/Documents/2004-2005CAKindergartenData.xls
+    2005-2006_kinder:
+        description: xls
+        row_spec:
+            data_end_line: 7376
+            data_start_line: 5
+            header_comment_lines:
+            - 0
+            - 1
+            header_lines:
+            - 3
+            - 4
+        segment: 0
+        table: kinder
+        url: http://www.cdph.ca.gov/programs/immunize/Documents/2005-2006CAKindergartenData.xls
+    2006-2007_kinder:
+        description: xls
+        row_spec:
+            data_end_line: 7369
+            data_start_line: 5
+            header_comment_lines:
+            - 0
+            - 1
+            header_lines:
+            - 3
+            - 4
+        segment: 0
+        table: kinder
+        url: http://www.cdph.ca.gov/programs/immunize/Documents/2006-2007CAKindergartenData.xls
+    2007-2008_kinder:
+        description: xls
+        row_spec:
+            data_end_line: 7314
+            data_start_line: 5
+            header_comment_lines:
+            - 0
+            - 1
+            header_lines:
+            - 3
+            - 4
+        segment: 0
+        table: kinder
+        url: http://www.cdph.ca.gov/programs/immunize/Documents/2007-2008%20CA%20Kindergarten%20Data.xls
+    2008-2009_kinder:
+        description: xls
+        row_spec:
+            data_end_line: 7179
+            data_start_line: 5
+            header_comment_lines:
+            - 0
+            - 1
+            header_lines:
+            - 3
+            - 4
+        segment: 0
+        table: kinder
+        url: http://www.cdph.ca.gov/programs/immunize/Documents/2008-2009CAKindergartenData.xls
+    2009-2010_kinder:
+        description: xls
+        row_spec:
+            data_end_line: 7130
+            data_start_line: 5
+            header_comment_lines:
+            - 0
+            - 1
+            header_lines:
+            - 3
+            - 4
+        segment: 0
+        table: kinder
+        url: http://www.cdph.ca.gov/programs/immunize/Documents/2009-2010CAKindergartenData.xls
+    2010-2011_child_care:
+        description: xls
+        row_spec:
+            data_start_line: 6
+            header_comment_lines:
+            - 0
+            - 1
+            - 2
+            header_lines:
+            - 4
+            - 5
+        segment: 0
+        table: child_care
+        url: http://www.cdph.ca.gov/programs/immunize/Documents/2010-2011%20Child%20Care%20Data.xls
+    2010-2011_kinder:
+        description: xls
+        row_spec:
+            data_end_line: 7170
+            data_start_line: 5
+            header_comment_lines:
+            - 0
+            - 1
+            header_lines:
+            - 3
+            - 4
+        segment: 0
+        table: kinder
+        url: http://www.cdph.ca.gov/programs/immunize/Documents/2010-2011CAKindergartenData%20(2).xls
+    2011-2012_12th:
+        description: xls
+        row_spec:
+            data_end_line: 17564
+            data_start_line: 5
+            header_comment_lines:
+            - 0
+            - 1
+            header_lines:
+            - 3
+            - 4
+        segment: 0
+        table: g12
+        url: http://www.cdph.ca.gov/programs/immunize/Documents/2011-2012%20CA%207-12th%20Grade%20Data.xls
+    2011-2012_child_care:
+        description: xls
+        row_spec:
+            data_start_line: 6
+            header_comment_lines:
+            - 0
+            - 1
+            - 2
+            header_lines:
+            - 4
+            - 5
+        segment: 0
+        table: child_care
+        url: http://www.cdph.ca.gov/programs/immunize/Documents/CAChildCareData2011-2012.xls
+    2011-2012_kinder:
+        description: xls
+        row_spec:
+            data_end_line: 7332
+            data_start_line: 5
+            header_comment_lines:
+            - 0
+            - 1
+            header_lines:
+            - 3
+            - 4
+        segment: 0
+        table: kinder
+        url: http://www.cdph.ca.gov/programs/immunize/Documents/2011-2012%20CA%20Kindergarten%20Data.xls
+    2012-2013_7th:
+        description: xls
+        row_spec:
+            data_end_line: 3854
+            data_start_line: 5
+            header_comment_lines:
+            - 0
+            - 1
+            header_lines:
+            - 3
+            - 4
+        segment: 3
+        table: g7
+        url: http://www.cdph.ca.gov/programs/immunize/Documents/2012-2013%20CA%20Seventh%20Grade%20Data.xls
+    2012-2013_child_care:
+        description: xls
+        row_spec:
+            data_start_line: 6
+            header_comment_lines:
+            - 0
+            - 1
+            - 2
+            header_lines:
+            - 4
+            - 5
+        segment: 0
+        table: child_care
+        url: http://www.cdph.ca.gov/programs/immunize/Documents/2012-2013%20CA%20Child%20Care%20Data.xls
+    2012-2013_kinder:
+        description: xls
+        row_spec:
+            data_end_line: 7642
+            data_start_line: 5
+            header_comment_lines:
+            - 0
+            - 1
+            header_lines:
+            - 3
+            - 4
+        segment: 2
+        table: kinder
+        url: http://www.cdph.ca.gov/programs/immunize/Documents/2012-2013%20California%20Kindergarten%20Data.xls
+    2013-2014_7th:
+        description: xls
+        row_spec:
+            data_end_line: 3848
+            data_start_line: 5
+            header_comment_lines:
+            - 0
+            - 1
+            header_lines:
+            - 3
+            - 4
+        segment: 3
+        table: g7
+        url: http://www.cdph.ca.gov/programs/immunize/Documents/2013-2014%20CA%20Seventh%20Grade%20Data.xls
+    2013-2014_child_care:
+        description: xls
+        row_spec:
+            data_start_line: 6
+            header_comment_lines:
+            - 0
+            - 1
+            - 2
+            header_lines:
+            - 4
+            - 5
+        segment: 0
+        table: child_care
+        url: http://www.cdph.ca.gov/programs/immunize/Documents/2013-2014%20CA%20Child%20Care%20Data.xls
+    2013-2014_kinder:
+        description: xls
+        row_spec:
+            data_end_line: 7386
+            data_start_line: 5
+            header_comment_lines:
+            - 0
+            - 1
+            header_lines:
+            - 3
+            - 4
+        segment: 2
+        table: kinder
+        url: http://www.cdph.ca.gov/programs/immunize/Documents/2013-2014%20CA%20Kindergarten%20Data.xls
+    2014-2015_7th:
+        description: None
+        row_spec:
+            data_end_line: 4038
+            data_start_line: 5
+            header_comment_lines:
+            - 0
+            - 1
+            header_lines:
+            - 3
+            - 4
+        segment: 2
+        table: g7
+        url: http://www.cdph.ca.gov/programs/immunize/Documents/2014-2015%20CA%20Seventh%20Grade%20Data.xls
+    2014-2015_child_care:
+        description: xls
+        row_spec:
+            data_start_line: 6
+            header_comment_lines:
+            - 0
+            - 1
+            - 2
+            header_lines:
+            - 4
+            - 5
+        segment: 0
+        table: child_care
+        url: http://www.cdph.ca.gov/programs/immunize/Documents/2014-2015%20CA%20Child%20Care%20Data.xlsx
+    2014-2015_kinder:
+        description: xls
+        row_spec:
+            data_end_line: 7469
+            data_start_line: 5
+            header_comment_lines:
+            - 0
+            - 1
+            header_lines:
+            - 3
+            - 4
+        segment: 0
+        table: kinder
+        url: http://www.cdph.ca.gov/programs/immunize/Documents/2014-15%20CA%20Kindergarten%20Data.xlsx
+views: {}

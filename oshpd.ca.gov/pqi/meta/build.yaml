@@ -1,0 +1,12 @@
+build:
+    requirements:
+        xlrd: xlrd
+dependencies:
+    counties: census.gov-index-counties
+extract: {}
+sources:
+    pqi:
+        description: Multi-year PQI file.
+        segment: 1
+        url: http://www.oshpd.ca.gov/HID/Products/PatDischargeData/AHRQ/PQI/PQI_Summary_V45a_2005-2013.xlsx
+views: {}

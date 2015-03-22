@@ -1,0 +1,54 @@
+about:
+    access: null
+    grain: null
+    groups: []
+    license: null
+    rights: null
+    space: null
+    subject: null
+    summary: The California Department of Public Health, Center for Health Care Quality,
+        Licensing and Certification (L&C) Program licenses more than 30 types of health
+        facilities. This table lists the name and location of over 7,500 licensed
+        healthcare facilities and services. The records are geocoded. These data are
+        a subset of the data in the L&C Electronic Licensing Management System (ELMS).
+        CDPH updates the data quarterly.
+    tags: []
+    time: null
+    title: Healthcare Facility Locations
+contact_bundle:
+    creator:
+        email: eric@sandiegodata.org
+        name: Eric Busboom
+        url: http://www.sandiegodata.org
+    maintainer: {}
+contact_source:
+    creator: {}
+    maintainer: {}
+external_documentation:
+    data_dictionary:
+        description: null
+        source: null
+        title: Data Dictionary
+        url: https://cdph.data.ca.gov/api/views/89gy-3cst/files/kDd6mBo_l5KAEVY9iTuKXQ0jNq6gjw642K39wZva1Z4?download=true&filename=Healthcare%20Facility%20Locations-DD.xlsx
+    download:
+        description: Web page that links to the source files.
+        source: null
+        title: Download Page
+        url: https://cdph.data.ca.gov/Facilities-and-Services/Healthcare-Facility-Locations/89gy-3cst
+identity:
+    bspace: null
+    btime: null
+    dataset: facilities
+    id: d03s
+    revision: 1
+    source: cdph.ca.gov
+    subset: null
+    type: null
+    variation: null
+    version: 0.0.1
+names:
+    fqname: cdph.ca.gov-facilities-0.0.1~d03s001
+    name: cdph.ca.gov-facilities
+    vid: d03s001
+    vname: cdph.ca.gov-facilities-0.0.1
+process: {}

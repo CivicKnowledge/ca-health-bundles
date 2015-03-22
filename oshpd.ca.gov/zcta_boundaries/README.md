@@ -1,0 +1,3 @@
+# ZCTA Code Boundaries
+
+ZCTA boundaries for California. ZCTA are similar to Zip and used by the census instead of Zip area

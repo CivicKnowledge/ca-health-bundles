@@ -1,0 +1,62 @@
+about:
+    access: public
+    grain: school
+    groups: []
+    license: null
+    rights: null
+    space: null
+    subject: null
+    summary: Most recent summary reports and data files that measure compliance with
+        the school immunization law, conducted in licensed child care facilities and
+        all schools with kindergartens and/or 7th grades. Individual facility/school
+        data is only presented for facilities/schools with 10 or more students.
+    tags: []
+    time: null
+    title: Immunization Levels in Child Care and Schools
+contact_bundle:
+    creator:
+        email: eric@sandiegodata.org
+        name: Eric Busboom
+        url: http://www.sandiegodata.org
+    maintainer:
+        email: eric@sandiegodata.org
+        name: Eric Busboom
+        url: http://www.sandiegodata.org
+contact_source:
+    creator:
+        name: California Department of Public Health
+        url: http://www.cdph.ca.gov/
+    maintainer: {}
+external_documentation:
+    dataset:
+        description: Main webpage for the dataset.
+        source: null
+        title: Dataset Page
+        url: http://www.cdph.ca.gov/programs/immunize/pages/immunizationlevels.aspx
+    download:
+        description: Web page that links to the source files.
+        source: null
+        title: Download Page
+        url: http://www.cdph.ca.gov/programs/immunize/pages/immunizationlevels.aspx
+identity:
+    bspace: null
+    btime: null
+    dataset: immunization
+    id: d03N
+    revision: 2
+    source: cdph.ca.gov
+    subset: schools
+    type: null
+    variation: null
+    version: 0.0.2
+names:
+    fqname: cdph.ca.gov-immunization-schools-0.0.2~d03N002
+    name: cdph.ca.gov-immunization-schools
+    vid: d03N002
+    vname: cdph.ca.gov-immunization-schools-0.0.2
+process: {}
+versions:
+    2:
+        date: '2015-03-06T20:11:44.530742'
+        description: 'Adding descriptions to schema. '
+        version: 0.0.2

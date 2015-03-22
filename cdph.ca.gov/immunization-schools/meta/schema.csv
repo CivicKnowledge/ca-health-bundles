@@ -1,0 +1,118 @@
+table,seq,column,is_pk,is_fk,type,size,description,proto_vid,id
+g7,1,id,1,,INTEGER,,Immunizations at Grade 7,,t03N01
+g7,2,county_gvid,,c03x04003,VARCHAR,6,gvid,c00104002,c03N01002
+g7,3,year,,c03x04002,INTEGER,4,year,c00102003,c03N01003
+g7,4,school_code,,c03L03005,VARCHAR,232,School part of the School's CDS code,,c03N01004
+g7,5,county,,,VARCHAR,15,County name,,c03N01005
+g7,6,pub_private,,,VARCHAR,7,Is school public or private?,,c03N01006
+g7,7,district,,,VARCHAR,61,School's district name,,c03N01007
+g7,8,city,,,VARCHAR,25,City name,,c03N01008
+g7,9,school_name,,,VARCHAR,77,School name,,c03N01009
+g7,10,enrollment,,,INTEGER,4,School enrollment,,c03N0100a
+g7,11,up_to_date_no,,,INTEGER,4,"Up-To-Date: Four doses of polio vaccine (three doses are acceptable if at least one dose was received on or after the fourth birthday); and five DTP/DT vaccine doses (four doses are acceptable if at least one dose was received on or after the fourth birthday); and two doses of measles-containing vaccine, at least one of which must be measles, mumps, and rubella combined. Both doses must have been received on or after the first birthday; and three doses of hepatitis B vaccine; and one dose of varicella vaccine or physician-documented varicella (chickenpox) disease.",,c03N0100b
+g7,12,up_to_date_pct,,,REAL,,"Up-To-Date: Four doses of polio vaccine (three doses are acceptable if at least one dose was received on or after the fourth birthday); and five DTP/DT vaccine doses (four doses are acceptable if at least one dose was received on or after the fourth birthday); and two doses of measles-containing vaccine, at least one of which must be measles, mumps, and rubella combined. Both doses must have been received on or after the first birthday; and three doses of hepatitis B vaccine; and one dose of varicella vaccine or physician-documented varicella (chickenpox) disease.",,c03N0100c
+g7,13,pme_no,,,INTEGER,3,A Permanent Medical Exemption (PME): granted upon the filing with the school of a written statement from a licensed physician to the effect that the physical condition of the student or medical circumstances relating to the student are such that immunization is permanently not indicated.,,c03N0100d
+g7,14,pme_pct,,,REAL,4,A Permanent Medical Exemption (PME): granted upon the filing with the school of a written statement from a licensed physician to the effect that the physical condition of the student or medical circumstances relating to the student are such that immunization is permanently not indicated.,,c03N0100e
+g7,15,pbe_no,,,INTEGER,4,"A Personal Belief Exemption (PBE), whereby a parent signs an affidavit requesting an exemption from the immunization requirements for school entry because all or some immunizations are contrary to the parent's beliefs.",,c03N0100f
+g7,16,pbe_pct,,,REAL,5,"A Personal Belief Exemption (PBE), whereby a parent signs an affidavit requesting an exemption from the immunization requirements for school entry because all or some immunizations are contrary to the parent's beliefs.",,c03N0100g
+g7,17,reported,,,VARCHAR,1,Did the school make a report of immunizations,,c03N0100h
+g7,18,counsel_pbe_no,,,INTEGER,4,3 or more doses of polio vaccine; Oral polio vaccine (OPV) or inactivated polio vaccine (IPV) or any combination of these. 2) the health risks to the student and to the community of the communicable diseases for which immunization is required in CA,,c03N0100i
+g7,19,counsel_pbe_pct,,,REAL,5,3 or more doses of polio vaccine; Oral polio vaccine (OPV) or inactivated polio vaccine (IPV) or any combination of these. 2) the health risks to the student and to the community of the communicable diseases for which immunization is required in CA,,c03N0100j
+g7,20,religious_pbe_no,,,INTEGER,4,"A Personal Belief Exemption (PBE), whereby a parent requests exemption from the immunization requirements for child care/preschool entry. A new state law that went into effect in January 2014 now requires parents seeking an exemption for their children to document that they have received vaccine counseling from a qualified health care practitioner within the last 6 months ('Health Care Practitioner PBE') or that they have a religious objection to receiving such counseling ('Religious PBE). Children already enrolled in child care/preschool prior to January 2014 ('pre-Jan PBE') were not subject to the new requirement. The number in this field represents the total PBE students as calculated by adding together the children in each of the PBE subcategories.",,c03N0100k
+g7,21,religious_pbe_pct,,,REAL,5,"A Personal Belief Exemption (PBE), whereby a parent requests exemption from the immunization requirements for child care/preschool entry. A new state law that went into effect in January 2014 now requires parents seeking an exemption for their children to document that they have received vaccine counseling from a qualified health care practitioner within the last 6 months ('Health Care Practitioner PBE') or that they have a religious objection to receiving such counseling ('Religious PBE). Children already enrolled in child care/preschool prior to January 2014 ('pre-Jan PBE') were not subject to the new requirement. The number in this field represents the total PBE students as calculated by adding together the children in each of the PBE subcategories.",,c03N0100l
+,,,,,,,,,
+child_care,1,id,1,,INTEGER,,Immunizations for children enrolled in child care,,t03N02
+child_care,2,county_gvid,,c03x04003,VARCHAR,6,gvid,c00104002,c03N02002
+child_care,3,year,,c03x04002,INTEGER,4,year,c00102003,c03N02003
+child_care,4,facility_number,,,VARCHAR,9,FACILITY NUMBER,,c03N02004
+child_care,5,county,,,VARCHAR,393,County name,,c03N02005
+child_care,6,hs_priv_pub,,,VARCHAR,10,Type of facility,,c03N02006
+child_care,7,city,,,VARCHAR,22,City name,,c03N02007
+child_care,8,facility_name,,,VARCHAR,87,Facility name,,c03N02008
+child_care,9,enrollment,,,INTEGER,4,School enrollment,,c03N02009
+child_care,10,up_to_date_no,,,REAL,,"Up-To-Date: Four doses of polio vaccine (three doses are acceptable if at least one dose was received on or after the fourth birthday); and five DTP/DT vaccine doses (four doses are acceptable if at least one dose was received on or after the fourth birthday); and two doses of measles-containing vaccine, at least one of which must be measles, mumps, and rubella combined. Both doses must have been received on or after the first birthday; and three doses of hepatitis B vaccine; and one dose of varicella vaccine or physician-documented varicella (chickenpox) disease.",,c03N0200a
+child_care,11,up_to_date_pct,,,REAL,,"Up-To-Date: Four doses of polio vaccine (three doses are acceptable if at least one dose was received on or after the fourth birthday); and five DTP/DT vaccine doses (four doses are acceptable if at least one dose was received on or after the fourth birthday); and two doses of measles-containing vaccine, at least one of which must be measles, mumps, and rubella combined. Both doses must have been received on or after the first birthday; and three doses of hepatitis B vaccine; and one dose of varicella vaccine or physician-documented varicella (chickenpox) disease.",,c03N0200b
+child_care,12,cond_no,,,INTEGER,4,Conditional Entrant is an enrollee who does not meet all requirements.,,c03N0200c
+child_care,13,cond_pct,,,REAL,14,Conditional Entrant is an enrollee who does not meet all requirements.,,c03N0200d
+child_care,14,pme_no,,,INTEGER,4,A Permanent Medical Exemption (PME): granted upon the filing with the school of a written statement from a licensed physician to the effect that the physical condition of the student or medical circumstances relating to the student are such that immunization is permanently not indicated.,,c03N0200e
+child_care,15,pme_pct,,,REAL,14,A Permanent Medical Exemption (PME): granted upon the filing with the school of a written statement from a licensed physician to the effect that the physical condition of the student or medical circumstances relating to the student are such that immunization is permanently not indicated.,,c03N0200f
+child_care,16,pbe_no,,,INTEGER,4,"A Personal Belief Exemption (PBE), whereby a parent signs an affidavit requesting an exemption from the immunization requirements for school entry because all or some immunizations are contrary to the parent's beliefs.",,c03N0200g
+child_care,17,pbe_pct,,,REAL,14,"A Personal Belief Exemption (PBE), whereby a parent signs an affidavit requesting an exemption from the immunization requirements for school entry because all or some immunizations are contrary to the parent's beliefs.",,c03N0200h
+child_care,18,pre_jan_pbe_no,,,INTEGER,4,"A Personal Belief Exemption (PBE) obtained prior to January 1, 2014 whereby a parent signed an affidavit requesting the exemption.",,c03N0200i
+child_care,19,pre_jan_pbe_pct,,,REAL,5,"A Personal Belief Exemption (PBE) obtained prior to January 1, 2014 whereby a parent signed an affidavit requesting the exemption.",,c03N0200j
+child_care,20,counsel_pbe_no,,,INTEGER,4,3 or more doses of polio vaccine; Oral polio vaccine (OPV) or inactivated polio vaccine (IPV) or any combination of these. 2) the health risks to the student and to the community of the communicable diseases for which immunization is required in CA,,c03N0200k
+child_care,21,counsel_pbe_pct,,,REAL,5,3 or more doses of polio vaccine; Oral polio vaccine (OPV) or inactivated polio vaccine (IPV) or any combination of these. 2) the health risks to the student and to the community of the communicable diseases for which immunization is required in CA,,c03N0200l
+child_care,22,religious_pbe_no,,,INTEGER,4,"A Personal Belief Exemption (PBE), whereby a parent requests exemption from the immunization requirements for child care/preschool entry. A new state law that went into effect in January 2014 now requires parents seeking an exemption for their children to document that they have received vaccine counseling from a qualified health care practitioner within the last 6 months ('Health Care Practitioner PBE') or that they have a religious objection to receiving such counseling ('Religious PBE). Children already enrolled in child care/preschool prior to January 2014 ('pre-Jan PBE') were not subject to the new requirement. The number in this field represents the total PBE students as calculated by adding together the children in each of the PBE subcategories.",,c03N0200m
+child_care,23,religious_pbe_pct,,,REAL,5,"A Personal Belief Exemption (PBE), whereby a parent requests exemption from the immunization requirements for child care/preschool entry. A new state law that went into effect in January 2014 now requires parents seeking an exemption for their children to document that they have received vaccine counseling from a qualified health care practitioner within the last 6 months ('Health Care Practitioner PBE') or that they have a religious objection to receiving such counseling ('Religious PBE). Children already enrolled in child care/preschool prior to January 2014 ('pre-Jan PBE') were not subject to the new requirement. The number in this field represents the total PBE students as calculated by adding together the children in each of the PBE subcategories.",,c03N0200n
+child_care,24,dtp_4p_no,,,INTEGER,4,Four or more doses of DTP,,c03N0200o
+child_care,25,dtp_4p_pct,,,REAL,,Four or more doses of DTP,,c03N0200p
+child_care,26,polio_3p_no,,,INTEGER,4,Three or more doses of Polio vaccine,,c03N0200q
+child_care,27,polio_3p_pct,,,REAL,,Three or more doses of Polio vaccine,,c03N0200r
+child_care,28,mmr_1p_no,,,INTEGER,4,One or more dose of measlesmumpsrubella vaccine,,c03N0200s
+child_care,29,mmr_1p_pct,,,REAL,,One or more dose of measlesmumpsrubella vaccine,,c03N0200t
+child_care,30,hib_1p_no,,,INTEGER,4,One or more doses of HIB on or after 1st birthday,,c03N0200u
+child_care,31,hib_1p_pct,,,REAL,,One or more doses of HIB on or after 1st birthday,,c03N0200v
+child_care,32,hepb_3p_no,,,INTEGER,4,Three or more doses of hepatitis B vaccine,,c03N0200w
+child_care,33,hepb_3p_pct,,,REAL,,Three or more doses of hepatitis B vaccine,,c03N0200x
+child_care,34,vari_1p_no,,,INTEGER,4,1 or more doses of varicella,,c03N0200y
+child_care,35,vari_1p_pct,,,REAL,,1 or more doses of varicella,,c03N0200z
+child_care,36,hib1_no,,,REAL,,1 or more doses of Hib on or after 1st birthday.,,c03N0200A
+child_care,37,hib1_pct,,,REAL,,1 or more doses of Hib on or after 1st birthday.,,c03N0200B
+child_care,38,reported,,,VARCHAR,1,Did the school make a report of immunizations,,c03N0200C
+,,,,,,,,,
+kinder,1,id,1,,INTEGER,,Immunizations in kindergarten,,t03N03
+kinder,2,county_gvid,,c03x04003,VARCHAR,6,gvid,c00104002,c03N03002
+kinder,3,year,,c03x04002,INTEGER,4,year,c00102003,c03N03003
+kinder,4,school_code,,c03L03005,VARCHAR,264,School part of the School's CDS code,,c03N03004
+kinder,5,county,,,VARCHAR,15,County name,,c03N03005
+kinder,6,pub_private,,,VARCHAR,7,Is school public or private?,,c03N03006
+kinder,7,district,,,VARCHAR,61,School's district name,,c03N03007
+kinder,8,city,,,VARCHAR,25,City name,,c03N03008
+kinder,9,school_name,,,VARCHAR,79,School name,,c03N03009
+kinder,10,enrollment,,,INTEGER,3,School enrollment,,c03N0300a
+kinder,11,up_to_date_no,,,INTEGER,3,"Up-To-Date: Four doses of polio vaccine (three doses are acceptable if at least one dose was received on or after the fourth birthday); and five DTP/DT vaccine doses (four doses are acceptable if at least one dose was received on or after the fourth birthday); and two doses of measles-containing vaccine, at least one of which must be measles, mumps, and rubella combined. Both doses must have been received on or after the first birthday; and three doses of hepatitis B vaccine; and one dose of varicella vaccine or physician-documented varicella (chickenpox) disease.",,c03N0300b
+kinder,12,up_to_date_pct,,,REAL,,"Up-To-Date: Four doses of polio vaccine (three doses are acceptable if at least one dose was received on or after the fourth birthday); and five DTP/DT vaccine doses (four doses are acceptable if at least one dose was received on or after the fourth birthday); and two doses of measles-containing vaccine, at least one of which must be measles, mumps, and rubella combined. Both doses must have been received on or after the first birthday; and three doses of hepatitis B vaccine; and one dose of varicella vaccine or physician-documented varicella (chickenpox) disease.",,c03N0300c
+kinder,13,cond_no,,,INTEGER,4,Conditional Entrant is an enrollee who does not meet all requirements.,,c03N0300d
+kinder,14,cond_pct,,,REAL,5,Conditional Entrant is an enrollee who does not meet all requirements.,,c03N0300e
+kinder,15,pme_no,,,INTEGER,4,A Permanent Medical Exemption (PME): granted upon the filing with the school of a written statement from a licensed physician to the effect that the physical condition of the student or medical circumstances relating to the student are such that immunization is permanently not indicated.,,c03N0300f
+kinder,16,pme_pct,,,REAL,5,A Permanent Medical Exemption (PME): granted upon the filing with the school of a written statement from a licensed physician to the effect that the physical condition of the student or medical circumstances relating to the student are such that immunization is permanently not indicated.,,c03N0300g
+kinder,17,pbe_no,,,INTEGER,4,"A Personal Belief Exemption (PBE), whereby a parent signs an affidavit requesting an exemption from the immunization requirements for school entry because all or some immunizations are contrary to the parent's beliefs.",,c03N0300h
+kinder,18,pbe_pct,,,REAL,5,"A Personal Belief Exemption (PBE), whereby a parent signs an affidavit requesting an exemption from the immunization requirements for school entry because all or some immunizations are contrary to the parent's beliefs.",,c03N0300i
+kinder,19,pre_jan_pbe_no,,,INTEGER,4,"A Personal Belief Exemption (PBE) obtained prior to January 1, 2014 whereby a parent signed an affidavit requesting the exemption.",,c03N0300j
+kinder,20,pre_jan_pbe_pct,,,REAL,5,"A Personal Belief Exemption (PBE) obtained prior to January 1, 2014 whereby a parent signed an affidavit requesting the exemption.",,c03N0300k
+kinder,21,counsel_pbe_no,,,INTEGER,4,3 or more doses of polio vaccine; Oral polio vaccine (OPV) or inactivated polio vaccine (IPV) or any combination of these. 2) the health risks to the student and to the community of the communicable diseases for which immunization is required in CA,,c03N0300l
+kinder,22,counsel_pbe_pct,,,REAL,5,3 or more doses of polio vaccine; Oral polio vaccine (OPV) or inactivated polio vaccine (IPV) or any combination of these. 2) the health risks to the student and to the community of the communicable diseases for which immunization is required in CA,,c03N0300m
+kinder,23,religious_pbe_no,,,INTEGER,4,"A Personal Belief Exemption (PBE), whereby a parent requests exemption from the immunization requirements for child care/preschool entry. A new state law that went into effect in January 2014 now requires parents seeking an exemption for their children to document that they have received vaccine counseling from a qualified health care practitioner within the last 6 months ('Health Care Practitioner PBE') or that they have a religious objection to receiving such counseling ('Religious PBE). Children already enrolled in child care/preschool prior to January 2014 ('pre-Jan PBE') were not subject to the new requirement. The number in this field represents the total PBE students as calculated by adding together the children in each of the PBE subcategories.",,c03N0300n
+kinder,24,religious_pbe_pct,,,REAL,5,"A Personal Belief Exemption (PBE), whereby a parent requests exemption from the immunization requirements for child care/preschool entry. A new state law that went into effect in January 2014 now requires parents seeking an exemption for their children to document that they have received vaccine counseling from a qualified health care practitioner within the last 6 months ('Health Care Practitioner PBE') or that they have a religious objection to receiving such counseling ('Religious PBE). Children already enrolled in child care/preschool prior to January 2014 ('pre-Jan PBE') were not subject to the new requirement. The number in this field represents the total PBE students as calculated by adding together the children in each of the PBE subcategories.",,c03N0300o
+kinder,25,dtp_no,,,INTEGER,3,Four or more doses of DTP,,c03N0300p
+kinder,26,dtp_pct,,,REAL,,Four or more doses of DTP,,c03N0300q
+kinder,27,polio_pct,,,REAL,,Three or more doses of Polio vaccine,,c03N0300r
+kinder,28,mmr_2_no,,,INTEGER,3,Two doses of MMR,,c03N0300s
+kinder,29,mmr_2_pct,,,REAL,,Two doses of MMR,,c03N0300t
+kinder,30,hepb_3p_no,,,INTEGER,3,Three or more doses of hepatitis B vaccine,,c03N0300u
+kinder,31,hepb_3p_pct,,,REAL,,Three or more doses of hepatitis B vaccine,,c03N0300v
+kinder,32,vari_no,,,INTEGER,3,"1 or more doses of varicella at or after child's first birthday, unadjusted for history of varicella illness.",,c03N0300w
+kinder,33,vari_pct,,,REAL,,"1 or more doses of varicella at or after child's first birthday, unadjusted for history of varicella illness.",,c03N0300x
+kinder,34,reported,,,VARCHAR,1,Did the school make a report of immunizations,,c03N0300y
+kinder,35,dictrict_code,,,INTEGER,5,District code,,c03N0300z
+kinder,36,mmr_1_no,,,INTEGER,3,One Dose of measlesmumpsrubella vaccine,,c03N0300A
+kinder,37,mmr_1_pct,,,REAL,,One Dose of measlesmumpsrubella vaccine,,c03N0300B
+,,,,,,,,,
+g12,1,id,1,,INTEGER,,Immunizations from Grade 7 to Grade 12,,t03N04
+g12,2,county_gvid,,c03x04003,VARCHAR,6,gvid,c00104002,c03N04002
+g12,3,year,,c03x04002,VARCHAR,4,year,c00102003,c03N04003
+g12,4,school_code,,c03L03005,VARCHAR,152,School part of the School's CDS code,,c03N04004
+g12,5,county,,,VARCHAR,15,County name,,c03N04005
+g12,6,pub_private,,,VARCHAR,7,Is school public or private?,,c03N04006
+g12,7,district,,,VARCHAR,55,School's district name,,c03N04007
+g12,8,city,,,VARCHAR,25,City name,,c03N04008
+g12,9,school_name,,,VARCHAR,76,School name,,c03N04009
+g12,10,grade,,,INTEGER,2,Student grade level,,c03N0400a
+g12,11,enrollment,,,INTEGER,4,School enrollment,,c03N0400b
+g12,12,comp_tdap_no,,,INTEGER,4,Completed Pertussis-containg booster on or after 7th birthday,,c03N0400c
+g12,13,comp_tdap_pct,,,REAL,,Completed Pertussis-containg booster on or after 7th birthday,,c03N0400d
+g12,14,pme_no,,,INTEGER,4,A Permanent Medical Exemption (PME): granted upon the filing with the school of a written statement from a licensed physician to the effect that the physical condition of the student or medical circumstances relating to the student are such that immunization is permanently not indicated.,,c03N0400e
+g12,15,pme_pct,,,REAL,8,A Permanent Medical Exemption (PME): granted upon the filing with the school of a written statement from a licensed physician to the effect that the physical condition of the student or medical circumstances relating to the student are such that immunization is permanently not indicated.,,c03N0400f
+g12,16,pbe_no,,,INTEGER,4,"A Personal Belief Exemption (PBE), whereby a parent signs an affidavit requesting an exemption from the immunization requirements for school entry because all or some immunizations are contrary to the parent's beliefs.",,c03N0400g
+g12,17,pbe_pct,,,REAL,8,"A Personal Belief Exemption (PBE), whereby a parent signs an affidavit requesting an exemption from the immunization requirements for school entry because all or some immunizations are contrary to the parent's beliefs.",,c03N0400h
+g12,18,reported,,,VARCHAR,1,Did the school make a report of immunizations,,c03N0400i

@@ -1,0 +1,6 @@
+-   name: oshpd.ca.gov-facilities-facilities
+    table: facilities
+-   name: oshpd.ca.gov-facilities-facilities_addresses
+    table: facilities_addresses
+-   name: oshpd.ca.gov-facilities-facilities_geoids
+    table: facilities_geoids

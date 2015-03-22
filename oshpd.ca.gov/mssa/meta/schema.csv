@@ -1,0 +1,137 @@
+table,seq,column,is_pk,is_fk,type,size,width,description,id
+mssa_tracts_2010,1,id,1,,INTEGER,,,"Medical Service Study Areas, 2010, Decomposed to Tracts",t03801
+mssa_tracts_2010,2,objectid,,,INTEGER,,9,GIS Item,c03801002
+mssa_tracts_2010,3,tract,,,VARCHAR,7,7,,c03801003
+mssa_tracts_2010,4,state_fips,,,VARCHAR,2,2,,c03801004
+mssa_tracts_2010,5,cnty_fips,,,VARCHAR,3,3,County FIPS Code,c03801005
+mssa_tracts_2010,6,tract_code,,,VARCHAR,6,6,,c03801006
+mssa_tracts_2010,7,census_key,,,VARCHAR,11,12,,c03801007
+mssa_tracts_2010,8,county,,,VARCHAR,15,20,County Name,c03801008
+mssa_tracts_2010,9,tract_id,,,VARCHAR,7,8,,c03801009
+mssa_tracts_2010,10,mssa_id,,,VARCHAR,8,10,Medical Service Study Area Identifier,c0380100a
+mssa_tracts_2010,11,mssa_name,,,VARCHAR,153,160,Medical Service Study Area Name,c0380100b
+mssa_tracts_2010,12,area_sqmi,,,REAL,,19,Area Square Miles for the MSSA,c0380100c
+mssa_tracts_2010,13,pop,,,INTEGER,,9,Total Population,c0380100d
+mssa_tracts_2010,14,pop_civ,,,INTEGER,,9,Civilian Population,c0380100e
+mssa_tracts_2010,15,pop100pov,,,INTEGER,,9,Count of persons living below the 100% federal poverty level,c0380100f
+mssa_tracts_2010,16,pct100pov,,,REAL,,19,Percent of persons living below the 100% federal poverty level,c0380100g
+mssa_tracts_2010,17,pop200pov,,,INTEGER,,9,Count of persons living below the 200% federal poverty level,c0380100h
+mssa_tracts_2010,18,pct200pov,,,REAL,,19,Percent of persons living below the 200% federal poverty level,c0380100i
+mssa_tracts_2010,19,white,,,INTEGER,,9,White count,c0380100j
+mssa_tracts_2010,20,pct_white,,,REAL,,19,Percent of persons identifying as White to total population,c0380100k
+mssa_tracts_2010,21,nhs_white,,,INTEGER,,9,Non-Hispanic White count,c0380100l
+mssa_tracts_2010,22,pct_nhs_wh,,,REAL,,19,Percent of persons identifying as Non-Hispanic White count to total population,c0380100m
+mssa_tracts_2010,23,black,,,INTEGER,,9,Black count,c0380100n
+mssa_tracts_2010,24,pct_black,,,REAL,,19,Percent of persons identifying as Black to total population,c0380100o
+mssa_tracts_2010,25,nhs_black,,,INTEGER,,9,Non-Hispanic Black count,c0380100p
+mssa_tracts_2010,26,pct_nhs_bl,,,REAL,,19,Percent of persons identifying as Non-Hispanic Black count to total population,c0380100q
+mssa_tracts_2010,27,asian,,,INTEGER,,9,Asian count,c0380100r
+mssa_tracts_2010,28,pct_asian,,,REAL,,19,Percent of persons identifying as Asian to total population,c0380100s
+mssa_tracts_2010,29,nhs_asian,,,INTEGER,,9,Non-Hispanic Asian count,c0380100t
+mssa_tracts_2010,30,pct_nhs_as,,,REAL,,19,Percent of persons identifying as Non-Hispanic Asian to total population,c0380100u
+mssa_tracts_2010,31,amind_esk,,,INTEGER,,9,American Indian - Eskimo count,c0380100v
+mssa_tracts_2010,32,pct_amind_,,,REAL,,19,Percent of persons identifying as American Indian - Eskimo to total population,c0380100w
+mssa_tracts_2010,33,nhs_amind_,,,INTEGER,,9,Non-Hispanic American Indian - Eskimo count,c0380100x
+mssa_tracts_2010,34,pct_nhs_am,,,REAL,,19,Percent of persons identifying as Non-Hispanic American Indian - Eskimo to total population,c0380100y
+mssa_tracts_2010,35,islander,,,INTEGER,,9,Islander count,c0380100z
+mssa_tracts_2010,36,pct_island,,,REAL,,19,Percent of persons identifying as Islander to total population,c0380100A
+mssa_tracts_2010,37,nhs_island,,,INTEGER,,9,Non-Hispanic Islander count,c0380100B
+mssa_tracts_2010,38,pct_nhs_is,,,REAL,,19,Percent of persons identifying as Non-Hispanic Islander to total population,c0380100C
+mssa_tracts_2010,39,other_race,,,INTEGER,,9,Other Race count,c0380100D
+mssa_tracts_2010,40,pct_other,,,REAL,,19,Percent of persons identifying as Other,c0380100E
+mssa_tracts_2010,41,nhs_other_,,,INTEGER,,9,Non-Hispanic Other count,c0380100F
+mssa_tracts_2010,42,pct_nhs_ot,,,REAL,,19,Percent of persons identifying as Non-Hispanic Other,c0380100G
+mssa_tracts_2010,43,multi_race,,,INTEGER,,9,Multi Race count,c0380100H
+mssa_tracts_2010,44,pct_multi,,,REAL,,19,Percent of persons identifying as Multi Race,c0380100I
+mssa_tracts_2010,45,nhs_multi_,,,INTEGER,,9,Non-Hispanic Multi Race count,c0380100J
+mssa_tracts_2010,46,pct_nhs_mu,,,REAL,,19,Percent of persons identifying as Non-Hispanic Multi Race,c0380100K
+mssa_tracts_2010,47,hispanic,,,INTEGER,,9,Hispanic count,c0380100L
+mssa_tracts_2010,48,pct_hspnc,,,REAL,,19,Percent of persons identifying as Hispanic to total population,c0380100M
+mssa_tracts_2010,49,age_under5,,,INTEGER,,9,Populaton Age 65 and over,c0380100N
+mssa_tracts_2010,50,pct_under5,,,REAL,,19,Percent of persons Age 65 and over to total population,c0380100O
+mssa_tracts_2010,51,age_undr18,,,INTEGER,,9,Population Age 18 - 64,c0380100P
+mssa_tracts_2010,52,pct_undr18,,,REAL,,19,Percent of persons Age 18 - 64 to total population,c0380100Q
+mssa_tracts_2010,53,age_18_64,,,INTEGER,,9,Population under Age 18,c0380100R
+mssa_tracts_2010,54,pct_18_64,,,REAL,,19,Percent of persons under Age 18 to total population,c0380100S
+mssa_tracts_2010,55,age_65over,,,INTEGER,,9,Population under Age 5,c0380100T
+mssa_tracts_2010,56,pct_65over,,,REAL,,19,Percent of persons under Age 5 to total population,c0380100U
+mssa_tracts_2010,57,eld_ratio,,,REAL,,19,Population under Age 18 divided by the population Age 18 - 64,c0380100V
+mssa_tracts_2010,58,yth_ratio,,,REAL,,19,Population Age 65 and over divided by the population Age 18 - 64,c0380100W
+mssa_tracts_2010,59,totalpover,,,INTEGER,,9,Total Population for whom poverty has been determined (U.S. Census; American Community Survey) - used to calculate percent of poverty,c0380100X
+mssa_tracts_2010,60,shape_leng,,,REAL,,19,GIS Item,c0380100Y
+mssa_tracts_2010,61,shape_area,,,REAL,,19,GIS Item,c0380100Z
+mssa_tracts_2010,62,geometry,,,MULTIPOLYGON,,,,c03801010
+,,,,,,,,,
+mssa_2010,1,id,1,,INTEGER,,,"Medical Study Service Areas, 2010",t03802
+mssa_2010,2,objectid,,,INTEGER,,9,GIS Item,c03802002
+mssa_2010,3,unit_count,,,INTEGER,,4,Count of U.S. Census tracts within the MSSA,c03802003
+mssa_2010,4,cnty_fips,,,VARCHAR,3,3,County FIPS Code,c03802004
+mssa_2010,5,county,,,VARCHAR,15,20,County Name,c03802005
+mssa_2010,6,mssa_id,,,VARCHAR,8,10,Medical Service Study Area Identifier,c03802006
+mssa_2010,7,mssa_name,,,VARCHAR,153,160,Medical Service Study Area Name,c03802007
+mssa_2010,8,definition,,,VARCHAR,8,10,"MSSA Rural Definition - Urban, Rural or Frontier   [Rural = population density < 250 persons/sq.mi]  Frontier = population density < 11 persons/sq.mi.  Urban = anything not Rural or Frontier]",c03802008
+mssa_2010,9,popdensity,,,REAL,,19,Population Density,c03802009
+mssa_2010,10,area_sqmi,,,REAL,,19,Area Square Miles for the MSSA,c0380200a
+mssa_2010,11,pop,,,INTEGER,,9,Total Population,c0380200b
+mssa_2010,12,pop_civ,,,INTEGER,,9,Civilian Population,c0380200c
+mssa_2010,13,pop100pov,,,INTEGER,,9,Count of persons living below the 100% federal poverty level,c0380200d
+mssa_2010,14,pct100pov,,,REAL,,19,Percent of persons living below the 100% federal poverty level,c0380200e
+mssa_2010,15,pop200pov,,,INTEGER,,9,Count of persons living below the 200% federal poverty level,c0380200f
+mssa_2010,16,pct200pov,,,REAL,,19,Percent of persons living below the 200% federal poverty level,c0380200g
+mssa_2010,17,pcsa,,,INTEGER,,4,Primary Care Shortage Area designation 1 = designated,c0380200h
+mssa_2010,18,pcsa_score,,,REAL,,19,Primary Care Shortage Area score,c0380200i
+mssa_2010,19,pcsa_civ,,,INTEGER,,4,Primary Care Shortage Area designation civilian population,c0380200j
+mssa_2010,20,pcsa_sco_1,,,REAL,,19,Primary Care Shortage Area score civilian population,c0380200k
+mssa_2010,21,pc_phys,,,INTEGER,,4,Primary Care physician count,c0380200l
+mssa_2010,22,pc_phys_r,,,REAL,,19,Primary Care population to physician ratio,c0380200m
+mssa_2010,23,pc_phys_r_,,,REAL,,19,Primary Care civilian population to physician ratio,c0380200n
+mssa_2010,24,dentist,,,INTEGER,,4,Dentist count,c0380200o
+mssa_2010,25,dentist_r,,,REAL,,19,Dentist population to provider ratio,c0380200p
+mssa_2010,26,dentist_r_,,,REAL,,19,Dentist civilian population to provider ratio,c0380200q
+mssa_2010,27,psych,,,INTEGER,,4,Psychiatrist count,c0380200r
+mssa_2010,28,psych_r,,,REAL,,19,Psychiatrist population to provider ratio,c0380200s
+mssa_2010,29,psych_r_ci,,,REAL,,19,Psychiatrist civilian population to provider ratio,c0380200t
+mssa_2010,30,hispanic,,,INTEGER,,9,Hispanic count,c0380200u
+mssa_2010,31,pct_hspnc,,,REAL,,19,Percent of persons identifying as Hispanic to total population,c0380200v
+mssa_2010,32,white,,,INTEGER,,9,White count,c0380200w
+mssa_2010,33,pct_white,,,REAL,,19,Percent of persons identifying as White to total population,c0380200x
+mssa_2010,34,nhs_white,,,INTEGER,,9,Non-Hispanic White count,c0380200y
+mssa_2010,35,pct_nhs_wh,,,REAL,,19,Percent of persons identifying as Non-Hispanic White count to total population,c0380200z
+mssa_2010,36,black,,,INTEGER,,9,Black count,c0380200A
+mssa_2010,37,pct_black,,,REAL,,19,Percent of persons identifying as Black to total population,c0380200B
+mssa_2010,38,nhs_black,,,INTEGER,,9,Non-Hispanic Black count,c0380200C
+mssa_2010,39,pct_nhs_bl,,,REAL,,19,Percent of persons identifying as Non-Hispanic Black count to total population,c0380200D
+mssa_2010,40,asian,,,INTEGER,,9,Asian count,c0380200E
+mssa_2010,41,pct_asian,,,REAL,,19,Percent of persons identifying as Asian to total population,c0380200F
+mssa_2010,42,nhs_asian,,,INTEGER,,9,Non-Hispanic Asian count,c0380200G
+mssa_2010,43,pct_nhs_as,,,REAL,,19,Percent of persons identifying as Non-Hispanic Asian to total population,c0380200H
+mssa_2010,44,amind_esk,,,INTEGER,,9,American Indian - Eskimo count,c0380200I
+mssa_2010,45,pct_amind_,,,REAL,,19,Percent of persons identifying as American Indian - Eskimo to total population,c0380200J
+mssa_2010,46,nhs_amind_,,,INTEGER,,9,Non-Hispanic American Indian - Eskimo count,c0380200K
+mssa_2010,47,pct_nhs_am,,,REAL,,19,Percent of persons identifying as Non-Hispanic American Indian - Eskimo to total population,c0380200L
+mssa_2010,48,islander,,,INTEGER,,9,Islander count,c0380200M
+mssa_2010,49,pct_island,,,REAL,,19,Percent of persons identifying as Islander to total population,c0380200N
+mssa_2010,50,nhs_island,,,INTEGER,,9,Non-Hispanic Islander count,c0380200O
+mssa_2010,51,pct_nhs_is,,,REAL,,19,Percent of persons identifying as Non-Hispanic Islander to total population,c0380200P
+mssa_2010,52,other_race,,,INTEGER,,9,Other Race count,c0380200Q
+mssa_2010,53,pct_other,,,REAL,,19,Percent of persons identifying as Other,c0380200R
+mssa_2010,54,nhs_other_,,,INTEGER,,9,Non-Hispanic Other count,c0380200S
+mssa_2010,55,pct_nhs_ot,,,REAL,,19,Percent of persons identifying as Non-Hispanic Other,c0380200T
+mssa_2010,56,multi_race,,,INTEGER,,9,Multi Race count,c0380200U
+mssa_2010,57,pct_multi,,,REAL,,19,Percent of persons identifying as Multi Race,c0380200V
+mssa_2010,58,nhs_multi_,,,INTEGER,,9,Non-Hispanic Multi Race count,c0380200W
+mssa_2010,59,pct_nhs_mu,,,REAL,,19,Percent of persons identifying as Non-Hispanic Multi Race,c0380200X
+mssa_2010,60,age_65over,,,INTEGER,,9,Populaton Age 65 and over,c0380200Y
+mssa_2010,61,pct_65over,,,REAL,,19,Percent of persons Age 65 and over to total population,c0380200Z
+mssa_2010,62,age_18_64,,,INTEGER,,9,Population Age 18 - 64,c03802010
+mssa_2010,63,pct_18_64,,,REAL,,19,Percent of persons Age 18 - 64 to total population,c03802011
+mssa_2010,64,age_undr18,,,INTEGER,,9,Population under Age 18,c03802012
+mssa_2010,65,pct_undr18,,,REAL,,19,Percent of persons under Age 18 to total population,c03802013
+mssa_2010,66,age_under5,,,INTEGER,,9,Population under Age 5,c03802014
+mssa_2010,67,pct_under5,,,REAL,,19,Percent of persons under Age 5 to total population,c03802015
+mssa_2010,68,yth_ratio,,,REAL,,19,Population under Age 18 divided by the population Age 18 - 64,c03802016
+mssa_2010,69,eld_ratio,,,REAL,,19,Population Age 65 and over divided by the population Age 18 - 64,c03802017
+mssa_2010,70,totalpovpo,,,INTEGER,,9,Total Population for whom poverty has been determined (U.S. Census; American Community Survey) - used to calculate percent of poverty,c03802018
+mssa_2010,71,shape_leng,,,REAL,,19,GIS Item,c03802019
+mssa_2010,72,shape_area,,,REAL,,19,GIS Item,c0380201a
+mssa_2010,73,geometry,,,MULTIPOLYGON,,,,c0380201b

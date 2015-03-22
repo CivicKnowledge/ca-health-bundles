@@ -1,0 +1,8 @@
+build: {}
+dependencies:
+    counties: census.gov-index-counties
+sources:
+    PDI_Summary:
+        description: xlsx
+        url: http://www.oshpd.ca.gov/HID/Products/PatDischargeData/AHRQ/pdi_overview.html/PDI/PDI_Summary.xlsx
+views: {}

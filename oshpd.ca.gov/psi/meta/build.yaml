@@ -1,0 +1,8 @@
+build: {}
+dependencies:
+    counties: census.gov-index-counties
+sources:
+    psi:
+        description: PSI for 2005 to 2013
+        url: http://www.oshpd.ca.gov/HID/Products/PatDischargeData/AHRQ/PSI/PSI_Summary_V45a_2005-2013.xlsx
+views: {}

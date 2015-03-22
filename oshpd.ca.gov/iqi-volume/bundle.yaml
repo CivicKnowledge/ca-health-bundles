@@ -1,0 +1,56 @@
+about:
+    access: null
+    grain: null
+    groups: []
+    license: null
+    rights: null
+    space: null
+    subject: null
+    summary: null
+    tags: []
+    time: null
+    title: null
+contact_bundle:
+    creator:
+        email: eric@sandiegodata.org
+        name: Eric Busboom
+        url: http://www.sandiegodata.org
+    maintainer:
+        email: eric@sandiegodata.org
+        name: Eric Busboom
+        url: http://www.sandiegodata.org
+contact_source:
+    creator: {}
+    maintainer: {}
+external_documentation:
+    about_ahrq:
+        description: Federal website about the quality indicator program
+        source: null
+        title: Agency for Healthcare Research and Quality Indicators
+        url: http://www.qualityindicators.ahrq.gov/
+    ahrq_spec:
+        title: Inpatient Quality Indicators Technical Specifications - Version 4.5, May 2013
+        description: AHRQ Sepcification for the Inpatient Quality Indicators
+        url: http://www.qualityindicators.ahrq.gov/Modules/IQI_TechSpec.aspx
+    download:
+        description: Web page that links to the source files.
+        source: null
+        title: Download Page
+        url: http://www.oshpd.ca.gov/HID/Products/PatDischargeData/ResearchReports/HospIPQualInd/Vol-Util_IndicatorsRpt/
+identity:
+    bspace: null
+    btime: null
+    dataset: iqi
+    id: d03o
+    revision: 1
+    source: oshpd.ca.gov
+    subset: volume
+    type: null
+    variation: null
+    version: 0.0.1
+names:
+    fqname: oshpd.ca.gov-iqi-volume-0.0.1~d03o001
+    name: oshpd.ca.gov-iqi-volume
+    vid: d03o001
+    vname: oshpd.ca.gov-iqi-volume-0.0.1
+process: {}

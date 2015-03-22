@@ -1,0 +1,11 @@
+build: {}
+dependencies: {}
+extract: {}
+sources:
+    mua:
+        description: Medically Underserved Areas
+        url: http://www.oshpd.ca.gov/HWDD/MSSA/GIS/MUA.zip
+    mup:
+        description: Medically Underserved Populations
+        url: http://www.oshpd.ca.gov/HWDD/MSSA/GIS/MUP.zip
+views: {}

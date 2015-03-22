@@ -1,0 +1,61 @@
+about:
+    access: public
+    grain: county
+    groups: []
+    license: null
+    rights: null
+    space: null
+    subject: null
+    summary: Pediatric Quality Indicators (PDIs) use indicators from other AHRQ QI
+        modules with adaptations for use among children. Similar to Prevention Quality
+        Indicators, the PDIs identify hospital admissions that evidence suggests may
+        have been avoided through access to high-quality outpatient care.
+    tags: []
+    time: null
+    title: Pediatric Quality Indicators (PDIs)
+contact_bundle:
+    creator:
+        email: eric@sandiegodata.org
+        name: Eric Busboom
+        url: http://www.sandiegodata.org
+    maintainer:
+        email: eric@sandiegodata.org
+        name: Eric Busboom
+        url: http://www.sandiegodata.org
+contact_source:
+    creator: {}
+    maintainer: {}
+external_documentation:
+    ahrq_spec:
+        description: AHRQ technical specification for the Pediatric Quality Indicators
+        source: null
+        title: Pediatric Quality Indicators Technical Specifications - Version 4.5,
+            May 2013
+        url: http://www.qualityindicators.ahrq.gov/Modules/PDI_TechSpec.aspx
+    download:
+        description: Web page that links to the source files.
+        source: null
+        title: Download Page
+        url: http://www.oshpd.ca.gov/HID/Products/PatDischargeData/AHRQ/pdi_overview.html
+identity:
+    bspace: null
+    btime: null
+    dataset: pdi
+    id: d03C
+    revision: 2
+    source: oshpd.ca.gov
+    subset: null
+    type: null
+    variation: null
+    version: 0.0.2
+names:
+    fqname: oshpd.ca.gov-pdi-0.0.2~d03C002
+    name: oshpd.ca.gov-pdi
+    vid: d03C002
+    vname: oshpd.ca.gov-pdi-0.0.2
+process: {}
+versions:
+    2:
+        date: '2015-02-22T21:01:55.087958'
+        description: 'Prior build failed in production '
+        version: 0.0.2

@@ -1,0 +1,15 @@
+-   format: geo
+    name: oshpd.ca.gov-hmsa-nurse-geo
+    table: nurse
+-   format: geo
+    name: oshpd.ca.gov-hmsa-dental-geo
+    table: dental
+-   format: geo
+    name: oshpd.ca.gov-hmsa-primarypro-geo
+    table: primarypro
+-   format: geo
+    name: oshpd.ca.gov-hmsa-primarycare-geo
+    table: primarycare
+-   format: geo
+    name: oshpd.ca.gov-hmsa-mental-geo
+    table: mental

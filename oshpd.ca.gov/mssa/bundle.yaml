@@ -1,0 +1,84 @@
+about:
+    groups:
+    - health
+    license: null
+    rights: public
+    subject: null
+    summary: Medical Service Study Areas (aka 'MSSA') are a geographic analysis unit
+        defined by the California Office of Statewide Health Planning and Development.
+        Based on US Census tract geography, the MSSA are a good foundation for needs
+        assessment analysis, healthcare planning, and healthcare policy development.
+    tags: []
+    title: Medical Service Study Areas
+contact_bundle:
+    creator:
+        email: eric@sandiegodata.org
+        name: Eric Busboom
+        url: http://www.sandiegodata.org
+    maintainer:
+        email: eric@sandiegodata.org
+        name: Eric Busboom
+        url: http://www.sandiegodata.org
+contact_source:
+    creator:
+        email: null
+        name: California Office of Statewide Planning and Development
+        url: http://www.oshpd.ca.gov/
+    maintainer:
+        email: null
+        name: null
+        url: null
+external_documentation:
+    boundary_map:
+        description: PDF map of MSSA boundaries
+        source: null
+        title: MSSA Boundary Map
+        url: http://www.oshpd.ca.gov/HWDD/MSSA/GIS/MSSA_Reconfiguration2010.pdf
+    download:
+        description: Web page that links to the MSSA files.
+        source: null
+        title: Medical Service Study Areas Download Page
+        url: http://www.oshpd.ca.gov/HWDD/Research_Policy_Planning_GIS.html
+    mssa:
+        description: Overview of the MSSA concept and definition.
+        source: null
+        title: Medical Service Study Areas overview
+        url: http://gis.oshpd.ca.gov/atlas/topics/mssa
+identity:
+    bspace: null
+    btime: null
+    dataset: mssa
+    id: d038
+    revision: 5
+    source: oshpd.ca.gov
+    subset: null
+    type: null
+    variation: null
+    version: 0.0.5
+names:
+    fqname: oshpd.ca.gov-mssa-0.0.5~d038005
+    name: oshpd.ca.gov-mssa
+    vid: d038005
+    vname: oshpd.ca.gov-mssa-0.0.5
+process: {}
+versions:
+    1:
+        date: null
+        description: Initial Import
+        version: 0.0.1
+    2:
+        date: null
+        description: null
+        version: 0.0.2
+    3:
+        date: '2014-12-20T10:51:41.940690'
+        description: Adding additional files and documentation, Descriptions to schema
+        version: 0.0.3
+    4:
+        date: '2015-01-03T21:36:47.695291'
+        description: Updating to new shapefile import
+        version: 0.0.4
+    5:
+        date: '2015-01-03T21:50:48.264704'
+        description: 'Setting normal schema types, numeric -> real, etc. '
+        version: 0.0.5

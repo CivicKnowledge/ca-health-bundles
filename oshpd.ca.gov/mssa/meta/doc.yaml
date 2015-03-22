@@ -1,0 +1,19 @@
+documentation:
+    main: '
+
+        # Medical Service Study Areas
+
+
+        Medical Service Study Areas (aka ''MSSA'') are a geographic analysis unit
+        defined by the California Office of Statewide Health Planning and Development.
+        Based on US Census tract geography, the MSSA are a good foundation for needs
+        assessment analysis, healthcare planning, and healthcare policy development.
+
+        '
+    readme: '# Medical Service Study Areas
+
+
+        Medical Service Study Areas (aka ''MSSA'') are a geographic analysis unit
+        defined by the California Office of Statewide Health Planning and Development.
+        Based on US Census tract geography, the MSSA are a good foundation for needs
+        assessment analysis, healthcare planning, and healthcare policy development.'

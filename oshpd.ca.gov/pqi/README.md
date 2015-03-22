@@ -1,0 +1,3 @@
+# Prevention Quality Indicators (PQIs)
+
+Prevention Quality Indicators (PQIs) identify hospital admissions (age 18 and over) that evidence suggests may have been avoided through access to high-quality outpatient care. The PQIs are also called 'ambulatory care-sensitive conditions'' or 'preventable hospitalizations.' These measures assess the quality of the healthcare system as a whole, especially ambulatory care, in preventing hospitalizations due to potentially avoidable medical complications.

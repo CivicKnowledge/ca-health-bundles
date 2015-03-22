@@ -1,0 +1,28 @@
+documentation:
+    main: '
+
+        # California Healthcare Facilities
+
+
+        List of California healthcare facilities, including Hospitals, long-term care
+        facilities, clinics and hospices
+
+
+        The OSHPD ids appear to being with a code that indicates the type of facility:
+
+
+        * 106 Hospitals
+
+        * 206 Care Centers
+
+        * 306 Community Clinics
+
+        * 406 Home healthcare
+
+
+        '
+    readme: '# California Healthcare Facilities
+
+
+        List of California healthcare facilities, including Hospitals, long-term care
+        facilities, clinics and hospices'

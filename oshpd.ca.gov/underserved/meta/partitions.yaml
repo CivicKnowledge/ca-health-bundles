@@ -1,0 +1,6 @@
+-   format: geo
+    name: oshpd.ca.gov-underserved-mua-geo
+    table: mua
+-   format: geo
+    name: oshpd.ca.gov-underserved-mup-geo
+    table: mup

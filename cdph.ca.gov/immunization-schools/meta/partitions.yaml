@@ -1,0 +1,8 @@
+-   name: cdph.ca.gov-immunization-schools-g7
+    table: g7
+-   name: cdph.ca.gov-immunization-schools-child_care
+    table: child_care
+-   name: cdph.ca.gov-immunization-schools-kinder
+    table: kinder
+-   name: cdph.ca.gov-immunization-schools-g12
+    table: g12

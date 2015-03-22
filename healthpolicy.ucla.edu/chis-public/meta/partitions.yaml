@@ -1,0 +1,4 @@
+-   name: healthpolicy.ucla.edu-chis-public-chis_puf
+    table: chis_puf
+-   name: healthpolicy.ucla.edu-chis-public-chis_puf_x
+    table: chis_puf_x

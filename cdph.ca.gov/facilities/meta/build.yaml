@@ -1,0 +1,7 @@
+build: {}
+dependencies: {}
+extract: {}
+sources:
+    facilities:
+        url: https://cdph.data.ca.gov/api/views/89gy-3cst/rows.csv?accessType=DOWNLOAD
+views: {}

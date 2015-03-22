@@ -1,0 +1,60 @@
+about:
+    access: null
+    grain: county
+    groups: []
+    license: null
+    rights: null
+    space: null
+    subject: null
+    summary: Patient Safety Indicators (PSIs) are measures that represent rates of
+        potentially-preventable adverse events that occur during a hospital stay.
+        They provide a perspective on potential complications and errors resulting
+        from a hospital admission and help assess total incidence within a region.
+    tags: []
+    time: null
+    title: Patient Saftey Indicators
+contact_bundle:
+    creator:
+        email: eric@sandiegodata.org
+        name: Eric Busboom
+        url: http://www.sandiegodata.org
+    maintainer:
+        email: eric@sandiegodata.org
+        name: Eric Busboom
+        url: http://www.sandiegodata.org
+contact_source:
+    creator: {}
+    maintainer: {}
+external_documentation:
+    dataset:
+        description: Information about the dataset
+        source: null
+        title: Dataset Page
+        url: http://www.oshpd.ca.gov/HID/Products/PatDischargeData/AHRQ/psi_overview.htm
+    download:
+        description: Web page that links to the source files.
+        source: null
+        title: Download Page
+        url: http://www.oshpd.ca.gov/HID/Products/PatDischargeData/AHRQ/psi_overview.html
+    technotes:
+        description: Technical Notes
+        source: null
+        title: Technical Notes
+        url: http://www.oshpd.ca.gov/HID/Products/PatDischargeData/AHRQ/psi_overview.html/PSI/PSI_TechNotes_V45a_2005-2013.pdf
+identity:
+    bspace: null
+    btime: null
+    dataset: psi
+    id: d03B
+    revision: 1
+    source: oshpd.ca.gov
+    subset: null
+    type: null
+    variation: null
+    version: 0.0.1
+names:
+    fqname: oshpd.ca.gov-psi-0.0.1~d03B001
+    name: oshpd.ca.gov-psi
+    vid: d03B001
+    vname: oshpd.ca.gov-psi-0.0.1
+process: {}

@@ -1,0 +1,40 @@
+table,seq,column,is_pk,is_fk,type,i1,i2,i3,size,description,d_caster,id
+utilization,1,id,1,,INTEGER,,,,,Utilization Indicators,,t03o01
+utilization,2,year,,c03x04002,INTEGER,,1,,4,,,c03o01002
+utilization,3,gvid,,c03x04003,VARCHAR,1,1,,6,County gvid,,c03o01003
+utilization,4,facility_index_id,,t03A01,INTEGER,,,,,Link to the facility index,,c03o01004
+utilization,5,county,,,VARCHAR,,,1,85,County,latin_decode,c03o01005
+utilization,6,hospital_name,,,VARCHAR,,,,85,Hospital Name,latin_decode,c03o01006
+utilization,7,uncomplicated_cesarean_delivery_count,,,REAL,,,,6,Uncomplicated Cesarean Delivery (Count),real_caster,c03o01007
+utilization,8,uncomplicated_cesarean_delivery_observed_rate_per_100_deliveries,,,REAL,,,,,Uncomplicated Cesarean Delivery Observed Rate per 100 Deliveries,real_caster,c03o01008
+utilization,9,uncomplicated_primary_cesarean_delivery_count,,,REAL,,,,5,Uncomplicated Primary Cesarean Delivery  (Count),real_caster,c03o01009
+utilization,10,uncomplicated_primary_cesarean_delivery_observed_rate_per_100_deliveries,,,REAL,,,,,Uncomplicated Primary Cesarean Delivery Observed Rate per 100 Deliveries,real_caster,c03o0100a
+utilization,11,vaginal_birth_after_cesarean_vbac_count,,,REAL,,,,4,Vaginal Birth after Cesarean (VBAC) (Count),real_caster,c03o0100b
+utilization,12,vaginal_birth_after_cesarean_vbac_observed_rate_per_100_deliveries,,,REAL,,,,,Vaginal Birth after Cesarean (VBAC) Observed Rate per 100 Deliveries,real_caster,c03o0100c
+utilization,13,uncomplicated_vbac_count,,,REAL,,,,4,Uncomplicated VBAC (Count),real_caster,c03o0100d
+utilization,14,uncomplicated_vbac_observed_rate_per_100_deliveries,,,REAL,,,,,Uncomplicated VBAC Observed Rate per 100 Deliveries,real_caster,c03o0100e
+utilization,15,laparoscopic_cholecystectomy_gall_bladder_surgery_count,,,REAL,,,,5,Laparoscopic Cholecystectomy  (Gall Bladder Surgery) (Count),real_caster,c03o0100f
+utilization,16,laparoscopic_cholecystectomy_gall_bladder_surgery_observed_rate_per_100_procedures,,,REAL,,,,,Laparoscopic Cholecystectomy  (Gall Bladder Surgery) Observed Rate per 100 Procedures,real_caster,c03o0100g
+utilization,17,all_vaginal_birth_after_cesarean_vbac_count,,,REAL,,,,,All Vaginal Birth after Cesarean (VBAC) (Count),real_caster,c03o0100h
+utilization,18,all_vaginal_birth_after_cesarean_vbac_observed_rate_per_100_deliveries,,,REAL,,,,,All Vaginal Birth after Cesarean (VBAC) Observed Rate per 100 Deliveries,real_caster,c03o0100i
+,,,,,,,,,,,,
+volume,1,id,1,,INTEGER,,,,,Volume indicators,,t03o02
+volume,2,year,,c03x04002,INTEGER,,1,,4,,,c03o02002
+volume,3,gvid,,c03x04003,VARCHAR,1,1,,6,County gvid,,c03o02003
+volume,4,facility_index_id,,t03A01,INTEGER,,,,,Link to the cacility index,,c03o02004
+volume,5,county,,,VARCHAR,,,,84,County,latin_decode,c03o02005
+volume,6,hospital_name,,,VARCHAR,,,,84,Hospital Name,latin_decode,c03o02006
+volume,7,esophageal_resection,,,INTEGER,,,,4,Esophageal  Resection,int_caster,c03o02007
+volume,8,pancreatic_resection,,,INTEGER,,,,4,Pancreatic  Resection,int_caster,c03o02008
+volume,9,pancreatic_resection_cancer,,,INTEGER,,,,3,Pancreatic Resection  (Cancer),int_caster,c03o02009
+volume,10,pancreatic_resection_other,,,INTEGER,,,,4,Pancreatic Resection  (Other),int_caster,c03o0200a
+volume,11,aaa_repair,,,INTEGER,,,,4,AAA Repair,int_caster,c03o0200b
+volume,12,aaa_repair_ruptured_open,,,INTEGER,,,,4,"AAA Repair  (Ruptured, Open)",int_caster,c03o0200c
+volume,13,aaa_repair_un_ruptured_open,,,INTEGER,,,,4,"AAA Repair  (Un-ruptured, Open)",int_caster,c03o0200d
+volume,14,aaa_repair_ruptured_endovascular,,,INTEGER,,,,4,"AAA Repair  (Ruptured, Endovascular)",int_caster,c03o0200e
+volume,15,aaa_repair_un_ruptured_endovascular,,,INTEGER,,,,5,"AAA Repair  (Un-ruptured, Endovascular)",int_caster,c03o0200f
+volume,16,cabg,,,INTEGER,,,,5,CABG,int_caster,c03o0200g
+volume,17,pci,,,INTEGER,,,,5,PCI,int_caster,c03o0200h
+volume,18,carotid_endarterectomy,,,INTEGER,,,,4,Carotid  Endarterectomy,int_caster,c03o0200i
+volume,19,aaa_repair_unruptured_open,,,INTEGER,,,,3,"AAA Repair  (Unruptured, Open)",int_caster,c03o0200j
+volume,20,aaa_repair_unruptured_endovascular,,,INTEGER,,,,,"AAA Repair  (Unruptured, Endovascular)",int_caster,c03o0200k

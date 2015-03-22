@@ -1,0 +1,6 @@
+-   name: oshpd.ca.gov-iqi-mortality-indicators
+    table: indicators
+-   name: oshpd.ca.gov-iqi-mortality-conditions
+    table: conditions
+-   name: oshpd.ca.gov-iqi-mortality-procedures
+    table: procedures

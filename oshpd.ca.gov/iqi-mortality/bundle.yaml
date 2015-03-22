@@ -1,0 +1,81 @@
+about:
+    access: null
+    grain: null
+    groups: []
+    license: null
+    rights: null
+    space: null
+    subject: null
+    summary: The Inpatient Mortality Indicators (IMIs) are a subset of the AHRQ quality
+        indicators that measure in-hospital mortality. They include medical conditions
+        and procedures for which mortality rates may vary significantly across institutions.
+        Evidence suggests that high mortality may be associated with deficiencies
+        in the quality of hospital care provided.
+    tags: []
+    time: null
+    title: Inpatient Mortality Indicators
+contact_bundle:
+    creator:
+        email: eric@sandiegodata.org
+        name: Eric Busboom
+        url: http://www.sandiegodata.org
+    maintainer:
+        email: eric@sandiegodata.org
+        name: Eric Busboom
+        url: http://www.sandiegodata.org
+contact_source:
+    creator: {}
+    maintainer: {}
+external_documentation:
+    about_ahrq:
+        description: Federal website about the quality indicator program
+        source: null
+        title: Agency for Healthcare Research and Quality Indicators
+        url: http://www.qualityindicators.ahrq.gov/
+    ahrq_spec:
+        title: Inpatient Quality Indicators Technical Specifications - Version 4.5, May 2013
+        description: AHRQ Sepcification for the Inpatient Quality Indicators
+        url: http://www.qualityindicators.ahrq.gov/Modules/IQI_TechSpec.aspx
+    2012_conditions:
+        description: '2012 Inpatient Mortality Indicators: Conditions'
+        source: null
+        title: null
+        url: http://www.oshpd.ca.gov/HID/Products/PatDischargeData/AHRQ/IQI/2012/AHRQ_IMI_VER4.5_Conditions2012_Formatted.pdf
+    2012_note:
+        description: 2012 Technical Note
+        source: null
+        title: null
+        url: http://www.oshpd.ca.gov/HID/Products/PatDischargeData/AHRQ/IQI/2012/TechNOTE2012.pdf
+    2012_procedures:
+        description: '2012 Inpatient Mortality Indicators: Procedures'
+        source: null
+        title: null
+        url: http://www.oshpd.ca.gov/HID/Products/PatDischargeData/AHRQ/IQI/2012/AHRQ_IMI_VER4.5_Procedures2012_Formatted.pdf
+    dataset:
+        description: IQI Dataset Page
+        source: null
+        title: IQI Dataset Page
+        url: http://www.oshpd.ca.gov/HID/Products/PatDischargeData/AHRQ/iqi-imi_overview.html
+    download:
+        description: Web page that links to the source files.
+        source: null
+        title: Download Page
+        url: http://example.com
+
+identity:
+    bspace: null
+    btime: null
+    dataset: iqi
+    id: d03p
+    revision: 1
+    source: oshpd.ca.gov
+    subset: mortality
+    type: null
+    variation: null
+    version: 0.0.1
+names:
+    fqname: oshpd.ca.gov-iqi-mortality-0.0.1~d03p001
+    name: oshpd.ca.gov-iqi-mortality
+    vid: d03p001
+    vname: oshpd.ca.gov-iqi-mortality-0.0.1
+process: {}

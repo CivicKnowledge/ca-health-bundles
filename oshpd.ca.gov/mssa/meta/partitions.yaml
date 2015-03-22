@@ -1,0 +1,6 @@
+-   format: geo
+    name: oshpd.ca.gov-mssa-mssa_tracts_2010-geo
+    table: mssa_tracts_2010
+-   format: geo
+    name: oshpd.ca.gov-mssa-mssa_2010-geo
+    table: mssa_2010

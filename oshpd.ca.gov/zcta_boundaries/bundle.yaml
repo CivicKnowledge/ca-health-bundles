@@ -1,0 +1,64 @@
+about:
+    groups: []
+    license: null
+    rights: null
+    subject: null
+    summary: ZCTA boundaries for California. ZCTA are similar to Zip and used by the
+        census instead of Zip area
+    tags:
+    - zcta
+    title: ZCTA Code Boundaries
+contact_bundle:
+    creator:
+        email: eric@sandiegodata.org
+        name: Eric Busboom
+        url: http://www.sandiegodata.org
+    maintainer:
+        email: eric@sandiegodata.org
+        name: Eric Busboom
+        url: http://www.sandiegodata.org
+contact_source:
+    creator:
+        email: null
+        name: Office of Statewide Health Planning and Development
+        url: http://www.oshpd.ca.gov/HWDD/Research_Policy_Planning_GIS.html
+    maintainer:
+        email: null
+        name: null
+        url: null
+external_documentation:
+    download_page:
+        description: The web page that links to the file.
+        source: source
+        title: Download Page
+        url: http://www.oshpd.ca.gov/HWDD/Research_Policy_Planning_GIS.html
+identity:
+    bspace: null
+    btime: null
+    dataset: zcta_boundaries
+    id: d032
+    revision: 3
+    source: oshpd.ca.gov
+    subset: null
+    type: null
+    variation: null
+    version: 0.0.3
+names:
+    fqname: oshpd.ca.gov-zcta_boundaries-0.0.3~d032003
+    name: oshpd.ca.gov-zcta_boundaries
+    vid: d032003
+    vname: oshpd.ca.gov-zcta_boundaries-0.0.3
+process: {}
+versions:
+    1:
+        date: null
+        description: Initial Version
+        version: 0.0.1
+    2:
+        date: null
+        description: Improved documentation, schema
+        version: 0.0.2
+    3:
+        date: '2014-12-30T16:05:47.365009'
+        description: Updating for new shapefile processing
+        version: 0.0.3

@@ -1,0 +1,63 @@
+about:
+    access: null
+    grain: null
+    groups: []
+    license: null
+    rights: null
+    space: null
+    subject: null
+    summary: Prevention Quality Indicators (PQIs) identify hospital admissions (age
+        18 and over) that evidence suggests may have been avoided through access to
+        high-quality outpatient care. The PQIs are also called 'ambulatory care-sensitive
+        conditions'' or 'preventable hospitalizations.' These measures assess the
+        quality of the healthcare system as a whole, especially ambulatory care, in
+        preventing hospitalizations due to potentially avoidable medical complications.
+    tags: []
+    time: null
+    title: Prevention Quality Indicators (PQIs)
+contact_bundle:
+    creator:
+        email: eric@sandiegodata.org
+        name: Eric Busboom
+        url: http://www.sandiegodata.org
+    maintainer:
+        email: eric@sandiegodata.org
+        name: Eric Busboom
+        url: http://www.sandiegodata.org
+contact_source:
+    creator: {}
+    maintainer: {}
+external_documentation:
+    dataset:
+        description: Overview of the dataset.
+        source: null
+        title: Dataset page
+        url: http://www.oshpd.ca.gov/HID/Products/PatDischargeData/AHRQ/pqi_overview.html
+    download:
+        description: Web page that links to the source files.
+        source: null
+        title: Download Page
+        url: http://www.oshpd.ca.gov/HID/Products/PatDischargeData/AHRQ/pqi_overview.html
+    pqi_spec:
+        description: AHRQ Specification for the Prevention Quality Indicators
+        source: null
+        title: Prevention Quality Indicators Technical Specifications - Version 4.5,
+            May 2013
+        url: http://www.qualityindicators.ahrq.gov/Modules/PQI_TechSpec.aspx
+identity:
+    bspace: null
+    btime: null
+    dataset: pqi
+    id: d03r
+    revision: 1
+    source: oshpd.ca.gov
+    subset: null
+    type: null
+    variation: null
+    version: 0.0.1
+names:
+    fqname: oshpd.ca.gov-pqi-0.0.1~d03r001
+    name: oshpd.ca.gov-pqi
+    vid: d03r001
+    vname: oshpd.ca.gov-pqi-0.0.1
+process: {}

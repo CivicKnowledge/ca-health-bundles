@@ -1,0 +1,3 @@
+# Healthcare Facility Locations
+
+The California Department of Public Health, Center for Health Care Quality, Licensing and Certification (L&C) Program licenses more than 30 types of health facilities. This table lists the name and location of over 7,500 licensed healthcare facilities and services. The records are geocoded. These data are a subset of the data in the L&C Electronic Licensing Management System (ELMS). CDPH updates the data quarterly.

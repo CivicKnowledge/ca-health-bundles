@@ -1,0 +1,16 @@
+documentation:
+    main: "\n# Patient Saftey Indicators\n\nPatient Safety Indicators (PSIs) are measures\
+        \ that represent rates of potentially-preventable adverse events that occur\
+        \ during a hospital stay. They provide a perspective on potential complications\
+        \ and errors resulting from a hospital admission and help assess total incidence\
+        \ within a region.\n\n## Development Notes\n\nThis bundle requires updating\
+        \ the sources manually, since the Excel files are too complex for manual processing.\
+        \ The \nSource can be automatically cached to the source store, but then it\
+        \ is converted to CSV manually. \n"
+    readme: '# Patient Saftey Indicators
+
+
+        Patient Safety Indicators (PSIs) are measures that represent rates of potentially-preventable
+        adverse events that occur during a hospital stay. They provide a perspective
+        on potential complications and errors resulting from a hospital admission
+        and help assess total incidence within a region.'

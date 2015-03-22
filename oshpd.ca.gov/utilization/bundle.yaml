@@ -1,0 +1,53 @@
+about:
+    access: null
+    grain: null
+    groups: []
+    license: null
+    rights: null
+    space: null
+    subject: null
+    summary: Counts of a variety of types of hospital procedures, from an extract from the State of Californias 
+        Automated Licensing Information and Report Tracking System. There is other utilization and volume information 
+        available from OSHPD via AHRQ. 
+    tags: []
+    time: null
+    title: Hospital Annual Utilization From ALIRTS
+contact_bundle:
+    creator:
+        email: eric@sandiegodata.org
+        name: Eric Busboom
+        url: http://www.sandiegodata.org
+    maintainer:
+        email: eric@sandiegodata.org
+        name: Eric Busboom
+        url: http://www.sandiegodata.org
+contact_source:
+    creator: {}
+    maintainer: {}
+external_documentation:
+    data_notes:
+        url: http://www.oshpd.ca.gov/hid/Products/Hospitals/Utilization/Hosp_Util_Info.html
+        title: Hospital Annual Utilization Data Notes
+        description: 
+    download:
+        description: Web page that links to the source files.
+        source: null
+        title: Download Page
+        url: http://www.oshpd.ca.gov/hid/Products/Hospitals/Utilization/Hospital_Utilization.html
+identity:
+    bspace: null
+    btime: null
+    dataset: utilization
+    id: d03D
+    revision: 1
+    source: oshpd.ca.gov
+    subset: null
+    type: null
+    variation: null
+    version: 0.0.1
+names:
+    fqname: oshpd.ca.gov-utilization-0.0.1~d03D001
+    name: oshpd.ca.gov-utilization
+    vid: d03D001
+    vname: oshpd.ca.gov-utilization-0.0.1
+process: {}

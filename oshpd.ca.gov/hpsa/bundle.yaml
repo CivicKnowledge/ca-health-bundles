@@ -1,0 +1,97 @@
+about:
+    groups: []
+    license: null
+    rights: null
+    subject: null
+    summary: null
+    tags: []
+    title: Health Professional Shortage Areas
+contact_bundle:
+    creator:
+        email: eric@sandiegodata.org
+        name: Eric Busboom
+        url: http://www.sandiegodata.org
+    maintainer:
+        email: eric@sandiegodata.org
+        name: Eric Busboom
+        url: http://www.sandiegodata.org
+contact_source:
+    creator:
+        email: null
+        name: null
+        url: null
+    maintainer:
+        email: null
+        name: null
+        url: null
+external_documentation:
+    dental_map:
+        description: PDF map of areas with dental provider shortages.
+        source: dental
+        title: Dental Health Professional Shortage Areas
+        url: http://www.oshpd.ca.gov/HWDD/MSSA/GIS/HPSA_DentalCare.pdf
+    download:
+        description: Web page that links to the source files.
+        source: null
+        title: Download Page
+        url: http://www.oshpd.ca.gov/HWDD/Research_Policy_Planning_GIS.html
+    hpsa_definition:
+        description: Regulations from HRSA to define a HPSA.
+        source: null
+        title: Health Professional Shortage Areas Designation Criteria
+        url: http://bhpr.hrsa.gov/shortage/hpsas/designationcriteria/designationcriteria.html
+    mental_map:
+        description: PDF map of areas with mental health provider shortages.
+        source: mental
+        title: Mental Health Health Professional Shortage Areas
+        url: http://www.oshpd.ca.gov/HWDD/MSSA/GIS/HPSA_MentalHealth.pdf
+    nurse_map:
+        description: Registered Nurse Shortage Areas (RNSAs) By County Using the Mean
+            as the Analytical Unit
+        source: nurse
+        title: Registered Nurse Shortage Areas
+        url: http://www.oshpd.ca.gov/HWDD/MSSA/GIS/RNSAMethodologyAnalysisReport2014.pdf
+    primarycare_map:
+        description: PDF Map of areas with primary care  shortages.
+        source: primarypro
+        title: California Primary Care Shortage Areas
+        url: http://www.oshpd.ca.gov/HWDD/MSSA/GIS/PCSA_Finalv2.pdf
+    primarypro_map:
+        description: PDF Map of areas with primary care health professional shortages.
+        source: primarypro
+        title: Primary Care Health Professional Shortage Areas
+        url: http://www.oshpd.ca.gov/HWDD/MSSA/GIS/HPSA_PrimaryCare.pdf
+identity:
+    bspace: null
+    btime: null
+    dataset: hpsa
+    id: d039
+    revision: 4
+    source: oshpd.ca.gov
+    subset: null
+    type: null
+    variation: null
+    version: 0.0.4
+names:
+    fqname: oshpd.ca.gov-hpsa-0.0.4~d039004
+    name: oshpd.ca.gov-hpsa
+    vid: d039004
+    vname: oshpd.ca.gov-hpsa-0.0.4
+process: {}
+versions:
+    1:
+        date: null
+        description: Not really anything, just the default random data.
+        version: 0.0.1
+    2:
+        date: null
+        description: First real data.
+        version: 0.0.2
+    3:
+        date: '2015-01-03T22:04:59.184117'
+        description: 'New shapefile import '
+        version: 0.0.3
+    4:
+        date: '2015-01-12T10:25:19.407658'
+        description: hmsa -> hpsa
+        version: 0.0.4

@@ -1,0 +1,78 @@
+build:
+    requirements:
+        xlrd: xlrd
+dependencies:
+    blockgroups: census.gov-tigerline-2012-blockgroups-ca-geo
+extract: {}
+sources:
+    hospice_2013:
+        description: Hospices licensed as of December 31, 2013
+        row_data:
+            type: hospice
+        table: facilities
+        time: 2013
+        url: http://www.oshpd.ca.gov/HID/Products/FacilityList/HHAListing_Dec2013.xlsx
+    hospice_2014:
+        description: Hospices licensed as of June 30, 2014
+        row_data:
+            type: hospice
+        table: facilities
+        time: 2014
+        url: http://www.oshpd.ca.gov/HID/Products/FacilityList/2014/Home-Health-Agencies-and-Hospice-Listing-2014.xlsx
+    hospitals_2013:
+        description: Hospitals licensed as of December 31, 2013
+        row_data:
+            type: hospital
+        table: facilities
+        time: 2013
+        url: http://www.oshpd.ca.gov/HID/Products/FacilityList/HospitalListing_Dec2013.xlsx
+    hospitals_2014:
+        description: Hospitals licensed as of June 30, 2014
+        row_data:
+            type: hospital
+        table: facilities
+        time: 2014
+        url: http://www.oshpd.ca.gov/HID/Products/FacilityList/2014/Hospital-Listing-2014.xlsx
+    longterm_2013:
+        description: Long term crare facilities icensed as of December 31, 2013
+        row_data:
+            type: longterm
+        table: facilities
+        time: 2013
+        url: http://www.oshpd.ca.gov/HID/Products/FacilityList/LTCListing_Dec2013.xlsx
+    longterm_2014:
+        description: Long term care facilities licensed as of June 30, 2014
+        row_data:
+            type: longterm
+        table: facilities
+        time: 2014
+        url: http://www.oshpd.ca.gov/HID/Products/FacilityList/2014/Long-Term-Care-Listing-2014.xlsx
+    primary_2013:
+        description: Primary care facilities licensed as of December 31, 2013
+        row_data:
+            type: primary
+        table: facilities
+        time: 2013
+        url: http://www.oshpd.ca.gov/HID/Products/FacilityList/PCListing_Dec2013.xlsx
+    primary_2014:
+        description: Primary care facilities licensed as of June 30, 2014
+        row_data:
+            type: primary
+        table: facilities
+        time: 2014
+        url: http://www.oshpd.ca.gov/HID/Products/FacilityList/2014/Primary-Care-Clinics-Listing-2014.xlsx
+    speciality_2013:
+        description: Speciality care facilities icensed as of December 31, 2013
+        row_data:
+            type: speciality
+        table: facilities
+        time: 2013
+        url: http://www.oshpd.ca.gov/HID/Products/FacilityList/SCListing_Dec2013.xlsx
+    speciality_2014:
+        description: Speciality care facilities licensed as of June 30, 2014
+        row_data:
+            type: speciality
+        table: facilities
+        time: 2014
+        url: http://www.oshpd.ca.gov/HID/Products/FacilityList/2014/Specialist-Care-Clinics-Listing-2014.xlsx
+views: {}

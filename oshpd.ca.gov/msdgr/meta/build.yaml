@@ -1,0 +1,45 @@
+build:
+    requirements:
+        xlrd: xlrd
+dependencies:
+    counties: census.gov-index-counties
+    fac_geo: oshpd.ca.gov-facilities-facilities_geoids->=0.0.4
+    facilities: oshpd.ca.gov-facilities-facilities->=0.0.4
+sources:
+    2008Top25MSDRG_Pivot:
+        description: null
+        segment: 3
+        table: msdrgs
+        time: 2008
+        url: http://www.oshpd.ca.gov/HID/Products/PatDischargeData/PivotTables/Top25DRGs/2008Top25MSDRG_Pivot.xlsm
+    2009Top25MSDRG_Pivot:
+        description: null
+        segment: 3
+        table: msdrgs
+        time: 2009
+        url: http://www.oshpd.ca.gov/HID/Products/PatDischargeData/PivotTables/Top25DRGs/2009Top25MSDRG_Pivot.xlsm
+    2010Top25MSDRG_Pivot:
+        description: null
+        segment: 3
+        table: msdrgs
+        time: 2010
+        url: http://www.oshpd.ca.gov/HID/Products/PatDischargeData/PivotTables/Top25DRGs/2010Top25MSDRG_Pivot.xlsm
+    2011Top25MSDRG_Pivot:
+        description: null
+        segment: 3
+        table: msdrgs
+        time: 2011
+        url: http://www.oshpd.ca.gov/HID/Products/PatDischargeData/PivotTables/Top25DRGs/2011Top25MSDRG_Pivot.xlsm
+    2012Top25MSDRG_Pivot:
+        description: null
+        segment: 3
+        table: msdrgs
+        time: 2012
+        url: http://www.oshpd.ca.gov/HID/Products/PatDischargeData/PivotTables/Top25DRGs/2012Top25MSDRG_Pivot.xlsm
+    2013Top25MSDRG_Pivot:
+        description: null
+        segment: 3
+        table: msdrgs
+        time: 2013
+        url: http://www.oshpd.ca.gov/HID/Products/PatDischargeData/PivotTables/Top25DRGs/2013Top25MSDRG_Pivot.xlsm
+views: {}
