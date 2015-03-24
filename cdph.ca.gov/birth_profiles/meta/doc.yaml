@@ -1,0 +1,23 @@
+documentation:
+    main: '
+
+        # Birth Profiles by Zip Code
+
+
+        Birth Profiles by ZIP Code consist of the number of live births, based on
+        the mother''s residence at the time of delivery and include aggregates by
+        Race/Ethnic Group of Mother, Age of Mother, Infant Birthweight, and Prenatal
+        Care Trimester by ZIP Code.  These key health status indicators at the ZIP
+        code level can be used to perform small area analysis to identify and target
+        areas within cities and counties where public health programs may be needed.
+
+        '
+    readme: '# Birth Profiles by Zip Code
+
+
+        Birth Profiles by ZIP Code consist of the number of live births, based on
+        the mother''s residence at the time of delivery and include aggregates by
+        Race/Ethnic Group of Mother, Age of Mother, Infant Birthweight, and Prenatal
+        Care Trimester by ZIP Code.  These key health status indicators at the ZIP
+        code level can be used to perform small area analysis to identify and target
+        areas within cities and counties where public health programs may be needed.'

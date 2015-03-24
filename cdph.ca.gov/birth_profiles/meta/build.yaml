@@ -1,0 +1,382 @@
+build: {}
+dependencies: {}
+sources:
+    births_1989:
+        row_spec:
+            data_end_line: null
+            data_start_line: 7
+            header_comment_lines:
+            - 0
+            - 1
+            - 2
+            - 3
+            header_lines:
+            - 4
+            - 5
+            - 6
+        table: birth_profile
+        time: 1989
+        url: http://www.cdph.ca.gov/data/statistics/Documents/birthzip1989.xls
+    births_1990:
+        row_spec:
+            data_end_line: null
+            data_start_line: 7
+            header_comment_lines:
+            - 0
+            - 1
+            - 2
+            - 3
+            header_lines:
+            - 4
+            - 5
+            - 6
+        table: birth_profile
+        time: 1990
+        url: http://www.cdph.ca.gov/data/statistics/Documents/birthzip1990.xls
+    births_1991:
+        row_spec:
+            data_end_line: null
+            data_start_line: 7
+            header_comment_lines:
+            - 0
+            - 1
+            - 2
+            - 3
+            header_lines:
+            - 4
+            - 5
+            - 6
+        table: birth_profile
+        time: 1991
+        url: http://www.cdph.ca.gov/data/statistics/Documents/birthzip1991.xls
+    births_1992:
+        row_spec:
+            data_end_line: null
+            data_start_line: 7
+            header_comment_lines:
+            - 0
+            - 1
+            - 2
+            - 3
+            header_lines:
+            - 4
+            - 5
+            - 6
+        table: birth_profile
+        time: 1992
+        url: http://www.cdph.ca.gov/data/statistics/Documents/birthzip1992.xls
+    births_1993:
+        row_spec:
+            data_end_line: null
+            data_start_line: 7
+            header_comment_lines:
+            - 0
+            - 1
+            - 2
+            - 3
+            header_lines:
+            - 4
+            - 5
+            - 6
+        table: birth_profile
+        time: 1993
+        url: http://www.cdph.ca.gov/data/statistics/Documents/birthzip1993.xls
+    births_1994:
+        row_spec:
+            data_end_line: null
+            data_start_line: 7
+            header_comment_lines:
+            - 0
+            - 1
+            - 2
+            - 3
+            header_lines:
+            - 4
+            - 5
+            - 6
+        table: birth_profile
+        time: 1994
+        url: http://www.cdph.ca.gov/data/statistics/Documents/birthzip1994.xls
+    births_1995:
+        row_spec:
+            data_end_line: null
+            data_start_line: 7
+            header_comment_lines:
+            - 0
+            - 1
+            - 2
+            - 3
+            header_lines:
+            - 4
+            - 5
+            - 6
+        table: birth_profile
+        time: 1995
+        url: http://www.cdph.ca.gov/data/statistics/Documents/birthzip1995.xls
+    births_1996:
+        row_spec:
+            data_end_line: null
+            data_start_line: 7
+            header_comment_lines:
+            - 0
+            - 1
+            - 2
+            - 3
+            header_lines:
+            - 4
+            - 5
+            - 6
+        table: birth_profile
+        time: 1996
+        url: http://www.cdph.ca.gov/data/statistics/Documents/birthzip1996.xls
+    births_1997:
+        row_spec:
+            data_end_line: null
+            data_start_line: 7
+            header_comment_lines:
+            - 0
+            - 1
+            - 2
+            - 3
+            header_lines:
+            - 4
+            - 5
+            - 6
+        table: birth_profile
+        time: 1997
+        url: http://www.cdph.ca.gov/data/statistics/Documents/birthzip1997.xls
+    births_1998:
+        row_spec:
+            data_end_line: null
+            data_start_line: 7
+            header_comment_lines:
+            - 0
+            - 1
+            - 2
+            - 3
+            header_lines:
+            - 4
+            - 5
+            - 6
+        table: birth_profile
+        time: 1998
+        url: http://www.cdph.ca.gov/data/statistics/Documents/birthzip1998.xls
+    births_1999:
+        row_spec:
+            data_end_line: null
+            data_start_line: 7
+            header_comment_lines:
+            - 0
+            - 1
+            - 2
+            - 3
+            header_lines:
+            - 4
+            - 5
+            - 6
+        table: birth_profile
+        time: 1999
+        url: http://www.cdph.ca.gov/data/statistics/Documents/birthzip1999.xls
+    births_2000:
+        row_spec:
+            data_end_line: 1564
+            data_start_line: 7
+            header_comment_lines:
+            - 0
+            - 1
+            - 2
+            - 3
+            header_lines:
+            - 4
+            - 5
+            - 6
+        table: birth_profile
+        time: 2000
+        url: http://www.cdph.ca.gov/data/statistics/Documents/birthzip2000.xls
+    births_2001:
+        row_spec:
+            data_end_line: 1577
+            data_start_line: 7
+            header_comment_lines:
+            - 0
+            - 1
+            - 2
+            - 3
+            header_lines:
+            - 4
+            - 5
+            - 6
+        table: birth_profile
+        time: 2001
+        url: http://www.cdph.ca.gov/data/statistics/Documents/birthzip2001.xls
+    births_2002:
+        row_spec:
+            data_end_line: 1569
+            data_start_line: 7
+            header_comment_lines:
+            - 0
+            - 1
+            - 2
+            - 3
+            header_lines:
+            - 4
+            - 5
+            - 6
+        table: birth_profile
+        time: 2002
+        url: http://www.cdph.ca.gov/data/statistics/Documents/birthzip2002.xls
+    births_2003:
+        row_spec:
+            data_end_line: 1564
+            data_start_line: 7
+            header_comment_lines:
+            - 0
+            - 1
+            - 2
+            - 3
+            header_lines:
+            - 4
+            - 5
+            - 6
+        table: birth_profile
+        time: 2003
+        url: http://www.cdph.ca.gov/data/statistics/Documents/birthzip2003.xls
+    births_2004:
+        row_spec:
+            data_end_line: 1566
+            data_start_line: 7
+            header_comment_lines:
+            - 0
+            - 1
+            - 2
+            - 3
+            header_lines:
+            - 4
+            - 5
+            - 6
+        table: birth_profile
+        time: 2004
+        url: http://www.cdph.ca.gov/data/statistics/Documents/birthzip2004.xls
+    births_2005:
+        row_spec:
+            data_end_line: 1578
+            data_start_line: 7
+            header_comment_lines:
+            - 0
+            - 1
+            - 2
+            - 3
+            header_lines:
+            - 4
+            - 5
+            - 6
+        table: birth_profile
+        time: 2005
+        url: http://www.cdph.ca.gov/data/statistics/Documents/birthzip2005.xls
+    births_2006:
+        row_spec:
+            data_end_line: 1584
+            data_start_line: 7
+            header_comment_lines:
+            - 0
+            - 1
+            - 2
+            - 3
+            header_lines:
+            - 4
+            - 5
+            - 6
+        table: birth_profile
+        time: 2006
+        url: http://www.cdph.ca.gov/data/statistics/Documents/birthzip2006.xls
+    births_2007:
+        row_spec:
+            data_end_line: 1563
+            data_start_line: 6
+            header_comment_lines:
+            - 0
+            - 1
+            - 2
+            - 3
+            header_lines:
+            - 4
+            - 5
+        table: birth_profile
+        time: 2007
+        url: http://www.cdph.ca.gov/data/statistics/Documents/birthzip2007.xlsx
+    births_2008:
+        row_spec:
+            data_end_line: 1551
+            data_start_line: 6
+            header_comment_lines:
+            - 0
+            - 1
+            - 2
+            - 3
+            header_lines:
+            - 4
+            - 5
+        table: birth_profile
+        time: 2008
+        url: http://www.cdph.ca.gov/data/statistics/Documents/birthzip2008.xlsx
+    births_2009:
+        row_spec:
+            data_end_line: 1528
+            data_start_line: 6
+            header_comment_lines:
+            - 0
+            - 1
+            - 2
+            - 3
+            header_lines:
+            - 4
+            - 5
+        table: birth_profile
+        time: 2009
+        url: http://www.cdph.ca.gov/data/statistics/Documents/birthzip2009.xlsx
+    births_2010:
+        row_spec:
+            data_end_line: 1536
+            data_start_line: 6
+            header_comment_lines:
+            - 0
+            - 1
+            - 2
+            - 3
+            header_lines:
+            - 4
+            - 5
+        table: birth_profile
+        time: 2010
+        url: http://www.cdph.ca.gov/data/statistics/Documents/birthzip2010.xlsx
+    births_2011:
+        row_spec:
+            data_end_line: 1536
+            data_start_line: 6
+            header_comment_lines:
+            - 0
+            - 1
+            - 2
+            - 3
+            header_lines:
+            - 4
+            - 5
+        table: birth_profile
+        time: 2011
+        url: http://www.cdph.ca.gov/data/statistics/Documents/birthzip2011.xlsx
+    births_2012:
+        row_spec:
+            data_end_line: 1532
+            data_start_line: 6
+            header_comment_lines:
+            - 0
+            - 1
+            - 2
+            - 3
+            header_lines:
+            - 4
+            - 5
+        table: birth_profile
+        time: 2012
+        url: http://www.cdph.ca.gov/data/statistics/Documents/birthzip2012.xlsx
+views: {}

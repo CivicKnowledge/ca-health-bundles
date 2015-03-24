@@ -1,0 +1,31 @@
+table,seq,column,is_pk,is_fk,type,i1,i2,size,description,proto_vid,d_caster,id
+birth_profile,1,id,1,,INTEGER,,,,Table generated from http://www.cdph.ca.gov/data/statistics/Documents/birthzip2010.xlsx,,,t03Q01
+birth_profile,2,zipcode,,,INTEGER,1,1,5,zipcode,,int_null_dash,c03Q01002
+birth_profile,3,year,,,INTEGER,1,,4,Year of record,c00102003005,,c03Q01003
+birth_profile,4,mother_age_20_29,,,INTEGER,,,6,mother_age_20_29,,int_null_dash,c03Q01004
+birth_profile,5,mother_age_30_34,,,INTEGER,,,6,mother_age_30_34,,int_null_dash,c03Q01005
+birth_profile,6,mother_age_gt35,,,INTEGER,,,5,mother_age_gt35,,int_null_dash,c03Q01006
+birth_profile,7,mother_age_lt20,,,INTEGER,,,5,mother_age_lt20,,int_null_dash,c03Q01007
+birth_profile,8,mother_age_lt29,,,INTEGER,,,3,mother_age_lt29,,int_null_dash,c03Q01008
+birth_profile,9,mother_age_unk,,,INTEGER,,,2,mother_age_unk,,int_null_dash,c03Q01009
+birth_profile,10,mother_race_amind,,,INTEGER,,,4,mother_race_amind,,int_null_dash,c03Q0100a
+birth_profile,11,mother_race_asian,,,INTEGER,,,5,mother_race_asian,,int_null_dash,c03Q0100b
+birth_profile,12,mother_race_asianpi,,,INTEGER,,,3,mother_race_asianpi,,int_null_dash,c03Q0100c
+birth_profile,13,mother_race_black,,,INTEGER,,,5,mother_race_black,,int_null_dash,c03Q0100d
+birth_profile,14,mother_race_filipino,,,INTEGER,,,5,mother_race_filipino,,int_null_dash,c03Q0100e
+birth_profile,15,mother_race_hisp,,,INTEGER,,,6,mother_race_hisp,,int_null_dash,c03Q0100f
+birth_profile,16,mother_race_hpi,,,INTEGER,,,4,mother_race_hpi,,int_null_dash,c03Q0100g
+birth_profile,17,mother_race_multiple,,,INTEGER,,,5,mother_race_multiple,,int_null_dash,c03Q0100h
+birth_profile,18,mother_race_other,,,INTEGER,,,5,mother_race_other,,int_null_dash,c03Q0100i
+birth_profile,19,mother_race_seasian,,,INTEGER,,,5,mother_race_seasian,,int_null_dash,c03Q0100j
+birth_profile,20,mother_race_white,,,INTEGER,,,6,mother_race_white,,int_null_dash,c03Q0100k
+birth_profile,21,prenatal_first,,,INTEGER,,,6,prenatal_first,,int_null_dash,c03Q0100l
+birth_profile,22,prenatal_none,,,INTEGER,,,6,prenatal_none,,int_null_dash,c03Q0100m
+birth_profile,23,prenatal_second,,,INTEGER,,,5,prenatal_second,,int_null_dash,c03Q0100n
+birth_profile,24,prenatal_third,,,INTEGER,,,5,prenatal_third,,int_null_dash,c03Q0100o
+birth_profile,25,prenatal_unk,,,INTEGER,,,5,prenatal_unk,,int_null_dash,c03Q0100p
+birth_profile,26,total_births,,,INTEGER,,,6,total_births,,int_null_dash,c03Q0100q
+birth_profile,27,weight_1500_2499,,,INTEGER,,,5,weight_1500_2499,,int_null_dash,c03Q0100r
+birth_profile,28,weight_gt2500,,,INTEGER,,,6,weight_gt2500,,int_null_dash,c03Q0100s
+birth_profile,29,weight_lt1500,,,INTEGER,,,4,weight_lt1500,,int_null_dash,c03Q0100t
+birth_profile,30,weight_unk,,,INTEGER,,,2,weight_unk,,int_null_dash,c03Q0100u

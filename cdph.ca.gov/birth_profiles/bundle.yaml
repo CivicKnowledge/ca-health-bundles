@@ -1,0 +1,53 @@
+about:
+    access: public
+    grain: zip
+    groups:
+    - health
+    license: null
+    rights: null
+    space: CA
+    subject: births
+    summary: Birth Profiles by ZIP Code consist of the number of live births, based
+        on the mother's residence at the time of delivery and include aggregates by
+        Race/Ethnic Group of Mother, Age of Mother, Infant Birthweight, and Prenatal
+        Care Trimester by ZIP Code.  These key health status indicators at the ZIP
+        code level can be used to perform small area analysis to identify and target
+        areas within cities and counties where public health programs may be needed.
+    tags: []
+    time: null
+    title: Birth Profiles by Zip Code
+contact_bundle:
+    creator:
+        email: eric@sandiegodata.org
+        name: Eric Busboom
+        url: http://www.sandiegodata.org
+    maintainer:
+        email: eric@sandiegodata.org
+        name: Eric Busboom
+        url: http://www.sandiegodata.org
+contact_source:
+    creator: {}
+    maintainer: {}
+external_documentation:
+    dataset:
+        description: Main webpage for the dataset.
+        source: null
+        title: Dataset Page
+        url: http://www.cdph.ca.gov/data/statistics/Pages/BirthProfilesbyZIPCode.aspx
+identity:
+    bspace: null
+    btime: null
+    dataset: birth_profiles
+    id: d03Q
+    revision: 1
+    source: cdph.ca.gov
+    subset: null
+    type: null
+    variation: null
+    version: 0.0.1
+names:
+    fqname: cdph.ca.gov-birth_profiles-0.0.1~d03Q001
+    name: cdph.ca.gov-birth_profiles
+    vid: d03Q001
+    vname: cdph.ca.gov-birth_profiles-0.0.1
+process: {}
