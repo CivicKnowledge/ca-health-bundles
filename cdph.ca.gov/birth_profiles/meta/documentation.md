@@ -4,6 +4,16 @@
 
 {about_summary}
 
+# Caveats
+
+The birth profiles have two special zip codes for mssing values and low number cells:
+
+* Zip 99998 collects the values for all cells in a column that are smaller than the lower number limit, which is documented for most years at 5. 
+* Zip 99999 collects the values for all cells in a column for births where the mother's zip code is not known, or where the value is not "in the appropriate range."
+
+Values for ``mother_age_lt29`` are recorded only for the year 1995. 
+
+
 # File Footer Documentation
 
 These are the notes from the footers of each of the annual files. The footer text varies a bit from year to year, but is substantially similar across many years, so the following sections may have some differences with the fotters for specific years. 

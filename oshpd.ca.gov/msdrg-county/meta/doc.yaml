@@ -1,0 +1,23 @@
+documentation:
+    main: "\n# Inpatient Hospital Discharges By County and Hospital, 2009 - 2013\n\
+        \nAn inpatient discharge record is submitted each time a patient is treated\
+        \ in a licensed general acute care hospital in California. These facilities\
+        \ report their discharge data via the Medical Information Reporting for California\
+        \ System (MIRCal). OSHPD has provided a custom extraction of the MIRCal system\
+        \ in two datasets; Medicare Severity-Diagnosis Related Group (MS-DRG) agregated\
+        \ to the county of the patient's residence, and the hospital from which the\
+        \ patient was discharged. \n\nThese files were recieved in response to a data\
+        \ request to OSHPD, so there isn't any online documentation for them. The\
+        \ closest online resources are probably: \n\n- [Inpatient Hospital Discharges:\
+        \ Frequencies by County](http://www.oshpd.ca.gov/HID/Products/PatDischargeData/FrequencyTables/CountyFreq/index.html)\
+        \ \n- [Patient Discharge Data](http://www.oshpd.ca.gov/HID/Products/PatDischargeData/PublicDataSet/)\n"
+    readme: '# Inpatient Hospital Discharges By County and Hospital, 2009 - 2013
+
+
+        An inpatient discharge record is submitted each time a patient is treated
+        in a licensed general acute care hospital in California. These facilities
+        report their discharge data via the Medical Information Reporting for California
+        System (MIRCal). OSHPD has provided a custom extraction of the MIRCal system
+        in two datasets; Medicare Severity-Diagnosis Related Group (MS-DRG) agregated
+        to the county of the patient''s residence, and the hospital from which the
+        patient was discharged. '

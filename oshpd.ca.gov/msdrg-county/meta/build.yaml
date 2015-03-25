@@ -1,0 +1,10 @@
+build: {}
+dependencies: {}
+sources:
+    msdrg_county:
+        description: MSDRGs by County
+        url: http://ds.civicknowledge.org/oshpd.ca.gov/Patient%20Discharges/MSDRGs%20by%20County%2C%202009-2013.xlsx
+    msdrg_hospital:
+        description: MSDRGs by Hospital
+        url: http://ds.civicknowledge.org/oshpd.ca.gov/Patient%20Discharges/MSDRGs%20by%20Hospital%2C%202009-2013.xlsx
+views: {}

@@ -1,0 +1,4 @@
+-   name: oshpd.ca.gov-msdrg-county-msdrg_hospital
+    table: msdrg_hospital
+-   name: oshpd.ca.gov-msdrg-county-msdrg_county
+    table: msdrg_county

@@ -42,7 +42,7 @@ identity:
     source: oshpd.ca.gov
     subset: null
     type: null
-    variation: null
+    variation: top25
     version: 0.0.1
 names:
     fqname: oshpd.ca.gov-msdgr-0.0.1~d03P001

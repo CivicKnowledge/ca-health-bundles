@@ -1,2 +1,5 @@
 -   name: cdph.ca.gov-birth_profiles-birth_profile
     table: birth_profile
+-   grain: totals
+    name: cdph.ca.gov-birth_profiles-birth_profile-totals
+    table: birth_profile

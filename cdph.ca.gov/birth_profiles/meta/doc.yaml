@@ -1,17 +1,49 @@
 documentation:
-    main: '
-
-        # Birth Profiles by Zip Code
-
-
-        Birth Profiles by ZIP Code consist of the number of live births, based on
-        the mother''s residence at the time of delivery and include aggregates by
-        Race/Ethnic Group of Mother, Age of Mother, Infant Birthweight, and Prenatal
-        Care Trimester by ZIP Code.  These key health status indicators at the ZIP
-        code level can be used to perform small area analysis to identify and target
-        areas within cities and counties where public health programs may be needed.
-
-        '
+    main: "\n\n# Birth Profiles by Zip Code\n\nBirth Profiles by ZIP Code consist\
+        \ of the number of live births, based on the mother's residence at the time\
+        \ of delivery and include aggregates by Race/Ethnic Group of Mother, Age of\
+        \ Mother, Infant Birthweight, and Prenatal Care Trimester by ZIP Code.  These\
+        \ key health status indicators at the ZIP code level can be used to perform\
+        \ small area analysis to identify and target areas within cities and counties\
+        \ where public health programs may be needed.\n\n# Caveats\n\nThe birth profiles\
+        \ have two special zip codes for mssing values and low number cells:\n\n*\
+        \ Zip 99998 collects the values for all cells in a column that are smaller\
+        \ than the lower number limit, which is documented for most years at 5. \n\
+        * Zip 99999 collects the values for all cells in a column for births where\
+        \ the mother's zip code is not known, or where the value is not \"in the appropriate\
+        \ range.\"\n\nValues for ``mother_age_lt29`` are recorded only for the year\
+        \ 1995. \n\n\n# File Footer Documentation\n\nThese are the notes from the\
+        \ footers of each of the annual files. The footer text varies a bit from year\
+        \ to year, but is substantially similar across many years, so the following\
+        \ sections may have some differences with the fotters for specific years.\
+        \ \n\n## File Footer for Year 2000 to 2003\n \n__ The following text appears,\
+        \ in a substantially similar form, after the end of data in the fiels for\
+        \ the years 2000, 2001, 2002 and 2003 __ \n            \n* Only ZIP Codes\
+        \ with five events or more are listed by ZIP in this report.  All births which\
+        \ occurred to residents in ZIP Codes with fewer than five events\nhave been\
+        \ combined into ZIP Code \"99998\".\n\n** All births to California residents\
+        \ with ZIP Codes missing or not in the appropriate range for California have\
+        \ been combined into ZIP Code \"99999\".\n\nSource: California Department\
+        \ of Health Services, Birth Records\n   \n        \n## File Footer for Years\
+        \ after 2003\n\n__ The following text appears after the end of the data in\
+        \ file years after 2005, and is substantially similar to this text in years\
+        \ 2003 and 2004. __ \n                \n- Indicates zero events. ( Translated\
+        \ to 0 in the Civic Knowledge conversion )\n                \n* Only ZIP Codes\
+        \ with five events or more are listed in this report.  All births which occurred\
+        \ to residents in ZIP Codes with fewer than five events\nhave been combined\
+        \ into ZIP Code \"99998\".\n** All births to California residents with ZIP\
+        \ Codes missing or not in the appropriate range for California have been combined\
+        \ into ZIP Code \"99999\".\n\n1.0 The \"American Indian\" group includes American\
+        \ Indian, Aleut, and Eskimo.\nThe \"Asian\" group includes Asian Indian, Chinese,\
+        \ Japanese, Korean, and Other Asian.\nThe \"Southeast Asian\" group includes\
+        \ Cambodian, Hmong, Laotian, Thai, and Vietnamese.\nThe \"Hawaiian/Pacific\
+        \ Islander\" group includes Hawaiian, Guamanian, Samoan, and Other Pacific\
+        \ Islanders.\nThe \"Hispanic\" group includes all mothers who indicated they\
+        \ were of Spanish/Hispanic origin, regardless of race.\nThe \"Two + Races\"\
+        \ group includes all non-Hispanic mothers who reported two or more of any\
+        \ of the race groups listed on this report.\n\nSource: California Department\
+        \ of Public Health, 2006 Birth Records\n                \n\n\n           \
+        \     \n                \n\n                \n                "
     readme: '# Birth Profiles by Zip Code
 
 

@@ -1,0 +1,55 @@
+about:
+    access: null
+    grain: null
+    groups: []
+    license: null
+    rights: null
+    space: null
+    subject: null
+    summary: 'An inpatient discharge record is submitted each time a patient is treated
+        in a licensed general acute care hospital in California. These facilities
+        report their discharge data via the Medical Information Reporting for California
+        System (MIRCal). OSHPD has provided a custom extraction of the MIRCal system
+        in two datasets; Medicare Severity-Diagnosis Related Group (MS-DRG) agregated
+        to the county of the patient''s residence, and the hospital from which the
+        patient was discharged. '
+    tags: []
+    time: p5ye2013
+    title: Inpatient Hospital Discharges By County and Hospital, 2009 - 2013
+contact_bundle:
+    creator:
+        email: eric@sandiegodata.org
+        name: Eric Busboom
+        url: http://www.sandiegodata.org
+    maintainer:
+        email: eric@sandiegodata.org
+        name: Eric Busboom
+        url: http://www.sandiegodata.org
+contact_source:
+    creator:
+        email: Karen.Henderson@oshpd.ca.gov
+        name: Karen Henderson, Research Program Specialist, OSHPD
+    maintainer: {}
+external_documentation:
+    dataset:
+        description: Main webpage for the dataset.
+        source: null
+        title: Patient Discharge Data
+        url: http://www.oshpd.ca.gov/HID/Products/PatDischargeData/PublicDataSet/
+identity:
+    bspace: null
+    btime: null
+    dataset: msdrg
+    id: d03R
+    revision: 1
+    source: oshpd.ca.gov
+    subset: null
+    type: null
+    variation: county
+    version: 0.0.1
+names:
+    fqname: oshpd.ca.gov-msdrg-county-0.0.1~d03R001
+    name: oshpd.ca.gov-msdrg-county
+    vid: d03R001
+    vname: oshpd.ca.gov-msdrg-county-0.0.1
+process: {}
