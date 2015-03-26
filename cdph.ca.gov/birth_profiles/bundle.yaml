@@ -39,15 +39,20 @@ identity:
     btime: null
     dataset: birth_profiles
     id: d03Q
-    revision: 1
+    revision: 2
     source: cdph.ca.gov
     subset: null
     type: null
     variation: null
-    version: 0.0.1
+    version: 0.0.2
 names:
-    fqname: cdph.ca.gov-birth_profiles-0.0.1~d03Q001
+    fqname: cdph.ca.gov-birth_profiles-0.0.2~d03Q002
     name: cdph.ca.gov-birth_profiles
-    vid: d03Q001
-    vname: cdph.ca.gov-birth_profiles-0.0.1
+    vid: d03Q002
+    vname: cdph.ca.gov-birth_profiles-0.0.2
 process: {}
+versions:
+    2:
+        date: '2015-03-26T16:08:33.984002'
+        description: Prior version hosed
+        version: 0.0.2
