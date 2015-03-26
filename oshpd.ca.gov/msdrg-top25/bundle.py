@@ -12,7 +12,7 @@ class Bundle(ExcelBuildBundle):
     prefix_headers = ['id', 'year']
 
 
-    def build_modify_row(self, p, source, row):
+    def build_modify_row(self, row_gen, p, source, row):
         """Called for every row to allow subclasses to modify rows. """
         row['year'] = int(source.time)
         

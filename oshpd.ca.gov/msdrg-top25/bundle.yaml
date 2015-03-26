@@ -45,8 +45,8 @@ identity:
     variation: top25
     version: 0.0.1
 names:
-    fqname: oshpd.ca.gov-msdgr-0.0.1~d03P001
-    name: oshpd.ca.gov-msdgr
+    fqname: oshpd.ca.gov-msdgr-top25-0.0.1~d03P001
+    name: oshpd.ca.gov-msdgr-top25
     vid: d03P001
-    vname: oshpd.ca.gov-msdgr-0.0.1
+    vname: oshpd.ca.gov-msdgr-top25-0.0.1
 process: {}
