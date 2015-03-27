@@ -220,6 +220,7 @@ class Bundle(ExcelBuildBundle):
         
         super(Bundle,self).build()
         self.build_totals()
+        self.build_aggregate_counties()
         return True
         
         
@@ -229,7 +230,6 @@ class Bundle(ExcelBuildBundle):
         import numpy as np
         from geoid import civick, census
 
-        
         df = self.partitions.all[0].pandas
         zc = self.library.dep('zip_county').partition.pandas
         

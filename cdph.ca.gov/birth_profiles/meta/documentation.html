@@ -5,13 +5,16 @@
 <body>
 <h1>Birth Profiles by Zip Code</h1>
 <p>Birth Profiles by ZIP Code consist of the number of live births, based on the mother's residence at the time of delivery and include aggregates by Race/Ethnic Group of Mother, Age of Mother, Infant Birthweight, and Prenatal Care Trimester by ZIP Code.  These key health status indicators at the ZIP code level can be used to perform small area analysis to identify and target areas within cities and counties where public health programs may be needed.</p>
+<h1>County Birth Profiles</h1>
+<p>The base data is provided from CDPH aggregated to zip codes. The <code>birth_profile_county</code> re-aggregates to counties, using the HUD zip code to county crosswalks. These crosswalks link zip codes to the counties that contain them, and where a zip code crosses a county bounty, the crosswalk provides the portion of residential addresses that are contained in each of the counties. The births are allocated to zip codes by the monther's zip code of residence, so while the re-allocation is statistically sensible, it will most likely result in different counts than if the original data were aggregated directly to counties. </p>
 <h1>Caveats</h1>
-<p>The birth profiles have two special zip codes for mssing values and low number cells:</p>
+<p>The birth profiles have two special "catchall" zip codes for mssing values and low number cells:</p>
 <ul>
 <li>Zip 99998 collects the values for all cells in a column that are smaller than the lower number limit, which is documented for most years at 5. </li>
 <li>Zip 99999 collects the values for all cells in a column for births where the mother's zip code is not known, or where the value is not "in the appropriate range."</li>
 </ul>
-<p>Values for <code>mother_age_lt29</code> are recorded only for the year 1995. </p>
+<p>Values for <code>mother_age_lt29</code> are recorded only for the year 1995. However, even though the &lt;29 values would appear to overlap with the 20-29 age group, summing all of the age columns produces the same value as the <code>total_births</code> column. Based on this, it appears that the <code>mother_age_lt29</code> coulmn is just misnamed, and should be <code>mother_age_lt20.</code></p>
+<p>In the catchall zip codes ( 99998 and 99999 ) for year 2006, the sum of the four birth weight columns does not equal the total_births column. </p>
 <h1>File Footer Documentation</h1>
 <p>These are the notes from the footers of each of the annual files. The footer text varies a bit from year to year, but is substantially similar across many years, so the following sections may have some differences with the fotters for specific years. </p>
 <h2>File Footer for Year 2000 to 2003</h2>

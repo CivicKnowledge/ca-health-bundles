@@ -3,3 +3,5 @@
 -   grain: totals
     name: cdph.ca.gov-birth_profiles-birth_profile-totals
     table: birth_profile
+-   name: cdph.ca.gov-birth_profiles-birth_profile_county
+    table: birth_profile_county

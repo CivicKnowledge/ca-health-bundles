@@ -31,18 +31,18 @@ birth_profile,29,weight_lt1500,,,INTEGER,,,4,weight_lt1500,,int_null_dash,c03Q01
 birth_profile,30,weight_unk,,,INTEGER,,,2,weight_unk,,int_null_dash,c03Q0100u
 ,,,,,,,,,,,,
 birth_profile_county,1,id,1,,INTEGER,,,,Table generated from http://www.cdph.ca.gov/data/statistics/Documents/birthzip2010.xlsx,,,t03Q02
-birth_profile_county,2,county_gvid,,c03x04003,VARCHAR,1,1,5,County gvid,c00104002,,c03Q02002
+birth_profile_county,2,county_gvid,,c03x04003,VARCHAR,1,1,6,County gvid,c00104002,,c03Q02002
 birth_profile_county,3,year,,,INTEGER,1,,4,Year of record,c00102003,,c03Q02003
 birth_profile_county,4,mother_age_lt20,,,INTEGER,,,5,mother_age_lt20,,,c03Q02004
 birth_profile_county,5,mother_age_20_29,,,INTEGER,,,6,mother_age_20_29,,,c03Q02005
-birth_profile_county,6,mother_age_lt29,,,INTEGER,,,3,mother_age_lt29,,,c03Q02006
+birth_profile_county,6,mother_age_lt29,,,INTEGER,,,5,mother_age_lt29,,,c03Q02006
 birth_profile_county,7,mother_age_30_34,,,INTEGER,,,6,mother_age_30_34,,,c03Q02007
 birth_profile_county,8,mother_age_gt35,,,INTEGER,,,5,mother_age_gt35,,,c03Q02008
-birth_profile_county,9,mother_age_unk,,,INTEGER,,,2,mother_age_unk,,,c03Q02009
+birth_profile_county,9,mother_age_unk,,,INTEGER,,,3,mother_age_unk,,,c03Q02009
 birth_profile_county,10,mother_race_white,,,INTEGER,,,6,mother_race_white,,,c03Q0200a
 birth_profile_county,11,mother_race_black,,,INTEGER,,,5,mother_race_black,,,c03Q0200b
 birth_profile_county,12,mother_race_asian,,,INTEGER,,,5,mother_race_asian,,,c03Q0200c
-birth_profile_county,13,mother_race_asianpi,,,INTEGER,,,3,mother_race_asianpi,,,c03Q0200d
+birth_profile_county,13,mother_race_asianpi,,,INTEGER,,,5,mother_race_asianpi,,,c03Q0200d
 birth_profile_county,14,mother_race_seasian,,,INTEGER,,,5,mother_race_seasian,,,c03Q0200e
 birth_profile_county,15,mother_race_hisp,,,INTEGER,,,6,mother_race_hisp,,,c03Q0200f
 birth_profile_county,16,mother_race_amind,,,INTEGER,,,4,mother_race_amind,,,c03Q0200g
