@@ -1,5 +1,6 @@
 build: {}
-dependencies: {}
+dependencies:
+    zip_county: huduser.org-zipcross-zip_county-201412
 sources:
     births_1989:
         row_spec:

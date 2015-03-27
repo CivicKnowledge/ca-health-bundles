@@ -1,7 +1,7 @@
 table,seq,column,is_pk,is_fk,type,i1,i2,size,description,proto_vid,d_caster,id
 birth_profile,1,id,1,,INTEGER,,,,Table generated from http://www.cdph.ca.gov/data/statistics/Documents/birthzip2010.xlsx,,,t03Q01
 birth_profile,2,zipcode,,,INTEGER,1,1,5,zipcode,,int_null_dash,c03Q01002
-birth_profile,3,year,,,INTEGER,1,,4,Year of record,c00102003005,,c03Q01003
+birth_profile,3,year,,,INTEGER,1,,4,Year of record,c00102003,,c03Q01003
 birth_profile,4,mother_age_lt20,,,INTEGER,,,5,mother_age_lt20,,int_null_dash,c03Q01004
 birth_profile,5,mother_age_20_29,,,INTEGER,,,6,mother_age_20_29,,int_null_dash,c03Q01005
 birth_profile,6,mother_age_lt29,,,INTEGER,,,3,mother_age_lt29,,int_null_dash,c03Q01006
@@ -29,3 +29,34 @@ birth_profile,27,weight_1500_2499,,,INTEGER,,,5,weight_1500_2499,,int_null_dash,
 birth_profile,28,weight_gt2500,,,INTEGER,,,6,weight_gt2500,,int_null_dash,c03Q0100s
 birth_profile,29,weight_lt1500,,,INTEGER,,,4,weight_lt1500,,int_null_dash,c03Q0100t
 birth_profile,30,weight_unk,,,INTEGER,,,2,weight_unk,,int_null_dash,c03Q0100u
+,,,,,,,,,,,,
+birth_profile_county,1,id,1,,INTEGER,,,,Table generated from http://www.cdph.ca.gov/data/statistics/Documents/birthzip2010.xlsx,,,t03Q02
+birth_profile_county,2,county_gvid,,c03x04003,VARCHAR,1,1,5,County gvid,c00104002,,c03Q02002
+birth_profile_county,3,year,,,INTEGER,1,,4,Year of record,c00102003,,c03Q02003
+birth_profile_county,4,mother_age_lt20,,,INTEGER,,,5,mother_age_lt20,,,c03Q02004
+birth_profile_county,5,mother_age_20_29,,,INTEGER,,,6,mother_age_20_29,,,c03Q02005
+birth_profile_county,6,mother_age_lt29,,,INTEGER,,,3,mother_age_lt29,,,c03Q02006
+birth_profile_county,7,mother_age_30_34,,,INTEGER,,,6,mother_age_30_34,,,c03Q02007
+birth_profile_county,8,mother_age_gt35,,,INTEGER,,,5,mother_age_gt35,,,c03Q02008
+birth_profile_county,9,mother_age_unk,,,INTEGER,,,2,mother_age_unk,,,c03Q02009
+birth_profile_county,10,mother_race_white,,,INTEGER,,,6,mother_race_white,,,c03Q0200a
+birth_profile_county,11,mother_race_black,,,INTEGER,,,5,mother_race_black,,,c03Q0200b
+birth_profile_county,12,mother_race_asian,,,INTEGER,,,5,mother_race_asian,,,c03Q0200c
+birth_profile_county,13,mother_race_asianpi,,,INTEGER,,,3,mother_race_asianpi,,,c03Q0200d
+birth_profile_county,14,mother_race_seasian,,,INTEGER,,,5,mother_race_seasian,,,c03Q0200e
+birth_profile_county,15,mother_race_hisp,,,INTEGER,,,6,mother_race_hisp,,,c03Q0200f
+birth_profile_county,16,mother_race_amind,,,INTEGER,,,4,mother_race_amind,,,c03Q0200g
+birth_profile_county,17,mother_race_filipino,,,INTEGER,,,5,mother_race_filipino,,,c03Q0200h
+birth_profile_county,18,mother_race_hpi,,,INTEGER,,,4,mother_race_hpi,,,c03Q0200i
+birth_profile_county,19,mother_race_multiple,,,INTEGER,,,5,mother_race_multiple,,,c03Q0200j
+birth_profile_county,20,mother_race_other,,,INTEGER,,,5,mother_race_other,,,c03Q0200k
+birth_profile_county,21,prenatal_first,,,INTEGER,,,6,prenatal_first,,,c03Q0200l
+birth_profile_county,22,prenatal_none,,,INTEGER,,,6,prenatal_none,,,c03Q0200m
+birth_profile_county,23,prenatal_second,,,INTEGER,,,5,prenatal_second,,,c03Q0200n
+birth_profile_county,24,prenatal_third,,,INTEGER,,,5,prenatal_third,,,c03Q0200o
+birth_profile_county,25,prenatal_unk,,,INTEGER,,,5,prenatal_unk,,,c03Q0200p
+birth_profile_county,26,total_births,,,INTEGER,,,6,total_births,,,c03Q0200q
+birth_profile_county,27,weight_1500_2499,,,INTEGER,,,5,weight_1500_2499,,,c03Q0200r
+birth_profile_county,28,weight_gt2500,,,INTEGER,,,6,weight_gt2500,,,c03Q0200s
+birth_profile_county,29,weight_lt1500,,,INTEGER,,,4,weight_lt1500,,,c03Q0200t
+birth_profile_county,30,weight_unk,,,INTEGER,,,2,weight_unk,,,c03Q0200u
