@@ -10,7 +10,7 @@
 "ageofmotherunder20","mother_age_lt20","AGE OF MOTHER Under 20   "
 "ageofmotherunder20.0","mother_age_lt20","AGE OF MOTHER Under 20.0"
 "mother'sageatdeliveryunder20","mother_age_lt20","Mother's Age at Delivery UNDER 20"
-"ageofmother<29","mother_age_lt29","Age of Mother  <29"
+"ageofmother<29","mother_age_lt20","Age of Mother  < 20"
 "ageofmotherageunk","mother_age_unk","Age of Mother Age Unk"
 "mother'sageatdeliveryunk","mother_age_unk","Mother's Age at Delivery UNK"
 "mother'srace/ethnicityamerind","mother_race_amind","Mother's Race/Ethnicity AMER IND"

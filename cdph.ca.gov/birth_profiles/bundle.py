@@ -237,7 +237,7 @@ class Bundle(ExcelBuildBundle):
 
         all_prenat_cols = [ u'prenatal_first', u'prenatal_none', u'prenatal_second', u'prenatal_third', u'prenatal_unk' ]
 
-        all_age_cols = [u'mother_age_lt20', u'mother_age_lt29', u'mother_age_20_29', u'mother_age_30_34', 
+        all_age_cols = [u'mother_age_lt20', u'mother_age_20_29', u'mother_age_30_34', 
          u'mother_age_gt35', u'mother_age_unk']
 
         all_weight_cols = [  u'weight_1500_2499', u'weight_gt2500', u'weight_lt1500', u'weight_unk']
@@ -263,7 +263,7 @@ class Bundle(ExcelBuildBundle):
         
         # Need to get rid of columns not in table, or intserter will throuw a cast error. 
         final_cols = [u'county', u'year', 
-          u'mother_age_lt20', u'mother_age_20_29', u'mother_age_lt29', u'mother_age_30_34', u'mother_age_gt35', u'mother_age_unk',
+          u'mother_age_lt20', u'mother_age_20_29', u'mother_age_30_34', u'mother_age_gt35', u'mother_age_unk',
           u'mother_race_white', u'mother_race_black', u'mother_race_asian', u'mother_race_asianpi', 
           u'mother_race_seasian', u'mother_race_hisp', u'mother_race_amind', u'mother_race_filipino', 
           u'mother_race_hpi', u'mother_race_multiple', u'mother_race_other', 
@@ -294,7 +294,7 @@ class Bundle(ExcelBuildBundle):
 
         all_prenat_cols = [ u'prenatal_first', u'prenatal_none', u'prenatal_second', u'prenatal_third', u'prenatal_unk' ]
 
-        all_age_cols = [u'mother_age_lt20', u'mother_age_lt29', u'mother_age_20_29', u'mother_age_30_34', 
+        all_age_cols = [u'mother_age_lt20', u'mother_age_20_29', u'mother_age_30_34', 
          u'mother_age_gt35', u'mother_age_unk']
 
         all_weight_cols = [  u'weight_1500_2499', u'weight_gt2500', u'weight_lt1500', u'weight_unk']
