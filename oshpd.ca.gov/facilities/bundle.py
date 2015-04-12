@@ -117,6 +117,11 @@ class Bundle(ExcelBuildBundle):
             for row in facilities.query(q):
                 ins.insert(row)
                 lr(str(p.identity))
+                
+    def redo_finalize(self):
+        
+        for p in self.partitions.all:
+            p.finalize(force=True)
         
         
         

@@ -13,7 +13,7 @@ facilities,11,facility_status_desc,,,VARCHAR,,,,,,,8,,,c03j0100b
 facilities,12,facility_status_date,,,DATE,,,,,,,,,,c03j0100c
 facilities,13,license_type_desc,,,VARCHAR,,,,,,,26,,,c03j0100d
 facilities,14,license_category_desc,,,VARCHAR,,,,,,,33,,,c03j0100e
-facilities,15,hyperlink_to_atlas,,,VARCHAR,,,,,,,,,,c03j0100f
+facilities,15,hyperlink_to_atlas,,,VARCHAR,,,,,,,55,,,c03j0100f
 facilities,16,er_service_level_desc,,,VARCHAR,,,,,,,25,,,c03j0100g
 facilities,17,total_number_beds,,,INTEGER,,,,,,,4,,,c03j0100h
 ,,,,,,,,,,,,,,,
@@ -37,7 +37,7 @@ facilities_addresses,16,data,,,TEXT,,,,,,,,"Extra data, In JSON format.",,c03j02
 facilities_geoids,1,id,1,,INTEGER,,,,,,,,Census region geoids for healthcare facilities,,t03j03
 facilities_geoids,2,facilities_id,,t03j01,INTEGER,1,,,,,,5,Link to facilities table,,c03j03002
 facilities_geoids,3,blockgroup_gvid,,c03x09003,VARCHAR,,1,,,,,12,Geoid for ACS 2012 blockgroup,c00104002,c03j03003
-facilities_geoids,4,tract_gvid,,c03x08003,VARCHAR,,,1,,,,,Geoid for ACS 2012  tract,c00104002,c03j03004
+facilities_geoids,4,tract_gvid,,c03x08003,VARCHAR,,,1,,,,11,Geoid for ACS 2012  tract,c00104002,c03j03004
 facilities_geoids,5,county_gvid,,c03x04003,VARCHAR,,,,1,,,6,Geoid for census county,c00104002,c03j03005
 ,,,,,,,,,,,,,,,
 facilities_index,1,id,1,,INTEGER,,,,,,,,Index for OSHPD California Healthcare facilities,,t03j04

@@ -93,7 +93,7 @@ primarycare,14,pct100pov,,,REAL,,19,,c0390400e
 primarycare,15,pcsa,,,INTEGER,1,4,,c0390400f
 primarycare,16,pcsa_score,,,REAL,,19,,c0390400g
 primarycare,17,pc_phys,,,INTEGER,3,4,,c0390400h
-primarycare,18,pc_phys_r_,,,REAL,,19,,c0390400i
+primarycare,18,pc_phys_r,,,REAL,,19,,c0390400i
 primarycare,19,totalpovpo,,,INTEGER,6,9,,c0390400j
 primarycare,20,povscore,,,INTEGER,1,9,,c0390400k
 primarycare,21,physratios,,,INTEGER,1,9,,c0390400l

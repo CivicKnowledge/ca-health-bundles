@@ -35,17 +35,17 @@ identity:
     btime: null
     dataset: facilities
     id: d03j
-    revision: 5
+    revision: 6
     source: oshpd.ca.gov
     subset: null
     type: null
     variation: null
-    version: 0.0.5
+    version: 0.0.6
 names:
-    fqname: oshpd.ca.gov-facilities-0.0.5~d03j005
+    fqname: oshpd.ca.gov-facilities-0.0.6~d03j006
     name: oshpd.ca.gov-facilities
-    vid: d03j005
-    vname: oshpd.ca.gov-facilities-0.0.5
+    vid: d03j006
+    vname: oshpd.ca.gov-facilities-0.0.6
 process: {}
 versions:
     2:
@@ -64,3 +64,7 @@ versions:
         date: '2015-03-20T12:19:55.946618'
         description: Moved to new RowGen code, added facilities index table
         version: 0.0.5
+    6:
+        date: '2015-04-12T14:13:25.800538'
+        description: ''
+        version: 0.0.6
