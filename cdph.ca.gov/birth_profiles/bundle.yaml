@@ -39,17 +39,17 @@ identity:
     btime: null
     dataset: birth_profiles
     id: d03Q
-    revision: 4
+    revision: 5
     source: cdph.ca.gov
     subset: null
     type: null
     variation: null
-    version: 0.0.4
+    version: 0.0.5
 names:
-    fqname: cdph.ca.gov-birth_profiles-0.0.4~d03Q004
+    fqname: cdph.ca.gov-birth_profiles-0.0.5~d03Q005
     name: cdph.ca.gov-birth_profiles
-    vid: d03Q004
-    vname: cdph.ca.gov-birth_profiles-0.0.4
+    vid: d03Q005
+    vname: cdph.ca.gov-birth_profiles-0.0.5
 process: {}
 versions:
     2:
@@ -64,3 +64,7 @@ versions:
         date: '2015-04-04T17:22:07.380200'
         description: Improved column descriptions
         version: 0.0.4
+    5:
+        date: '2015-04-07T20:31:02.745959'
+        description: Update to add coverage
+        version: 0.0.5

@@ -224,7 +224,20 @@ class Bundle(ExcelBuildBundle):
         return True
         
         
+    all_weight_cols = [  u'weight_1500_2499', u'weight_gt2500', u'weight_lt1500', u'weight_unk']
+        
+    all_age_cols = [u'mother_age_lt20', u'mother_age_20_29', u'mother_age_30_34', 
+     u'mother_age_gt35', u'mother_age_unk']
+        
+    all_prenat_cols = [ u'prenatal_first', u'prenatal_none', u'prenatal_second', u'prenatal_third', u'prenatal_unk' ]
+       
+    all_race_cols = [ u'mother_race_white', u'mother_race_black',
+     u'mother_race_asian', u'mother_race_asianpi', u'mother_race_seasian', u'mother_race_hisp',
+     u'mother_race_amind', u'mother_race_filipino', u'mother_race_hpi', u'mother_race_multiple', 
+     u'mother_race_other']
+        
     def build_aggregate_counties(self):
+        """Aggregate zip codes into counties """
         
         import pandas as pd
         import numpy as np
@@ -235,46 +248,32 @@ class Bundle(ExcelBuildBundle):
         
         zcm = pd.merge(df,zc, left_on='zipcode',right_on='zip')
 
-        all_prenat_cols = [ u'prenatal_first', u'prenatal_none', u'prenatal_second', u'prenatal_third', u'prenatal_unk' ]
+        all_cols = self.all_age_cols+self.all_weight_cols+self.all_race_cols+self.all_prenat_cols+[u'total_births']
 
-        all_age_cols = [u'mother_age_lt20', u'mother_age_20_29', u'mother_age_30_34', 
-         u'mother_age_gt35', u'mother_age_unk']
-
-        all_weight_cols = [  u'weight_1500_2499', u'weight_gt2500', u'weight_lt1500', u'weight_unk']
-
-        all_race_cols = [ u'mother_race_white', u'mother_race_black',
-         u'mother_race_asian', u'mother_race_asianpi', u'mother_race_seasian', u'mother_race_hisp',
-         u'mother_race_amind', u'mother_race_filipino', u'mother_race_hpi', u'mother_race_multiple', 
-         u'mother_race_other']
-
-        for v in (all_age_cols+all_weight_cols+all_race_cols+all_prenat_cols+[u'total_births']):
+        for v in all_cols:
             zcm[v] *= zcm.res_ratio
 
         zcm = zcm.groupby(['county','year']).sum()
         zcm = zcm.reset_index()
         
-        for v in (all_age_cols+all_weight_cols+all_race_cols+all_prenat_cols+[u'total_births']):
+        for v in all_cols:
             zcm[v] = np.round(zcm[v],0)
         
-        zcm['total_births_prenat'] = zcm[all_prenat_cols].sum(axis=1).astype('int')
-        zcm['total_births_age'] = zcm[all_age_cols].sum(axis=1).astype('int')
-        zcm['total_births_weight'] = zcm[all_weight_cols].sum(axis=1).astype('int')
+        zcm['total_births_prenat'] = zcm[self.all_prenat_cols].sum(axis=1).astype('int')
+        zcm['total_births_age'] = zcm[self.all_age_cols].sum(axis=1).astype('int')
+        zcm['total_births_weight'] = zcm[self.all_weight_cols].sum(axis=1).astype('int')
         zcm['total_births'] = zcm['total_births'].astype('int')
         
-        # Need to get rid of columns not in table, or intserter will throuw a cast error. 
-        final_cols = [u'county', u'year', 
-          u'mother_age_lt20', u'mother_age_20_29', u'mother_age_30_34', u'mother_age_gt35', u'mother_age_unk',
-          u'mother_race_white', u'mother_race_black', u'mother_race_asian', u'mother_race_asianpi', 
-          u'mother_race_seasian', u'mother_race_hisp', u'mother_race_amind', u'mother_race_filipino', 
-          u'mother_race_hpi', u'mother_race_multiple', u'mother_race_other', 
-          u'prenatal_first', u'prenatal_none', u'prenatal_second', u'prenatal_third', u'prenatal_unk', 
-          u'total_births', u'weight_1500_2499', u'weight_gt2500', u'weight_lt1500', u'weight_unk']
+        ##
+        ## Now we can write the Pandas dataframe to the database. 
         
-        zcm = zcm[final_cols]
+        # Need to get rid of columns not in table, or intserter will throw a cast error. 
+        zcm = zcm[all_cols + [u'county', u'year']]
         
         p = self.partitions.find_or_new(table='birth_profile_county')
         lr = self.init_log_rate()
-        
+
+    
         with p.inserter() as ins:
             for row in zcm.iterrows():
                 row =  row[1].to_dict()
@@ -292,21 +291,9 @@ class Bundle(ExcelBuildBundle):
         
         df = self.partitions.all[0].pandas
 
-        all_prenat_cols = [ u'prenatal_first', u'prenatal_none', u'prenatal_second', u'prenatal_third', u'prenatal_unk' ]
-
-        all_age_cols = [u'mother_age_lt20', u'mother_age_20_29', u'mother_age_30_34', 
-         u'mother_age_gt35', u'mother_age_unk']
-
-        all_weight_cols = [  u'weight_1500_2499', u'weight_gt2500', u'weight_lt1500', u'weight_unk']
-
-        all_race_cols = [ u'mother_race_white', u'mother_race_black',
-        u'mother_race_asian', u'mother_race_asianpi', u'mother_race_seasian', u'mother_race_hisp',
-        u'mother_race_amind', u'mother_race_filipino', u'mother_race_hpi', u'mother_race_multiple', 
-        u'mother_race_other']
-        
-        df['total_births_prenat'] = df[all_prenat_cols].sum(axis=1).astype('int')
-        df['total_births_age'] = df[all_age_cols].sum(axis=1).astype('int')
-        df['total_births_weight'] = df[all_weight_cols].sum(axis=1).astype('int')
+        df['total_births_prenat'] = df[self.all_prenat_cols].sum(axis=1).astype('int')
+        df['total_births_age'] = df[self.all_age_cols].sum(axis=1).astype('int')
+        df['total_births_weight'] = df[self.all_weight_cols].sum(axis=1).astype('int')
         df['total_births'] = df['total_births'].astype('int')
 
         assert (all(df['total_births_prenat'] == df['total_births' ]))
@@ -316,12 +303,18 @@ class Bundle(ExcelBuildBundle):
         # The 99998 and 99999 catch-all zipcodes are broken for 2006
         not_broke = np.logical_not(((df.zipcode == 99998) | (df.zipcode == 99999)) &  (df.year == 2006))
         
-
         assert (all(df[not_broke]['total_births_weight'] == df[not_broke]['total_births' ]))
         
+
+
+    def test_geo(self):
         
-         
+        for p in self.partitions.all:
+            p.compile_geo_coverage()
+            p.compile_time_coverage()
+        
+            print p.record.data
+                
         
         
-        
-        
+

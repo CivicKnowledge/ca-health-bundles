@@ -1,7 +1,9 @@
 build: {}
-dependencies: {}
+dependencies:
+    counties: census.gov-index-counties
 extract: {}
 sources:
     facilities:
+        filetype: csv
         url: https://cdph.data.ca.gov/api/views/89gy-3cst/rows.csv?accessType=DOWNLOAD
 views: {}
