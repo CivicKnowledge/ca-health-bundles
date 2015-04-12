@@ -3,7 +3,7 @@
 '''
 
 from  ambry.bundle.loader import ExcelBuildBundle
- 
+from ambry.util import memoize
 
 
 class Bundle(ExcelBuildBundle):
@@ -20,7 +20,7 @@ class Bundle(ExcelBuildBundle):
             self.col_map =  self.filesystem.read_csv('meta/colmap.csv', 
                                                      key=lambda row: (row['header_name'], row['col_name']))
         
-
+        
     def decode(self, x):
         try:
             return x.encode('utf8').decode('ascii','ignore')
@@ -28,6 +28,26 @@ class Bundle(ExcelBuildBundle):
             print x
             raise
 
+    @property
+    @memoize
+    def county_map(self):
+        return { r['name'].replace(" County, California",'').lower(): r['gvid'] 
+                     for r in  self.library.dep('counties').partition.rows  if int(r['state'] == 6)}
+    
+
+    @property
+    @memoize
+    def column_map(self):
+        cm =  self.filesystem.read_csv('meta/colmap.csv', key=lambda row: (row['header_name'], row['col_name']))    
+                 
+        cm['id'] = 'id'
+        cm['year'] = 'year'
+        cm['county_gvid'] =  'county_gvid'
+                                        
+        return cm
+                                                 
+                                                 
+                                                                                   
     def meta_set_segment(self):
         """Many of the Excel files have the data on a sheet that isn't the first. """
         from xlrd import open_workbook
@@ -107,44 +127,36 @@ class Bundle(ExcelBuildBundle):
             for k in sorted(cols.keys()):
                 w.writerow([k, cols[k][0], cols[k][1]])
             
-    def meta_set_descriptions(self):
-        """Set the descriptions from the col_map into the schema"""
-            
-        col_map =  self.filesystem.read_csv('meta/colmap.csv', 
-                                                 key=lambda row: (row['col_name'], 
-                                                 row['description'].decode('latin1')))
-      
-        self.prepare()
-      
-        with self.session:
-            for t in self.schema.tables:
-                for c in t.columns:
-                    if c.name in col_map:
-                        c.description = col_map[c.name]
-                        
-        self.schema.write_schema()
+
                 
-    def build(self):
+    def mangle_column_name(self, i, name):
+        
+        try:
+            return self.column_map[name]
+        except KeyError:
+            self.error("Failed to get '{}' from map. {} ".format(name, self.column_map.keys()))
+            raise 
+            
+    def build_modify_row(self, row_gen, p, source, row):
+        """Called for every row to allow subclasses to modify rows. """
+        
+        row['year'] = source.time
+        try:
+            row['county_gvid'] = self.county_map.get(row['county'].lower())
+        except:
+            print self.error(row)
+            raise 
+            
+    def xbuild(self):
 
         lr = self.init_log_rate()
-        
-        counties = { r['name'].replace(" County, California",'').lower(): r['gvid'] 
-                     for r in  self.library.dep('counties').partition.rows  if int(r['state'] == 6)}
-        
+
         for p in self.partitions:
             p.clean()
         
         for source_name, source in self.metadata.sources.items():
         
-            self.log(source_name)
-        
-            p = self.partitions.find_or_new(table = source.table)
-            
-            
-            years, _ = source_name.split('_',1)
-            first_year, last_year = years.split('-')
-       
-            
+
             with p.inserter() as ins:
                 for i, (header, row) in enumerate(self.gen_rows(source_name)):
 

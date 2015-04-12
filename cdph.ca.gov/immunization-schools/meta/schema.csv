@@ -24,7 +24,7 @@ g7,21,religious_pbe_pct,,,REAL,5,"A Personal Belief Exemption (PBE), whereby a p
 child_care,1,id,1,,INTEGER,,Immunizations for children enrolled in child care,,t03N02
 child_care,2,county_gvid,,c03x04003,VARCHAR,6,gvid,c00104002,c03N02002
 child_care,3,year,,c03x04002,INTEGER,4,year,c00102003,c03N02003
-child_care,4,facility_number,,,VARCHAR,9,FACILITY NUMBER,,c03N02004
+child_care,4,facility_number,,,VARCHAR,226,FACILITY NUMBER,,c03N02004
 child_care,5,county,,,VARCHAR,393,County name,,c03N02005
 child_care,6,hs_priv_pub,,,VARCHAR,10,Type of facility,,c03N02006
 child_care,7,city,,,VARCHAR,22,City name,,c03N02007

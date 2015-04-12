@@ -19,6 +19,7 @@ sources:
             - 4
         segment: 0
         table: kinder
+        time: 2000
         url: http://www.cdph.ca.gov/programs/immunize/Documents/2000-2001%20CA%20Kindergarten%20Data.xls
     2001-2002_kinder:
         description: xls
@@ -33,6 +34,7 @@ sources:
             - 4
         segment: 0
         table: kinder
+        time: 2001
         url: http://www.cdph.ca.gov/programs/immunize/Documents/2001-2002CAKindergartenData.xls
     2002-2003_kinder:
         description: xls
@@ -47,6 +49,7 @@ sources:
             - 4
         segment: 0
         table: kinder
+        time: 2002
         url: http://www.cdph.ca.gov/programs/immunize/Documents/2002-2003CAKindergartenData.xls
     2003-2004_kinder:
         description: xls
@@ -61,6 +64,7 @@ sources:
             - 4
         segment: 0
         table: kinder
+        time: 2003
         url: http://www.cdph.ca.gov/programs/immunize/Documents/2003-2004CAKindergartenData.xls
     2004-2005_kinder:
         description: xls
@@ -75,6 +79,7 @@ sources:
             - 4
         segment: 0
         table: kinder
+        time: 2004
         url: http://www.cdph.ca.gov/programs/immunize/Documents/2004-2005CAKindergartenData.xls
     2005-2006_kinder:
         description: xls
@@ -89,6 +94,7 @@ sources:
             - 4
         segment: 0
         table: kinder
+        time: 2005
         url: http://www.cdph.ca.gov/programs/immunize/Documents/2005-2006CAKindergartenData.xls
     2006-2007_kinder:
         description: xls
@@ -103,6 +109,7 @@ sources:
             - 4
         segment: 0
         table: kinder
+        time: 2006
         url: http://www.cdph.ca.gov/programs/immunize/Documents/2006-2007CAKindergartenData.xls
     2007-2008_kinder:
         description: xls
@@ -117,6 +124,7 @@ sources:
             - 4
         segment: 0
         table: kinder
+        time: 2007
         url: http://www.cdph.ca.gov/programs/immunize/Documents/2007-2008%20CA%20Kindergarten%20Data.xls
     2008-2009_kinder:
         description: xls
@@ -131,6 +139,7 @@ sources:
             - 4
         segment: 0
         table: kinder
+        time: 2008
         url: http://www.cdph.ca.gov/programs/immunize/Documents/2008-2009CAKindergartenData.xls
     2009-2010_kinder:
         description: xls
@@ -145,6 +154,7 @@ sources:
             - 4
         segment: 0
         table: kinder
+        time: 2009
         url: http://www.cdph.ca.gov/programs/immunize/Documents/2009-2010CAKindergartenData.xls
     2010-2011_child_care:
         description: xls
@@ -159,6 +169,7 @@ sources:
             - 5
         segment: 0
         table: child_care
+        time: 2010
         url: http://www.cdph.ca.gov/programs/immunize/Documents/2010-2011%20Child%20Care%20Data.xls
     2010-2011_kinder:
         description: xls
@@ -173,6 +184,7 @@ sources:
             - 4
         segment: 0
         table: kinder
+        time: 2010
         url: http://www.cdph.ca.gov/programs/immunize/Documents/2010-2011CAKindergartenData%20(2).xls
     2011-2012_12th:
         description: xls
@@ -187,6 +199,7 @@ sources:
             - 4
         segment: 0
         table: g12
+        time: 2011
         url: http://www.cdph.ca.gov/programs/immunize/Documents/2011-2012%20CA%207-12th%20Grade%20Data.xls
     2011-2012_child_care:
         description: xls
@@ -201,6 +214,7 @@ sources:
             - 5
         segment: 0
         table: child_care
+        time: 2011
         url: http://www.cdph.ca.gov/programs/immunize/Documents/CAChildCareData2011-2012.xls
     2011-2012_kinder:
         description: xls
@@ -215,6 +229,7 @@ sources:
             - 4
         segment: 0
         table: kinder
+        time: 2011
         url: http://www.cdph.ca.gov/programs/immunize/Documents/2011-2012%20CA%20Kindergarten%20Data.xls
     2012-2013_7th:
         description: xls
@@ -229,6 +244,7 @@ sources:
             - 4
         segment: 3
         table: g7
+        time: 2012
         url: http://www.cdph.ca.gov/programs/immunize/Documents/2012-2013%20CA%20Seventh%20Grade%20Data.xls
     2012-2013_child_care:
         description: xls
@@ -243,6 +259,7 @@ sources:
             - 5
         segment: 0
         table: child_care
+        time: 2012
         url: http://www.cdph.ca.gov/programs/immunize/Documents/2012-2013%20CA%20Child%20Care%20Data.xls
     2012-2013_kinder:
         description: xls
@@ -257,6 +274,7 @@ sources:
             - 4
         segment: 2
         table: kinder
+        time: 2012
         url: http://www.cdph.ca.gov/programs/immunize/Documents/2012-2013%20California%20Kindergarten%20Data.xls
     2013-2014_7th:
         description: xls
@@ -271,6 +289,7 @@ sources:
             - 4
         segment: 3
         table: g7
+        time: 2013
         url: http://www.cdph.ca.gov/programs/immunize/Documents/2013-2014%20CA%20Seventh%20Grade%20Data.xls
     2013-2014_child_care:
         description: xls
@@ -285,6 +304,7 @@ sources:
             - 5
         segment: 0
         table: child_care
+        time: 2013
         url: http://www.cdph.ca.gov/programs/immunize/Documents/2013-2014%20CA%20Child%20Care%20Data.xls
     2013-2014_kinder:
         description: xls
@@ -299,6 +319,7 @@ sources:
             - 4
         segment: 2
         table: kinder
+        time: 2013
         url: http://www.cdph.ca.gov/programs/immunize/Documents/2013-2014%20CA%20Kindergarten%20Data.xls
     2014-2015_7th:
         description: None
@@ -313,6 +334,7 @@ sources:
             - 4
         segment: 2
         table: g7
+        time: 2014
         url: http://www.cdph.ca.gov/programs/immunize/Documents/2014-2015%20CA%20Seventh%20Grade%20Data.xls
     2014-2015_child_care:
         description: xls
@@ -327,6 +349,7 @@ sources:
             - 5
         segment: 0
         table: child_care
+        time: 2014
         url: http://www.cdph.ca.gov/programs/immunize/Documents/2014-2015%20CA%20Child%20Care%20Data.xlsx
     2014-2015_kinder:
         description: xls
@@ -341,5 +364,6 @@ sources:
             - 4
         segment: 0
         table: kinder
+        time: 2014
         url: http://www.cdph.ca.gov/programs/immunize/Documents/2014-15%20CA%20Kindergarten%20Data.xlsx
 views: {}

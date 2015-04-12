@@ -35,7 +35,7 @@
 "PRE-JAN PBE  %","pre_jan_pbe_pct","A Personal Belief Exemption (PBE) obtained prior to January 1, 2014 whereby a parent signed an affidavit requesting the exemption."
 "VARI #","vari_no","1 or more doses of varicella at or after child's first birthday, unadjusted for history of varicella illness."
 "VARI %","vari_pct","1 or more doses of varicella at or after child's first birthday, unadjusted for history of varicella illness."
-" FACILITY NUMBER","facility_no","Facility Number"
+" FACILITY NUMBER","facility_number","Facility Number"
 "PUB/ PRIV ","pub_private","Is school public or private?"
 "PUBLIC SCHOOL DISTRICT ","district","School's district name"
 "PUBLIC/  PRIVATE ","pub_private","Is school public or private?"

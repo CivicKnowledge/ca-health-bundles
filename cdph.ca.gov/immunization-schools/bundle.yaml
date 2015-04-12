@@ -43,20 +43,24 @@ identity:
     btime: null
     dataset: immunization
     id: d03N
-    revision: 2
+    revision: 3
     source: cdph.ca.gov
     subset: schools
     type: null
     variation: null
-    version: 0.0.2
+    version: 0.0.3
 names:
-    fqname: cdph.ca.gov-immunization-schools-0.0.2~d03N002
+    fqname: cdph.ca.gov-immunization-schools-0.0.3~d03N003
     name: cdph.ca.gov-immunization-schools
-    vid: d03N002
-    vname: cdph.ca.gov-immunization-schools-0.0.2
+    vid: d03N003
+    vname: cdph.ca.gov-immunization-schools-0.0.3
 process: {}
 versions:
     2:
         date: '2015-03-06T20:11:44.530742'
         description: 'Adding descriptions to schema. '
         version: 0.0.2
+    3:
+        date: '2015-04-12T13:33:30.224799'
+        description: Adding coverage
+        version: 0.0.3
