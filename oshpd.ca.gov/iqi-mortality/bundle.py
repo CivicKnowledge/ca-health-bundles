@@ -2,19 +2,48 @@
 
 '''
 
-from  ambry.bundle.loader import CsvBundle
- 
 
 
-class Bundle(CsvBundle):
+from  ambry.bundle.loader import ExcelBuildBundle
+from ambry.bundle.rowgen import RowSpecIntuiter
+from ambry.util import memoize
+class RowIntuiter(RowSpecIntuiter):
+    """This RowIntuiter is defined specifically for the files in this bundle, making a few adjustments to 
+    detect lines that are not data rows. """
+    
+    def is_data_line(self, i, row):
+        """Return true if a line is a data row"""
+      
+        return not self.is_header_line(i,row) and not self.is_header_comment_line(i,row)
+
+    def is_header_line(self, i, row):
+        """Return true if a row is part of the header"""
+        
+        return row[0] == 'COUNTY'
+        
+        
+    def is_header_comment_line(self, i, row):
+        """Return true if a line is a header comment"""
+        return len(filter(bool, row)) < 2
+        
+
+class Bundle(ExcelBuildBundle):
     ''' '''
+
+    prefix_headers = ['id','year','county_gvid','facility_index_id']
 
     @staticmethod
     def  int_caster(v):
         """Remove commas from numbers"""
         
+        
+        v = str(v).replace('.','').replace(',','')
+        
+        if not bool(v):
+            return None
+        
         try:
-            return int(v.replace(',',''))
+            return int(v)
         except AttributeError:
             return v
 
@@ -22,162 +51,62 @@ class Bundle(CsvBundle):
     def  real_caster(v):
         """Remove commas from numbers"""
         
+        v = str(v).replace('.','').replace(',','')
+
+        if not bool(v):
+            return None
+
         try:
-            return float(v.replace(',',''))
+            return float(v)
         except AttributeError:
             return v
     
 
-    def set_desc(self):
-        import re
-        
-        for k, v in self.metadata.sources.items():
-         
-            g =  re.match(r'(\d+)(\w+)', k).groups()
-            
-            d = { 'Vol': 'Volume', 'Util': 'Utilization'}
-            
-            self.metadata.sources.get(k).description = '{} {}'.format(g[0], d[g[1]])
 
-        self.metadata.write_to_dir(write_all=True)
-
-    def gen_rows(self, source=None, as_dict=False):
+   
+    def meta_set_row_specs(self):
         
-        return super(Bundle, self).gen_rows(source, as_dict,  
-                                            prefix_headers = ['id','year','gvid','facility_index_id'])
+        super(Bundle,self).meta_set_row_specs(RowIntuiter)
         
-
-    def meta(self):
+    def meta_fix_datatypes(self):
         
-        self.prepare()
-        self.meta_schema()
-        self.meta_intuit()
-        
-        return True
-        
-    def meta_schema(self):
-        import csv
-        from ambry.orm import Column
-        import re
-        
-        
-        combined_header = {}
-        
-        for k in self.metadata.sources:
-            fn = self.get_source(k)
-            
-            table, year = k.split('_')
-            
-            if table not in combined_header:
-                combined_header[table] = []
-            
-            with open(fn) as f:
-                r = csv.reader(f)
-                header = r.next()
-                
-                for c in header:
-                    if c not in combined_header[table]:
-                      
-                        combined_header[table].append(c)
-                        
-
-        with self.session:
-            
-            for k, v in  combined_header.items():
-                t = self.schema.add_table(k)
-                self.schema.add_column(t, 'id', datatype='integer', is_primary_key=True)
-                self.schema.add_column(t, 'year', datatype='integer', fk_vid = 'c03x04002', indexes='i2') 
-                self.schema.add_column(t, 'gvid', datatype='varchar', fk_vid = 'c03x04003', indexes='i1,i2') 
-                self.schema.add_column(t, 'facility_index_id', datatype='integer', fk_vid = 't03A01', indexes='i3')
-                for i,c in enumerate(v):
+        for t in self.schema.tables:
+            for c in t.columns:
+                if c.name.endswith('rate'):
+                    c.datatype = 'real'
+                    c.data['caster'] = 'real_caster'
+                elif c.name.endswith('cases') or c.name.endswith('deaths') :
+                    c.datatype = 'integer'
+                    c.data['caster'] = 'int_caster'
+                elif  c.name.endswith('ratings') :
+                    c.datatype = 'varchar'
+                    c.data['caster'] = None
+                elif c.name.endswith('gvid'):
+                    c.proto_vid = 'c00104002'
+                    c.fk_vid = 'c03x04003'
+                elif c.name == 'year':
+                    c.proto_vid = 'c00102003'
+                    c.fk_vid = 'c03x04002'
                     
-                    if not c:
-                        c = "blank{}".format(i)
-                    
-                    caster = None
-                    
-                    if 'Rate' in c:
-                        datatype = 'real'
-                        caster = 'real_caster'
-                    elif 'Ratings' in c or Column.mangle_name(c) in ('unty','hospital','comment_letters'):
-                        datatype = 'varchar'
-                    else:
-                        datatype = 'integer'
-                        caster = 'int_caster'
-                  
-                    self.schema.add_column(t, Column.mangle_name(c), datatype=datatype,
-                                            description = re.sub('[\r\n]+',' ', c), data = {'caster': caster})
                     
         self.schema.write_schema()
-     
-    def meta_intuit(self):
         
-        with self.session:
-            for source_name, source in self.metadata.sources.items():
+    @property
+    @memoize
+    def county_map(self):
+        return { r['name'].replace(" County, California",'').lower(): r['gvid'] 
+                     for r in  self.library.dep('counties').partition.rows  if int(r['state'] == 6)}
+        
+    def build_modify_row(self, row_gen, p, source, row):
+        
+        row['year'] = int(source.time)
+        #row['hospital'] = row['hospital'].decode('latin1')
+        
+        if row['county']:
+            row['county_gvid'] = self.county_map[row['county'].lower()]
+        
 
-                table_name = source.table if source.table else  source_name
-
-                table_name, year = table_name.split('_')
-
-                table_desc = source.description if source.description else "Table generated from {}".format(source.url)
-
-                data = dict(source)
-                del data['description']
-                del data['url']
-
-
-                table = self.schema.add_table(table_name, description=table_desc, data = data)
-
-                header, row = self.gen_rows(source_name, as_dict=False).next()
-
-                header = [ x for x in header if x]
-
-                def itr():
-                    for header, row in self.gen_rows(source_name, as_dict=False):
-                        yield row
-
-                self.schema.update_from_iterator(table_name,
-                                   header = header,
-                                   iterator=itr(),
-                                   max_n=1000,
-                                   logger=self.init_log_rate(500))
-                                   
-                                   
-    def build(self):
-        from ambry.orm import Column
-
-        for source in self.metadata.sources:
-
-            table_name, year = source.split('_')
-
-            p = self.partitions.find_or_new(table=table_name)
-            
-            p.clean()
-
-        for source in self.metadata.sources:
-
-            table_name, year = source.split('_')
-
-            p = self.partitions.find_or_new(table=table_name)
-
-            self.log("Loading source '{}' into partition '{}'".format(source, p.identity.name))
-
-            lr = self.init_log_rate(print_rate = 5)
-
-            header = [c.name for c in p.table.columns]
-
-            with p.inserter() as ins:
-               for row in self.gen_rows(source, as_dict = True):
-                   lr(str(p.identity.name))
-
-                   d = { Column.mangle_name(k):v for k,v in row.items() }
-
-                   d['year'] = int(year)
-                   d['hospital'] = d['hospital'].decode('latin1')
-                   ins.insert(d)
-
-
-        return True
+        
         
         
 

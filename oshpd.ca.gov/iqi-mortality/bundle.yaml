@@ -27,15 +27,6 @@ contact_source:
     creator: {}
     maintainer: {}
 external_documentation:
-    about_ahrq:
-        description: Federal website about the quality indicator program
-        source: null
-        title: Agency for Healthcare Research and Quality Indicators
-        url: http://www.qualityindicators.ahrq.gov/
-    ahrq_spec:
-        title: Inpatient Quality Indicators Technical Specifications - Version 4.5, May 2013
-        description: AHRQ Sepcification for the Inpatient Quality Indicators
-        url: http://www.qualityindicators.ahrq.gov/Modules/IQI_TechSpec.aspx
     2012_conditions:
         description: '2012 Inpatient Mortality Indicators: Conditions'
         source: null
@@ -51,6 +42,17 @@ external_documentation:
         source: null
         title: null
         url: http://www.oshpd.ca.gov/HID/Products/PatDischargeData/AHRQ/IQI/2012/AHRQ_IMI_VER4.5_Procedures2012_Formatted.pdf
+    about_ahrq:
+        description: Federal website about the quality indicator program
+        source: null
+        title: Agency for Healthcare Research and Quality Indicators
+        url: http://www.qualityindicators.ahrq.gov/
+    ahrq_spec:
+        description: AHRQ Sepcification for the Inpatient Quality Indicators
+        source: null
+        title: Inpatient Quality Indicators Technical Specifications - Version 4.5,
+            May 2013
+        url: http://www.qualityindicators.ahrq.gov/Modules/IQI_TechSpec.aspx
     dataset:
         description: IQI Dataset Page
         source: null
@@ -61,21 +63,25 @@ external_documentation:
         source: null
         title: Download Page
         url: http://example.com
-
 identity:
     bspace: null
     btime: null
     dataset: iqi
     id: d03p
-    revision: 1
+    revision: 2
     source: oshpd.ca.gov
     subset: mortality
     type: null
     variation: null
-    version: 0.0.1
+    version: 0.0.2
 names:
-    fqname: oshpd.ca.gov-iqi-mortality-0.0.1~d03p001
+    fqname: oshpd.ca.gov-iqi-mortality-0.0.2~d03p002
     name: oshpd.ca.gov-iqi-mortality
-    vid: d03p001
-    vname: oshpd.ca.gov-iqi-mortality-0.0.1
+    vid: d03p002
+    vname: oshpd.ca.gov-iqi-mortality-0.0.2
 process: {}
+versions:
+    2:
+        date: '2015-04-12T15:49:55.077036'
+        description: Adding coverage
+        version: 0.0.2

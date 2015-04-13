@@ -1,158 +1,152 @@
-table,seq,column,is_pk,is_fk,type,i1,i2,i3,size,description,d_caster,d_time,id
-indicators,1,id,1,,INTEGER,,,,,2008 Inpatient Mortality Indicators,,2010,t03p01
-indicators,2,year,,c03x04002,VARCHAR,,1,,4,year,,,c03p01002
-indicators,3,gvid,,c03x04003,VARCHAR,1,1,,4,gvid,,,c03p01003
-indicators,4,facility_index_id,,t03A01,VARCHAR,,,1,4,facility_index_id,,,c03p01004
-indicators,5,unty,,,VARCHAR,,,,15,UNTY,,,c03p01005
-indicators,6,hospital,,,VARCHAR,,,,69,HOSPITAL,,,c03p01006
-indicators,7,comment_letters,,,VARCHAR,,,,20,COMMENT LETTERS,,,c03p01007
-indicators,8,espophageal_resection_risk_adjusted_mortality_rate,,,VARCHAR,,,,5,ESPOPHAGEAL RESECTION (Risk-Adjusted Mortality Rate),real_caster,,c03p01008
-indicators,9,espophageal_resection_of_deaths,,,VARCHAR,,,,3,ESPOPHAGEAL RESECTION (# of Deaths),int_caster,,c03p01009
-indicators,10,espophageal_resection_of_cases,,,VARCHAR,,,,4,ESPOPHAGEAL RESECTION (# of Cases),int_caster,,c03p0100a
-indicators,11,espophageal_resection_outlier_ratings,,,VARCHAR,,,,5,ESPOPHAGEAL RESECTION (Outlier Ratings),,,c03p0100b
-indicators,12,pancreatic_resection_risk_adjusted_mortality_rate,,,VARCHAR,,,,5,PANCREATIC RESECTION (Risk-Adjusted Mortality Rate),real_caster,,c03p0100c
-indicators,13,pancreatic_resection_of_deaths,,,VARCHAR,,,,2,PANCREATIC RESECTION (# of Deaths),int_caster,,c03p0100d
-indicators,14,pancreatic_resection_of_cases,,,VARCHAR,,,,3,PANCREATIC RESECTION (# of Cases),int_caster,,c03p0100e
-indicators,15,pancreatic_resection_outlier_ratings,,,VARCHAR,,,,5,PANCREATIC RESECTION (Outlier Ratings),,,c03p0100f
-indicators,16,aaa_repair_risk_adjusted_mortality_rate,,,VARCHAR,,,,5,AAA REPAIR (Risk-Adjusted Mortality Rate),real_caster,,c03p0100g
-indicators,17,aaa_repair_of_deaths,,,VARCHAR,,,,2,AAA REPAIR (# of Deaths),int_caster,,c03p0100h
-indicators,18,aaa_repair_of_cases,,,VARCHAR,,,,5,AAA REPAIR (# of Cases),int_caster,,c03p0100i
-indicators,19,aaa_repair_outlier_ratings,,,VARCHAR,,,,6,AAA REPAIR    (Outlier Ratings),,,c03p0100j
-indicators,20,craniotomy_risk_adjusted_mortality_rate,,,VARCHAR,,,,5,CRANIOTOMY (Risk-Adjusted Mortality Rate),real_caster,,c03p0100k
-indicators,21,craniotomy_of_deaths,,,VARCHAR,,,,5,CRANIOTOMY (# of Deaths),int_caster,,c03p0100l
-indicators,22,craniotomy_of_cases,,,VARCHAR,,,,5,CRANIOTOMY (# of Cases),int_caster,,c03p0100m
-indicators,23,craniotomy_outlier_ratings,,,VARCHAR,,,,6,CRANIOTOMY (Outlier Ratings),,,c03p0100n
-indicators,24,acute_myocardial_infarction_risk_adjusted_mortality_rate,,,REAL,,,,,ACUTE MYOCARDIAL INFARCTION (Risk-Adjusted Mortality Rate),real_caster,,c03p0100o
-indicators,25,acute_myocardial_infarction_of_deaths,,,INTEGER,,,,4,ACUTE MYOCARDIAL INFARCTION (# of Deaths),int_caster,,c03p0100p
-indicators,26,acute_myocardial_infarction_of_cases,,,INTEGER,,,,5,ACUTE MYOCARDIAL INFARCTION (# of Cases),int_caster,,c03p0100q
-indicators,27,acute_myocardial_infarction_outlier_ratings,,,VARCHAR,,,,6,ACUTE MYOCARDIAL INFARCTION (Outlier Ratings),,,c03p0100r
-indicators,28,congestive_heart_failure_risk_adjusted_mortality_rate,,,REAL,,,,,CONGESTIVE HEART FAILURE (Risk-Adjusted Mortality Rate),real_caster,,c03p0100s
-indicators,29,congestive_heart_failure_of_deaths,,,INTEGER,,,,4,CONGESTIVE HEART FAILURE (# of Deaths),int_caster,,c03p0100t
-indicators,30,congestive_heart_failure_of_cases,,,INTEGER,,,,5,CONGESTIVE HEART FAILURE (# of Cases),int_caster,,c03p0100u
-indicators,31,congestive_heart_failure_outlier_ratings,,,VARCHAR,,,,6,CONGESTIVE HEART FAILURE (Outlier Ratings),,,c03p0100v
-indicators,32,acute_stroke_risk_adjusted_mortality_rate,,,REAL,,,,,ACUTE STROKE (Risk-Adjusted Mortality Rate),real_caster,,c03p0100w
-indicators,33,acute_stroke_of_deaths,,,INTEGER,,,,4,ACUTE STROKE (# of Deaths),int_caster,,c03p0100x
-indicators,34,acute_stroke_of_cases,,,INTEGER,,,,5,ACUTE STROKE (# of Cases),int_caster,,c03p0100y
-indicators,35,acute_stroke_outlier_ratings,,,VARCHAR,,,,6,ACUTE STROKE (Outlier Ratings),,,c03p0100z
-indicators,36,gi_hemorrhage_risk_adjusted_mortality_rate,,,VARCHAR,,,,4,GI HEMORRHAGE (Risk-Adjusted Mortality Rate),real_caster,,c03p0100A
-indicators,37,gi_hemorrhage_of_deaths,,,VARCHAR,,,,4,GI HEMORRHAGE (# of Deaths),int_caster,,c03p0100B
-indicators,38,gi_hemorrhage_of_cases,,,INTEGER,,,,5,GI HEMORRHAGE (# of Cases),int_caster,,c03p0100C
-indicators,39,gi_hemorrhage_outlier_ratings,,,VARCHAR,,,,6,GI HEMORRHAGE (Outlier Ratings),,,c03p0100D
-indicators,40,hip_fracture_risk_adjusted_mortality_rate,,,VARCHAR,,,,4,HIP FRACTURE (Risk-Adjusted Mortality Rate),real_caster,,c03p0100E
-indicators,41,hip_fracture_of_deaths,,,VARCHAR,,,,3,HIP FRACTURE (# of Deaths),int_caster,,c03p0100F
-indicators,42,hip_fracture_of_cases,,,INTEGER,,,,5,HIP FRACTURE (# of Cases),int_caster,,c03p0100G
-indicators,43,hip_fracture_outlier_ratings,,,VARCHAR,,,,6,HIP FRACTURE (Outlier Ratings),,,c03p0100H
-indicators,44,pneumonia_risk_adjusted_mortality_rate,,,REAL,,,,,PNEUMONIA (Risk-Adjusted Mortality Rate),real_caster,,c03p0100I
-indicators,45,pneumonia_of_deaths,,,INTEGER,,,,4,PNEUMONIA (# of Deaths),int_caster,,c03p0100J
-indicators,46,pneumonia_of_cases,,,INTEGER,,,,5,PNEUMONIA (# of Cases),int_caster,,c03p0100K
-indicators,47,pneumonia_outlier_ratings,,,VARCHAR,,,,6,PNEUMONIA (Outlier Ratings),,,c03p0100L
-indicators,48,ptca_risk_adjusted_mortality_rate,,,VARCHAR,,,,4,PTCA (Risk-Adjusted Mortality Rate),real_caster,,c03p0100M
-indicators,49,ptca_of_deaths,,,VARCHAR,,,,4,PTCA (# of Deaths),int_caster,,c03p0100N
-indicators,50,ptca_of_cases,,,VARCHAR,,,,5,PTCA (# of Cases),int_caster,,c03p0100O
-indicators,51,ptca_outlier_ratings,,,VARCHAR,,,,6,PTCA (Outlier Ratings),,,c03p0100P
-indicators,52,carotid_endarterectomy_risk_adjusted_mortality_rate,,,VARCHAR,,,,5,CAROTID ENDARTERECTOMY (Risk-Adjusted Mortality Rate),real_caster,,c03p0100Q
-indicators,53,carotid_endarterectomy_of_deaths,,,VARCHAR,,,,2,CAROTID ENDARTERECTOMY (# of Deaths),int_caster,,c03p0100R
-indicators,54,carotid_endarterectomy_of_cases,,,VARCHAR,,,,4,CAROTID ENDARTERECTOMY (# of Cases),int_caster,,c03p0100S
-indicators,55,carotid_endarterectomy_outlier_ratings,,,VARCHAR,,,,5,CAROTID ENDARTERECTOMY (Outlier Ratings),,,c03p0100T
-indicators,56,blank51,,,INTEGER,,,,,blank51,int_caster,,c03p0100U
-indicators,64,esophageal_resection_risk_adjusted_mortality_rate,,,VARCHAR,,,,4,ESOPHAGEAL RESECTION (Risk-Adjusted Mortality Rate),real_caster,,c03p01012
-indicators,65,esophageal_resection_of_cases,,,VARCHAR,,,,3,ESOPHAGEAL RESECTION (# of Cases),int_caster,,c03p01013
-indicators,66,esophageal_resection_outlier_ratings,,,VARCHAR,,,,5,ESOPHAGEAL RESECTION (Outlier Ratings),,,c03p01014
-indicators,96,esophageal_resection_of_deaths,,,VARCHAR,,,,2,ESOPHAGEAL RESECTION (# of Deaths),int_caster,,c03p0101y
-indicators,100,heart_failure_risk_adjusted_mortality_rate,,,REAL,,,,,HEART FAILURE (Risk-Adjusted Mortality Rate),real_caster,,c03p0101C
-indicators,101,heart_failure_of_deaths,,,INTEGER,,,,4,HEART FAILURE (# of Deaths),int_caster,,c03p0101D
-indicators,102,heart_failure_of_cases,,,INTEGER,,,,5,HEART FAILURE (# of Cases),int_caster,,c03p0101E
-indicators,103,heart_failure_outlier_ratings,,,VARCHAR,,,,6,HEART FAILURE (Outlier Ratings),,,c03p0101F
-indicators,104,pci_risk_adjusted_mortality_rate,,,VARCHAR,,,,3,PCI (Risk-Adjusted Mortality Rate),real_caster,,c03p0101G
-indicators,105,pci_of_deaths,,,VARCHAR,,,,4,PCI (# of Deaths),int_caster,,c03p0101H
-indicators,106,pci_of_cases,,,VARCHAR,,,,5,PCI (# of Cases),int_caster,,c03p0101I
-indicators,107,pci_outlier_ratings,,,VARCHAR,,,,6,PCI (Outlier Ratings),,,c03p0101J
-indicators,163,column55,,,VARCHAR,,,,0,column55,,,c03p0102D
-indicators,164,column56,,,VARCHAR,,,,0,column56,,,c03p0102E
-indicators,282,column31,,,VARCHAR,,,,0,column31,,,c03p0104y
-indicators,283,column32,,,VARCHAR,,,,0,column32,,,c03p0104z
-indicators,284,column33,,,VARCHAR,,,,0,column33,,,c03p0104A
-,,,,,,,,,,,,,
-procedures,1,id,1,,INTEGER,,,,,2012 Inpatient Mortality Indicators: Procedures,,2012,t03p02
-procedures,2,year,,c03x04002,VARCHAR,,1,,4,year,,,c03p02002
-procedures,3,gvid,,c03x04003,VARCHAR,1,1,,4,gvid,,,c03p02003
-procedures,4,facility_index_id,,t03A01,VARCHAR,,,1,4,facility_index_id,,,c03p02004
-procedures,5,unty,,,VARCHAR,,,,15,UNTY,,,c03p02005
-procedures,6,hospital,,,VARCHAR,,,,84,HOSPITAL,,,c03p02006
-procedures,7,comment_letters,,,VARCHAR,,,,19,COMMENT LETTERS,,,c03p02007
-procedures,8,aaa_repair_unruptured_risk_adjusted_mortality_rate,,,VARCHAR,,,,4,"AAA REPAIR,               UNRUPTURED     (Risk-Adjusted Mortality Rate)",real_caster,,c03p02008
-procedures,9,aaa_repair_unruptured_of_deaths,,,VARCHAR,,,,2,"AAA REPAIR, UNRUPTURED   (# of Deaths)",int_caster,,c03p02009
-procedures,10,aaa_repair_unruptured_of_cases,,,VARCHAR,,,,4,"AAA REPAIR, UNRUPTURED (# of Cases)",int_caster,,c03p0200a
-procedures,11,aaa_repair_unruptured_outlier_ratings,,,VARCHAR,,,,5,"AAA REPAIR, UNRUPTURED (Outlier Ratings)",,,c03p0200b
-procedures,12,carotid_endarterectomy_risk_adjusted_mortality_rate,,,VARCHAR,,,,4,CAROTID ENDARTERECTOMY (Risk-Adjusted Mortality Rate),real_caster,,c03p0200c
-procedures,13,carotid_endarterectomy_of_deaths,,,VARCHAR,,,,2,CAROTID ENDARTERECTOMY (# of Deaths),int_caster,,c03p0200d
-procedures,14,carotid_endarterectomy_of_cases,,,VARCHAR,,,,4,CAROTID ENDARTERECTOMY (# of Cases),int_caster,,c03p0200e
-procedures,15,carotid_endarterectomy_outlier_ratings,,,VARCHAR,,,,5,CAROTID ENDARTERECTOMY (Outlier Ratings),,,c03p0200f
-procedures,16,craniotomy_risk_adjusted_mortality_rate,,,REAL,,,,,CRANIOTOMY (Risk-Adjusted Mortality Rate),real_caster,,c03p0200g
-procedures,17,craniotomy_of_deaths,,,VARCHAR,,,,4,CRANIOTOMY (# of Deaths),int_caster,,c03p0200h
-procedures,18,craniotomy_of_cases,,,VARCHAR,,,,5,CRANIOTOMY         (# of Cases),int_caster,,c03p0200i
-procedures,19,craniotomy_outlier_ratings,,,VARCHAR,,,,6,CRANIOTOMY (Outlier Ratings),,,c03p0200j
-procedures,20,esophageal_resection_risk_adjusted_mortality_rate,,,VARCHAR,,,,4,ESOPHAGEAL RESECTION (Risk-Adjusted Mortality Rate),real_caster,,c03p0200k
-procedures,21,esophageal_resection_of_deaths,,,VARCHAR,,,,2,ESOPHAGEAL RESECTION (# of Deaths),int_caster,,c03p0200l
-procedures,22,esophageal_resection_of_cases,,,VARCHAR,,,,3,ESOPHAGEAL RESECTION (# of Cases),int_caster,,c03p0200m
-procedures,23,esophageal_resection_outlier_ratings,,,VARCHAR,,,,0,ESOPHAGEAL RESECTION (Outlier Ratings),,,c03p0200n
-procedures,24,pancreatic_resection_total_risk_adjusted_mortality_rate,,,VARCHAR,,,,4,"PANCREATIC RESECTION, TOTAL           (Risk-Adjusted Mortality Rate)",real_caster,,c03p0200o
-procedures,25,pancreatic_resection_total_of_deaths,,,VARCHAR,,,,2,"PANCREATIC RESECTION, TOTAL               (# of Deaths)",int_caster,,c03p0200p
-procedures,26,pancreatic_resection_total_of_cases,,,VARCHAR,,,,4,"PANCREATIC RESECTION, TOTAL             (# of Cases)",int_caster,,c03p0200q
-procedures,27,pancreatic_resection_total_outlier_ratings,,,VARCHAR,,,,5,"PANCREATIC RESECTION, TOTAL     (Outlier Ratings)",,,c03p0200r
-procedures,28,pancreatic_resection_cancer_risk_adjusted_mortality_rate,,,VARCHAR,,,,4,"PANCREATIC RESECTION, CANCER (Risk-Adjusted Mortality Rate)",real_caster,,c03p0200s
-procedures,29,pancreatic_resection_cancer_of_deaths,,,VARCHAR,,,,2,"PANCREATIC RESECTION, CANCER             (# of Deaths)",int_caster,,c03p0200t
-procedures,30,pancreatic_resection_cancer_of_cases,,,VARCHAR,,,,3,"PANCREATIC RESECTION, CANCER              (# of Cases)",int_caster,,c03p0200u
-procedures,31,pancreatic_resection_cancer_outlier_ratings,,,VARCHAR,,,,0,"PANCREATIC RESECTION, CANCER       (Outlier Ratings)",,,c03p0200v
-procedures,32,pancreatic_resection_other_risk_adjusted_mortality_rate,,,VARCHAR,,,,4,"PANCREATIC RESECTION, OTHER (Risk-Adjusted Mortality Rate)",real_caster,,c03p0200w
-procedures,33,pancreatic_resection_other_of_deaths,,,VARCHAR,,,,2,"PANCREATIC RESECTION, OTHER              (# of Deaths)",int_caster,,c03p0200x
-procedures,34,pancreatic_resection_other_of_cases,,,VARCHAR,,,,3,"PANCREATIC RESECTION, OTHER                (# of Cases)",int_caster,,c03p0200y
-procedures,35,pancreatic_resection_other_outlier_ratings,,,VARCHAR,,,,5,"PANCREATIC RESECTION, OTHER       (Outlier Ratings)",,,c03p0200z
-procedures,36,percutaneous_coronary_intervention_risk_adjusted_mortality_rate,,,REAL,,,,,PERCUTANEOUS CORONARY INTERVENTION     (Risk-Adjusted Mortality Rate),real_caster,,c03p0200A
-procedures,37,percutaneous_coronary_intervention_of_deaths,,,VARCHAR,,,,4,PERCUTANEOUS CORONARY INTERVENTION (# of Deaths),int_caster,,c03p0200B
-procedures,38,percutaneous_coronary_intervention_of_cases,,,VARCHAR,,,,5,PERCUTANEOUS CORONARY INTERVENTION           (# of Cases),int_caster,,c03p0200C
-procedures,39,percutaneous_coronary_intervention_outlier_ratings,,,VARCHAR,,,,6,PERCUTANEOUS CORONARY INTERVENTION (Outlier Ratings),,,c03p0200D
-,,,,,,,,,,,,,
-conditions,1,id,1,,INTEGER,,,,,2012 Inpatient Mortality Indicators: Conditions,,2012,t03p03
-conditions,2,year,,c03x04002,VARCHAR,,1,,4,year,,,c03p03002
-conditions,3,gvid,,c03x04003,VARCHAR,1,1,,4,gvid,,,c03p03003
-conditions,4,facility_index_id,,t03A01,VARCHAR,,,1,4,facility_index_id,,,c03p03004
-conditions,5,unty,,,VARCHAR,,,,15,UNTY,,,c03p03005
-conditions,6,hospital,,,VARCHAR,,,,84,HOSPITAL,,,c03p03006
-conditions,7,comment_letters,,,VARCHAR,,,,19,COMMENT LETTERS,,,c03p03007
-conditions,8,acute_myocardial_infarction_risk_adjusted_mortality_rate,,,REAL,,,,,ACUTE MYOCARDIAL INFARCTION (Risk-Adjusted Mortality Rate),real_caster,,c03p03008
-conditions,9,acute_myocardial_infarction_of_deaths,,,INTEGER,,,,4,ACUTE MYOCARDIAL INFARCTION (# of Deaths),int_caster,,c03p03009
-conditions,10,acute_myocardial_infarction_of_cases,,,INTEGER,,,,5,ACUTE MYOCARDIAL INFARCTION (# of Cases),int_caster,,c03p0300a
-conditions,11,acute_myocardial_infarction_outlier_ratings,,,VARCHAR,,,,6,ACUTE MYOCARDIAL INFARCTION (Outlier Ratings),,,c03p0300b
-conditions,12,acute_stroke_total_risk_adjusted_mortality_rate,,,REAL,,,,,"ACUTE STROKE, TOTAL               (Risk-Adjusted Mortality Rate)",real_caster,,c03p0300c
-conditions,13,acute_stroke_total_of_deaths,,,INTEGER,,,,4,"ACUTE STROKE, TOTAL                  (# of Deaths)",int_caster,,c03p0300d
-conditions,14,acute_stroke_total_of_cases,,,INTEGER,,,,5,"ACUTE STROKE, TOTAL                 (# of Cases)",int_caster,,c03p0300e
-conditions,15,acute_stroke_total_outlier_ratings,,,VARCHAR,,,,6,"ACUTE STROKE, TOTAL          (Outlier Ratings)",,,c03p0300f
-conditions,16,acute_stroke_hemorrhagic_risk_adjusted_mortality_rate,,,REAL,,,,,"ACUTE STROKE, HEMORRHAGIC   (Risk-Adjusted Mortality Rate)",real_caster,,c03p0300g
-conditions,17,acute_stroke_hemorrhagic_of_deaths,,,VARCHAR,,,,4,"ACUTE STROKE, HEMORRHAGIC       (# of Deaths)",int_caster,,c03p0300h
-conditions,18,acute_stroke_hemorrhagic_of_cases,,,VARCHAR,,,,5,"ACUTE STROKE, HEMORRHAGIC   (# of Cases)",int_caster,,c03p0300i
-conditions,19,acute_stroke_hemorrhagic_outlier_ratings,,,VARCHAR,,,,6,"ACUTE STROKE, HEMORRHAGIC (Outlier Ratings)",,,c03p0300j
-conditions,20,acute_stroke_ischemic_risk_adjusted_mortality_rate,,,REAL,,,,,"ACUTE STROKE, ISCHEMIC         (Risk-Adjusted Mortality Rate)",real_caster,,c03p0300k
-conditions,21,acute_stroke_ischemic_of_deaths,,,INTEGER,,,,4,"ACUTE STROKE, ISCHEMIC              (# of Deaths)",int_caster,,c03p0300l
-conditions,22,acute_stroke_ischemic_of_cases,,,INTEGER,,,,5,"ACUTE STROKE, ISCHEMIC             (# of Cases)",int_caster,,c03p0300m
-conditions,23,acute_stroke_ischemic_outlier_ratings,,,VARCHAR,,,,6,"ACUTE STROKE, ISCHEMIC     (Outlier Ratings)",,,c03p0300n
-conditions,24,acute_stroke_subarachnoid_risk_adjusted_mortality_rate,,,REAL,,,,,"ACUTE STROKE, SUBARACHNOID (Risk-Adjusted Mortality Rate)",real_caster,,c03p0300o
-conditions,25,acute_stroke_subarachnoid_of_deaths,,,VARCHAR,,,,3,"ACUTE STROKE, SUBARACHNOID (# of Deaths)",int_caster,,c03p0300p
-conditions,26,acute_stroke_subarachnoid_of_cases,,,VARCHAR,,,,4,"ACUTE STROKE, SUBARACHNOID  (# of Cases)",int_caster,,c03p0300q
-conditions,27,acute_stroke_subarachnoid_outlier_ratings,,,VARCHAR,,,,6,"ACUTE STROKE, SUBARACHNOID (Outlier Ratings)",,,c03p0300r
-conditions,28,gi_hemorrhage_risk_adjusted_mortality_rate,,,VARCHAR,,,,4,GI HEMORRHAGE (Risk-Adjusted Mortality Rate),real_caster,,c03p0300s
-conditions,29,gi_hemorrhage_of_deaths,,,VARCHAR,,,,4,GI HEMORRHAGE (# of Deaths),int_caster,,c03p0300t
-conditions,30,gi_hemorrhage_of_cases,,,INTEGER,,,,5,GI HEMORRHAGE (# of Cases),int_caster,,c03p0300u
-conditions,31,gi_hemorrhage_outlier_ratings,,,VARCHAR,,,,6,GI HEMORRHAGE (Outlier Ratings),,,c03p0300v
-conditions,32,heart_failure_risk_adjusted_mortality_rate,,,REAL,,,,,HEART FAILURE (Risk-Adjusted Mortality Rate),real_caster,,c03p0300w
-conditions,33,heart_failure_of_deaths,,,INTEGER,,,,4,HEART FAILURE (# of Deaths),int_caster,,c03p0300x
-conditions,34,heart_failure_of_cases,,,INTEGER,,,,5,HEART FAILURE (# of Cases),int_caster,,c03p0300y
-conditions,35,heart_failure_outlier_ratings,,,VARCHAR,,,,6,HEART FAILURE (Outlier Ratings),,,c03p0300z
-conditions,36,hip_fracture_risk_adjusted_mortality_rate,,,VARCHAR,,,,4,HIP FRACTURE (Risk-Adjusted Mortality Rate),real_caster,,c03p0300A
-conditions,37,hip_fracture_of_deaths,,,VARCHAR,,,,3,HIP FRACTURE (# of Deaths),int_caster,,c03p0300B
-conditions,38,hip_fracture_of_cases,,,INTEGER,,,,5,HIP FRACTURE (# of Cases),int_caster,,c03p0300C
-conditions,39,hip_fracture_outlier_ratings,,,VARCHAR,,,,6,HIP FRACTURE (Outlier Ratings),,,c03p0300D
-conditions,40,pneumonia_risk_adjusted_mortality_rate,,,REAL,,,,,PNEUMONIA (Risk-Adjusted Mortality Rate),real_caster,,c03p0300E
-conditions,41,pneumonia_of_deaths,,,INTEGER,,,,4,PNEUMONIA (# of Deaths),int_caster,,c03p0300F
-conditions,42,pneumonia_of_cases,,,INTEGER,,,,5,PNEUMONIA (# of Cases),int_caster,,c03p0300G
-conditions,43,pneumonia_outlier_ratings,,,VARCHAR,,,,6,PNEUMONIA (Outlier Ratings),,,c03p0300H
+table,seq,column,is_pk,is_fk,type,size,description,proto_vid,d_caster,d_has_codes,d_row_spec,d_table,d_time,id
+indicators,1,id,1,,INTEGER,,2010 Inpatient Mortality Indicators,,,,"{u'data_start_line': 13, u'data_end_line': None, u'header_lines': [12], u'header_comment_lines': [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]}",indicators,2010,t03p01
+indicators,2,year,,c03x04002,VARCHAR,4,year,c00102003,,,,,,c03p01002
+indicators,3,county_gvid,,c03x04003,VARCHAR,6,county_gvid,c00104002,,,,,,c03p01003
+indicators,4,facility_index_id,,,VARCHAR,4,facility_index_id,,,,,,,c03p01004
+indicators,5,county,,,VARCHAR,15,county,,,,,,,c03p01005
+indicators,6,hospital,,,VARCHAR,69,hospital,,,,,,,c03p01006
+indicators,7,comment_letters,,,VARCHAR,20,comment_letters,,,,,,,c03p01007
+indicators,8,espophageal_resection_risk_adjusted_mortality_rate,,,REAL,5,espophageal_resection_risk_adjusted_mortality_rate,,real_caster,,,,,c03p01008
+indicators,9,espophageal_resection_of_deaths,,,INTEGER,4,espophageal_resection_of_deaths,,int_caster,,,,,c03p01009
+indicators,10,espophageal_resection_of_cases,,,INTEGER,5,espophageal_resection_of_cases,,int_caster,,,,,c03p0100a
+indicators,11,espophageal_resection_outlier_ratings,,,VARCHAR,5,espophageal_resection_outlier_ratings,,,,,,,c03p0100b
+indicators,12,pancreatic_resection_risk_adjusted_mortality_rate,,,REAL,4,pancreatic_resection_risk_adjusted_mortality_rate,,real_caster,,,,,c03p0100c
+indicators,13,pancreatic_resection_of_deaths,,,INTEGER,4,pancreatic_resection_of_deaths,,int_caster,,,,,c03p0100d
+indicators,14,pancreatic_resection_of_cases,,,INTEGER,5,pancreatic_resection_of_cases,,int_caster,,,,,c03p0100e
+indicators,15,pancreatic_resection_outlier_ratings,,,VARCHAR,5,pancreatic_resection_outlier_ratings,,,,,,,c03p0100f
+indicators,16,aaa_repair_risk_adjusted_mortality_rate,,,REAL,4,aaa_repair_risk_adjusted_mortality_rate,,real_caster,,,,,c03p0100g
+indicators,17,aaa_repair_of_deaths,,,INTEGER,4,aaa_repair_of_deaths,,int_caster,,,,,c03p0100h
+indicators,18,aaa_repair_of_cases,,,INTEGER,6,aaa_repair_of_cases,,int_caster,,,,,c03p0100i
+indicators,19,aaa_repair_outlier_ratings,,,VARCHAR,5,aaa_repair_outlier_ratings,,,,,,,c03p0100j
+indicators,20,craniotomy_risk_adjusted_mortality_rate,,,REAL,5,craniotomy_risk_adjusted_mortality_rate,,real_caster,,,,,c03p0100k
+indicators,21,craniotomy_of_deaths,,,INTEGER,6,craniotomy_of_deaths,,int_caster,,,,,c03p0100l
+indicators,22,craniotomy_of_cases,,,INTEGER,7,craniotomy_of_cases,,int_caster,,,,,c03p0100m
+indicators,23,craniotomy_outlier_ratings,,,VARCHAR,6,craniotomy_outlier_ratings,,,,,,,c03p0100n
+indicators,24,acute_myocardial_infarction_risk_adjusted_mortality_rate,,,REAL,,acute_myocardial_infarction_risk_adjusted_mortality_rate,,real_caster,1,,,,c03p0100o
+indicators,25,acute_myocardial_infarction_of_deaths,,,INTEGER,5,acute_myocardial_infarction_of_deaths,,int_caster,1,,,,c03p0100p
+indicators,26,acute_myocardial_infarction_of_cases,,,INTEGER,6,acute_myocardial_infarction_of_cases,,int_caster,1,,,,c03p0100q
+indicators,27,acute_myocardial_infarction_outlier_ratings,,,VARCHAR,6,acute_myocardial_infarction_outlier_ratings,,,,,,,c03p0100r
+indicators,28,congestive_heart_failure_risk_adjusted_mortality_rate,,,REAL,,congestive_heart_failure_risk_adjusted_mortality_rate,,real_caster,1,,,,c03p0100s
+indicators,29,congestive_heart_failure_of_deaths,,,INTEGER,5,congestive_heart_failure_of_deaths,,int_caster,1,,,,c03p0100t
+indicators,30,congestive_heart_failure_of_cases,,,INTEGER,6,congestive_heart_failure_of_cases,,int_caster,1,,,,c03p0100u
+indicators,31,congestive_heart_failure_outlier_ratings,,,VARCHAR,6,congestive_heart_failure_outlier_ratings,,,,,,,c03p0100v
+indicators,32,acute_stroke_risk_adjusted_mortality_rate,,,REAL,,acute_stroke_risk_adjusted_mortality_rate,,real_caster,1,,,,c03p0100w
+indicators,33,acute_stroke_of_deaths,,,INTEGER,5,acute_stroke_of_deaths,,int_caster,1,,,,c03p0100x
+indicators,34,acute_stroke_of_cases,,,INTEGER,6,acute_stroke_of_cases,,int_caster,1,,,,c03p0100y
+indicators,35,acute_stroke_outlier_ratings,,,VARCHAR,6,acute_stroke_outlier_ratings,,,,,,,c03p0100z
+indicators,36,gi_hemorrhage_risk_adjusted_mortality_rate,,,REAL,,gi_hemorrhage_risk_adjusted_mortality_rate,,real_caster,1,,,,c03p0100A
+indicators,37,gi_hemorrhage_of_deaths,,,INTEGER,5,gi_hemorrhage_of_deaths,,int_caster,1,,,,c03p0100B
+indicators,38,gi_hemorrhage_of_cases,,,INTEGER,6,gi_hemorrhage_of_cases,,int_caster,1,,,,c03p0100C
+indicators,39,gi_hemorrhage_outlier_ratings,,,VARCHAR,6,gi_hemorrhage_outlier_ratings,,,,,,,c03p0100D
+indicators,40,hip_fracture_risk_adjusted_mortality_rate,,,REAL,,hip_fracture_risk_adjusted_mortality_rate,,real_caster,1,,,,c03p0100E
+indicators,41,hip_fracture_of_deaths,,,INTEGER,4,hip_fracture_of_deaths,,int_caster,1,,,,c03p0100F
+indicators,42,hip_fracture_of_cases,,,INTEGER,6,hip_fracture_of_cases,,int_caster,1,,,,c03p0100G
+indicators,43,hip_fracture_outlier_ratings,,,VARCHAR,6,hip_fracture_outlier_ratings,,,,,,,c03p0100H
+indicators,44,pneumonia_risk_adjusted_mortality_rate,,,REAL,,pneumonia_risk_adjusted_mortality_rate,,real_caster,1,,,,c03p0100I
+indicators,45,pneumonia_of_deaths,,,INTEGER,5,pneumonia_of_deaths,,int_caster,1,,,,c03p0100J
+indicators,46,pneumonia_of_cases,,,INTEGER,6,pneumonia_of_cases,,int_caster,1,,,,c03p0100K
+indicators,47,pneumonia_outlier_ratings,,,VARCHAR,6,pneumonia_outlier_ratings,,,,,,,c03p0100L
+indicators,48,ptca_risk_adjusted_mortality_rate,,,REAL,4,ptca_risk_adjusted_mortality_rate,,real_caster,,,,,c03p0100M
+indicators,49,ptca_of_deaths,,,INTEGER,5,ptca_of_deaths,,int_caster,,,,,c03p0100N
+indicators,50,ptca_of_cases,,,INTEGER,7,ptca_of_cases,,int_caster,,,,,c03p0100O
+indicators,51,ptca_outlier_ratings,,,VARCHAR,6,ptca_outlier_ratings,,,,,,,c03p0100P
+indicators,52,carotid_endarterectomy_risk_adjusted_mortality_rate,,,REAL,4,carotid_endarterectomy_risk_adjusted_mortality_rate,,real_caster,,,,,c03p0100Q
+indicators,53,carotid_endarterectomy_of_deaths,,,INTEGER,4,carotid_endarterectomy_of_deaths,,int_caster,,,,,c03p0100R
+indicators,54,carotid_endarterectomy_of_cases,,,INTEGER,6,carotid_endarterectomy_of_cases,,int_caster,,,,,c03p0100S
+indicators,55,carotid_endarterectomy_outlier_ratings,,,VARCHAR,5,carotid_endarterectomy_outlier_ratings,,,,,,,c03p0100T
+indicators,56,esophageal_resection_risk_adjusted_mortality_rate,,,REAL,4,esophageal_resection_risk_adjusted_mortality_rate,,real_caster,,,,,c03p0100U
+indicators,57,esophageal_resection_of_cases,,,INTEGER,5,esophageal_resection_of_cases,,int_caster,,,,,c03p0100V
+indicators,58,esophageal_resection_outlier_ratings,,,VARCHAR,5,esophageal_resection_outlier_ratings,,,,,,,c03p0100W
+indicators,59,esophageal_resection_of_deaths,,,INTEGER,4,esophageal_resection_of_deaths,,int_caster,,,,,c03p0100X
+indicators,60,heart_failure_risk_adjusted_mortality_rate,,,REAL,,heart_failure_risk_adjusted_mortality_rate,,real_caster,1,,,,c03p0100Y
+indicators,61,heart_failure_of_deaths,,,INTEGER,5,heart_failure_of_deaths,,int_caster,1,,,,c03p0100Z
+indicators,62,heart_failure_of_cases,,,INTEGER,6,heart_failure_of_cases,,int_caster,1,,,,c03p01010
+indicators,63,heart_failure_outlier_ratings,,,VARCHAR,6,heart_failure_outlier_ratings,,,,,,,c03p01011
+indicators,64,pci_risk_adjusted_mortality_rate,,,REAL,3,pci_risk_adjusted_mortality_rate,,real_caster,,,,,c03p01012
+indicators,65,pci_of_deaths,,,INTEGER,5,pci_of_deaths,,int_caster,,,,,c03p01013
+indicators,66,pci_of_cases,,,INTEGER,7,pci_of_cases,,int_caster,,,,,c03p01014
+indicators,67,pci_outlier_ratings,,,VARCHAR,6,pci_outlier_ratings,,,,,,,c03p01015
+,,,,,,,,,,,,,,
+conditions,1,id,1,,INTEGER,,2012 Inpatient Mortality Indicators: Conditions,,,,"{u'data_start_line': 13, u'data_end_line': None, u'header_lines': [12], u'header_comment_lines': [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]}",conditions,2012,t03p02
+conditions,2,year,,c03x04002,VARCHAR,4,year,c00102003,,,,,,c03p02002
+conditions,3,county_gvid,,c03x04003,VARCHAR,6,county_gvid,c00104002,,,,,,c03p02003
+conditions,4,facility_index_id,,,VARCHAR,4,facility_index_id,,,,,,,c03p02004
+conditions,5,county,,,VARCHAR,15,county,,,,,,,c03p02005
+conditions,6,hospital,,,VARCHAR,84,hospital,,,,,,,c03p02006
+conditions,7,comment_letters,,,VARCHAR,19,comment_letters,,,,,,,c03p02007
+conditions,8,acute_myocardial_infarction_risk_adjusted_mortality_rate,,,REAL,,acute_myocardial_infarction_risk_adjusted_mortality_rate,,real_caster,,,,,c03p02008
+conditions,9,acute_myocardial_infarction_of_deaths,,,INTEGER,5,acute_myocardial_infarction_of_deaths,,int_caster,1,,,,c03p02009
+conditions,10,acute_myocardial_infarction_of_cases,,,INTEGER,6,acute_myocardial_infarction_of_cases,,int_caster,1,,,,c03p0200a
+conditions,11,acute_myocardial_infarction_outlier_ratings,,,VARCHAR,6,acute_myocardial_infarction_outlier_ratings,,,,,,,c03p0200b
+conditions,12,acute_stroke_total_risk_adjusted_mortality_rate,,,REAL,,acute_stroke_total_risk_adjusted_mortality_rate,,real_caster,,,,,c03p0200c
+conditions,13,acute_stroke_total_of_deaths,,,INTEGER,5,acute_stroke_total_of_deaths,,int_caster,1,,,,c03p0200d
+conditions,14,acute_stroke_total_of_cases,,,INTEGER,6,acute_stroke_total_of_cases,,int_caster,1,,,,c03p0200e
+conditions,15,acute_stroke_total_outlier_ratings,,,VARCHAR,6,acute_stroke_total_outlier_ratings,,,,,,,c03p0200f
+conditions,16,acute_stroke_hemorrhagic_risk_adjusted_mortality_rate,,,REAL,,acute_stroke_hemorrhagic_risk_adjusted_mortality_rate,,real_caster,,,,,c03p0200g
+conditions,17,acute_stroke_hemorrhagic_of_deaths,,,INTEGER,6,acute_stroke_hemorrhagic_of_deaths,,int_caster,,,,,c03p0200h
+conditions,18,acute_stroke_hemorrhagic_of_cases,,,INTEGER,7,acute_stroke_hemorrhagic_of_cases,,int_caster,,,,,c03p0200i
+conditions,19,acute_stroke_hemorrhagic_outlier_ratings,,,VARCHAR,6,acute_stroke_hemorrhagic_outlier_ratings,,,,,,,c03p0200j
+conditions,20,acute_stroke_ischemic_risk_adjusted_mortality_rate,,,REAL,,acute_stroke_ischemic_risk_adjusted_mortality_rate,,real_caster,,,,,c03p0200k
+conditions,21,acute_stroke_ischemic_of_deaths,,,INTEGER,5,acute_stroke_ischemic_of_deaths,,int_caster,1,,,,c03p0200l
+conditions,22,acute_stroke_ischemic_of_cases,,,INTEGER,6,acute_stroke_ischemic_of_cases,,int_caster,1,,,,c03p0200m
+conditions,23,acute_stroke_ischemic_outlier_ratings,,,VARCHAR,6,acute_stroke_ischemic_outlier_ratings,,,,,,,c03p0200n
+conditions,24,acute_stroke_subarachnoid_risk_adjusted_mortality_rate,,,REAL,,acute_stroke_subarachnoid_risk_adjusted_mortality_rate,,real_caster,,,,,c03p0200o
+conditions,25,acute_stroke_subarachnoid_of_deaths,,,INTEGER,5,acute_stroke_subarachnoid_of_deaths,,int_caster,,,,,c03p0200p
+conditions,26,acute_stroke_subarachnoid_of_cases,,,INTEGER,6,acute_stroke_subarachnoid_of_cases,,int_caster,,,,,c03p0200q
+conditions,27,acute_stroke_subarachnoid_outlier_ratings,,,VARCHAR,6,acute_stroke_subarachnoid_outlier_ratings,,,,,,,c03p0200r
+conditions,28,gi_hemorrhage_risk_adjusted_mortality_rate,,,REAL,,gi_hemorrhage_risk_adjusted_mortality_rate,,real_caster,,,,,c03p0200s
+conditions,29,gi_hemorrhage_of_deaths,,,INTEGER,5,gi_hemorrhage_of_deaths,,int_caster,1,,,,c03p0200t
+conditions,30,gi_hemorrhage_of_cases,,,INTEGER,6,gi_hemorrhage_of_cases,,int_caster,1,,,,c03p0200u
+conditions,31,gi_hemorrhage_outlier_ratings,,,VARCHAR,6,gi_hemorrhage_outlier_ratings,,,,,,,c03p0200v
+conditions,32,heart_failure_risk_adjusted_mortality_rate,,,REAL,,heart_failure_risk_adjusted_mortality_rate,,real_caster,,,,,c03p0200w
+conditions,33,heart_failure_of_deaths,,,INTEGER,5,heart_failure_of_deaths,,int_caster,1,,,,c03p0200x
+conditions,34,heart_failure_of_cases,,,INTEGER,6,heart_failure_of_cases,,int_caster,1,,,,c03p0200y
+conditions,35,heart_failure_outlier_ratings,,,VARCHAR,6,heart_failure_outlier_ratings,,,,,,,c03p0200z
+conditions,36,hip_fracture_risk_adjusted_mortality_rate,,,REAL,,hip_fracture_risk_adjusted_mortality_rate,,real_caster,,,,,c03p0200A
+conditions,37,hip_fracture_of_deaths,,,INTEGER,4,hip_fracture_of_deaths,,int_caster,1,,,,c03p0200B
+conditions,38,hip_fracture_of_cases,,,INTEGER,6,hip_fracture_of_cases,,int_caster,1,,,,c03p0200C
+conditions,39,hip_fracture_outlier_ratings,,,VARCHAR,6,hip_fracture_outlier_ratings,,,,,,,c03p0200D
+conditions,40,pneumonia_risk_adjusted_mortality_rate,,,REAL,,pneumonia_risk_adjusted_mortality_rate,,real_caster,,,,,c03p0200E
+conditions,41,pneumonia_of_deaths,,,INTEGER,5,pneumonia_of_deaths,,int_caster,1,,,,c03p0200F
+conditions,42,pneumonia_of_cases,,,INTEGER,6,pneumonia_of_cases,,int_caster,1,,,,c03p0200G
+conditions,43,pneumonia_outlier_ratings,,,VARCHAR,6,pneumonia_outlier_ratings,,,,,,,c03p0200H
+,,,,,,,,,,,,,,
+procedures,1,id,1,,INTEGER,,2012 Inpatient Mortality Indicators: Procedures,,,,"{u'data_start_line': 13, u'data_end_line': None, u'header_lines': [12], u'header_comment_lines': [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]}",procedures,2012,t03p03
+procedures,2,year,,c03x04002,VARCHAR,4,year,c00102003,,,,,,c03p03002
+procedures,3,county_gvid,,c03x04003,VARCHAR,6,county_gvid,c00104002,,,,,,c03p03003
+procedures,4,facility_index_id,,,VARCHAR,4,facility_index_id,,,,,,,c03p03004
+procedures,5,county,,,VARCHAR,15,county,,,,,,,c03p03005
+procedures,6,hospital,,,VARCHAR,84,hospital,,,,,,,c03p03006
+procedures,7,comment_letters,,,VARCHAR,19,comment_letters,,,,,,,c03p03007
+procedures,8,aaa_repair_unruptured_risk_adjusted_mortality_rate,,,REAL,,aaa_repair_unruptured_risk_adjusted_mortality_rate,,real_caster,,,,,c03p03008
+procedures,9,aaa_repair_unruptured_of_deaths,,,INTEGER,4,aaa_repair_unruptured_of_deaths,,int_caster,,,,,c03p03009
+procedures,10,aaa_repair_unruptured_of_cases,,,INTEGER,6,aaa_repair_unruptured_of_cases,,int_caster,,,,,c03p0300a
+procedures,11,aaa_repair_unruptured_outlier_ratings,,,VARCHAR,5,aaa_repair_unruptured_outlier_ratings,,,,,,,c03p0300b
+procedures,12,carotid_endarterectomy_risk_adjusted_mortality_rate,,,REAL,,carotid_endarterectomy_risk_adjusted_mortality_rate,,real_caster,,,,,c03p0300c
+procedures,13,carotid_endarterectomy_of_deaths,,,INTEGER,4,carotid_endarterectomy_of_deaths,,int_caster,,,,,c03p0300d
+procedures,14,carotid_endarterectomy_of_cases,,,INTEGER,6,carotid_endarterectomy_of_cases,,int_caster,,,,,c03p0300e
+procedures,15,carotid_endarterectomy_outlier_ratings,,,VARCHAR,5,carotid_endarterectomy_outlier_ratings,,,,,,,c03p0300f
+procedures,16,craniotomy_risk_adjusted_mortality_rate,,,REAL,,craniotomy_risk_adjusted_mortality_rate,,real_caster,,,,,c03p0300g
+procedures,17,craniotomy_of_deaths,,,INTEGER,6,craniotomy_of_deaths,,int_caster,,,,,c03p0300h
+procedures,18,craniotomy_of_cases,,,INTEGER,7,craniotomy_of_cases,,int_caster,,,,,c03p0300i
+procedures,19,craniotomy_outlier_ratings,,,VARCHAR,6,craniotomy_outlier_ratings,,,,,,,c03p0300j
+procedures,20,esophageal_resection_risk_adjusted_mortality_rate,,,REAL,4,esophageal_resection_risk_adjusted_mortality_rate,,real_caster,,,,,c03p0300k
+procedures,21,esophageal_resection_of_deaths,,,INTEGER,4,esophageal_resection_of_deaths,,int_caster,,,,,c03p0300l
+procedures,22,esophageal_resection_of_cases,,,INTEGER,5,esophageal_resection_of_cases,,int_caster,,,,,c03p0300m
+procedures,23,esophageal_resection_outlier_ratings,,,VARCHAR,0,esophageal_resection_outlier_ratings,,,,,,,c03p0300n
+procedures,24,pancreatic_resection_total_risk_adjusted_mortality_rate,,,REAL,4,pancreatic_resection_total_risk_adjusted_mortality_rate,,real_caster,,,,,c03p0300o
+procedures,25,pancreatic_resection_total_of_deaths,,,INTEGER,4,pancreatic_resection_total_of_deaths,,int_caster,,,,,c03p0300p
+procedures,26,pancreatic_resection_total_of_cases,,,INTEGER,6,pancreatic_resection_total_of_cases,,int_caster,,,,,c03p0300q
+procedures,27,pancreatic_resection_total_outlier_ratings,,,VARCHAR,5,pancreatic_resection_total_outlier_ratings,,,,,,,c03p0300r
+procedures,28,pancreatic_resection_cancer_risk_adjusted_mortality_rate,,,REAL,4,pancreatic_resection_cancer_risk_adjusted_mortality_rate,,real_caster,,,,,c03p0300s
+procedures,29,pancreatic_resection_cancer_of_deaths,,,INTEGER,4,pancreatic_resection_cancer_of_deaths,,int_caster,,,,,c03p0300t
+procedures,30,pancreatic_resection_cancer_of_cases,,,INTEGER,5,pancreatic_resection_cancer_of_cases,,int_caster,,,,,c03p0300u
+procedures,31,pancreatic_resection_cancer_outlier_ratings,,,VARCHAR,0,pancreatic_resection_cancer_outlier_ratings,,,,,,,c03p0300v
+procedures,32,pancreatic_resection_other_risk_adjusted_mortality_rate,,,REAL,4,pancreatic_resection_other_risk_adjusted_mortality_rate,,real_caster,,,,,c03p0300w
+procedures,33,pancreatic_resection_other_of_deaths,,,INTEGER,4,pancreatic_resection_other_of_deaths,,int_caster,,,,,c03p0300x
+procedures,34,pancreatic_resection_other_of_cases,,,INTEGER,5,pancreatic_resection_other_of_cases,,int_caster,,,,,c03p0300y
+procedures,35,pancreatic_resection_other_outlier_ratings,,,VARCHAR,5,pancreatic_resection_other_outlier_ratings,,,,,,,c03p0300z
+procedures,36,percutaneous_coronary_intervention_risk_adjusted_mortality_rate,,,REAL,,percutaneous_coronary_intervention_risk_adjusted_mortality_rate,,real_caster,,,,,c03p0300A
+procedures,37,percutaneous_coronary_intervention_of_deaths,,,INTEGER,6,percutaneous_coronary_intervention_of_deaths,,int_caster,,,,,c03p0300B
+procedures,38,percutaneous_coronary_intervention_of_cases,,,INTEGER,7,percutaneous_coronary_intervention_of_cases,,int_caster,,,,,c03p0300C
+procedures,39,percutaneous_coronary_intervention_outlier_ratings,,,VARCHAR,6,percutaneous_coronary_intervention_outlier_ratings,,,,,,,c03p0300D
