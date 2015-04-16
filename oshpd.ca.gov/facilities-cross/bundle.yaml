@@ -1,0 +1,54 @@
+about:
+    access: public
+    grain: facility
+    groups: []
+    license: null
+    rights: null
+    space: CA
+    subject: null
+    summary: null
+    tags: []
+    time: null
+    title: null
+contact_bundle:
+    creator:
+        email: eric@sandiegodata.org
+        name: Eric Busboom
+        url: http://www.sandiegodata.org
+    maintainer:
+        email: eric@sandiegodata.org
+        name: Eric Busboom
+        url: http://www.sandiegodata.org
+contact_source:
+    creator:
+        email: Charlene.Ellsworth@oshpd.ca.gov
+        name: Charlene Ellsworth, Data Product Specialist, OSHPD
+    maintainer: {}
+external_documentation:
+    dataset:
+        description: Main webpage for the dataset.
+        source: null
+        title: Dataset Page
+        url: https://chhs.data.ca.gov/Facilities-and-Services/Licensed-Facility-Cross-Walk/tthg-z4mf
+    documentation:
+        description: The primary documentation file
+        source: null
+        title: Main Documentation
+        url: https://chhs.data.ca.gov/api/views/tthg-z4mf/files/Upn6dUlWcojzXui_gaB0aOZ4D4pFge6x96Gh5iQK4f4?filename=Licensed_Facility_Cross_Walk_Data_Dictionary.pdf
+identity:
+    bspace: null
+    btime: null
+    dataset: facilities
+    id: d03U
+    revision: 1
+    source: oshpd.ca.gov
+    subset: null
+    type: null
+    variation: cross
+    version: 0.0.1
+names:
+    fqname: oshpd.ca.gov-facilities-cross-0.0.1~d03U001
+    name: oshpd.ca.gov-facilities-cross
+    vid: d03U001
+    vname: oshpd.ca.gov-facilities-cross-0.0.1
+process: {}

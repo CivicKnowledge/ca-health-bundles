@@ -1,0 +1,9 @@
+build: {}
+dependencies: {}
+sources:
+    facility_cross:
+        time: 2015
+        space: California
+        description: Crosswalk between OSHPD and CDPH health care facility numbers
+        url: https://chhs.data.ca.gov/api/views/tthg-z4mf/rows.csv
+views: {}

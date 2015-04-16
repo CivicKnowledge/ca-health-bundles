@@ -307,14 +307,6 @@ class Bundle(ExcelBuildBundle):
         
 
 
-    def test_geo(self):
-        
-        for p in self.partitions.all:
-            p.compile_geo_coverage()
-            p.compile_time_coverage()
-        
-            print p.record.data
-                
         
         
 
