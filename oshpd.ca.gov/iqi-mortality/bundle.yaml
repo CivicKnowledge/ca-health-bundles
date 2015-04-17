@@ -4,7 +4,7 @@ about:
     groups: []
     license: null
     rights: null
-    space: null
+    space: California
     subject: null
     summary: The Inpatient Mortality Indicators (IMIs) are a subset of the AHRQ quality
         indicators that measure in-hospital mortality. They include medical conditions
@@ -68,20 +68,24 @@ identity:
     btime: null
     dataset: iqi
     id: d03p
-    revision: 2
+    revision: 3
     source: oshpd.ca.gov
     subset: mortality
     type: null
     variation: null
-    version: 0.0.2
+    version: 0.0.3
 names:
-    fqname: oshpd.ca.gov-iqi-mortality-0.0.2~d03p002
+    fqname: oshpd.ca.gov-iqi-mortality-0.0.3~d03p003
     name: oshpd.ca.gov-iqi-mortality
-    vid: d03p002
-    vname: oshpd.ca.gov-iqi-mortality-0.0.2
+    vid: d03p003
+    vname: oshpd.ca.gov-iqi-mortality-0.0.3
 process: {}
 versions:
     2:
         date: '2015-04-12T15:49:55.077036'
         description: Adding coverage
         version: 0.0.2
+    3:
+        date: '2015-04-16T21:41:02.843045'
+        description: Adding space and time
+        version: 0.0.3

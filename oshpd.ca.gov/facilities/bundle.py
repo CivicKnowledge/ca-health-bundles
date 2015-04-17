@@ -44,7 +44,7 @@ class Bundle(ExcelBuildBundle):
         
         with p.inserter() as ins:
             for i, (k, r, inp_row) in enumerate(dstk_gc.geocode()):
-                lr(str(i))
+                lr("Addresses "+str(i))
                 r['facilities_id'] = inp_row['id']
                 ins.insert(r)
             

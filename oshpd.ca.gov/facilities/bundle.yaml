@@ -35,17 +35,17 @@ identity:
     btime: null
     dataset: facilities
     id: d03j
-    revision: 6
+    revision: 7
     source: oshpd.ca.gov
     subset: null
     type: null
     variation: null
-    version: 0.0.6
+    version: 0.0.7
 names:
-    fqname: oshpd.ca.gov-facilities-0.0.6~d03j006
+    fqname: oshpd.ca.gov-facilities-0.0.7~d03j007
     name: oshpd.ca.gov-facilities
-    vid: d03j006
-    vname: oshpd.ca.gov-facilities-0.0.6
+    vid: d03j007
+    vname: oshpd.ca.gov-facilities-0.0.7
 process: {}
 versions:
     2:
@@ -68,3 +68,7 @@ versions:
         date: '2015-04-12T14:13:25.800538'
         description: ''
         version: 0.0.6
+    7:
+        date: '2015-04-16T20:30:28.301559'
+        description: Improve prototypes
+        version: 0.0.7

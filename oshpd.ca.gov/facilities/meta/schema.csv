@@ -1,52 +1,52 @@
-table,seq,column,is_pk,is_fk,type,i1,i2,i3,i4,i5,i6,size,description,proto_vid,id
-facilities,1,id,1,,INTEGER,,,,,,,,California health care facilities.,,t03j01
-facilities,2,year,,,INTEGER,,,,,,,4,,,c03j01002
-facilities,3,type,,,VARCHAR,,,,,,,10,,,c03j01003
-facilities,4,oshpd_id,,,VARCHAR,1,,,,,,9,,,c03j01004
-facilities,5,facility_name,,,VARCHAR,,,,,,,60,,,c03j01005
-facilities,6,dba_address1,,,VARCHAR,,,,,,,40,,,c03j01006
-facilities,7,dba_city,,,VARCHAR,,,,,,,21,,,c03j01007
-facilities,8,dba_zip_code,,,INTEGER,,,,,,,5,,,c03j01008
-facilities,9,county_code,,,VARCHAR,,1,,,,,2,,,c03j01009
-facilities,10,county_name,,,VARCHAR,,,,,,,15,,,c03j0100a
-facilities,11,facility_status_desc,,,VARCHAR,,,,,,,8,,,c03j0100b
-facilities,12,facility_status_date,,,DATE,,,,,,,,,,c03j0100c
-facilities,13,license_type_desc,,,VARCHAR,,,,,,,26,,,c03j0100d
-facilities,14,license_category_desc,,,VARCHAR,,,,,,,33,,,c03j0100e
-facilities,15,hyperlink_to_atlas,,,VARCHAR,,,,,,,55,,,c03j0100f
-facilities,16,er_service_level_desc,,,VARCHAR,,,,,,,25,,,c03j0100g
-facilities,17,total_number_beds,,,INTEGER,,,,,,,4,,,c03j0100h
-,,,,,,,,,,,,,,,
-facilities_addresses,1,id,1,,INTEGER,,,,,,,,"Street Addresses for healthcare facilities , geocoded with DTSK",,t03j02
-facilities_addresses,2,facilities_id,,t03j01,INTEGER,,,,,,,5,Link to facilities table,,c03j02002
-facilities_addresses,3,street_number,,,VARCHAR,,,,,,,6,Street Number,,c03j02003
-facilities_addresses,4,street_address,,,VARCHAR,,,,,,,33,Street Addresses,,c03j02004
-facilities_addresses,5,street_name,,,VARCHAR,,,,,,,29,Steet Name,,c03j02005
-facilities_addresses,6,zip_code,,,INTEGER,,,,,,,,US Zip code,,c03j02006
-facilities_addresses,7,fips_county,,,VARCHAR,,,,,,,5,"US County, FIPS",,c03j02007
-facilities_addresses,8,locality,,,VARCHAR,,,,,,,22,"Locality. In the US, a city",,c03j02008
-facilities_addresses,9,region,,,VARCHAR,,,,,,,2,"Region, In the US, the State",,c03j02009
-facilities_addresses,10,country_code3,,,VARCHAR,,,,,,,3,3 Letter country code,,c03j0200a
-facilities_addresses,11,country_code,,,VARCHAR,,,,,,,2,2 Letter country code,,c03j0200b
-facilities_addresses,12,country_name,,,VARCHAR,,,,,,,13,Country name,,c03j0200c
-facilities_addresses,13,longitude,,,REAL,,,,,,,,Longitude,,c03j0200d
-facilities_addresses,14,latitude,,,REAL,,,,,,,,Latitude,,c03j0200e
-facilities_addresses,15,confidence,,,REAL,,,,,,,,"Geocoder confidence, from 0 to 1",,c03j0200f
-facilities_addresses,16,data,,,TEXT,,,,,,,,"Extra data, In JSON format.",,c03j0200g
-,,,,,,,,,,,,,,,
-facilities_geoids,1,id,1,,INTEGER,,,,,,,,Census region geoids for healthcare facilities,,t03j03
-facilities_geoids,2,facilities_id,,t03j01,INTEGER,1,,,,,,5,Link to facilities table,,c03j03002
-facilities_geoids,3,blockgroup_gvid,,c03x09003,VARCHAR,,1,,,,,12,Geoid for ACS 2012 blockgroup,c00104002,c03j03003
-facilities_geoids,4,tract_gvid,,c03x08003,VARCHAR,,,1,,,,11,Geoid for ACS 2012  tract,c00104002,c03j03004
-facilities_geoids,5,county_gvid,,c03x04003,VARCHAR,,,,1,,,6,Geoid for census county,c00104002,c03j03005
-,,,,,,,,,,,,,,,
-facilities_index,1,id,1,,INTEGER,,,,,,,,Index for OSHPD California Healthcare facilities,,t03j04
-facilities_index,2,year,,,INTEGER,,,,,1,,4,Year Facility's status was recorded,,c03j04002
-facilities_index,3,type,,,VARCHAR,,,,,,1,10,"Text describing type of facility: hospital, longterm, etc.",c00102003,c03j04003
-facilities_index,4,oshpd_id,,,VARCHAR,1,,,,,,9,OSHPD Facility ID,,c03j04004
-facilities_index,5,facility_name,,,VARCHAR,,,,,,,60,Facility name,,c03j04005
-facilities_index,6,dba_city,,,VARCHAR,,,,,,,21,City where facility is registered,,c03j04006
-facilities_index,7,dba_zip_code,,,INTEGER,,,,,,,5,Zipcode where facility is registered,,c03j04007
-facilities_index,8,blockgroup_gvid,,c03x09003,VARCHAR,,1,,,,,12,Geoid for ACS 2012 blockgroup,c00104002,c03j04008
-facilities_index,9,tract_gvid,,c03x08003,VARCHAR,,,1,,,,,Geoid for ACS 2012  tract,c00104002,c03j04009
-facilities_index,10,county_gvid,,c03x04003,VARCHAR,,,,1,,,6,Geoid for census county,c00104002,c03j0400a
+table,seq,column,is_pk,is_fk,id,type,i1,i2,i3,i4,i5,i6,size,description,proto_vid,d_index,d_orig_proto_vid
+facilities,1,id,1,,t03j01,INTEGER,,,,,,,,California health care facilities.,,,
+facilities,2,year,,,c03j01002,INTEGER,,,,,,,4,,,,
+facilities,3,type,,,c03j01003,VARCHAR,,,,,,,10,,,,
+facilities,4,oshpd_id,,,c03j01004,VARCHAR,1,,,,,,9,,,,
+facilities,5,facility_name,,,c03j01005,VARCHAR,,,,,,,60,,,,
+facilities,6,dba_address1,,,c03j01006,VARCHAR,,,,,,,40,,,,
+facilities,7,dba_city,,,c03j01007,VARCHAR,,,,,,,21,,,,
+facilities,8,dba_zip_code,,,c03j01008,INTEGER,,,,,,,5,,,,
+facilities,9,county_code,,,c03j01009,VARCHAR,,1,,,,,2,,,,
+facilities,10,county_name,,,c03j0100a,VARCHAR,,,,,,,15,,,,
+facilities,11,facility_status_desc,,,c03j0100b,VARCHAR,,,,,,,8,,,,
+facilities,12,facility_status_date,,,c03j0100c,DATE,,,,,,,,,,,
+facilities,13,license_type_desc,,,c03j0100d,VARCHAR,,,,,,,26,,,,
+facilities,14,license_category_desc,,,c03j0100e,VARCHAR,,,,,,,33,,,,
+facilities,15,hyperlink_to_atlas,,,c03j0100f,VARCHAR,,,,,,,55,,,,
+facilities,16,er_service_level_desc,,,c03j0100g,VARCHAR,,,,,,,25,,,,
+facilities,17,total_number_beds,,,c03j0100h,INTEGER,,,,,,,4,,,,
+,,,,,,,,,,,,,,,,,
+facilities_addresses,1,id,1,,t03j02,INTEGER,,,,,,,,"Street Addresses for healthcare facilities , geocoded with DTSK",,,
+facilities_addresses,2,facilities_id,,t03j01,c03j02002,INTEGER,,,,,,,5,Link to facilities table,,,
+facilities_addresses,3,street_number,,,c03j02003,VARCHAR,,,,,,,6,Street Number,,,
+facilities_addresses,4,street_address,,,c03j02004,VARCHAR,,,,,,,33,Street Addresses,,,
+facilities_addresses,5,street_name,,,c03j02005,VARCHAR,,,,,,,29,Steet Name,,,
+facilities_addresses,6,zip_code,,,c03j02006,INTEGER,,,,,,,,US Zip code,,,
+facilities_addresses,7,fips_county,,,c03j02007,VARCHAR,,,,,,,5,"US County, FIPS",,,
+facilities_addresses,8,locality,,,c03j02008,VARCHAR,,,,,,,22,"Locality. In the US, a city",,,
+facilities_addresses,9,region,,,c03j02009,VARCHAR,,,,,,,2,"Region, In the US, the State",,,
+facilities_addresses,10,country_code3,,,c03j0200a,VARCHAR,,,,,,,3,3 Letter country code,,,
+facilities_addresses,11,country_code,,,c03j0200b,VARCHAR,,,,,,,2,2 Letter country code,,,
+facilities_addresses,12,country_name,,,c03j0200c,VARCHAR,,,,,,,13,Country name,,,
+facilities_addresses,13,longitude,,,c03j0200d,REAL,,,,,,,,Longitude,,,
+facilities_addresses,14,latitude,,,c03j0200e,REAL,,,,,,,,Latitude,,,
+facilities_addresses,15,confidence,,,c03j0200f,REAL,,,,,,,,"Geocoder confidence, from 0 to 1",,,
+facilities_addresses,16,data,,,c03j0200g,TEXT,,,,,,,,"Extra data, In JSON format.",,,
+,,,,,,,,,,,,,,,,,
+facilities_geoids,1,id,1,,t03j03,INTEGER,,,,,,,,Census region geoids for healthcare facilities,,,
+facilities_geoids,2,facilities_id,,t03j01,c03j03002,INTEGER,1,,,,,,5,Link to facilities table,,,
+facilities_geoids,3,blockgroup_gvid,,c03x09003,c03j03003,VARCHAR,,1,,,,,12,Geoid for ACS 2012 blockgroup,c0010e003,census.gov-index-blockgroups-0.0.4:gvid,blockgroups.gvid
+facilities_geoids,4,tract_gvid,,c03x08003,c03j03004,VARCHAR,,,1,,,,11,Geoid for ACS 2012  tract,c0010d003,census.gov-index-tracts-0.0.4:gvid,tracts.gvid
+facilities_geoids,5,county_gvid,,c03x04003,c03j03005,VARCHAR,,,,1,,,6,Geoid for census county,c00109003,census.gov-index-counties-0.0.4:gvid,counties.gvid
+,,,,,,,,,,,,,,,,,
+facilities_index,1,id,1,,t03j04,INTEGER,,,,,,,,Index for OSHPD California Healthcare facilities,,,
+facilities_index,2,year,,,c03j04002,INTEGER,,,,,1,,4,Year Facility's status was recorded,c00102003,,dates.year
+facilities_index,3,type,,,c03j04003,VARCHAR,,,,,,1,10,"Text describing type of facility: hospital, longterm, etc.",,,
+facilities_index,4,oshpd_id,,,c03j04004,VARCHAR,1,,,,,,9,OSHPD Facility ID,,,
+facilities_index,5,facility_name,,,c03j04005,VARCHAR,,,,,,,60,Facility name,,,
+facilities_index,6,dba_city,,,c03j04006,VARCHAR,,,,,,,21,City where facility is registered,,,
+facilities_index,7,dba_zip_code,,,c03j04007,INTEGER,,,,,,,5,Zipcode where facility is registered,,,
+facilities_index,8,blockgroup_gvid,,c03x09003,c03j04008,VARCHAR,,1,,,,,12,Geoid for ACS 2012 blockgroup,c0010e003,census.gov-index-blockgroups-0.0.4:gvid,blockgroups.gvid
+facilities_index,9,tract_gvid,,c03x08003,c03j04009,VARCHAR,,,1,,,,,Geoid for ACS 2012  tract,c0010d003,census.gov-index-tracts-0.0.4:gvid,tracts.gvid
+facilities_index,10,county_gvid,,c03x04003,c03j0400a,VARCHAR,,,,1,,,6,Geoid for census county,c00109003,census.gov-index-counties-0.0.4:gvid,counties.gvid
