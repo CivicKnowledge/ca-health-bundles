@@ -4,7 +4,7 @@ about:
     groups: []
     license: null
     rights: null
-    space: null
+    space: California
     subject: null
     summary: 'An inpatient discharge record is submitted each time a patient is treated
         in a licensed general acute care hospital in California. These facilities
@@ -14,7 +14,7 @@ about:
         to the county of the patient''s residence, and the hospital from which the
         patient was discharged. '
     tags: []
-    time: p5ye2013
+    time: null
     title: Inpatient Hospital Discharges By County and Hospital, 2009 - 2013
 contact_bundle:
     creator:
@@ -41,15 +41,20 @@ identity:
     btime: null
     dataset: msdrg
     id: d03R
-    revision: 1
+    revision: 2
     source: oshpd.ca.gov
     subset: null
     type: null
     variation: county
-    version: 0.0.1
+    version: 0.0.2
 names:
-    fqname: oshpd.ca.gov-msdrg-county-0.0.1~d03R001
+    fqname: oshpd.ca.gov-msdrg-county-0.0.2~d03R002
     name: oshpd.ca.gov-msdrg-county
-    vid: d03R001
-    vname: oshpd.ca.gov-msdrg-county-0.0.1
+    vid: d03R002
+    vname: oshpd.ca.gov-msdrg-county-0.0.2
 process: {}
+versions:
+    2:
+        date: '2015-04-16T22:06:11.756628'
+        description: Adding coverage
+        version: 0.0.2

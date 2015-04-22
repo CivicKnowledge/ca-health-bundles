@@ -7,6 +7,19 @@ extract: {}
 sources:
     pqi:
         description: Multi-year PQI file.
+        grain: counties
+        row_spec:
+            data_end_line: null
+            data_start_line: 7
+            header_comment_lines:
+            - 0
+            - 1
+            - 2
+            - 3
+            - 5
+            header_lines:
+            - 4
+            - 6
         segment: 1
         url: http://www.oshpd.ca.gov/HID/Products/PatDischargeData/AHRQ/PQI/PQI_Summary_V45a_2005-2013.xlsx
 views: {}

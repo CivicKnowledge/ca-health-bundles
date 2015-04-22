@@ -1,17 +1,17 @@
-table,seq,column,is_pk,is_fk,type,i1,i2,size,description,proto_vid,d_caster,d_has_codes,id
-pdi_summary,1,id,1,,INTEGER,,,,,,,,t03C01
-pdi_summary,2,year,,,INTEGER,,,4,Year,,,,c03C01002
-pdi_summary,3,county,,,VARCHAR,,,15,County,,,,c03C01003
-pdi_summary,4,pdi_14_asthma_cases,,,INTEGER,,,4,PDI #14 Asthma: # Cases,,int_caster,1,c03C01004
-pdi_summary,5,pdi_14_asthma_risk_adjusted_rate,,,REAL,,,,PDI #14 Asthma: Risk-Adjusted Rate,,real_caster,1,c03C01005
-pdi_summary,6,pdi_15_diabetes_short_term_complications_cases,,,INTEGER,,,4,PDI #15 Diabetes Short-term Complications: # Cases,,int_caster,1,c03C01006
-pdi_summary,7,pdi_15_diabetes_short_term_complications_risk_adjusted_rate,,,REAL,,,,PDI #15 Diabetes Short-term Complications: Risk-Adjusted Rate,,real_caster,1,c03C01007
-pdi_summary,8,pdi_16_gastroenteritis_cases,,,INTEGER,,,5,PDI #16 Gastroenteritis: # Cases,,int_caster,1,c03C01008
-pdi_summary,9,pdi_16_gastroenteritis_risk_adjusted_rate,,,REAL,,,,PDI #16 Gastroenteritis: Risk-Adjusted Rate,,real_caster,1,c03C01009
-pdi_summary,10,pdi_17_perforated_appendix_cases,,,INTEGER,,,4,PDI #17 Perforated Appendix: # Cases,,int_caster,1,c03C0100a
-pdi_summary,11,pdi_17_perforated_appendix_risk_adjusted_rate,,,REAL,,,,PDI #17 Perforated Appendix: Risk-Adjusted Rate,,real_caster,1,c03C0100b
-pdi_summary,12,pdi_18_urinary_tract_infection_cases,,,INTEGER,,,4,PDI #18 Urinary Tract Infection: # Cases,,int_caster,1,c03C0100c
-pdi_summary,13,pdi_18_urinary_tract_infection_risk_adjusted_rate,,,REAL,,,,PDI #18 Urinary Tract Infection: Risk-Adjusted Rate,,real_caster,1,c03C0100d
-pdi_summary,14,pqi_9_low_birth_weight_births,,,INTEGER,,,3,PQI #9 Low Birth Weight: # Births,,,1,c03C0100e
-pdi_summary,15,pqi_9_low_birth_weight_risk_adjusted_rate,,,REAL,,,,PQI #9 Low Birth Weight: Risk-Adjusted Rate,,real_caster,1,c03C0100f
-pdi_summary,16,gvid,,c03x04003,VARCHAR,1,1,6,GVid reference to county,c00104002,,,c03C0100g
+table,seq,column,is_pk,is_fk,id,type,size,description,proto_vid,d_caster,d_grain,d_index,d_orig_proto_vid
+pdi_summary,1,id,1,,t03C01,INTEGER,,Multi-year PQI file.,,,counties,,
+pdi_summary,2,gvid,,c03x04003,c03C01002,VARCHAR,6,gvid,c00109003,,,census.gov-index-counties-0.0.4:gvid,counties.gvid
+pdi_summary,3,year,,c03x04002,c03C01003,INTEGER,4,Year,c00109002,,,census.gov-index-counties-0.0.4:year,counties.year
+pdi_summary,5,county,,,c03C01005,VARCHAR,15,County,,,,,
+pdi_summary,6,pdi_14_asthma_cases,,,c03C01006,INTEGER,4,PDI #14 Asthma: # Cases,,int_caster,,,
+pdi_summary,7,pdi_14_asthma_risk_adjusted_rate,,,c03C01007,REAL,,PDI #14 Asthma: Risk-Adjusted Rate,,real_caster,,,
+pdi_summary,8,pdi_15_diabetes_short_term_complications_cases,,,c03C01008,INTEGER,4,PDI #15 Diabetes Short-term Complications: # Cases,,int_caster,,,
+pdi_summary,9,pdi_15_diabetes_short_term_complications_risk_adjusted_rate,,,c03C01009,REAL,,PDI #15 Diabetes Short-term Complications: Risk-Adjusted Rate,,real_caster,,,
+pdi_summary,10,pdi_16_gastroenteritis_cases,,,c03C0100a,INTEGER,5,PDI #16 Gastroenteritis: # Cases,,int_caster,,,
+pdi_summary,11,pdi_16_gastroenteritis_risk_adjusted_rate,,,c03C0100b,REAL,,PDI #16 Gastroenteritis: Risk-Adjusted Rate,,real_caster,,,
+pdi_summary,12,pdi_17_perforated_appendix_cases,,,c03C0100c,INTEGER,4,PDI #17 Perforated Appendix: # Cases,,int_caster,,,
+pdi_summary,13,pdi_17_perforated_appendix_risk_adjusted_rate,,,c03C0100d,REAL,,PDI #17 Perforated Appendix: Risk-Adjusted Rate,,real_caster,,,
+pdi_summary,14,pdi_18_urinary_tract_infection_cases,,,c03C0100e,INTEGER,4,PDI #18 Urinary Tract Infection: # Cases,,int_caster,,,
+pdi_summary,15,pdi_18_urinary_tract_infection_risk_adjusted_rate,,,c03C0100f,REAL,,PDI #18 Urinary Tract Infection: Risk-Adjusted Rate,,real_caster,,,
+pdi_summary,16,pqi_9_low_birth_weight_births,,,c03C0100g,INTEGER,5,PQI #9 Low Birth Weight: # Births,,int_caster,,,
+pdi_summary,17,pqi_9_low_birth_weight_risk_adjusted_rate,,,c03C0100h,REAL,,PQI #9 Low Birth Weight: Risk-Adjusted Rate,,real_caster,,,

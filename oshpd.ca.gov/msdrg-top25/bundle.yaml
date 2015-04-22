@@ -4,7 +4,7 @@ about:
     groups: []
     license: null
     rights: null
-    space: null
+    space: California
     subject: null
     summary: The files display the total number of discharges, average charge per
         stay, average charge per day and average length of stay for the top 25 Medicare-Severity
@@ -38,15 +38,20 @@ identity:
     btime: null
     dataset: msdgr
     id: d03P
-    revision: 1
+    revision: 2
     source: oshpd.ca.gov
     subset: null
     type: null
     variation: top25
-    version: 0.0.1
+    version: 0.0.2
 names:
-    fqname: oshpd.ca.gov-msdgr-top25-0.0.1~d03P001
+    fqname: oshpd.ca.gov-msdgr-top25-0.0.2~d03P002
     name: oshpd.ca.gov-msdgr-top25
-    vid: d03P001
-    vname: oshpd.ca.gov-msdgr-top25-0.0.1
+    vid: d03P002
+    vname: oshpd.ca.gov-msdgr-top25-0.0.2
 process: {}
+versions:
+    2:
+        date: '2015-04-19T19:29:15.191137'
+        description: Adding Coverage
+        version: 0.0.2

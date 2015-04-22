@@ -1,17 +1,17 @@
-table,seq,column,is_pk,is_fk,type,size,description,proto_vid,d_segment,d_table,id
-msdrgs,1,id,1,,INTEGER,,"California Top 25 Medicare Severity Diagnosis Related Groups,  generated from http://www.oshpd.ca.gov/HID/Products/PatDischargeData/PivotTables/Top25DRGs/2013Top25MSDRG_Pivot.xlsm",,3,msdrgs,t03P01
-msdrgs,2,year,,,INTEGER,4,Year of record,c00102003,,,c03P01002
-msdrgs,4,facilitynumber,,,VARCHAR,9,FacilityNumber,,,,c03P01004
-msdrgs,5,facilityname,,,VARCHAR,60,FacilityName,,,,c03P01005
-msdrgs,6,drgcode,,,INTEGER,3,A three-digit Medicare Severity Diagnosis Related Group code.,,,,c03P01006
-msdrgs,7,drgdescription,,,VARCHAR,97,A description of the Medicare Severity Diagnosis Related Group.,,,,c03P01007
-msdrgs,8,discharges,,,INTEGER,6,"The sum of selected discharges.  Discharges refer to the hospital stay.  The unit of analysis is the hospital discharge (i.e., the hospital stay) not a person or patient. This means that a person who is admitted to the hospital multiple times in one year will be counted each time as a separate ""discharge"" from the hospital.",,,,c03P01008
-msdrgs,9,dischargeswithcharges,,,INTEGER64,10,The sum of discharges that had a total charge greater than zero.,,,,c03P01009
-msdrgs,10,validcharges,,,INTEGER64,10,The sum of the hospital charges for the selected discharges.  Charges  reflect the amount the hospital billed for the entire hospital stay and do not include professional (physician) fees.,,,,c03P0100a
-msdrgs,11,avgchgperstay,,,REAL,,The sum of the hospital charges divided by the number of discharges with charges. [Total Charges] / [DischargesWithCharges],,,,c03P0100b
-msdrgs,12,avgchgperday,,,REAL,,The sum of hospital charges divided by the length of stay for those discharges with total charge greater than zero.  [Total Charges] / [vlos],,,,c03P0100c
-msdrgs,13,alos,,,REAL,,Average length of Stay. The sum of the number of nights the patient remained in the hospital for his or her stay divided by the number of dischages .  [sum_los] / [Discharges],,,,c03P0100d
-msdrgs,14,sort,,,VARCHAR,20,"One of three ways of looking at the data: Number of Discharges, Mean Length of Stay, and Mean Charge per Stay.",,,,c03P0100e
-msdrgs,15,rank,,,INTEGER,7,Numeric rank 1 to 25 for each type of sort.,,,,c03P0100f
-msdrgs,16,sum_los,,,INTEGER,7,The sum of the number of nights the patient remained in the hospital for his or her stay. A patient admitted and discharged on the same day has a length of stay equal to 1.,,,,c03P0100g
-msdrgs,17,vlos,,,INTEGER,7,The sum of the number of nights the patient remained in the hospital for his or her stay where total chages is greater than zero. A patient admitted and discharged on the same day has a length of stay equal to 1.,,,,c03P0100h
+table,seq,column,is_pk,is_fk,id,type,size,description,proto_vid,d_segment,d_table
+msdrgs,1,id,1,,t03P01,INTEGER,,"California Top 25 Medicare Severity Diagnosis Related Groups,  generated from http://www.oshpd.ca.gov/HID/Products/PatDischargeData/PivotTables/Top25DRGs/2013Top25MSDRG_Pivot.xlsm",,3,msdrgs
+msdrgs,2,year,,,c03P01002,INTEGER,4,Year of record,c00102003,,
+msdrgs,4,facilitynumber,,,c03P01004,VARCHAR,9,FacilityNumber,,,
+msdrgs,5,facilityname,,,c03P01005,VARCHAR,60,FacilityName,,,
+msdrgs,6,drgcode,,,c03P01006,INTEGER,3,A three-digit Medicare Severity Diagnosis Related Group code.,,,
+msdrgs,7,drgdescription,,,c03P01007,VARCHAR,97,A description of the Medicare Severity Diagnosis Related Group.,,,
+msdrgs,8,discharges,,,c03P01008,INTEGER,6,"The sum of selected discharges.  Discharges refer to the hospital stay.  The unit of analysis is the hospital discharge (i.e., the hospital stay) not a person or patient. This means that a person who is admitted to the hospital multiple times in one year will be counted each time as a separate ""discharge"" from the hospital.",,,
+msdrgs,9,dischargeswithcharges,,,c03P01009,INTEGER64,10,The sum of discharges that had a total charge greater than zero.,,,
+msdrgs,10,validcharges,,,c03P0100a,INTEGER64,10,The sum of the hospital charges for the selected discharges.  Charges  reflect the amount the hospital billed for the entire hospital stay and do not include professional (physician) fees.,,,
+msdrgs,11,avgchgperstay,,,c03P0100b,REAL,,The sum of the hospital charges divided by the number of discharges with charges. [Total Charges] / [DischargesWithCharges],,,
+msdrgs,12,avgchgperday,,,c03P0100c,REAL,,The sum of hospital charges divided by the length of stay for those discharges with total charge greater than zero.  [Total Charges] / [vlos],,,
+msdrgs,13,alos,,,c03P0100d,REAL,,Average length of Stay. The sum of the number of nights the patient remained in the hospital for his or her stay divided by the number of dischages .  [sum_los] / [Discharges],,,
+msdrgs,14,sort,,,c03P0100e,VARCHAR,20,"One of three ways of looking at the data: Number of Discharges, Mean Length of Stay, and Mean Charge per Stay.",,,
+msdrgs,15,rank,,,c03P0100f,INTEGER,7,Numeric rank 1 to 25 for each type of sort.,,,
+msdrgs,16,sum_los,,,c03P0100g,INTEGER,7,The sum of the number of nights the patient remained in the hospital for his or her stay. A patient admitted and discharged on the same day has a length of stay equal to 1.,,,
+msdrgs,17,vlos,,,c03P0100h,INTEGER,7,The sum of the number of nights the patient remained in the hospital for his or her stay where total chages is greater than zero. A patient admitted and discharged on the same day has a length of stay equal to 1.,,,

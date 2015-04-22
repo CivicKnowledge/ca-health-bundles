@@ -4,8 +4,12 @@ extract: {}
 sources:
     mssa_2010:
         description: Shapefile for MSSA areas
+        space: California
+        time: 2010
         url: http://www.oshpd.ca.gov/HWDD/MSSA/GIS/MSSA_2010ACSv2.zip
     mssa_tracts_2010:
         description: Shapefile for tracts, linked to MSSA areas
+        space: California
+        time: 2010
         url: http://www.oshpd.ca.gov/HWDD/MSSA/GIS/MSSA_ACS_Detailv2.zip
 views: {}

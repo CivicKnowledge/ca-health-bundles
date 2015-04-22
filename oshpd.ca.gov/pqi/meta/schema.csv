@@ -1,69 +1,69 @@
-table,seq,column,is_pk,is_fk,type,size,description,proto_vid,id
-pqi,1,id,1,,INTEGER,,id,,t03r01
-pqi,4,year,,,INTEGER,4,year,,c03r01004
-pqi,5,county,,,VARCHAR,15,county,,c03r01005
-pqi,6,pqi_1_cases,,,INTEGER,5,PQI #1 # Cases,,c03r01006
-pqi,7,pqi_1_population,,,INTEGER,8,PQI #1 Population,,c03r01007
-pqi,8,pqi_1_observed_rate,,,REAL,,PQI #1 Observed Rate,,c03r01008
-pqi,9,pqi_1_risk_adjusted_rate,,,REAL,,PQI #1 Risk-Adjusted Rate,,c03r01009
-pqi,10,pqi_2_cases,,,INTEGER,4,PQI #2 # Cases,,c03r0100a
-pqi,11,pqi_2_population,,,INTEGER,5,PQI #2 Population,,c03r0100b
-pqi,12,pqi_2_observed_rate,,,REAL,,PQI #2 Observed Rate,,c03r0100c
-pqi,13,pqi_2_risk_adjusted_rate,,,REAL,,PQI #2 Risk-Adjusted Rate,,c03r0100d
-pqi,14,pqi_3_cases,,,INTEGER,5,PQI #3 # Cases,,c03r0100e
-pqi,15,pqi_3_population,,,INTEGER,8,PQI #3 Population,,c03r0100f
-pqi,16,pqi_3_observed_rate,,,REAL,,PQI #3 Observed Rate,,c03r0100g
-pqi,17,pqi_3_risk_adjusted_rate,,,REAL,,PQI #3 Risk-Adjusted Rate,,c03r0100h
-pqi,18,pqi_5_cases,,,INTEGER,5,PQI #5 # Cases,,c03r0100i
-pqi,19,pqi_5_population,,,INTEGER,8,PQI #5 Population,,c03r0100j
-pqi,20,pqi_5_observed_rate,,,REAL,,PQI #5 Observed Rate,,c03r0100k
-pqi,21,pqi_5_risk_adjusted_rate,,,REAL,,PQI #5 Risk-Adjusted Rate,,c03r0100l
-pqi,22,pqi_7_cases,,,INTEGER,4,PQI #7 # Cases,,c03r0100m
-pqi,23,pqi_7_population,,,INTEGER,8,PQI #7 Population,,c03r0100n
-pqi,24,pqi_7_observed_rate,,,REAL,,PQI #7 Observed Rate,,c03r0100o
-pqi,25,pqi_7_risk_adjusted_rate,,,REAL,,PQI #7 Risk-Adjusted Rate,,c03r0100p
-pqi,26,pqi_8_cases,,,INTEGER,5,PQI #8 # Cases,,c03r0100q
-pqi,27,pqi_8_population,,,INTEGER,8,PQI #8 Population,,c03r0100r
-pqi,28,pqi_8_observed_rate,,,REAL,,PQI #8 Observed Rate,,c03r0100s
-pqi,29,pqi_8_risk_adjusted_rate,,,REAL,,PQI #8 Risk-Adjusted Rate,,c03r0100t
-pqi,30,pqi_10_cases,,,INTEGER,5,PQI #10 # Cases,,c03r0100u
-pqi,31,pqi_10_population,,,INTEGER,8,PQI #10 Population,,c03r0100v
-pqi,32,pqi_10_observed_rate,,,REAL,,PQI #10 Observed Rate,,c03r0100w
-pqi,33,pqi_10_risk_adjusted_rate,,,REAL,,PQI #10 Risk-Adjusted Rate,,c03r0100x
-pqi,34,pqi_11_cases,,,INTEGER,5,PQI #11 # Cases,,c03r0100y
-pqi,35,pqi_11_population,,,INTEGER,8,PQI #11 Population,,c03r0100z
-pqi,36,pqi_11_observed_rate,,,REAL,,PQI #11 Observed Rate,,c03r0100A
-pqi,37,pqi_11_risk_adjusted_rate,,,REAL,,PQI #11 Risk-Adjusted Rate,,c03r0100B
-pqi,38,pqi_12_cases,,,INTEGER,5,PQI #12 # Cases,,c03r0100C
-pqi,39,pqi_12_population,,,INTEGER,8,PQI #12 Population,,c03r0100D
-pqi,40,pqi_12_observed_rate,,,REAL,,PQI #12 Observed Rate,,c03r0100E
-pqi,41,pqi_12_risk_adjusted_rate,,,REAL,,PQI #12 Risk-Adjusted Rate,,c03r0100F
-pqi,42,pqi_13_cases,,,INTEGER,4,PQI #13 # Cases,,c03r0100G
-pqi,43,pqi_13_population,,,INTEGER,8,PQI #13 Population,,c03r0100H
-pqi,44,pqi_13_observed_rate,,,REAL,,PQI #13 Observed Rate,,c03r0100I
-pqi,45,pqi_13_risk_adjusted_rate,,,REAL,,PQI #13 Risk-Adjusted Rate,,c03r0100J
-pqi,46,pqi_14_cases,,,INTEGER,4,PQI #14 # Cases,,c03r0100K
-pqi,47,pqi_14_population,,,INTEGER,8,PQI #14 Population,,c03r0100L
-pqi,48,pqi_14_observed_rate,,,REAL,,PQI #14 Observed Rate,,c03r0100M
-pqi,49,pqi_14_risk_adjusted_rate,,,REAL,,PQI #14 Risk-Adjusted Rate,,c03r0100N
-pqi,50,pqi_15_cases,,,INTEGER,4,PQI #15 # Cases,,c03r0100O
-pqi,51,pqi_15_population,,,INTEGER,8,PQI #15 Population,,c03r0100P
-pqi,52,pqi_15_observed_rate,,,REAL,,PQI #15 Observed Rate,,c03r0100Q
-pqi,53,pqi_15_risk_adjusted_rate,,,REAL,,PQI #15 Risk-Adjusted Rate,,c03r0100R
-pqi,54,pqi_16_cases,,,INTEGER,4,PQI #16 # Cases,,c03r0100S
-pqi,55,pqi_16_population,,,INTEGER,8,PQI #16 Population,,c03r0100T
-pqi,56,pqi_16_observed_rate,,,REAL,,PQI #16 Observed Rate,,c03r0100U
-pqi,57,pqi_16_risk_adjusted_rate,,,REAL,,PQI #16 Risk-Adjusted Rate,,c03r0100V
-pqi,58,pqi_90_cases,,,INTEGER,6,PQI #90 # Cases,,c03r0100W
-pqi,59,pqi_90_population,,,INTEGER,8,PQI #90 Population,,c03r0100X
-pqi,60,pqi_90_observed_rate,,,REAL,,PQI #90 Observed Rate,,c03r0100Y
-pqi,61,pqi_90_risk_adjusted_rate,,,REAL,,PQI #90 Risk-Adjusted Rate,,c03r0100Z
-pqi,62,pqi_91_cases,,,INTEGER,6,PQI #91 # Cases,,c03r01010
-pqi,63,pqi_91_population,,,INTEGER,8,PQI #91 Population,,c03r01011
-pqi,64,pqi_91_observed_rate,,,REAL,,PQI #91 Observed Rate,,c03r01012
-pqi,65,pqi_91_risk_adjusted_rate,,,REAL,,PQI #91 Risk-Adjusted Rate,,c03r01013
-pqi,66,pqi_92_cases,,,INTEGER,6,PQI #92 # Cases,,c03r01014
-pqi,67,pqi_92_population,,,INTEGER,8,PQI #92 Population,,c03r01015
-pqi,68,pqi_92_observed_rate,,,REAL,,PQI #92 Observed Rate,,c03r01016
-pqi,69,pqi_92_risk_adjusted_rate,,,REAL,,PQI #92 Risk-Adjusted Rate,,c03r01017
-pqi,70,gvid,,c03x04003,VARCHAR,6,GVid reference to county,c00104002,c03r01018
+table,seq,column,is_pk,is_fk,id,type,size,description,proto_vid,d_grain,d_index,d_orig_proto_vid
+pqi,1,id,1,,t03r01,INTEGER,,Multi-year PQI file.,,counties,,
+pqi,2,gvid,,c03x04003,c03r01002,VARCHAR,6,gvid,c00109003,,census.gov-index-counties-0.0.4:gvid,counties.gvid
+pqi,3,year,,c03x04002,c03r01003,INTEGER,4,Year,c00109002,,census.gov-index-counties-0.0.4:year,counties.year
+pqi,5,county,,,c03r01005,VARCHAR,15,County,,,,
+pqi,6,pqi_1_diabetes_short_term_complications_cases,,,c03r01006,INTEGER,5,PQI #1 Diabetes Short-term Complications # Cases,,,,
+pqi,7,pqi_1_diabetes_short_term_complications_population,,,c03r01007,INTEGER,8,PQI #1 Diabetes Short-term Complications Population,,,,
+pqi,8,pqi_1_diabetes_short_term_complications_observed_rate,,,c03r01008,REAL,,PQI #1 Diabetes Short-term Complications Observed Rate,,,,
+pqi,9,pqi_1_diabetes_short_term_complications_risk_adjusted_rate,,,c03r01009,REAL,,PQI #1 Diabetes Short-term Complications Risk-Adjusted Rate,,,,
+pqi,10,pqi_2_perforated_appendix_cases,,,c03r0100a,INTEGER,4,PQI #2 Perforated Appendix # Cases,,,,
+pqi,11,pqi_2_perforated_appendix_population,,,c03r0100b,INTEGER,5,PQI #2 Perforated Appendix Population,,,,
+pqi,12,pqi_2_perforated_appendix_observed_rate,,,c03r0100c,REAL,,PQI #2 Perforated Appendix Observed Rate,,,,
+pqi,13,pqi_2_perforated_appendix_risk_adjusted_rate,,,c03r0100d,REAL,,PQI #2 Perforated Appendix Risk-Adjusted Rate,,,,
+pqi,14,pqi_3_diabetes_long_term_complications_cases,,,c03r0100e,INTEGER,5,PQI #3 Diabetes Long-term Complications # Cases,,,,
+pqi,15,pqi_3_diabetes_long_term_complications_population,,,c03r0100f,INTEGER,8,PQI #3 Diabetes Long-term Complications Population,,,,
+pqi,16,pqi_3_diabetes_long_term_complications_observed_rate,,,c03r0100g,REAL,,PQI #3 Diabetes Long-term Complications Observed Rate,,,,
+pqi,17,pqi_3_diabetes_long_term_complications_risk_adjusted_rate,,,c03r0100h,REAL,,PQI #3 Diabetes Long-term Complications Risk-Adjusted Rate,,,,
+pqi,18,pqi_5_copd_or_asthma_in_older_adults_cases,,,c03r0100i,INTEGER,5,PQI #5 COPD or Asthma in Older Adults # Cases,,,,
+pqi,19,pqi_5_copd_or_asthma_in_older_adults_population,,,c03r0100j,INTEGER,8,PQI #5 COPD or Asthma in Older Adults Population,,,,
+pqi,20,pqi_5_copd_or_asthma_in_older_adults_observed_rate,,,c03r0100k,REAL,,PQI #5 COPD or Asthma in Older Adults Observed Rate,,,,
+pqi,21,pqi_5_copd_or_asthma_in_older_adults_risk_adjusted_rate,,,c03r0100l,REAL,,PQI #5 COPD or Asthma in Older Adults Risk-Adjusted Rate,,,,
+pqi,22,pqi_7_hypertension_cases,,,c03r0100m,INTEGER,4,PQI #7 Hypertension # Cases,,,,
+pqi,23,pqi_7_hypertension_population,,,c03r0100n,INTEGER,8,PQI #7 Hypertension Population,,,,
+pqi,24,pqi_7_hypertension_observed_rate,,,c03r0100o,REAL,,PQI #7 Hypertension Observed Rate,,,,
+pqi,25,pqi_7_hypertension_risk_adjusted_rate,,,c03r0100p,REAL,,PQI #7 Hypertension Risk-Adjusted Rate,,,,
+pqi,26,pqi_8_heart_failure_cases,,,c03r0100q,INTEGER,5,PQI #8 Heart Failure # Cases,,,,
+pqi,27,pqi_8_heart_failure_population,,,c03r0100r,INTEGER,8,PQI #8 Heart Failure Population,,,,
+pqi,28,pqi_8_heart_failure_observed_rate,,,c03r0100s,REAL,,PQI #8 Heart Failure Observed Rate,,,,
+pqi,29,pqi_8_heart_failure_risk_adjusted_rate,,,c03r0100t,REAL,,PQI #8 Heart Failure Risk-Adjusted Rate,,,,
+pqi,30,pqi_10_dehydration_cases,,,c03r0100u,INTEGER,5,PQI #10 Dehydration # Cases,,,,
+pqi,31,pqi_10_dehydration_population,,,c03r0100v,INTEGER,8,PQI #10 Dehydration Population,,,,
+pqi,32,pqi_10_dehydration_observed_rate,,,c03r0100w,REAL,,PQI #10 Dehydration Observed Rate,,,,
+pqi,33,pqi_10_dehydration_risk_adjusted_rate,,,c03r0100x,REAL,,PQI #10 Dehydration Risk-Adjusted Rate,,,,
+pqi,34,pqi_11_bacterial_pneumonia_cases,,,c03r0100y,INTEGER,5,PQI #11 Bacterial Pneumonia # Cases,,,,
+pqi,35,pqi_11_bacterial_pneumonia_population,,,c03r0100z,INTEGER,8,PQI #11 Bacterial Pneumonia Population,,,,
+pqi,36,pqi_11_bacterial_pneumonia_observed_rate,,,c03r0100A,REAL,,PQI #11 Bacterial Pneumonia Observed Rate,,,,
+pqi,37,pqi_11_bacterial_pneumonia_risk_adjusted_rate,,,c03r0100B,REAL,,PQI #11 Bacterial Pneumonia Risk-Adjusted Rate,,,,
+pqi,38,pqi_12_urinary_tract_infection_cases,,,c03r0100C,INTEGER,5,PQI #12 Urinary Tract Infection # Cases,,,,
+pqi,39,pqi_12_urinary_tract_infection_population,,,c03r0100D,INTEGER,8,PQI #12 Urinary Tract Infection Population,,,,
+pqi,40,pqi_12_urinary_tract_infection_observed_rate,,,c03r0100E,REAL,,PQI #12 Urinary Tract Infection Observed Rate,,,,
+pqi,41,pqi_12_urinary_tract_infection_risk_adjusted_rate,,,c03r0100F,REAL,,PQI #12 Urinary Tract Infection Risk-Adjusted Rate,,,,
+pqi,42,pqi_13_angina_without_procedure_cases,,,c03r0100G,INTEGER,4,PQI #13 Angina without Procedure # Cases,,,,
+pqi,43,pqi_13_angina_without_procedure_population,,,c03r0100H,INTEGER,8,PQI #13 Angina without Procedure Population,,,,
+pqi,44,pqi_13_angina_without_procedure_observed_rate,,,c03r0100I,REAL,,PQI #13 Angina without Procedure Observed Rate,,,,
+pqi,45,pqi_13_angina_without_procedure_risk_adjusted_rate,,,c03r0100J,REAL,,PQI #13 Angina without Procedure Risk-Adjusted Rate,,,,
+pqi,46,pqi_14_uncontrolled_diabetes_cases,,,c03r0100K,INTEGER,4,PQI #14 Uncontrolled Diabetes # Cases,,,,
+pqi,47,pqi_14_uncontrolled_diabetes_population,,,c03r0100L,INTEGER,8,PQI #14 Uncontrolled Diabetes Population,,,,
+pqi,48,pqi_14_uncontrolled_diabetes_observed_rate,,,c03r0100M,REAL,,PQI #14 Uncontrolled Diabetes Observed Rate,,,,
+pqi,49,pqi_14_uncontrolled_diabetes_risk_adjusted_rate,,,c03r0100N,REAL,,PQI #14 Uncontrolled Diabetes Risk-Adjusted Rate,,,,
+pqi,50,pqi_15_asthma_in_younger_adults_cases,,,c03r0100O,INTEGER,4,PQI #15 Asthma in Younger Adults # Cases,,,,
+pqi,51,pqi_15_asthma_in_younger_adults_population,,,c03r0100P,INTEGER,8,PQI #15 Asthma in Younger Adults Population,,,,
+pqi,52,pqi_15_asthma_in_younger_adults_observed_rate,,,c03r0100Q,REAL,,PQI #15 Asthma in Younger Adults Observed Rate,,,,
+pqi,53,pqi_15_asthma_in_younger_adults_risk_adjusted_rate,,,c03r0100R,REAL,,PQI #15 Asthma in Younger Adults Risk-Adjusted Rate,,,,
+pqi,54,pqi_16_lower_extremity_amputation_among_patients_with_diabetes_cases,,,c03r0100S,INTEGER,4,PQI #16 Lower-Extremity Amputation Among Patients with Diabetes # Cases,,,,
+pqi,55,pqi_16_lower_extremity_amputation_among_patients_with_diabetes_population,,,c03r0100T,INTEGER,8,PQI #16 Lower-Extremity Amputation Among Patients with Diabetes Population,,,,
+pqi,56,pqi_16_lower_extremity_amputation_among_patients_with_diabetes_observed_rate,,,c03r0100U,REAL,,PQI #16 Lower-Extremity Amputation Among Patients with Diabetes Observed Rate,,,,
+pqi,57,pqi_16_lower_extremity_amputation_among_patients_with_diabetes_risk_adjusted_rate,,,c03r0100V,REAL,,PQI #16 Lower-Extremity Amputation Among Patients with Diabetes Risk-Adjusted Rate,,,,
+pqi,58,pqi_90_overall_composite_cases,,,c03r0100W,INTEGER,6,PQI #90 Overall Composite # Cases,,,,
+pqi,59,pqi_90_overall_composite_population,,,c03r0100X,INTEGER,8,PQI #90 Overall Composite Population,,,,
+pqi,60,pqi_90_overall_composite_observed_rate,,,c03r0100Y,REAL,,PQI #90 Overall Composite Observed Rate,,,,
+pqi,61,pqi_90_overall_composite_risk_adjusted_rate,,,c03r0100Z,REAL,,PQI #90 Overall Composite Risk-Adjusted Rate,,,,
+pqi,62,pqi_91_acute_composite_cases,,,c03r01010,INTEGER,6,PQI #91 Acute Composite # Cases,,,,
+pqi,63,pqi_91_acute_composite_population,,,c03r01011,INTEGER,8,PQI #91 Acute Composite Population,,,,
+pqi,64,pqi_91_acute_composite_observed_rate,,,c03r01012,REAL,,PQI #91 Acute Composite Observed Rate,,,,
+pqi,65,pqi_91_acute_composite_risk_adjusted_rate,,,c03r01013,REAL,,PQI #91 Acute Composite Risk-Adjusted Rate,,,,
+pqi,66,pqi_92_chronic_composite_cases,,,c03r01014,INTEGER,6,PQI #92 Chronic Composite # Cases,,,,
+pqi,67,pqi_92_chronic_composite_population,,,c03r01015,INTEGER,8,PQI #92 Chronic Composite Population,,,,
+pqi,68,pqi_92_chronic_composite_observed_rate,,,c03r01016,REAL,,PQI #92 Chronic Composite Observed Rate,,,,
+pqi,69,pqi_92_chronic_composite_risk_adjusted_rate,,,c03r01017,REAL,,PQI #92 Chronic Composite Risk-Adjusted Rate,,,,

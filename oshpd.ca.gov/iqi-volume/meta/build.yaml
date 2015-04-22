@@ -10,74 +10,92 @@ extract: {}
 sources:
     2005Util:
         description: 2005 Utilization
+        table: utilization
         time: 2005
         url: http://www.oshpd.ca.gov/HID/Products/PatDischargeData/ResearchReports/HospIPQualInd/Vol-Util_IndicatorsRpt/2005Util.xls
     2005Vol:
         description: 2005 Volume
+        table: volume
         time: 2005
         url: http://www.oshpd.ca.gov/HID/Products/PatDischargeData/ResearchReports/HospIPQualInd/Vol-Util_IndicatorsRpt/2005Vol.xls
     2006Util:
         description: 2006 Utilization
+        table: utilization
         time: 2006
         url: http://www.oshpd.ca.gov/HID/Products/PatDischargeData/ResearchReports/HospIPQualInd/Vol-Util_IndicatorsRpt/2006Util.xls
     2006Vol:
         description: 2006 Volume
+        table: volume
         time: 2006
         url: http://www.oshpd.ca.gov/HID/Products/PatDischargeData/ResearchReports/HospIPQualInd/Vol-Util_IndicatorsRpt/2006Vol.xls
     2007Util:
         description: 2007 Utilization
+        table: utilization
         time: 2007
         url: http://www.oshpd.ca.gov/HID/Products/PatDischargeData/ResearchReports/HospIPQualInd/Vol-Util_IndicatorsRpt/2007Util.xls
     2007Vol:
         description: 2007 Volume
+        table: volume
         time: 2007
         url: http://www.oshpd.ca.gov/HID/Products/PatDischargeData/ResearchReports/HospIPQualInd/Vol-Util_IndicatorsRpt/2007Vol.xls
     2008Util:
         description: 2008 Utilization
+        table: utilization
         time: 2008
         url: http://www.oshpd.ca.gov/HID/Products/PatDischargeData/ResearchReports/HospIPQualInd/Vol-Util_IndicatorsRpt/2008Util.xls
     2008Vol:
         description: 2008 Volume
+        table: volume
         time: 2008
         url: http://www.oshpd.ca.gov/HID/Products/PatDischargeData/ResearchReports/HospIPQualInd/Vol-Util_IndicatorsRpt/2008Vol.xls
     2009Util:
         description: 2009 Utilization
+        table: utilization
         time: 2009
         url: http://www.oshpd.ca.gov/HID/Products/PatDischargeData/ResearchReports/HospIPQualInd/Vol-Util_IndicatorsRpt/2009Util.xls
     2009Vol:
         description: 2009 Volume
+        table: volume
         time: 2009
         url: http://www.oshpd.ca.gov/HID/Products/PatDischargeData/ResearchReports/HospIPQualInd/Vol-Util_IndicatorsRpt/2009Vol.xls
     2010Util:
         description: 2010 Utilization
+        table: utilization
         time: 2010
         url: http://www.oshpd.ca.gov/HID/Products/PatDischargeData/ResearchReports/HospIPQualInd/Vol-Util_IndicatorsRpt/2010Util.xls
     2010Vol:
         description: 2010 Volume
+        table: volume
         time: 2010
         url: http://www.oshpd.ca.gov/HID/Products/PatDischargeData/ResearchReports/HospIPQualInd/Vol-Util_IndicatorsRpt/2010Vol.xls
     2011Util:
         description: 2011 Utilization
+        table: utilization
         time: 2011
         url: http://www.oshpd.ca.gov/HID/Products/PatDischargeData/ResearchReports/HospIPQualInd/Vol-Util_IndicatorsRpt/2011Util.xls
     2011Vol:
         description: 2011 Volume
+        table: volume
         time: 2011
         url: http://www.oshpd.ca.gov/HID/Products/PatDischargeData/ResearchReports/HospIPQualInd/Vol-Util_IndicatorsRpt/2011Vol.xls
     2012Util:
         description: 2012 Utilization
+        table: utilization
         time: 2012
         url: http://www.oshpd.ca.gov/HID/Products/PatDischargeData/ResearchReports/HospIPQualInd/Vol-Util_IndicatorsRpt/2012Util.xls
     2012Vol:
         description: 2012 Volume
+        table: volume
         time: 2012
         url: http://www.oshpd.ca.gov/HID/Products/PatDischargeData/ResearchReports/HospIPQualInd/Vol-Util_IndicatorsRpt/2012Vol.xls
     2013Util:
         description: 2013 Utilization
+        table: utilization
         time: 2013
         url: http://www.oshpd.ca.gov/HID/Products/PatDischargeData/ResearchReports/HospIPQualInd/Vol-Util_IndicatorsRpt/2013Util.xls
     2013Vol:
         description: 2013 Volume
+        table: volume
         time: 2013
         url: http://www.oshpd.ca.gov/HID/Products/PatDischargeData/ResearchReports/HospIPQualInd/Vol-Util_IndicatorsRpt/2013Vol.xls
 views: {}

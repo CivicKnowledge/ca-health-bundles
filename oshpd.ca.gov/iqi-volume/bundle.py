@@ -2,14 +2,12 @@
 
 '''
 
-from  ambry.bundle.loader import CsvBundle
+from  ambry.bundle.loader import ExcelBuildBundle
 from ambry.util import memoize
 
 
-class Bundle(CsvBundle):
+class Bundle(ExcelBuildBundle):
     ''' '''
-
-
 
     @staticmethod
     def latin_decode(v):
@@ -17,25 +15,11 @@ class Bundle(CsvBundle):
         
         return unidecode(v.decode('latin1'))
 
-    def set_desc(self):
-        import re
-        
-        for k, v in self.metadata.sources.items():
-         
-            g =  re.match(r'(\d+)(\w+)', k).groups()
-            
-            d = { 'Vol': 'Volume', 'Util': 'Utilization'}
-            
-            self.metadata.sources.get(k).description = '{} {}'.format(g[0], d[g[1]])
-
-        self.metadata.write_to_dir(write_all=True)
-
-
+    @memoize
     def counties_map(self):
         counties = { r['name'].replace(" County, California",''): r['gvid'] 
                      for r in  self.library.dep('counties').partition.rows  if int(r['state'] == 6)}
 
-  
         return counties
   
     def meta_combine_tables(self):
@@ -70,61 +54,23 @@ class Bundle(CsvBundle):
         self.schema.write_schema()
         
     def build(self):
-        self.build_import()
-        self.build_summary()
+        super(Bundle, self).build()
+        #self.build_summary()
         
         return True
         
-    def build_import(self):
-        import re
+    def build_modify_row(self, row_gen, p, source, row):
         
-        lr = self.init_log_rate()
+        row['year'] = int(source.time)
+        #row['hospital'] = row['hospital'].decode('latin1')
         
-        counties_map = self.counties_map()
-        
-        def do_insert(table, year, k):
-            
-            p = self.partitions.find_or_new(table=table, grain = None)
-            
-            header = [ c.name for c in p.table.columns]
-            
-            with p.inserter() as ins:
-                for _, row in self.gen_rows(k):
+        if row['county']:
+            row['county_gvid'] = self.counties_map[row['county'].lower()]
+    
 
-                    drow = dict(zip(header, [None]*3 + row ))
-              
-                    drow['year'] = year
-                   
-                    lr("{} {}".format(table, year))
-                    
-                    drow['gvid'] = counties_map.get(drow['county'], None)
-                    
-
-                    if drow['gvid'] and drow['hospital_name']:
-                        match =  self.match_name(drow['gvid'], drow['hospital_name'].decode("latin1"))
-                        
-                        if match:
-                            score, name, ids = match
-                            drow['facility_index_id'] = ids[0]
-                    
-                    e = ins.insert(drow)
-                    
-                    if e:
-                        self.error("Insert error {}".format(e))
-                    
-        for k, v in self.metadata.sources.items():
-            if k.endswith('Util'):
-                year = int(k.replace('Util',''))
-                do_insert('utilization',year, k)
-                         
-            elif k.endswith('Vol'):
-                year = int(k.replace('Vol',''))
-                do_insert('volume',year, k)
-                
-        return True
         
     def build_summary(self):
-        
+        """Use Pandas to sum hospital records to counties."""
         for table_name in ('utilization', "volume"):
 
             p = self.partitions.find_or_new(table=table_name, grain='county')
@@ -132,7 +78,7 @@ class Bundle(CsvBundle):
         
             self.log("Building {}".format(p.identity))
         
-            df = self.partitions.find_or_new(table=table_name, grain = None).pandas
+            df = self.partitions.find(table=table_name, grain = None).pandas
         
             df[(df.hospital_name != 'STATEWIDE TOTAL')].groupby(['year','county', 'gvid']).sum().reset_index().drop('id',axis=1)
         
@@ -144,6 +90,7 @@ class Bundle(CsvBundle):
      
     @memoize
     def name_link_dicts(self):
+        """Create a set of dictionaries that group facilities by county, for matching"""
         facilities = self.library.dep('facilities').partition
         
         fac_by_county = {}
@@ -166,6 +113,7 @@ class Bundle(CsvBundle):
         return fac_by_county, fac_all
         
     def match_name(self, county, n):
+        """Match hospital names by name and county"""
         from fuzzywuzzy import fuzz
         scores = []
         
@@ -186,12 +134,4 @@ class Bundle(CsvBundle):
             
         else:
             return None
-            
-
-            
-            
-        
-    
-        
-
-          
+                  

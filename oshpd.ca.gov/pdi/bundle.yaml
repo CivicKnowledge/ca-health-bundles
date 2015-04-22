@@ -4,7 +4,7 @@ about:
     groups: []
     license: null
     rights: null
-    space: null
+    space: California
     subject: null
     summary: Pediatric Quality Indicators (PDIs) use indicators from other AHRQ QI
         modules with adaptations for use among children. Similar to Prevention Quality
@@ -32,30 +32,34 @@ external_documentation:
         title: Pediatric Quality Indicators Technical Specifications - Version 4.5,
             May 2013
         url: http://www.qualityindicators.ahrq.gov/Modules/PDI_TechSpec.aspx
-    download:
+    dataset:
         description: Web page that links to the source files.
         source: null
-        title: Download Page
+        title: Dataset Page
         url: http://www.oshpd.ca.gov/HID/Products/PatDischargeData/AHRQ/pdi_overview.html
 identity:
     bspace: null
     btime: null
     dataset: pdi
     id: d03C
-    revision: 2
+    revision: 3
     source: oshpd.ca.gov
     subset: null
     type: null
     variation: null
-    version: 0.0.2
+    version: 0.0.3
 names:
-    fqname: oshpd.ca.gov-pdi-0.0.2~d03C002
+    fqname: oshpd.ca.gov-pdi-0.0.3~d03C003
     name: oshpd.ca.gov-pdi
-    vid: d03C002
-    vname: oshpd.ca.gov-pdi-0.0.2
+    vid: d03C003
+    vname: oshpd.ca.gov-pdi-0.0.3
 process: {}
 versions:
     2:
         date: '2015-02-22T21:01:55.087958'
         description: 'Prior build failed in production '
         version: 0.0.2
+    3:
+        date: '2015-04-19T19:28:13.535730'
+        description: Adding coverage
+        version: 0.0.3

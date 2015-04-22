@@ -3,6 +3,8 @@ dependencies:
     counties: census.gov-index-counties
 sources:
     PDI_Summary:
-        description: xlsx
+        conversion: http://ds.civicknowledge.org/oshpd.ca.gov/oshpd.ca.gov-pdi/PDI_Summary.csv
+        description: Pediatric Quality Indicators
+        time: 2005/2013
         url: http://www.oshpd.ca.gov/HID/Products/PatDischargeData/AHRQ/pdi_overview.html/PDI/PDI_Summary.xlsx
 views: {}
