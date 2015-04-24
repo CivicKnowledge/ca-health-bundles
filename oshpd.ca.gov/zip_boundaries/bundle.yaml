@@ -7,6 +7,8 @@ about:
     tags:
     - zip
     title: Zip Code Boundaries
+    time: 2015
+    space: California
 contact_bundle:
     creator:
         email: eric@sandiegodata.org

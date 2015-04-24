@@ -1,12 +1,16 @@
 about:
+    access: null
+    grain: null
     groups: []
     license: null
     rights: null
+    space: California
     subject: null
     summary: ZCTA boundaries for California. ZCTA are similar to Zip and used by the
         census instead of Zip area
     tags:
     - zcta
+    time: 2015
     title: ZCTA Code Boundaries
 contact_bundle:
     creator:
@@ -37,17 +41,17 @@ identity:
     btime: null
     dataset: zcta_boundaries
     id: d032
-    revision: 3
+    revision: 4
     source: oshpd.ca.gov
     subset: null
     type: null
     variation: null
-    version: 0.0.3
+    version: 0.0.4
 names:
-    fqname: oshpd.ca.gov-zcta_boundaries-0.0.3~d032003
+    fqname: oshpd.ca.gov-zcta_boundaries-0.0.4~d032004
     name: oshpd.ca.gov-zcta_boundaries
-    vid: d032003
-    vname: oshpd.ca.gov-zcta_boundaries-0.0.3
+    vid: d032004
+    vname: oshpd.ca.gov-zcta_boundaries-0.0.4
 process: {}
 versions:
     1:
@@ -62,3 +66,7 @@ versions:
         date: '2014-12-30T16:05:47.365009'
         description: Updating for new shapefile processing
         version: 0.0.3
+    4:
+        date: '2015-04-23T21:03:51.873695'
+        description: Adding coverage
+        version: 0.0.4
