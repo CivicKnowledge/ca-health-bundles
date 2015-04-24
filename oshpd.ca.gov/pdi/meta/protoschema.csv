@@ -1,0 +1,4 @@
+"table","seq","column","is_pk","is_fk","id","type","size","description","proto_vid","d_grain"
+"pdi_summary",1,"id",1,,,"INTEGER",,"Multi-year PQI file.",,"counties"
+"pdi_summary",2,"gvid",,,,"VARCHAR",4,"gvid","counties.gvid",
+"pdi_summary",3,"year",,,,"VARCHAR",4,"Year","counties.year",

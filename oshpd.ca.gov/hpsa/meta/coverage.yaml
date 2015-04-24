@@ -1,0 +1,8 @@
+coverage:
+    geo:
+    - 0E06
+    grain:
+    - 0E00
+    - entity
+    time:
+    - 2014
