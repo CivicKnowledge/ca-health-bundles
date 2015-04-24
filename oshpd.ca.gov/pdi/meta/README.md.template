@@ -1,3 +1,6 @@
 # {about_title}
 
 {about_summary}
+
+Unlike the ``oshpd.ca.gov-pqi`` and ``oshpd.ca.gov-psi`` bundles,  xlrd
+can't parse the source file for this bundle, so we've converted it manually and provided a conversion link in the source record. 

@@ -4,5 +4,18 @@ dependencies:
 sources:
     psi:
         description: PSI for 2005 to 2013
+        row_spec:
+            data_end_line: null
+            data_start_line: 7
+            header_comment_lines:
+            - 0
+            - 1
+            - 2
+            - 3
+            - 5
+            header_lines:
+            - 4
+            - 6
+        segment: 1
         url: http://www.oshpd.ca.gov/HID/Products/PatDischargeData/AHRQ/PSI/PSI_Summary_V45a_2005-2013.xlsx
 views: {}

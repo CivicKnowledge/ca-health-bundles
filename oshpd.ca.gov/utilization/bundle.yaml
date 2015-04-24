@@ -6,9 +6,10 @@ about:
     rights: null
     space: null
     subject: null
-    summary: Counts of a variety of types of hospital procedures, from an extract from the State of Californias 
-        Automated Licensing Information and Report Tracking System. There is other utilization and volume information 
-        available from OSHPD via AHRQ. 
+    summary: Counts of a variety of types of hospital procedures, from an extract
+        from the State of Californias Automated Licensing Information and Report Tracking
+        System. There is other utilization and volume information available from OSHPD
+        via AHRQ.
     tags: []
     time: null
     title: Hospital Annual Utilization From ALIRTS
@@ -26,9 +27,10 @@ contact_source:
     maintainer: {}
 external_documentation:
     data_notes:
-        url: http://www.oshpd.ca.gov/hid/Products/Hospitals/Utilization/Hosp_Util_Info.html
+        description: null
+        source: null
         title: Hospital Annual Utilization Data Notes
-        description: 
+        url: http://www.oshpd.ca.gov/hid/Products/Hospitals/Utilization/Hosp_Util_Info.html
     download:
         description: Web page that links to the source files.
         source: null

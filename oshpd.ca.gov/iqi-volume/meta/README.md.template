@@ -1,3 +1,5 @@
 # {about_title}
 
 {about_summary}
+
+This bundle is currently broken, because the excel file sources are actually XML and are not zipped, and there doesn't appear to be a Python library that can read the files. 

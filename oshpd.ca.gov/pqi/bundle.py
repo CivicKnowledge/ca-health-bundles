@@ -39,8 +39,7 @@ class Bundle(ExcelBuildBundle):
     
     def build_modify_row(self, row_gen, p, source, row):
 
-            
-            try:
-                row['gvid'] =  self.county_map[row['county'].lower()]
-            except KeyError:
-                pass
+        try:
+            row['gvid'] =  self.county_map[row['county'].lower()]
+        except KeyError:
+            pass

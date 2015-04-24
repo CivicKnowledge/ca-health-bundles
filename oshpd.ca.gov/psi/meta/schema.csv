@@ -1,26 +1,26 @@
-table,seq,column,is_pk,is_fk,type,i1,i2,size,description,d_caster,d_has_codes,id
-psi,1,id,1,,INTEGER,,,,PSI for 2005 to 2013,,,t03B01
-psi,2,year,,,INTEGER,,,4,Year,,,c03B01002
-psi,3,county,,,VARCHAR,,,15,County,,,c03B01003
-psi,4,psi_21_cases,,,INTEGER,,,3,PSI #21 Retained Surgical Item or Unretrieved Device Fragment: # Cases,int_caster,,c03B01004
-psi,5,psi_21_population,,,INTEGER,,,12,PSI #21 Retained Surgical Item or Unretrieved Device Fragment: Population,int_caster,,c03B01005
-psi,6,psi_21_rate,,,REAL,,,3,PSI #21 Retained Surgical Item or Unretrieved Device Fragment: Observed Rate,real_caster,,c03B01006
-psi,7,psi_22_cases,,,INTEGER,,,4,PSI #22 Iatrogenic Pneumothorax: # Cases,int_caster,1,c03B01007
-psi,8,psi_22_population,,,INTEGER,,,12,PSI #22 Iatrogenic Pneumothorax: Population,int_caster,,c03B01008
-psi,9,psi_22_rate,,,REAL,,,,PSI #22 Iatrogenic Pneumothorax: Observed Rate,real_caster,1,c03B01009
-psi,10,psi_23_cases,,,INTEGER,,,4,PSI #23 Central Venous Catheter-Related Blood Stream Infection: # Cases,int_caster,1,c03B0100a
-psi,11,psi_23_population,,,INTEGER,,,12,PSI #23 Central Venous Catheter-Related Blood Stream Infection: Population,int_caster,,c03B0100b
-psi,12,psi_23_rate,,,REAL,,,,PSI #23 Central Venous Catheter-Related Blood Stream Infection: Observed Rate,real_caster,1,c03B0100c
-psi,13,psi_24_cases,,,INTEGER,,,3,PSI #24 Postoperative Wound Dehiscence: # Cases,int_caster,,c03B0100d
-psi,14,psi_24_population,,,INTEGER,,,12,PSI #24 Postoperative Wound Dehiscence: Population,int_caster,,c03B0100e
-psi,15,psi_24_rate,,,REAL,,,4,PSI #24 Postoperative Wound Dehiscence: Observed Rate,real_caster,,c03B0100f
-psi,16,psi_25_cases,,,INTEGER,,,4,PSI #25 Accidental Puncture or Laceration: # Cases,int_caster,1,c03B0100g
-psi,17,psi_25_population,,,INTEGER,,,12,PSI #25 Accidental Puncture or Laceration: Population,int_caster,,c03B0100h
-psi,18,psi_25_rate,,,REAL,,,,PSI #25 Accidental Puncture or Laceration: Observed Rate,real_caster,1,c03B0100i
-psi,19,psi_26_cases,,,INTEGER,,,2,PSI #26 Transfusion Reaction: # Cases,int_caster,,c03B0100j
-psi,20,psi_26_population,,,INTEGER,,,12,PSI #26 Transfusion Reaction: Population,int_caster,,c03B0100k
-psi,21,psi_26_rate,,,REAL,,,3,PSI #26 Transfusion Reaction: Observed Rate,real_caster,,c03B0100l
-psi,22,psi_27_cases,,,INTEGER,,,4,PSI #27 Perioperative Hemorrhage or Hematoma: # Cases,int_caster,1,c03B0100m
-psi,23,psi_27_population,,,INTEGER,,,12,PSI #27 Perioperative Hemorrhage or Hematoma: Population,int_caster,,c03B0100n
-psi,24,psi_27_rate,,,REAL,,,,PSI #27 Perioperative Hemorrhage or Hematoma: Observed Rate,real_caster,1,c03B0100o
-psi,25,gvid,,c03x04003,VARCHAR,1,1,6,GVid reference to county,,,c03B0100p
+table,seq,column,is_pk,is_fk,id,type,size,description,proto_vid,d_grain,d_index,d_orig_proto_vid
+psi,1,id,1,,t03B01,INTEGER,,Multi-year PQI file.,,counties,,
+psi,2,gvid,,c03x04003,c03B01002,VARCHAR,6,gvid,c00109003,,census.gov-index-counties-0.0.4:gvid,counties.gvid
+psi,3,year,,c03x04002,c03B01003,INTEGER,4,Year,c00109002,,census.gov-index-counties-0.0.4:year,counties.year
+psi,5,county,,,c03B01005,VARCHAR,15,County,,,,
+psi,6,psi_21_retained_surgical_item_or_unretrieved_device_fragment_cases,,,c03B01006,INTEGER,3,PSI #21 Retained Surgical Item or Unretrieved Device Fragment # Cases,,,,
+psi,7,psi_21_retained_surgical_item_or_unretrieved_device_fragment_population,,,c03B01007,INTEGER,8,PSI #21 Retained Surgical Item or Unretrieved Device Fragment Population,,,,
+psi,8,psi_21_retained_surgical_item_or_unretrieved_device_fragment_observed_rate,,,c03B01008,REAL,,PSI #21 Retained Surgical Item or Unretrieved Device Fragment Observed Rate,,,,
+psi,9,psi_22_iatrogenic_pneumothorax_cases,,,c03B01009,INTEGER,4,PSI #22 Iatrogenic Pneumothorax # Cases,,,,
+psi,10,psi_22_iatrogenic_pneumothorax_population,,,c03B0100a,INTEGER,8,PSI #22 Iatrogenic Pneumothorax Population,,,,
+psi,11,psi_22_iatrogenic_pneumothorax_observed_rate,,,c03B0100b,REAL,,PSI #22 Iatrogenic Pneumothorax Observed Rate,,,,
+psi,12,psi_23_central_venous_catheter_related_blood_stream_infection_cases,,,c03B0100c,INTEGER,4,PSI #23 Central Venous Catheter-Related Blood Stream Infection # Cases,,,,
+psi,13,psi_23_central_venous_catheter_related_blood_stream_infection_population,,,c03B0100d,INTEGER,8,PSI #23 Central Venous Catheter-Related Blood Stream Infection Population,,,,
+psi,14,psi_23_central_venous_catheter_related_blood_stream_infection_observed_rate,,,c03B0100e,REAL,,PSI #23 Central Venous Catheter-Related Blood Stream Infection Observed Rate,,,,
+psi,15,psi_24_postoperative_wound_dehiscence_cases,,,c03B0100f,INTEGER,3,PSI #24 Postoperative Wound Dehiscence # Cases,,,,
+psi,16,psi_24_postoperative_wound_dehiscence_population,,,c03B0100g,INTEGER,8,PSI #24 Postoperative Wound Dehiscence Population,,,,
+psi,17,psi_24_postoperative_wound_dehiscence_observed_rate,,,c03B0100h,REAL,,PSI #24 Postoperative Wound Dehiscence Observed Rate,,,,
+psi,18,psi_25_accidental_puncture_or_laceration_cases,,,c03B0100i,INTEGER,4,PSI #25 Accidental Puncture or Laceration # Cases,,,,
+psi,19,psi_25_accidental_puncture_or_laceration_population,,,c03B0100j,INTEGER,8,PSI #25 Accidental Puncture or Laceration Population,,,,
+psi,20,psi_25_accidental_puncture_or_laceration_observed_rate,,,c03B0100k,REAL,,PSI #25 Accidental Puncture or Laceration Observed Rate,,,,
+psi,21,psi_26_transfusion_reaction_cases,,,c03B0100l,INTEGER,2,PSI #26 Transfusion Reaction # Cases,,,,
+psi,22,psi_26_transfusion_reaction_population,,,c03B0100m,INTEGER,8,PSI #26 Transfusion Reaction Population,,,,
+psi,23,psi_26_transfusion_reaction_observed_rate,,,c03B0100n,REAL,,PSI #26 Transfusion Reaction Observed Rate,,,,
+psi,24,psi_27_perioperative_hemorrhage_or_hematoma_cases,,,c03B0100o,INTEGER,4,PSI #27 Perioperative Hemorrhage or Hematoma # Cases,,,,
+psi,25,psi_27_perioperative_hemorrhage_or_hematoma_population,,,c03B0100p,INTEGER,8,PSI #27 Perioperative Hemorrhage or Hematoma Population,,,,
+psi,26,psi_27_perioperative_hemorrhage_or_hematoma_observed_rate,,,c03B0100q,REAL,,PSI #27 Perioperative Hemorrhage or Hematoma Observed Rate,,,,
