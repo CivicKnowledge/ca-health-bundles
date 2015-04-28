@@ -3,8 +3,8 @@ coverage:
     - 0E06
     - 0O0600
     grain:
-    - 0O0000
-    - 0O0000
+    - 0OZZZZ
+    - 0OZZZZ
     time:
     - 2005
     - 2006

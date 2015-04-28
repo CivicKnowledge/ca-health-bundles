@@ -1,4 +1,6 @@
 coverage:
-    geo: []
+    geo:
+    - 0E06
     grain: []
-    time: []
+    time:
+    - 2010
