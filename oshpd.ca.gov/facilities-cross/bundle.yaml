@@ -1,10 +1,10 @@
 about:
-    access: public
+    access: restricted
     grain: facility
     groups: []
-    license: null
-    rights: null
-    space: CA
+    license: ckdbl
+    rights: public
+    space: California
     subject: null
     summary: null
     tags: []

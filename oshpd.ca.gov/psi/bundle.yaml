@@ -1,10 +1,10 @@
 about:
-    access: null
+    access: restricted
     grain: county
     groups: []
-    license: null
-    rights: null
-    space: null
+    license: ckdbl
+    rights: public
+    space: California
     subject: null
     summary: Patient Safety Indicators (PSIs) are measures that represent rates of
         potentially-preventable adverse events that occur during a hospital stay.

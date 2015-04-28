@@ -1,9 +1,9 @@
 about:
-    access: null
+    access: restricted
     grain: null
     groups:
     - health
-    license: null
+    license: ckdbl
     rights: public
     space: California
     subject: null

@@ -1,9 +1,9 @@
 about:
-    access: public
+    access: restricted
     grain: hospital
     groups: []
-    license: null
-    rights: null
+    license: ckdbl
+    rights: public
     space: California
     subject: healthcare quality
     summary: of 11 Hospital Inpatient Quality Indicators (Inpatient Quality Indicators,

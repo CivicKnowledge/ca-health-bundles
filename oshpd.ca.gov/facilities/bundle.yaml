@@ -1,10 +1,10 @@
 about:
-    access: null
+    access: restricted
     grain: null
     groups:
     - health
-    license: public
-    rights: null
+    license: ckdbl
+    rights: public
     space: California
     subject: Healthcare Facliities
     summary: List of California healthcare facilities, including Hospitals, long-term

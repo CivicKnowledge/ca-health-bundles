@@ -1,9 +1,9 @@
 about:
-    access: null
+    access: restricted
     grain: null
     groups: []
-    license: null
-    rights: null
+    license: ckdbl
+    rights: public
     space: California
     subject: zip codes
     summary: Boundaries of Zip codes in California

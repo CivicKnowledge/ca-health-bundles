@@ -1,9 +1,9 @@
 about:
-    access: null
+    access: restricted
     grain: null
     groups: []
-    license: null
-    rights: null
+    license: ckdbl
+    rights: public
     space: California
     subject: null
     summary: ZCTA boundaries for California. ZCTA are similar to Zip and used by the

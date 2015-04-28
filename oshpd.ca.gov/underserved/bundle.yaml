@@ -1,9 +1,9 @@
 about:
-    access: null
+    access: restricted
     grain: null
     groups: []
-    license: null
-    rights: null
+    license: ckdbl
+    rights: public
     space: California
     subject: null
     summary: Medically Underserved Populations (MUPs) are based on the evaluation
