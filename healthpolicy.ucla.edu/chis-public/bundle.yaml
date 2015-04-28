@@ -1,11 +1,16 @@
 about:
+    access: null
+    grain: null
     groups: []
     license: null
     rights: null
+    space: null
     subject: null
-    summary: The California Health Interview Survey (CHIS) is the nations largest state health survey and a critical 
-        source of data on Californians as well as on the states various racial and ethnic groups.
+    summary: The California Health Interview Survey (CHIS) is the nations largest
+        state health survey and a critical source of data on Californians as well
+        as on the states various racial and ethnic groups.
     tags: []
+    time: null
     title: California Health Interview Survey, Adult
 contact_bundle:
     creator:
@@ -28,34 +33,40 @@ external_documentation:
         source: null
         title: Download page
         url: http://healthpolicy.ucla.edu/chis/data/Pages/public-use-data.aspx
+    faq:
+        description: Frequently asked questions
+        source: null
+        title: Frequently asked Questions
+        url: http://healthpolicy.ucla.edu/chis/faq/Pages/default.aspx
     terms:
         description: Restrictions on the Use of California Health Interview Survey
             Data
         source: null
         title: Source Terms of Use
         url: http://healthpolicy.ucla.edu/chis/data/public-use-data-file/Pages/TermsOfUse.aspx
-    faq:
-        description: Frequently asked questions
-        title: Frequently asked Questions
-        url: http://healthpolicy.ucla.edu/chis/faq/Pages/default.aspx    
 identity:
     bspace: null
     btime: null
     dataset: chis
     id: d037
-    revision: 1
+    revision: 2
     source: healthpolicy.ucla.edu
     subset: public
     type: null
     variation: null
-    version: 0.0.1
+    version: 0.0.2
 names:
-    fqname: healthpolicy.ucla.edu-chis-public-0.0.1~d037001
+    fqname: healthpolicy.ucla.edu-chis-public-0.0.2~d037002
     name: healthpolicy.ucla.edu-chis-public
-    vid: d037001
-    vname: healthpolicy.ucla.edu-chis-public-0.0.1
+    vid: d037002
+    vname: healthpolicy.ucla.edu-chis-public-0.0.2
 process: {}
 versions:
     1:
+        date: null
         description: null
         version: 0.0.1
+    2:
+        date: '2015-04-27T18:10:03.916437'
+        description: Setting new access remotes
+        version: 0.0.2

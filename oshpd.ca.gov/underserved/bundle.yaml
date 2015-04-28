@@ -26,6 +26,11 @@ contact_source:
     creator: {}
     maintainer: {}
 external_documentation:
+    dataset:
+        description: Overview of the MUA / MUP designation
+        source: null
+        title: MUA / MUP Overview
+        url: http://www.oshpd.ca.gov/hwdd/MUA_MUP.html
     download:
         description: Web page that links to the source files.
         source: null
@@ -36,25 +41,25 @@ external_documentation:
         source: null
         title: Map of Medically Underserved Areas and Populations
         url: http://www.oshpd.ca.gov/HWDD/MSSA/GIS/MUAP_v12.pdf
-    dataset:
-        description: Overview of the MUA / MUP designation
-        source: null
-        title: MUA / MUP Overview
-        url: http://www.oshpd.ca.gov/hwdd/MUA_MUP.html
 identity:
     bspace: null
     btime: null
     dataset: underserved
     id: d03m
-    revision: 1
+    revision: 2
     source: oshpd.ca.gov
     subset: null
     type: null
     variation: null
-    version: 0.0.1
+    version: 0.0.2
 names:
-    fqname: oshpd.ca.gov-underserved-0.0.1~d03m001
+    fqname: oshpd.ca.gov-underserved-0.0.2~d03m002
     name: oshpd.ca.gov-underserved
-    vid: d03m001
-    vname: oshpd.ca.gov-underserved-0.0.1
+    vid: d03m002
+    vname: oshpd.ca.gov-underserved-0.0.2
 process: {}
+versions:
+    2:
+        date: '2015-04-27T18:10:10.643133'
+        description: Setting new access remotes
+        version: 0.0.2

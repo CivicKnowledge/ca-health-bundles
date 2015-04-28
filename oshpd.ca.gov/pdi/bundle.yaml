@@ -42,17 +42,17 @@ identity:
     btime: null
     dataset: pdi
     id: d03C
-    revision: 3
+    revision: 4
     source: oshpd.ca.gov
     subset: null
     type: null
     variation: null
-    version: 0.0.3
+    version: 0.0.4
 names:
-    fqname: oshpd.ca.gov-pdi-0.0.3~d03C003
+    fqname: oshpd.ca.gov-pdi-0.0.4~d03C004
     name: oshpd.ca.gov-pdi
-    vid: d03C003
-    vname: oshpd.ca.gov-pdi-0.0.3
+    vid: d03C004
+    vname: oshpd.ca.gov-pdi-0.0.4
 process: {}
 versions:
     2:
@@ -63,3 +63,7 @@ versions:
         date: '2015-04-19T19:28:13.535730'
         description: Adding coverage
         version: 0.0.3
+    4:
+        date: '2015-04-27T18:10:19.968490'
+        description: Setting new access remotes
+        version: 0.0.4

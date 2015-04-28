@@ -48,15 +48,20 @@ identity:
     btime: null
     dataset: iqi
     id: d03o
-    revision: 1
+    revision: 2
     source: oshpd.ca.gov
     subset: volume
     type: null
     variation: null
-    version: 0.0.1
+    version: 0.0.2
 names:
-    fqname: oshpd.ca.gov-iqi-volume-0.0.1~d03o001
+    fqname: oshpd.ca.gov-iqi-volume-0.0.2~d03o002
     name: oshpd.ca.gov-iqi-volume
-    vid: d03o001
-    vname: oshpd.ca.gov-iqi-volume-0.0.1
+    vid: d03o002
+    vname: oshpd.ca.gov-iqi-volume-0.0.2
 process: {}
+versions:
+    2:
+        date: '2015-04-27T18:10:30.816403'
+        description: Setting new access remotes
+        version: 0.0.2

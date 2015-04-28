@@ -38,20 +38,24 @@ identity:
     btime: null
     dataset: msdgr
     id: d03P
-    revision: 2
+    revision: 3
     source: oshpd.ca.gov
     subset: null
     type: null
     variation: top25
-    version: 0.0.2
+    version: 0.0.3
 names:
-    fqname: oshpd.ca.gov-msdgr-top25-0.0.2~d03P002
+    fqname: oshpd.ca.gov-msdgr-top25-0.0.3~d03P003
     name: oshpd.ca.gov-msdgr-top25
-    vid: d03P002
-    vname: oshpd.ca.gov-msdgr-top25-0.0.2
+    vid: d03P003
+    vname: oshpd.ca.gov-msdgr-top25-0.0.3
 process: {}
 versions:
     2:
         date: '2015-04-19T19:29:15.191137'
         description: Adding Coverage
         version: 0.0.2
+    3:
+        date: '2015-04-27T18:10:41.976369'
+        description: Setting new access remotes
+        version: 0.0.3

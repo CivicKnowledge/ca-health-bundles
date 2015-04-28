@@ -4,7 +4,7 @@ extract: {}
 sources:
     zips:
         description: Zip code boundary file
-        url: http://www.oshpd.ca.gov/HWDD/MSSA/GIS/GIS-Shapefile-ZipCode.zip
-        time: 2015
         space: California
+        time: 2015
+        url: http://www.oshpd.ca.gov/HWDD/MSSA/GIS/GIS-Shapefile-ZipCode.zip
 views: {}

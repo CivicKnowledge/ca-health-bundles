@@ -41,17 +41,17 @@ identity:
     btime: null
     dataset: zcta_boundaries
     id: d032
-    revision: 4
+    revision: 5
     source: oshpd.ca.gov
     subset: null
     type: null
     variation: null
-    version: 0.0.4
+    version: 0.0.5
 names:
-    fqname: oshpd.ca.gov-zcta_boundaries-0.0.4~d032004
+    fqname: oshpd.ca.gov-zcta_boundaries-0.0.5~d032005
     name: oshpd.ca.gov-zcta_boundaries
-    vid: d032004
-    vname: oshpd.ca.gov-zcta_boundaries-0.0.4
+    vid: d032005
+    vname: oshpd.ca.gov-zcta_boundaries-0.0.5
 process: {}
 versions:
     1:
@@ -70,3 +70,7 @@ versions:
         date: '2015-04-23T21:03:51.873695'
         description: Adding coverage
         version: 0.0.4
+    5:
+        date: '2015-04-27T18:10:21.050347'
+        description: Setting new access remotes
+        version: 0.0.5

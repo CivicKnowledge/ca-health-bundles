@@ -46,15 +46,20 @@ identity:
     btime: null
     dataset: psi
     id: d03B
-    revision: 1
+    revision: 2
     source: oshpd.ca.gov
     subset: null
     type: null
     variation: null
-    version: 0.0.1
+    version: 0.0.2
 names:
-    fqname: oshpd.ca.gov-psi-0.0.1~d03B001
+    fqname: oshpd.ca.gov-psi-0.0.2~d03B002
     name: oshpd.ca.gov-psi
-    vid: d03B001
-    vname: oshpd.ca.gov-psi-0.0.1
+    vid: d03B002
+    vname: oshpd.ca.gov-psi-0.0.2
 process: {}
+versions:
+    2:
+        date: '2015-04-27T18:10:06.665553'
+        description: Setting new access remotes
+        version: 0.0.2

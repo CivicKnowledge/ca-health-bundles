@@ -35,17 +35,17 @@ identity:
     btime: null
     dataset: facilities
     id: d03j
-    revision: 7
+    revision: 8
     source: oshpd.ca.gov
     subset: null
     type: null
     variation: null
-    version: 0.0.7
+    version: 0.0.8
 names:
-    fqname: oshpd.ca.gov-facilities-0.0.7~d03j007
+    fqname: oshpd.ca.gov-facilities-0.0.8~d03j008
     name: oshpd.ca.gov-facilities
-    vid: d03j007
-    vname: oshpd.ca.gov-facilities-0.0.7
+    vid: d03j008
+    vname: oshpd.ca.gov-facilities-0.0.8
 process: {}
 versions:
     2:
@@ -72,3 +72,7 @@ versions:
         date: '2015-04-16T20:30:28.301559'
         description: Improve prototypes
         version: 0.0.7
+    8:
+        date: '2015-04-27T18:09:56.826449'
+        description: Setting new access remotes
+        version: 0.0.8

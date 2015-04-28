@@ -40,15 +40,20 @@ identity:
     btime: null
     dataset: facilities
     id: d03U
-    revision: 1
+    revision: 2
     source: oshpd.ca.gov
     subset: null
     type: null
     variation: cross
-    version: 0.0.1
+    version: 0.0.2
 names:
-    fqname: oshpd.ca.gov-facilities-cross-0.0.1~d03U001
+    fqname: oshpd.ca.gov-facilities-cross-0.0.2~d03U002
     name: oshpd.ca.gov-facilities-cross
-    vid: d03U001
-    vname: oshpd.ca.gov-facilities-cross-0.0.1
+    vid: d03U002
+    vname: oshpd.ca.gov-facilities-cross-0.0.2
 process: {}
+versions:
+    2:
+        date: '2015-04-27T18:10:14.546568'
+        description: Setting new access remotes
+        version: 0.0.2

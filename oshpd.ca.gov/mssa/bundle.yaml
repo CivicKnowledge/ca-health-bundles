@@ -53,17 +53,17 @@ identity:
     btime: null
     dataset: mssa
     id: d038
-    revision: 6
+    revision: 7
     source: oshpd.ca.gov
     subset: null
     type: null
     variation: null
-    version: 0.0.6
+    version: 0.0.7
 names:
-    fqname: oshpd.ca.gov-mssa-0.0.6~d038006
+    fqname: oshpd.ca.gov-mssa-0.0.7~d038007
     name: oshpd.ca.gov-mssa
-    vid: d038006
-    vname: oshpd.ca.gov-mssa-0.0.6
+    vid: d038007
+    vname: oshpd.ca.gov-mssa-0.0.7
 process: {}
 versions:
     1:
@@ -90,3 +90,7 @@ versions:
         date: '2015-04-19T19:28:34.696235'
         description: Adding Coverage
         version: 0.0.6
+    7:
+        date: '2015-04-27T18:10:07.934982'
+        description: Setting new access remotes
+        version: 0.0.7

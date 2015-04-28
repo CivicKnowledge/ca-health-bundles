@@ -49,15 +49,20 @@ identity:
     btime: null
     dataset: pqi
     id: d03r
-    revision: 1
+    revision: 2
     source: oshpd.ca.gov
     subset: null
     type: null
     variation: null
-    version: 0.0.1
+    version: 0.0.2
 names:
-    fqname: oshpd.ca.gov-pqi-0.0.1~d03r001
+    fqname: oshpd.ca.gov-pqi-0.0.2~d03r002
     name: oshpd.ca.gov-pqi
-    vid: d03r001
-    vname: oshpd.ca.gov-pqi-0.0.1
+    vid: d03r002
+    vname: oshpd.ca.gov-pqi-0.0.2
 process: {}
+versions:
+    2:
+        date: '2015-04-27T18:10:13.868343'
+        description: Setting new access remotes
+        version: 0.0.2

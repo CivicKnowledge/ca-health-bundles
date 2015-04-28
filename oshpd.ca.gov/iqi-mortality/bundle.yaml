@@ -68,17 +68,17 @@ identity:
     btime: null
     dataset: iqi
     id: d03p
-    revision: 3
+    revision: 4
     source: oshpd.ca.gov
     subset: mortality
     type: null
     variation: null
-    version: 0.0.3
+    version: 0.0.4
 names:
-    fqname: oshpd.ca.gov-iqi-mortality-0.0.3~d03p003
+    fqname: oshpd.ca.gov-iqi-mortality-0.0.4~d03p004
     name: oshpd.ca.gov-iqi-mortality
-    vid: d03p003
-    vname: oshpd.ca.gov-iqi-mortality-0.0.3
+    vid: d03p004
+    vname: oshpd.ca.gov-iqi-mortality-0.0.4
 process: {}
 versions:
     2:
@@ -89,3 +89,7 @@ versions:
         date: '2015-04-16T21:41:02.843045'
         description: Adding space and time
         version: 0.0.3
+    4:
+        date: '2015-04-27T18:10:22.946391'
+        description: Setting new access remotes
+        version: 0.0.4

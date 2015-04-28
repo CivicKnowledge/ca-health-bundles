@@ -40,20 +40,24 @@ identity:
     btime: null
     dataset: facilities
     id: d03s
-    revision: 2
+    revision: 3
     source: cdph.ca.gov
     subset: null
     type: null
     variation: null
-    version: 0.0.2
+    version: 0.0.3
 names:
-    fqname: cdph.ca.gov-facilities-0.0.2~d03s002
+    fqname: cdph.ca.gov-facilities-0.0.3~d03s003
     name: cdph.ca.gov-facilities
-    vid: d03s002
-    vname: cdph.ca.gov-facilities-0.0.2
+    vid: d03s003
+    vname: cdph.ca.gov-facilities-0.0.3
 process: {}
 versions:
     2:
         date: '2015-04-11T17:43:12.962610'
         description: Adding stats and samples to partitions
         version: 0.0.2
+    3:
+        date: '2015-04-27T18:09:58.915644'
+        description: Setting new access remotes
+        version: 0.0.3

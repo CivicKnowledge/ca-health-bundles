@@ -54,9 +54,6 @@ class Bundle(CsvBundle):
                 pass
             
             
-
-
-
         
     def test(self):
         

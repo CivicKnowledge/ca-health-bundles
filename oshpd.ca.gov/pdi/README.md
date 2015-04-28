@@ -1,3 +1,6 @@
 # Pediatric Quality Indicators (PDIs)
 
 Pediatric Quality Indicators (PDIs) use indicators from other AHRQ QI modules with adaptations for use among children. Similar to Prevention Quality Indicators, the PDIs identify hospital admissions that evidence suggests may have been avoided through access to high-quality outpatient care.
+
+Unlike the ``oshpd.ca.gov-pqi`` and ``oshpd.ca.gov-psi`` bundles,  xlrd
+can't parse the source file for this bundle, so we've converted it manually and provided a conversion link in the source record. 

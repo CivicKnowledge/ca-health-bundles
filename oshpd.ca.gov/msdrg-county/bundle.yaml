@@ -41,20 +41,24 @@ identity:
     btime: null
     dataset: msdrg
     id: d03R
-    revision: 2
+    revision: 3
     source: oshpd.ca.gov
     subset: null
     type: null
     variation: county
-    version: 0.0.2
+    version: 0.0.3
 names:
-    fqname: oshpd.ca.gov-msdrg-county-0.0.2~d03R002
+    fqname: oshpd.ca.gov-msdrg-county-0.0.3~d03R003
     name: oshpd.ca.gov-msdrg-county
-    vid: d03R002
-    vname: oshpd.ca.gov-msdrg-county-0.0.2
+    vid: d03R003
+    vname: oshpd.ca.gov-msdrg-county-0.0.3
 process: {}
 versions:
     2:
         date: '2015-04-16T22:06:11.756628'
         description: Adding coverage
         version: 0.0.2
+    3:
+        date: '2015-04-27T18:10:09.236344'
+        description: Setting new access remotes
+        version: 0.0.3

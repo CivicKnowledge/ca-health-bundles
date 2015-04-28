@@ -41,15 +41,20 @@ identity:
     btime: null
     dataset: utilization
     id: d03D
-    revision: 1
+    revision: 2
     source: oshpd.ca.gov
     subset: null
     type: null
     variation: null
-    version: 0.0.1
+    version: 0.0.2
 names:
-    fqname: oshpd.ca.gov-utilization-0.0.1~d03D001
+    fqname: oshpd.ca.gov-utilization-0.0.2~d03D002
     name: oshpd.ca.gov-utilization
-    vid: d03D001
-    vname: oshpd.ca.gov-utilization-0.0.1
+    vid: d03D002
+    vname: oshpd.ca.gov-utilization-0.0.2
 process: {}
+versions:
+    2:
+        date: '2015-04-27T18:10:15.747200'
+        description: Setting new access remotes
+        version: 0.0.2

@@ -70,17 +70,17 @@ identity:
     btime: null
     dataset: hpsa
     id: d039
-    revision: 4
+    revision: 5
     source: oshpd.ca.gov
     subset: null
     type: null
     variation: null
-    version: 0.0.4
+    version: 0.0.5
 names:
-    fqname: oshpd.ca.gov-hpsa-0.0.4~d039004
+    fqname: oshpd.ca.gov-hpsa-0.0.5~d039005
     name: oshpd.ca.gov-hpsa
-    vid: d039004
-    vname: oshpd.ca.gov-hpsa-0.0.4
+    vid: d039005
+    vname: oshpd.ca.gov-hpsa-0.0.5
 process: {}
 versions:
     1:
@@ -99,3 +99,7 @@ versions:
         date: '2015-01-12T10:25:19.407658'
         description: hmsa -> hpsa
         version: 0.0.4
+    5:
+        date: '2015-04-27T18:10:05.306191'
+        description: Setting new access remotes
+        version: 0.0.5
