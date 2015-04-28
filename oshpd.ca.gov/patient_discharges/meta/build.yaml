@@ -1,0 +1,20 @@
+build: {}
+dependencies: {}
+sources:
+    puf_10:
+        description: Public Discharge Data, Public Use File 2010
+        url: s3://private.source.civicknowledge.com/oshpd.ca.gov/PDD%20PUF%202010/Public10.zip
+        file: LA_lbl.txt
+        filetype: csv
+    puf_11:
+        description: Public Discharge Data, Public Use File 2011
+        url: s3://private.source.civicknowledge.com/oshpd.ca.gov/PDD%20PUF%202011/Public11.zip
+        file: LA_lbl.txt
+        filetype: csv
+    puf_12:
+        description: Public Discharge Data, Public Use File 2012
+        url: s3://private.source.civicknowledge.com/oshpd.ca.gov/PDD%20PUF%202012/Public12.zip
+    puf_13:
+        description: Public Discharge Data, Public Use File 2013
+        url: s3://private.source.civicknowledge.com/oshpd.ca.gov/PDD%20PUF%202013/PUBLIC13.zip
+views: {}

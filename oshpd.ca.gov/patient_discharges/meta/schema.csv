@@ -1,0 +1,8 @@
+table,seq,column,is_pk,is_fk,id,type,description
+puf_11,1,id,1,,t03V01,INTEGER,"Public Discharge Data, Public Use File 2011"
+,,,,,,,
+puf_10,1,id,1,,t03V02,INTEGER,"Public Discharge Data, Public Use File 2010"
+,,,,,,,
+puf_13,1,id,1,,t03V03,INTEGER,"Public Discharge Data, Public Use File 2013"
+,,,,,,,
+puf_12,1,id,1,,t03V04,INTEGER,"Public Discharge Data, Public Use File 2012"

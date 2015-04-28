@@ -1,0 +1,59 @@
+about:
+    access: private
+    grain: null
+    groups: []
+    license: restricted
+    rights: restricted
+    space: California
+    subject: null
+    summary: The California Office of Statewide Health Planning and Development (OSHPD)
+        provides public data sets of patient discharge (PDD), emergency department
+        (ED), and ambulatory surgery (AS) data collected from licensed California
+        hospitals, hospital emergency departments, and licensed freestanding ambulatory
+        surgery clinics in California. Each record within the data sets consists of
+        either one inpatient discharge, or one outpatient encounter, also known as
+        a service visit. Data included on the public data sets includes clinical,
+        payer, and facility information.
+    tags: []
+    time: p2010e2013
+    title: Patient Discharge Data, Public Use File
+contact_bundle:
+    creator:
+        email: eric@sandiegodata.org
+        name: Eric Busboom
+        url: http://www.sandiegodata.org
+    maintainer:
+        email: eric@sandiegodata.org
+        name: Eric Busboom
+        url: http://www.sandiegodata.org
+contact_source:
+    creator: {}
+    maintainer: {}
+external_documentation:
+    dataset:
+        description: Main webpage for the dataset.
+        source: null
+        title: Dataset Page
+        url: http://www.oshpd.ca.gov/HID/Data_Request_Center/PUF.html
+    documentation:
+        description: The primary documentation file
+        source: null
+        title: Main Documentation
+        url: http://www.oshpd.ca.gov/HID/Data_Request_Center/documents/puf/PDD_PublicFileDocumentation_2010_2012.pdf
+identity:
+    bspace: null
+    btime: null
+    dataset: patient_discharges
+    id: d03V
+    revision: 1
+    source: oshpd.ca.gov
+    subset: null
+    type: null
+    variation: null
+    version: 0.0.1
+names:
+    fqname: oshpd.ca.gov-patient_discharges-0.0.1~d03V001
+    name: oshpd.ca.gov-patient_discharges
+    vid: d03V001
+    vname: oshpd.ca.gov-patient_discharges-0.0.1
+process: {}
