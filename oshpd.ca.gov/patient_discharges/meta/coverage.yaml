@@ -1,4 +1,5 @@
 coverage:
-    geo: []
+    geo:
+    - 0E06
     grain: []
     time: []

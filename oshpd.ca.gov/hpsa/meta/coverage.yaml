@@ -2,7 +2,7 @@ coverage:
     geo:
     - 0E06
     grain:
-    - 0E00
+    - 0EZZ
     - entity
     time:
     - 2014
