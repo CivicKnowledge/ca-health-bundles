@@ -8,15 +8,15 @@ class Bundle(LoaderBundle):
     """"""
 
 
-
     def __init__(self, directory=None):
         super(Bundle, self).__init__(directory)
 
-    
         
     def build(self):
         
         super(Bundle, self).build()
+        
+        self.build_codes()
         
         return True
         
@@ -42,8 +42,32 @@ class Bundle(LoaderBundle):
     def build_codes(self):
         
         p_in = self.partitions.find(table = 'pdd_puf')
-        p_out = self.partitions.find(table = 'pdd_puf')
-       
+        p_out = self.partitions.find_or_new(table = 'pdd_puf_c')
+        p_out.clean()
+        
+        cm = self.codes_map()
+
+        def sub(k,v):
+            
+            try:
+                return str(cm[k][v])
+            except KeyError:
+                return v
+            
+        lr = self.init_log_rate(1000)
+        
+        with p_out.inserter() as ins:
+            
+            for row in p_in.rows:
+                nr = { k:sub(k,v) for k,v in row.items() }
+                
+                e = ins.insert(nr)
+                
+                lr("Build codes")
+            
+                if e:
+                    self.error(e)
+            
     
     def meta_collect_codes(self):
         
@@ -136,6 +160,14 @@ class Bundle(LoaderBundle):
                     
                 else:
                     print last_col, line
+                    
+    def test_wfs(self):
+        
+        p = self.partitions.find(table = 'pdd_puf')
+        
+        
+        
+        p.write_full_stats()
                     
                 
                 
