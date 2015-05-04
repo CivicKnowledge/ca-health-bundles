@@ -1,1 +1,4 @@
-[]
+-   name: oshpd.ca.gov-patient_discharges-pdd_puf
+    table: pdd_puf
+-   name: oshpd.ca.gov-patient_discharges-pdd_puf_c
+    table: pdd_puf_c

@@ -2,4 +2,5 @@ coverage:
     geo:
     - 0E06
     grain: []
-    time: []
+    time:
+    - '2013'
