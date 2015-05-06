@@ -7,12 +7,10 @@ about:
     rights: public
     space: California
     subject: births
-    summary: Birth Profiles by ZIP Code consist of the number of live births, based
-        on the mother's residence at the time of delivery and include aggregates by
-        Race/Ethnic Group of Mother, Age of Mother, Infant Birthweight, and Prenatal
-        Care Trimester by ZIP Code.  These key health status indicators at the ZIP
-        code level can be used to perform small area analysis to identify and target
-        areas within cities and counties where public health programs may be needed.
+    summary: 'Number of live births by county, based on the zip codes of the mother''s residence at the time of delivery, 
+        and by race/ethnicity of mother, age of mother, receipt of prenatal care, and infant birthweight.'
+    source: {{source.name}}, {{external_documentation.dataset.title}}, {{external_documentation.dataset.url}}. 
+    processed: Data were aggregated from zip codes to counties by Civic Knowledge.
     tags: []
     time: 1989/2012
     title: Birth Profiles by Zip Code
@@ -32,7 +30,7 @@ external_documentation:
     dataset:
         description: Main webpage for the dataset.
         source: null
-        title: Dataset Page
+        title: Birth Profiles by Zip Code
         url: http://www.cdph.ca.gov/data/statistics/Pages/BirthProfilesbyZIPCode.aspx
 identity:
     bspace: null

@@ -99,7 +99,6 @@ class Bundle(LoaderBundle):
                 
         self.schema.write_codes()
     
-       
     
         
     def meta_expand_sources(self):
@@ -161,13 +160,7 @@ class Bundle(LoaderBundle):
                 else:
                     print last_col, line
                     
-    def test_wfs(self):
-        
-        p = self.partitions.find(table = 'pdd_puf')
-        
-        
-        
-        p.write_full_stats()
+
                     
                 
                 

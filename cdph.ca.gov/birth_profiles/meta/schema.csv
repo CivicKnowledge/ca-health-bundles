@@ -1,60 +1,60 @@
-table,seq,column,is_pk,is_fk,id,type,i1,i2,size,description,proto_vid,d_caster
-birth_profile,1,id,1,,t03Q01,INTEGER,,,,"Birth counts in a variety of categories, by zip code.",,
-birth_profile,2,zipcode,,,c03Q01002,INTEGER,1,1,5,Zip code of mother's residence,,int_null_dash
-birth_profile,3,year,,,c03Q01003,INTEGER,1,,4,Year of record,c00102003,
-birth_profile,4,mother_age_lt20,,,c03Q01004,INTEGER,,,5,Mother's age less than 20 years,,int_null_dash
-birth_profile,5,mother_age_20_29,,,c03Q01005,INTEGER,,,6,Mother's age 20 to 29 years,,int_null_dash
-birth_profile,6,mother_age_30_34,,,c03Q01006,INTEGER,,,6,Mother's age 30 to 34 years,,int_null_dash
-birth_profile,7,mother_age_gt35,,,c03Q01007,INTEGER,,,5,Mother's age greater than 35 years,,int_null_dash
-birth_profile,8,mother_age_unk,,,c03Q01008,INTEGER,,,2,Mother's age was unknown,,int_null_dash
-birth_profile,9,mother_race_white,,,c03Q01009,INTEGER,,,6,Mother's race: White,,int_null_dash
-birth_profile,10,mother_race_black,,,c03Q0100a,INTEGER,,,5,Mother's race: Black,,int_null_dash
-birth_profile,11,mother_race_asian,,,c03Q0100b,INTEGER,,,5,Mother's race: Asian,,int_null_dash
-birth_profile,12,mother_race_asianpi,,,c03Q0100c,INTEGER,,,3,Mother's race: Asian / Pacific Islander,,int_null_dash
-birth_profile,13,mother_race_seasian,,,c03Q0100d,INTEGER,,,5,Mother's race: South-East Asian,,int_null_dash
-birth_profile,14,mother_race_hisp,,,c03Q0100e,INTEGER,,,6,Mother's race: Hispanic,,int_null_dash
-birth_profile,15,mother_race_amind,,,c03Q0100f,INTEGER,,,4,Mother's race: American Indian,,int_null_dash
-birth_profile,16,mother_race_filipino,,,c03Q0100g,INTEGER,,,5,Mother's race: Filipino,,int_null_dash
-birth_profile,17,mother_race_hpi,,,c03Q0100h,INTEGER,,,4,Mother's race: Hawaiian / Pacific Islander,,int_null_dash
-birth_profile,18,mother_race_multiple,,,c03Q0100i,INTEGER,,,5,Mother's race: Multiple,,int_null_dash
-birth_profile,19,mother_race_other,,,c03Q0100j,INTEGER,,,5,Mother's race: Other,,int_null_dash
-birth_profile,20,prenatal_none,,,c03Q0100k,INTEGER,,,6,Mother received no prenatal care,,int_null_dash
-birth_profile,21,prenatal_first,,,c03Q0100l,INTEGER,,,6,Prenatal care began in first trimester,,int_null_dash
-birth_profile,22,prenatal_second,,,c03Q0100m,INTEGER,,,5,Prenatal care began in second trimester,,int_null_dash
-birth_profile,23,prenatal_third,,,c03Q0100n,INTEGER,,,5,Prenatal care began in third trimester,,int_null_dash
-birth_profile,24,prenatal_unk,,,c03Q0100o,INTEGER,,,5,Unknown if mother received prenatal care,,int_null_dash
-birth_profile,25,total_births,,,c03Q0100p,INTEGER,,,6,Total number of births,,int_null_dash
-birth_profile,26,weight_1500_2499,,,c03Q0100q,INTEGER,,,5,Birth weight between 1500 and 2499 grams,,int_null_dash
-birth_profile,27,weight_gt2500,,,c03Q0100r,INTEGER,,,6,Birth weight greater than 2500 grams,,int_null_dash
-birth_profile,28,weight_lt1500,,,c03Q0100s,INTEGER,,,4,Birth weight less than 1500 grams,,int_null_dash
-birth_profile,29,weight_unk,,,c03Q0100t,INTEGER,,,2,Birth weight unknown,,int_null_dash
+"table","seq","column","is_pk","is_fk","id","type","i1","i2","size","description","proto_vid","d_caster"
+"birth_profile",1,"id",1,,"t03Q01","INTEGER",,,,"Births by Zip Code, Race, Age, Birthweight, and Prenatal Care",,
+"birth_profile",2,"zipcode",,,"c03Q01002","INTEGER",1,1,5,"Zip Code Of Mother's Residence",,"int_null_dash"
+"birth_profile",3,"year",,,"c03Q01003","INTEGER",1,,4,"Year","c00102003",
+"birth_profile",4,"mother_age_lt20",,,"c03Q01004","INTEGER",,,5,"Mother Age: Under 20",,"int_null_dash"
+"birth_profile",5,"mother_age_20_29",,,"c03Q01005","INTEGER",,,6,"Mother Age: 20-29",,"int_null_dash"
+"birth_profile",6,"mother_age_30_34",,,"c03Q01006","INTEGER",,,6,"Mother Age: 30-34",,"int_null_dash"
+"birth_profile",7,"mother_age_gt35",,,"c03Q01007","INTEGER",,,5,"Mother Age: 35+",,"int_null_dash"
+"birth_profile",8,"mother_age_unk",,,"c03Q01008","INTEGER",,,2,"Mother Age: Unknown",,"int_null_dash"
+"birth_profile",9,"mother_race_white",,,"c03Q01009","INTEGER",,,6,"Mother Race: White",,"int_null_dash"
+"birth_profile",10,"mother_race_black",,,"c03Q0100a","INTEGER",,,5,"Mother Race: Black",,"int_null_dash"
+"birth_profile",11,"mother_race_asian",,,"c03Q0100b","INTEGER",,,5,"Mother Race: Asian",,"int_null_dash"
+"birth_profile",12,"mother_race_asianpi",,,"c03Q0100c","INTEGER",,,3,"Mother Race: Asian/Pacific Islander",,"int_null_dash"
+"birth_profile",13,"mother_race_seasian",,,"c03Q0100d","INTEGER",,,5,"Mother Race: Southeast Asian",,"int_null_dash"
+"birth_profile",14,"mother_race_hisp",,,"c03Q0100e","INTEGER",,,6,"Mother Race: Hispanic/Latino",,"int_null_dash"
+"birth_profile",15,"mother_race_amind",,,"c03Q0100f","INTEGER",,,4,"Mother Race: American Indian",,"int_null_dash"
+"birth_profile",16,"mother_race_filipino",,,"c03Q0100g","INTEGER",,,5,"Mother Race: Filipino",,"int_null_dash"
+"birth_profile",17,"mother_race_hpi",,,"c03Q0100h","INTEGER",,,4,"Mother Race: Hawaiian/Pacific Islander",,"int_null_dash"
+"birth_profile",18,"mother_race_multiple",,,"c03Q0100i","INTEGER",,,5,"Mother Race: Multiple",,"int_null_dash"
+"birth_profile",19,"mother_race_other",,,"c03Q0100j","INTEGER",,,5,"Mother Race: Other",,"int_null_dash"
+"birth_profile",20,"prenatal_none",,,"c03Q0100k","INTEGER",,,6,"Prenatal Care: None",,"int_null_dash"
+"birth_profile",21,"prenatal_first",,,"c03Q0100l","INTEGER",,,6,"Prenatal Care: Began 1st Trimester",,"int_null_dash"
+"birth_profile",22,"prenatal_second",,,"c03Q0100m","INTEGER",,,5,"Prenatal Care: Began 2nd Trimester",,"int_null_dash"
+"birth_profile",23,"prenatal_third",,,"c03Q0100n","INTEGER",,,5,"Prenatal Care: Began 3rd Trimester",,"int_null_dash"
+"birth_profile",24,"prenatal_unk",,,"c03Q0100o","INTEGER",,,5,"Prenatal Care: Unknown",,"int_null_dash"
+"birth_profile",25,"total_births",,,"c03Q0100p","INTEGER",,,6,"Total Births",,"int_null_dash"
+"birth_profile",26,"weight_1500_2499",,,"c03Q0100q","INTEGER",,,5,"Birthweight (Low): 1500-2499 grams",,"int_null_dash"
+"birth_profile",27,"weight_gt2500",,,"c03Q0100r","INTEGER",,,6,"Birthweight: 2500+ grams",,"int_null_dash"
+"birth_profile",28,"weight_lt1500",,,"c03Q0100s","INTEGER",,,4,"Birthweight (Very Low): Under 1500 grams",,"int_null_dash"
+"birth_profile",29,"weight_unk",,,"c03Q0100t","INTEGER",,,2,"Birthweight: Unknown",,"int_null_dash"
 ,,,,,,,,,,,,
-birth_profile_county,1,id,1,,t03Q02,INTEGER,,,,"Birth counts in a variety of categories, aggregated from zip codes to counties.",,
-birth_profile_county,2,county_gvid,,c03x04003,c03Q02002,VARCHAR,1,1,6,"GVID of county of mothers residence, aggregated from zip code of mother's residence.",c00104002,
-birth_profile_county,3,year,,,c03Q02003,INTEGER,1,,4,Year of record,c00102003,
-birth_profile_county,4,mother_age_lt20,,,c03Q02004,INTEGER,,,5,Mother's age less than 20 years,,
-birth_profile_county,5,mother_age_20_29,,,c03Q02005,INTEGER,,,6,Mother's age 20 to 29 years,,
-birth_profile_county,6,mother_age_30_34,,,c03Q02006,INTEGER,,,6,Mother's age 30 to 34 years,,
-birth_profile_county,7,mother_age_gt35,,,c03Q02007,INTEGER,,,5,Mother's age greater than 35 years,,
-birth_profile_county,8,mother_age_unk,,,c03Q02008,INTEGER,,,3,Mother's age was unknown,,
-birth_profile_county,9,mother_race_white,,,c03Q02009,INTEGER,,,6,Mother's race: White,,
-birth_profile_county,10,mother_race_black,,,c03Q0200a,INTEGER,,,5,Mother's race: Black,,
-birth_profile_county,11,mother_race_asian,,,c03Q0200b,INTEGER,,,5,Mother's race: Asian,,
-birth_profile_county,12,mother_race_asianpi,,,c03Q0200c,INTEGER,,,5,Mother's race: Asian / Pacific Islander,,
-birth_profile_county,13,mother_race_seasian,,,c03Q0200d,INTEGER,,,5,Mother's race: South-East Asian,,
-birth_profile_county,14,mother_race_hisp,,,c03Q0200e,INTEGER,,,6,Mother's race: Hispanic,,
-birth_profile_county,15,mother_race_amind,,,c03Q0200f,INTEGER,,,4,Mother's race: American Indian,,
-birth_profile_county,16,mother_race_filipino,,,c03Q0200g,INTEGER,,,5,Mother's race: Filipino,,
-birth_profile_county,17,mother_race_hpi,,,c03Q0200h,INTEGER,,,4,Mother's race: Hawaiian / Pacific Islander,,
-birth_profile_county,18,mother_race_multiple,,,c03Q0200i,INTEGER,,,5,Mother's race: Multiple,,
-birth_profile_county,19,mother_race_other,,,c03Q0200j,INTEGER,,,5,Mother's race: Other,,
-birth_profile_county,20,prenatal_none,,,c03Q0200k,INTEGER,,,6,Mother received no prenatal care,,
-birth_profile_county,21,prenatal_first,,,c03Q0200l,INTEGER,,,6,Prenatal care began in first trimester,,
-birth_profile_county,22,prenatal_second,,,c03Q0200m,INTEGER,,,5,Prenatal care began in second trimester,,
-birth_profile_county,23,prenatal_third,,,c03Q0200n,INTEGER,,,5,Prenatal care began in third trimester,,
-birth_profile_county,24,prenatal_unk,,,c03Q0200o,INTEGER,,,5,Unknown if mother received prenatal care,,
-birth_profile_county,25,total_births,,,c03Q0200p,INTEGER,,,6,Total number of births,,
-birth_profile_county,26,weight_1500_2499,,,c03Q0200q,INTEGER,,,5,Birth weight between 1500 and 2499 grams,,
-birth_profile_county,27,weight_gt2500,,,c03Q0200r,INTEGER,,,6,Birth weight greater than 2500 grams,,
-birth_profile_county,28,weight_lt1500,,,c03Q0200s,INTEGER,,,4,Birth weight less than 1500 grams,,
-birth_profile_county,29,weight_unk,,,c03Q0200t,INTEGER,,,2,Birth weight unknown,,
+"birth_profile_county",1,"id",1,,"t03Q02","INTEGER",,,,"Births by County, Race, Age, Birthweight, and Prenatal Care",,
+"birth_profile_county",2,"county_gvid",,"c03x04003","c03Q02002","VARCHAR",1,1,6,"County of Mother's Residence","c00104002",
+"birth_profile_county",3,"year",,,"c03Q02003","INTEGER",1,,4,"Year","c00102003",
+"birth_profile_county",4,"mother_age_lt20",,,"c03Q02004","INTEGER",,,5,"Mother Age: Under 20",,
+"birth_profile_county",5,"mother_age_20_29",,,"c03Q02005","INTEGER",,,6,"Mother Age: 20-29",,
+"birth_profile_county",6,"mother_age_30_34",,,"c03Q02006","INTEGER",,,6,"Mother Age: 30-34",,
+"birth_profile_county",7,"mother_age_gt35",,,"c03Q02007","INTEGER",,,5,"Mother Age: 35+",,
+"birth_profile_county",8,"mother_age_unk",,,"c03Q02008","INTEGER",,,3,"Mother Age: Unknown",,
+"birth_profile_county",9,"mother_race_white",,,"c03Q02009","INTEGER",,,6,"Mother Race: White",,
+"birth_profile_county",10,"mother_race_black",,,"c03Q0200a","INTEGER",,,5,"Mother Race: Black",,
+"birth_profile_county",11,"mother_race_asian",,,"c03Q0200b","INTEGER",,,5,"Mother Race: Asian",,
+"birth_profile_county",12,"mother_race_asianpi",,,"c03Q0200c","INTEGER",,,5,"Mother Race: Asian/Pacific Islander",,
+"birth_profile_county",13,"mother_race_seasian",,,"c03Q0200d","INTEGER",,,5,"Mother Race: Southeast Asian",,
+"birth_profile_county",14,"mother_race_hisp",,,"c03Q0200e","INTEGER",,,6,"Mother Race: Hispanic/Latino",,
+"birth_profile_county",15,"mother_race_amind",,,"c03Q0200f","INTEGER",,,4,"Mother Race: American Indian",,
+"birth_profile_county",16,"mother_race_filipino",,,"c03Q0200g","INTEGER",,,5,"Mother Race: Filipino",,
+"birth_profile_county",17,"mother_race_hpi",,,"c03Q0200h","INTEGER",,,4,"Mother Race: Hawaiian/Pacific Islander",,
+"birth_profile_county",18,"mother_race_multiple",,,"c03Q0200i","INTEGER",,,5,"Mother Race: Multiple",,
+"birth_profile_county",19,"mother_race_other",,,"c03Q0200j","INTEGER",,,5,"Mother Race: Other",,
+"birth_profile_county",20,"prenatal_none",,,"c03Q0200k","INTEGER",,,6,"Prenatal Care: None",,
+"birth_profile_county",21,"prenatal_first",,,"c03Q0200l","INTEGER",,,6,"Prenatal Care: Began 1st Trimester",,
+"birth_profile_county",22,"prenatal_second",,,"c03Q0200m","INTEGER",,,5,"Prenatal Care: Began 2nd Trimester",,
+"birth_profile_county",23,"prenatal_third",,,"c03Q0200n","INTEGER",,,5,"Prenatal Care: Began 3rd Trimester",,
+"birth_profile_county",24,"prenatal_unk",,,"c03Q0200o","INTEGER",,,5,"Prenatal Care: Unknown",,
+"birth_profile_county",25,"total_births",,,"c03Q0200p","INTEGER",,,6,"Total Births",,
+"birth_profile_county",26,"weight_1500_2499",,,"c03Q0200q","INTEGER",,,5,"Birthweight (Low): 1500-2499 grams",,
+"birth_profile_county",27,"weight_gt2500",,,"c03Q0200r","INTEGER",,,6,"Birthweight: 2500+ grams",,
+"birth_profile_county",28,"weight_lt1500",,,"c03Q0200s","INTEGER",,,4,"Birthweight (Very Low): Under 1500 grams",,
+"birth_profile_county",29,"weight_unk",,,"c03Q0200t","INTEGER",,,2,"Birthweight: Unknown",,

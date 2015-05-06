@@ -45,20 +45,24 @@ identity:
     btime: null
     dataset: patient_discharges
     id: d03V
-    revision: 2
+    revision: 3
     source: oshpd.ca.gov
     subset: null
     type: null
     variation: null
-    version: 0.0.2
+    version: 0.0.3
 names:
-    fqname: oshpd.ca.gov-patient_discharges-0.0.2~d03V002
+    fqname: oshpd.ca.gov-patient_discharges-0.0.3~d03V003
     name: oshpd.ca.gov-patient_discharges
-    vid: d03V002
-    vname: oshpd.ca.gov-patient_discharges-0.0.2
+    vid: d03V003
+    vname: oshpd.ca.gov-patient_discharges-0.0.3
 process: {}
 versions:
     2:
         date: '2015-05-03T13:56:35.784626'
         description: Adding codes
         version: 0.0.2
+    3:
+        date: '2015-05-04T09:16:19.249762'
+        description: Moved codes from pdd_puf to pdd_puf_c
+        version: 0.0.3
