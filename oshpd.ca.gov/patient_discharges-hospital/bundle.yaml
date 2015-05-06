@@ -1,0 +1,55 @@
+about:
+    access: restricted
+    footnote: null
+    grain: null
+    groups: []
+    license: restricted
+    processed: null
+    rights: restricted
+    source: null
+    space: California
+    subject: null
+    summary: Patient discharge records, aggregated to hospitals.
+    tags: []
+    time: p2010e2013
+    title: Patient Discharge Data, Public Use File
+contact_bundle:
+    creator:
+        email: eric@civicknowledge.com
+        name: Eric Busboom
+        url: http://civicknowledge.com
+    maintainer:
+        email: eric@civicknowledge.com
+        name: Eric Busboom
+        url: http://civicknowledge.com
+contact_source:
+    creator: {}
+    maintainer: {}
+external_documentation:
+    dataset:
+        description: Main webpage for the dataset.
+        source: null
+        title: Patient Discharge Data, Public Use File
+        url: http://www.oshpd.ca.gov/HID/Data_Request_Center/PUF.html
+    documentation:
+        description: The primary documentation file
+        source: null
+        title: Main Documentation
+        url: http://www.oshpd.ca.gov/HID/Data_Request_Center/documents/puf/PDD_PublicFileDocumentation_2010_2012.pdf
+identity:
+    bspace: null
+    btime: null
+    dataset: patient_discharges
+    id: d03W
+    revision: 1
+    source: oshpd.ca.gov
+    subset: hospital
+    type: null
+    variation: null
+    version: 0.0.1
+names:
+    fqname: oshpd.ca.gov-patient_discharges-hospital-0.0.1~d03W001
+    name: oshpd.ca.gov-patient_discharges-hospital
+    vid: d03W001
+    vname: oshpd.ca.gov-patient_discharges-hospital-0.0.1
+process: {}

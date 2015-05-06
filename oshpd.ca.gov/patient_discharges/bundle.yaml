@@ -1,9 +1,12 @@
 about:
     access: private
+    footnote: null
     grain: null
     groups: []
     license: restricted
+    processed: null
     rights: restricted
+    source: null
     space: California
     subject: null
     summary: The California Office of Statewide Health Planning and Development (OSHPD)
@@ -33,7 +36,7 @@ external_documentation:
     dataset:
         description: Main webpage for the dataset.
         source: null
-        title: Dataset Page
+        title: Patient Discharge Data, Public Use File
         url: http://www.oshpd.ca.gov/HID/Data_Request_Center/PUF.html
     documentation:
         description: The primary documentation file
@@ -45,17 +48,17 @@ identity:
     btime: null
     dataset: patient_discharges
     id: d03V
-    revision: 3
+    revision: 4
     source: oshpd.ca.gov
     subset: null
     type: null
     variation: null
-    version: 0.0.3
+    version: 0.0.4
 names:
-    fqname: oshpd.ca.gov-patient_discharges-0.0.3~d03V003
+    fqname: oshpd.ca.gov-patient_discharges-0.0.4~d03V004
     name: oshpd.ca.gov-patient_discharges
-    vid: d03V003
-    vname: oshpd.ca.gov-patient_discharges-0.0.3
+    vid: d03V004
+    vname: oshpd.ca.gov-patient_discharges-0.0.4
 process: {}
 versions:
     2:
@@ -66,3 +69,7 @@ versions:
         date: '2015-05-04T09:16:19.249762'
         description: Moved codes from pdd_puf to pdd_puf_c
         version: 0.0.3
+    4:
+        date: '2015-05-06T15:51:44.597145'
+        description: 'Adding year to schema. '
+        version: 0.0.4

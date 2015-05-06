@@ -6,95 +6,111 @@ sources:
         file: LA_lbl.txt
         filetype: csv
         table: pdd_puf
+        time: 2010
         url: s3://private.source.civicknowledge.com/oshpd.ca.gov/OSHPD%20PDD%20PUF/PDD%20PUF%202010/Public10.zip
     puf_10_northa:
         description: Public Discharge Data, Public Use File 2010
         file: Northa_lbl.txt
         filetype: csv
         table: pdd_puf
+        time: 2010
         url: s3://private.source.civicknowledge.com/oshpd.ca.gov/OSHPD%20PDD%20PUF/PDD%20PUF%202010/Public10.zip
     puf_10_northb:
         description: Public Discharge Data, Public Use File 2010
         file: Northb_lbl.txt
         filetype: csv
         table: pdd_puf
+        time: 2010
         url: s3://private.source.civicknowledge.com/oshpd.ca.gov/OSHPD%20PDD%20PUF/PDD%20PUF%202010/Public10.zip
     puf_10_south:
         description: Public Discharge Data, Public Use File 2010
         file: South_lbl.txt
         filetype: csv
         table: pdd_puf
+        time: 2010
         url: s3://private.source.civicknowledge.com/oshpd.ca.gov/OSHPD%20PDD%20PUF/PDD%20PUF%202010/Public10.zip
     puf_11_la:
         description: Public Discharge Data, Public Use File 2011
         file: LA_lbl.txt
         filetype: csv
         table: pdd_puf
+        time: 2011
         url: s3://private.source.civicknowledge.com/oshpd.ca.gov/OSHPD%20PDD%20PUF/PDD%20PUF%202011/Public11.zip
     puf_11_northa:
         description: Public Discharge Data, Public Use File 2011
         file: Northa_lbl.txt
         filetype: csv
         table: pdd_puf
+        time: 2011
         url: s3://private.source.civicknowledge.com/oshpd.ca.gov/OSHPD%20PDD%20PUF/PDD%20PUF%202011/Public11.zip
     puf_11_northb:
         description: Public Discharge Data, Public Use File 2011
         file: Northb_lbl.txt
         filetype: csv
         table: pdd_puf
+        time: 2011
         url: s3://private.source.civicknowledge.com/oshpd.ca.gov/OSHPD%20PDD%20PUF/PDD%20PUF%202011/Public11.zip
     puf_11_south:
         description: Public Discharge Data, Public Use File 2011
         file: South_lbl.txt
         filetype: csv
         table: pdd_puf
+        time: 2011
         url: s3://private.source.civicknowledge.com/oshpd.ca.gov/OSHPD%20PDD%20PUF/PDD%20PUF%202011/Public11.zip
     puf_12_la:
         description: Public Discharge Data, Public Use File 2012
         file: LA_lbl.txt
         filetype: csv
         table: pdd_puf
+        time: 2012
         url: s3://private.source.civicknowledge.com/oshpd.ca.gov/OSHPD%20PDD%20PUF/PDD%20PUF%202012/Public12.zip
     puf_12_northa:
         description: Public Discharge Data, Public Use File 2012
         file: Northa_lbl.txt
         filetype: csv
         table: pdd_puf
+        time: 2012
         url: s3://private.source.civicknowledge.com/oshpd.ca.gov/OSHPD%20PDD%20PUF/PDD%20PUF%202012/Public12.zip
     puf_12_northb:
         description: Public Discharge Data, Public Use File 2012
         file: Northb_lbl.txt
         filetype: csv
         table: pdd_puf
+        time: 2012
         url: s3://private.source.civicknowledge.com/oshpd.ca.gov/OSHPD%20PDD%20PUF/PDD%20PUF%202012/Public12.zip
     puf_12_south:
         description: Public Discharge Data, Public Use File 2012
         file: South_lbl.txt
         filetype: csv
         table: pdd_puf
+        time: 2012
         url: s3://private.source.civicknowledge.com/oshpd.ca.gov/OSHPD%20PDD%20PUF/PDD%20PUF%202012/Public12.zip
     puf_13_la:
         description: Public Discharge Data, Public Use File 2013
         file: LA_lbl.txt
         filetype: csv
         table: pdd_puf
+        time: 2013
         url: s3://private.source.civicknowledge.com/oshpd.ca.gov/OSHPD%20PDD%20PUF/PDD%20PUF%202013/PUBLIC13.zip
     puf_13_northa:
         description: Public Discharge Data, Public Use File 2013
         file: Northa_lbl.txt
         filetype: csv
         table: pdd_puf
+        time: 2013
         url: s3://private.source.civicknowledge.com/oshpd.ca.gov/OSHPD%20PDD%20PUF/PDD%20PUF%202013/PUBLIC13.zip
     puf_13_northb:
         description: Public Discharge Data, Public Use File 2013
         file: Northb_lbl.txt
         filetype: csv
         table: pdd_puf
+        time: 2013
         url: s3://private.source.civicknowledge.com/oshpd.ca.gov/OSHPD%20PDD%20PUF/PDD%20PUF%202013/PUBLIC13.zip
     puf_13_south:
         description: Public Discharge Data, Public Use File 2013
         file: South_lbl.txt
         filetype: csv
         table: pdd_puf
+        time: 2013
         url: s3://private.source.civicknowledge.com/oshpd.ca.gov/OSHPD%20PDD%20PUF/PDD%20PUF%202013/PUBLIC13.zip
 views: {}
