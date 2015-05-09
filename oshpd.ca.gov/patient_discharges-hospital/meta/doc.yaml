@@ -1,3 +1,13 @@
 documentation:
-    main: null
-    readme: null
+    main: '
+
+        # Patient Discharge Data, Public Use File
+
+
+        Patient discharge records, aggregated to hospitals.
+
+        '
+    readme: '# Patient Discharge Data, Public Use File
+
+
+        Patient discharge records, aggregated to hospitals.'

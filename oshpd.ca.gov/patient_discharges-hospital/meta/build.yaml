@@ -1,4 +1,9 @@
-build: {}
+build:
+    summary_cols:
+    - mdc
+    - msdrg
+    - diag_p
+    - poa_p
 dependencies:
     pddpuf: oshpd.ca.gov-patient_discharges-pdd_puf_c
-sources: {}
+views: {}

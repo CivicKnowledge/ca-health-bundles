@@ -25,7 +25,7 @@ class Bundle(LoaderBundle):
         # Can't seem to figure out how to get this character encoded correctly
         row['msdrg_name'] = row['msdrg_name'].replace('\xad','-')
         
-        row['year'] = source.time
+        row['year'] = int(row['dschyear'])
        
     def codes_map(self):
         

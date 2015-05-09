@@ -48,17 +48,17 @@ identity:
     btime: null
     dataset: patient_discharges
     id: d03V
-    revision: 4
+    revision: 5
     source: oshpd.ca.gov
     subset: null
     type: null
     variation: null
-    version: 0.0.4
+    version: 0.0.5
 names:
-    fqname: oshpd.ca.gov-patient_discharges-0.0.4~d03V004
+    fqname: oshpd.ca.gov-patient_discharges-0.0.5~d03V005
     name: oshpd.ca.gov-patient_discharges
-    vid: d03V004
-    vname: oshpd.ca.gov-patient_discharges-0.0.4
+    vid: d03V005
+    vname: oshpd.ca.gov-patient_discharges-0.0.5
 process: {}
 versions:
     2:
@@ -73,3 +73,7 @@ versions:
         date: '2015-05-06T15:51:44.597145'
         description: 'Adding year to schema. '
         version: 0.0.4
+    5:
+        date: '2015-05-07T10:32:16.732836'
+        description: Adding proto_vid for year
+        version: 0.0.5
