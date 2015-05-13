@@ -1,0 +1,60 @@
+about:
+    access: null
+    footnote: null
+    grain: null
+    groups: []
+    license: null
+    processed: null
+    rights: null
+    source: null
+    space: null
+    subject: null
+    summary: null
+    tags: []
+    time: null
+    title: null
+contact_bundle:
+    creator:
+        email: eric@civicknowledge.com
+        name: Eric Busboom
+        org: Civic Knowledge
+        url: http://civicknowledge.com
+    maintainer: {}
+contact_source:
+    creator:
+        org: Office of Statewide Health Planning and Development
+        url: http://oshpd.ca.gov/
+    maintainer: {}
+external_documentation:
+    dataset:
+        description: Main webpage for the dataset.
+        source: null
+        title: Dataset Page
+        url: http://example.com
+    documentation:
+        description: The primary documentation file
+        source: null
+        title: Main Documentation
+        url: http://example.com
+    download:
+        description: Web page that links to the source files.
+        source: null
+        title: Download Page
+        url: http://example.com
+identity:
+    bspace: null
+    btime: null
+    dataset: facilities
+    id: d041
+    revision: 1
+    source: oshpd.ca.gov
+    subset: index
+    type: null
+    variation: null
+    version: 0.0.1
+names:
+    fqname: oshpd.ca.gov-facilities-index-0.0.1~d041001
+    name: oshpd.ca.gov-facilities-index
+    vid: d041001
+    vname: oshpd.ca.gov-facilities-index-0.0.1
+process: {}

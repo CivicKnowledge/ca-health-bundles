@@ -1,0 +1,9 @@
+coverage:
+    geo:
+    - 0E06
+    - 0O0600
+    grain:
+    - 0OZZZZ
+    - 2gZZZZZZZZZ
+    - 2qZZZZZZZZZZ
+    time: []

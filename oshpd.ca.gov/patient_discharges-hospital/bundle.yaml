@@ -1,12 +1,13 @@
 about:
     access: restricted
     footnote: null
-    grain: null
+    grain: facility
     groups: []
     license: restricted
-    processed: null
+    processed: 'Records loaded from {{dependencies.pddpuf.ref}} are addregated by
+        hospital and split into tables based on MDC MS-DRG and other variabes. '
     rights: restricted
-    source: null
+    source: '{{contact_source.creator.org}} processed by {{contact_bundle.creator.source}}'
     space: California
     subject: null
     summary: Patient discharge records, aggregated to hospitals.
@@ -17,13 +18,17 @@ contact_bundle:
     creator:
         email: eric@civicknowledge.com
         name: Eric Busboom
+        org: Civic Knowledge
         url: http://civicknowledge.com
     maintainer:
         email: eric@civicknowledge.com
         name: Eric Busboom
+        org: Civic Knowledge
         url: http://civicknowledge.com
 contact_source:
-    creator: {}
+    creator:
+        org: California Office of Statewide Health Planning and Development, Healthcare
+            Information Division
     maintainer: {}
 external_documentation:
     dataset:

@@ -1,0 +1,5 @@
+build: {}
+dependencies:
+    facilities: oshpd.ca.gov-facilities-facilities
+    geoids: oshpd.ca.gov-facilities-facilities_geoids
+views: {}

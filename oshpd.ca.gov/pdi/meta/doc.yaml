@@ -1,4 +1,5 @@
 documentation:
+    footnote: null
     main: '
 
         # Pediatric Quality Indicators (PDIs)
@@ -10,6 +11,7 @@ documentation:
         avoided through access to high-quality outpatient care.
 
         '
+    processed: ''
     readme: '# Pediatric Quality Indicators (PDIs)
 
 
@@ -23,3 +25,9 @@ documentation:
 
         can''t parse the source file for this bundle, so we''ve converted it manually
         and provided a conversion link in the source record. '
+    source: ''
+    summary: Pediatric Quality Indicators (PDIs) use indicators from other AHRQ QI
+        modules with adaptations for use among children. Similar to Prevention Quality
+        Indicators, the PDIs identify hospital admissions that evidence suggests may
+        have been avoided through access to high-quality outpatient care.
+    title: Pediatric Quality Indicators (PDIs)

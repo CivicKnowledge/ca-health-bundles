@@ -1,9 +1,12 @@
 about:
     access: restricted
+    footnote: null
     grain: county
     groups: []
     license: ckdbl
+    processed: null
     rights: public
+    source: null
     space: California
     subject: null
     summary: Pediatric Quality Indicators (PDIs) use indicators from other AHRQ QI
@@ -23,7 +26,9 @@ contact_bundle:
         name: Eric Busboom
         url: http://www.sandiegodata.org
 contact_source:
-    creator: {}
+    creator:
+        org: Office of Statewide Health Planning and Development
+        url: http://oshpd.ca.gov/
     maintainer: {}
 external_documentation:
     ahrq_spec:
@@ -42,17 +47,17 @@ identity:
     btime: null
     dataset: pdi
     id: d03C
-    revision: 4
+    revision: 5
     source: oshpd.ca.gov
     subset: null
     type: null
     variation: null
-    version: 0.0.4
+    version: 0.0.5
 names:
-    fqname: oshpd.ca.gov-pdi-0.0.4~d03C004
+    fqname: oshpd.ca.gov-pdi-0.0.5~d03C005
     name: oshpd.ca.gov-pdi
-    vid: d03C004
-    vname: oshpd.ca.gov-pdi-0.0.4
+    vid: d03C005
+    vname: oshpd.ca.gov-pdi-0.0.5
 process: {}
 versions:
     2:

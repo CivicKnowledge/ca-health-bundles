@@ -1,0 +1,8 @@
+-   name: oshpd.ca.gov-patient_discharges-hospital-pdd_summary_mdc
+    table: pdd_summary_mdc
+-   name: oshpd.ca.gov-patient_discharges-hospital-pdd_summary_msdrg
+    table: pdd_summary_msdrg
+-   name: oshpd.ca.gov-patient_discharges-hospital-pdd_summary_diag_p
+    table: pdd_summary_diag_p
+-   name: oshpd.ca.gov-patient_discharges-hospital-pdd_summary_poa_p
+    table: pdd_summary_poa_p

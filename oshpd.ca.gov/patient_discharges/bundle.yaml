@@ -25,10 +25,6 @@ contact_bundle:
         email: eric@sandiegodata.org
         name: Eric Busboom
         url: http://www.sandiegodata.org
-    maintainer:
-        email: eric@sandiegodata.org
-        name: Eric Busboom
-        url: http://www.sandiegodata.org
 contact_source:
     creator: {}
     maintainer: {}

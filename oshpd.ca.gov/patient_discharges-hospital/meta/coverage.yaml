@@ -1,7 +1,8 @@
 coverage:
     geo:
     - 0E06
-    grain: []
+    grain:
+    - facility
     time:
     - 2010
     - 2011

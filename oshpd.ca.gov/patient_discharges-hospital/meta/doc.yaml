@@ -1,13 +1,18 @@
 documentation:
-    main: '
-
-        # Patient Discharge Data, Public Use File
-
-
-        Patient discharge records, aggregated to hospitals.
-
-        '
+    footnote: null
+    main: "\n# Patient Discharge Data, Public Use File\n\nPatient discharge records,\
+        \ aggregated to hospitals.\n\nThe partition with the ``pdd_summary_msdrg``\
+        \ table with no grain summarizes the counts for each MSDRG for the all years,\
+        \ while the partitions with the ``pdd_summary_msdrg`` and grains summarize\
+        \ counts for only the MDC in the name of the grain. Note that MS-DRG codes\
+        \ less than 20 and codes greater than 977 are not uniquely associated with\
+        \ MDC codes, so those MS-DRG codes may appear in multiple partitions. \n\n"
+    processed: 'Records loaded from {{dependencies.pddpuf.ref}} are addregated by
+        hospital and split into tables based on MDC MS-DRG and other variabes. '
     readme: '# Patient Discharge Data, Public Use File
 
 
         Patient discharge records, aggregated to hospitals.'
+    source: '{{contact_source.creator.org}} processed by {{contact_bundle.creator.source}}'
+    summary: Patient discharge records, aggregated to hospitals.
+    title: Patient Discharge Data, Public Use File
