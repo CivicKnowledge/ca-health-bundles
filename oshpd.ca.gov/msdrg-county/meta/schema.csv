@@ -1,14 +1,14 @@
-"table","seq","column","is_pk","is_fk","id","type","size","description"
-"msdrg_hospital",1,"id",1,,"t03R01","INTEGER",,"Hospital Discharges by Hospital and Medicare Severity-Diagnosis Related Group (MS-DRG) "
-"msdrg_hospital",2,"year",,,"c03R01002","INTEGER",4,"Year"
-"msdrg_hospital",3,"oshpd_id",,,"c03R01003","INTEGER",6,"OSHPD Facility ID"
-"msdrg_hospital",4,"msdrg",,,"c03R01004","INTEGER",3,"Medicare Severity-Diagnosis Related Group"
-"msdrg_hospital",5,"discharges",,,"c03R01005","INTEGER",4,"Discharges"
-"msdrg_hospital",6,"facility_name",,,"c03R01006","VARCHAR",60,"Facility Name"
-"msdrg_hospital",7,"county_name",,,"c03R01007","VARCHAR",15,"County Name"
-,,,,,,,,
-"msdrg_county",1,"id",1,,"t03R02","INTEGER",,"Hospital Discharges by County and Medicare Severity-Diagnosis Related Group (MS-DRG) "
-"msdrg_county",2,"year",,,"c03R02002","INTEGER",4,"Year"
-"msdrg_county",3,"patcnty1",,,"c03R02003","VARCHAR",15,"County Name"
-"msdrg_county",4,"msdrg",,,"c03R02004","INTEGER",3,"Medicare Severity-Diagnosis Related Group"
-"msdrg_county",5,"discharges",,,"c03R02005","INTEGER",6,"Discharges"
+table,seq,column,is_pk,is_fk,id,type,size,description,proto_vid,d_orig_proto_vid
+msdrg_hospital,1,id,1,,t03R01,INTEGER,,Hospital Discharges by Hospital and Medicare Severity-Diagnosis Related Group (MS-DRG),,
+msdrg_hospital,2,year,,,c03R01002,INTEGER,4,Year,c0010k003,oshpd_facility.year
+msdrg_hospital,3,oshpd_id,,,c03R01003,VARCHAR,6,OSHPD Facility ID,c0010k002,oshpd_facility.oshpd_id
+msdrg_hospital,4,msdrg,,,c03R01004,INTEGER,3,Medicare Severity-Diagnosis Related Group,,
+msdrg_hospital,5,discharges,,,c03R01005,INTEGER,4,Discharges,,
+msdrg_hospital,6,facility_name,,,c03R01006,VARCHAR,60,Facility Name,,
+msdrg_hospital,7,county_name,,,c03R01007,VARCHAR,15,County Name,,
+,,,,,,,,,,
+msdrg_county,1,id,1,,t03R02,INTEGER,,Hospital Discharges by County and Medicare Severity-Diagnosis Related Group (MS-DRG),,
+msdrg_county,2,year,,,c03R02002,INTEGER,4,Year,,
+msdrg_county,3,patcnty1,,,c03R02003,VARCHAR,15,County Name,,
+msdrg_county,4,msdrg,,,c03R02004,INTEGER,3,Medicare Severity-Diagnosis Related Group,,
+msdrg_county,5,discharges,,,c03R02005,INTEGER,6,Discharges,,

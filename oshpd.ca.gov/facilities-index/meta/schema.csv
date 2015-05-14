@@ -1,6 +1,6 @@
 table,seq,column,is_pk,is_fk,id,type,ui1,size,description,proto_vid,d_index,d_orig_proto_vid
 facilities_index,1,id,1,,t04101,INTEGER,,,,,,
-facilities_index,2,oshpd_id,,,c04101002,VARCHAR,1,9,oshpd_id,,,
+facilities_index,2,oshpd_id,,,c04101002,VARCHAR,1,9,oshpd_id,c0010k002,,oshpd_facility.oshpd_id
 facilities_index,3,type,,,c04101003,VARCHAR,,10,type,,,
 facilities_index,4,facility_name,,,c04101004,VARCHAR,,60,facility_name,,,
 facilities_index,5,dba_address1,,,c04101005,VARCHAR,,40,dba_address1,,,

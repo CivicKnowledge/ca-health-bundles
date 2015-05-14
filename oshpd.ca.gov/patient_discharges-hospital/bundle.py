@@ -25,8 +25,9 @@ class Bundle(BuildBundle):
                 t = self.schema.add_table('pdd_summary_'+str(v), 
                     description = "Patient Discharge counts, aggregated on the {} variable ".format(v))
                 t.add_id_column()
-                t.add_column('oshpd_id', datatype = 'varchar', description=p.table.column('oshpd_id').description )
-                t.add_column('year', datatype = 'integer', proto_vid = 'dates.year',
+                t.add_column('oshpd_id', datatype = 'varchar', description=p.table.column('oshpd_id').description,
+                             proto_vid = 'oshpd_facility.oshpd_id')
+                t.add_column('year', datatype = 'integer', proto_vid = 'oshpd_facility.year',
                              description=p.table.column('dschyear').description )
                 t.add_column(v, datatype=c.datatype, proto_vid=c.id_, description = c.description, data={'aggvar':1})
                 t.add_column('count', datatype = 'integer', derivedfrom=c.id_, description = "Count of records")

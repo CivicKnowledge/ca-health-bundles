@@ -27,8 +27,8 @@ contact_bundle:
         url: http://civicknowledge.com
 contact_source:
     creator:
-        org: California Office of Statewide Health Planning and Development, Healthcare
-            Information Division
+        org: Office of Statewide Health Planning and Development
+        url: http://oshpd.ca.gov/
     maintainer: {}
 external_documentation:
     dataset:

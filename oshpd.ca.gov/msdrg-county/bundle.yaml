@@ -1,17 +1,20 @@
 about:
     access: restricted
+    footnote: null
     grain: null
     groups: []
     license: ckdbl
+    processed: null
     rights: public
+    source: Custom Data Extraction from the , {{contact_source.creator.org}}, Patient
+        Discharge Data, {{external_documentation.dataset.url}}
     space: California
     subject: null
-    summary: ' Inpatient discharges from licensed general acute care hospitals, by Medicare Severity-Diagnosis 
-        Related Group and county of patient’s residence.; Medicare Severity-Diagnosis Related Group (MS-DRG) are aggregated
-        to the county of the patient''s residence and the hospital from which the
-        patient was discharged. '
-    source: Custom Data Extraction from the , {{contact_source.creator.org}}, 
-        Patient Discharge Data, {{external_documentation.dataset.url}}
+    summary: " Inpatient discharges from licensed general acute care hospitals, by\
+        \ Medicare Severity-Diagnosis Related Group and county of patient\u2019s residence.;\
+        \ Medicare Severity-Diagnosis Related Group (MS-DRG) are aggregated to the\
+        \ county of the patient's residence and the hospital from which the patient\
+        \ was discharged. "
     tags: []
     time: null
     title: Inpatient Hospital Discharges By County and Hospital, 2009 - 2013
@@ -27,9 +30,9 @@ contact_bundle:
 contact_source:
     creator:
         email: Karen.Henderson@oshpd.ca.gov
-        org: California Office of Statewide Health Planning and Development, Healthcare 
-        Information Division
         name: Karen Henderson, Research Program Specialist, OSHPD
+        org: California Office of Statewide Health Planning and Development, Healthcare
+            Information Division
     maintainer: {}
 external_documentation:
     dataset:
