@@ -1,5 +1,5 @@
 about:
-    access: null
+    access: public
     footnote: null
     grain: null
     groups: []
@@ -46,15 +46,20 @@ identity:
     btime: null
     dataset: facilities
     id: d041
-    revision: 1
+    revision: 2
     source: oshpd.ca.gov
     subset: index
     type: null
     variation: null
-    version: 0.0.1
+    version: 0.0.2
 names:
-    fqname: oshpd.ca.gov-facilities-index-0.0.1~d041001
+    fqname: oshpd.ca.gov-facilities-index-0.0.2~d041002
     name: oshpd.ca.gov-facilities-index
-    vid: d041001
-    vname: oshpd.ca.gov-facilities-index-0.0.1
+    vid: d041002
+    vname: oshpd.ca.gov-facilities-index-0.0.2
 process: {}
+versions:
+    2:
+        date: '2015-05-14T13:22:59.070917'
+        description: Setting about.access
+        version: 0.0.2
