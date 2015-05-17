@@ -117,7 +117,6 @@
 "procedures",2,"year",,"c03x04002",,"VARCHAR",4,"year","c00102003",,,,,,,
 "procedures",3,"county_gvid",,"c03x04003",,"VARCHAR",6,"county_gvid","c00104002",,,,,,,
 "procedures",4,"oshpd_id",,"c04101002",,"VARCHAR",4,"oshpd_id","c0010k002",,,"oshpd.ca.gov-facilities-index-facilities_index-0.0.3:oshpd_id","oshpd_facilities.oshpd_id",,,
-"procedures",,"facilities_id",,,,,,,,,,,,,,
 "procedures",5,"county",,,,"VARCHAR",15,"county",,,,,,,,
 "procedures",6,"hospital",,,,"VARCHAR",84,"hospital",,,,,,,,
 "conditions",7,"matched_hospital_name",,,,"VARCHAR",84,"Name of hospital that was matched to the 'hospital' field to determine the oshpd_id",,,,,,,,
