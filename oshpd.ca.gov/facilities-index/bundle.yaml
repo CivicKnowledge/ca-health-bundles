@@ -46,17 +46,17 @@ identity:
     btime: null
     dataset: facilities
     id: d041
-    revision: 3
+    revision: 4
     source: oshpd.ca.gov
     subset: index
     type: null
     variation: null
-    version: 0.0.3
+    version: 0.0.4
 names:
-    fqname: oshpd.ca.gov-facilities-index-0.0.3~d041003
+    fqname: oshpd.ca.gov-facilities-index-0.0.4~d041004
     name: oshpd.ca.gov-facilities-index
-    vid: d041003
-    vname: oshpd.ca.gov-facilities-index-0.0.3
+    vid: d041004
+    vname: oshpd.ca.gov-facilities-index-0.0.4
 process: {}
 versions:
     2:
@@ -67,3 +67,7 @@ versions:
         date: '2015-05-16T17:23:54.885649'
         description: Added short facility code and type code
         version: 0.0.3
+    4:
+        date: '2015-05-16T21:40:36.420786'
+        description: 'Put facilities)id back. '
+        version: 0.0.4
