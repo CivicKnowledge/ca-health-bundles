@@ -1,4 +1,5 @@
 documentation:
+    footnote: null
     main: '
 
         # Inpatient Mortality Indicators
@@ -19,7 +20,14 @@ documentation:
         facilities list, from bundle cdph.ca.gov-facilities.
 
 
+        However, they match well enough to the OSHPD list that nearly all of the entries
+        can be assigned an OSHPD facility id. When the ``oshpod_id`` column is set
+        from an inexact hospital name match, the name of the matched facility is stored
+        in the ``matched_hospital_name`` column
+
+
         '
+    processed: ''
     readme: '# Inpatient Mortality Indicators
 
 
@@ -28,3 +36,10 @@ documentation:
         and procedures for which mortality rates may vary significantly across institutions.
         Evidence suggests that high mortality may be associated with deficiencies
         in the quality of hospital care provided.'
+    source: ''
+    summary: The Inpatient Mortality Indicators (IMIs) are a subset of the AHRQ quality
+        indicators that measure in-hospital mortality. They include medical conditions
+        and procedures for which mortality rates may vary significantly across institutions.
+        Evidence suggests that high mortality may be associated with deficiencies
+        in the quality of hospital care provided.
+    title: Inpatient Mortality Indicators

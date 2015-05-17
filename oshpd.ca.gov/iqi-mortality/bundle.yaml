@@ -1,9 +1,12 @@
 about:
     access: restricted
+    footnote: null
     grain: null
     groups: []
     license: ckdbl
+    processed: null
     rights: public
+    source: null
     space: California
     subject: null
     summary: The Inpatient Mortality Indicators (IMIs) are a subset of the AHRQ quality
@@ -24,7 +27,9 @@ contact_bundle:
         name: Eric Busboom
         url: http://www.sandiegodata.org
 contact_source:
-    creator: {}
+    creator:
+        org: Office of Statewide Health Planning and Development
+        url: http://oshpd.ca.gov/
     maintainer: {}
 external_documentation:
     2012_conditions:
@@ -68,17 +73,17 @@ identity:
     btime: null
     dataset: iqi
     id: d03p
-    revision: 4
+    revision: 5
     source: oshpd.ca.gov
     subset: mortality
     type: null
     variation: null
-    version: 0.0.4
+    version: 0.0.5
 names:
-    fqname: oshpd.ca.gov-iqi-mortality-0.0.4~d03p004
+    fqname: oshpd.ca.gov-iqi-mortality-0.0.5~d03p005
     name: oshpd.ca.gov-iqi-mortality
-    vid: d03p004
-    vname: oshpd.ca.gov-iqi-mortality-0.0.4
+    vid: d03p005
+    vname: oshpd.ca.gov-iqi-mortality-0.0.5
 process: {}
 versions:
     2:
@@ -93,3 +98,7 @@ versions:
         date: '2015-04-27T18:10:22.946391'
         description: Setting new access remotes
         version: 0.0.4
+    5:
+        date: '2015-05-16T20:02:38.588076'
+        description: Adding oshpd_id
+        version: 0.0.5

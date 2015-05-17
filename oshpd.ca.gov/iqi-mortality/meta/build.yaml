@@ -3,6 +3,7 @@ build:
         xlrd: xlrd
 dependencies:
     counties: census.gov-index-counties
+    facilities: oshpd.ca.gov-facilities-index-facilities_index
 extract: {}
 sources:
     conditions_2012:

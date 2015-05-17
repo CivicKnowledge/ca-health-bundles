@@ -3,7 +3,6 @@
 '''
 
 
-
 from  ambry.bundle.loader import ExcelBuildBundle
 from ambry.bundle.rowgen import RowSpecIntuiter
 from ambry.util import memoize
@@ -61,8 +60,6 @@ class Bundle(ExcelBuildBundle):
         except AttributeError:
             return v
     
-
-
    
     def meta_set_row_specs(self):
         
@@ -97,15 +94,51 @@ class Bundle(ExcelBuildBundle):
         return { r['name'].replace(" County, California",'').lower(): r['gvid'] 
                      for r in  self.library.dep('counties').partition.rows  if int(r['state'] == 6)}
         
+    @property
+    @memoize
+    def facilities_map(self):
+        return { r['facility_name'].lower(): dict(r) for r in  self.library.dep('facilities').partition.rows}
+        
+    @property
+    @memoize
+    def hospital_names_by_county(self):
+        from collections import defaultdict
+        
+        d = defaultdict(set)
+        
+        for r in  self.library.dep('facilities').partition.rows:
+             d[r['county_gvid']].add(r['facility_name'].lower())
+
+        return d
+
+
     def build_modify_row(self, row_gen, p, source, row):
+        from difflib import get_close_matches
         
         row['year'] = int(source.time)
         #row['hospital'] = row['hospital'].decode('latin1')
         
         if row['county']:
             row['county_gvid'] = self.county_map[row['county'].lower()]
-        
+        else:
+            row['county_gvid'] = None
 
+        hn = row['hospital'].lower()
+        
+        if hn in self.facilities_map:
+            row['oshpd_id'] = self.facilities_map[hn]['oshpd_id']
+           
+        elif row['county_gvid']:
+            matches =  get_close_matches(hn,self.hospital_names_by_county[row['county_gvid']])
+            
+            if matches:
+                row['matched_hospital_name'] = matches[0].title()
+                row['oshpd_id'] = self.facilities_map[matches[0]]['oshpd_id']
+            else:
+                self.error("Failed to get OSHPD_ID for "+hn)
+        
+        else:
+            self.error("Failed to get OSHPD_ID for "+hn)
         
         
         

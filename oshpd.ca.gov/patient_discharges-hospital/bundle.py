@@ -11,7 +11,6 @@ class Bundle(BuildBundle):
 
         super(Bundle, self).__init__(directory)
 
-
     def meta_build_schema(self):
         
         p = self.library.dep('pddpuf').partition
@@ -32,10 +31,8 @@ class Bundle(BuildBundle):
                 t.add_column(v, datatype=c.datatype, proto_vid=c.id_, description = c.description, data={'aggvar':1})
                 t.add_column('count', datatype = 'integer', derivedfrom=c.id_, description = "Count of records")
     
-        
         self.schema.write_schema()
         
-
     def build(self):
 
         for v in self.metadata.build.summary_cols:
@@ -98,8 +95,9 @@ class Bundle(BuildBundle):
             t = self.schema.add_table(table_name, 
                 description = "MSDRGs counts per hospital, per year, for MDC {}".format(mdc))
             t.add_id_column()
-            t.add_column('oshpd_id', datatype = 'varchar', description='OSHPD facility id' )
-            t.add_column('year', datatype = 'integer', proto_vid = 'dates.year',
+            t.add_column('oshpd_id', datatype = 'varchar', proto_vid = 'oshpd_facility.oshpd_id', 
+                        description='OSHPD facility id' )
+            t.add_column('year', datatype = 'integer', proto_vid = 'oshpd_facility.year',
                          description='Year of discharge' )
                          
             for col in columns[2:]:

@@ -43,6 +43,8 @@ class Bundle(LoaderBundle):
    
     def build_modify_row(self, row_gen, p, source, row):
 
+        row['type_code'], row['oshpd_short_id'] = row['oshpd_id'][:3], row['oshpd_id'][3:]
+
         del row['id']
         
     def build(self):
