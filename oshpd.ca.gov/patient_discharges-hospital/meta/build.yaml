@@ -5,6 +5,6 @@ build:
     - diag_p
     - poa_p
 dependencies:
-    facilities: oshpd.ca.gov-facilities-index-facilities_index
+    facilities: oshpd.ca.gov-facilities-index-facilities_index->=0.0.4
     pddpuf: oshpd.ca.gov-patient_discharges-pdd_puf_c
 views: {}

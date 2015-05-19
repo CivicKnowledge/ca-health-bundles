@@ -46,20 +46,24 @@ identity:
     btime: null
     dataset: patient_discharges
     id: d03W
-    revision: 2
+    revision: 3
     source: oshpd.ca.gov
     subset: hospital
     type: null
     variation: null
-    version: 0.0.2
+    version: 0.0.3
 names:
-    fqname: oshpd.ca.gov-patient_discharges-hospital-0.0.2~d03W002
+    fqname: oshpd.ca.gov-patient_discharges-hospital-0.0.3~d03W003
     name: oshpd.ca.gov-patient_discharges-hospital
-    vid: d03W002
-    vname: oshpd.ca.gov-patient_discharges-hospital-0.0.2
+    vid: d03W003
+    vname: oshpd.ca.gov-patient_discharges-hospital-0.0.3
 process: {}
 versions:
     2:
         date: '2015-05-16T13:50:22.046690'
         description: Improving protos
         version: 0.0.2
+    3:
+        date: '2015-05-19T11:46:49.015073'
+        description: Require recent facilities index
+        version: 0.0.3
