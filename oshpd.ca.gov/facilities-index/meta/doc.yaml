@@ -2,17 +2,22 @@ documentation:
     footnote: null
     main: '
 
-        # None
+        # {about.title}
 
 
-        None
+        {about.summary}
 
         '
-    processed: ''
-    readme: '# None
+    processed: The partitions oshpd.ca.gov-facilities-facilities and oshpd.ca.gov-facilities-facilities_geoids
+        are joined and copied to a new partition, with a table that includes the GVID
+        for the county and both the six and nine character versions of the OSHPD facility
+        ID.
+    readme: '# OSHPD Health Care Facilities Index
 
 
-        None'
-    source: ''
-    summary: ''
-    title: ''
+        Index of health care facilities, based on OSHPD&apos;s official list, via
+        {{dependencies.facilities}}.'
+    source: Office of Statewide Health Planning and Development via the bundles oshpd.ca.gov-facilities-facilities
+        and oshpd.ca.gov-facilities-facilities_geoids.
+    summary: Index of health care facilities, based on OSHPDs official list, via oshpd.ca.gov-facilities-facilities.
+    title: OSHPD Health Care Facilities Index

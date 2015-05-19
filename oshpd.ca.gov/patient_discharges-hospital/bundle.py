@@ -1,7 +1,7 @@
 """"""
 
 from ambry.bundle import BuildBundle
-
+from ambry.util import memoize
 
 class Bundle(BuildBundle):
 
@@ -10,6 +10,8 @@ class Bundle(BuildBundle):
     def __init__(self, directory=None):
 
         super(Bundle, self).__init__(directory)
+        
+        self._facilities_map = None
 
     def meta_build_schema(self):
         
@@ -38,19 +40,22 @@ class Bundle(BuildBundle):
         for v in self.metadata.build.summary_cols:
             self.build_aggregate(v)
           
+        self.build_mdc_msdrg()
 
         return True
         
+
     def build_aggregate(self, v):
         
         self.log("Build aggregate for: {}".format(v))
         
         p = self.library.dep('pddpuf').partition
 
-        q = "SELECT id, oshpd_id, dschyear as year,  {} FROM pdd_puf_c".format(v)
 
+        q = "SELECT id, oshpd_id, dschyear as year,  {} FROM pdd_puf_c  ".format(v)
+        
         df = p.select(q,index_col=p.get_table().primary_key.name).pandas
- 
+
         dfg =  df.groupby(['year','oshpd_id',v]).count().reset_index()
  
         dfg.columns = ["year", "oshpd_id", v, "count" ]
@@ -58,28 +63,18 @@ class Bundle(BuildBundle):
         out_p = self.partitions.new_partition(table = 'pdd_summary_{}'.format(v))
         out_p.clean()
         
-        lr = self.init_log_rate(10000)
+        lr = self.init_log_rate(1000)
         
         with out_p.inserter() as ins:
             for r in dfg.sort(['oshpd_id','count'], ascending = False).itertuples(index=False):
                 d =  dict(zip(dfg.columns, r))
                 
+                # They are all hospitals, so they should all have a '106' type code
+                d['oshpd_id'] = '106' + str(d['oshpd_id']).zfill(6)
+              
                 ins.insert(d)
                 lr()
                 
-    def build_pivot_aggregate(self):
-        
-        
-        df = self.partitions.find(table ='pdd_summary_mdc').pandas
-        
-        print df.describe()
-    
-        
-        df = b.partitions.find(table ='pdd_summary_mdc').pandas
-        dfmi = df.set_index(['oshpd_id','year','mdc'])
-        dfmi = dfmi.drop('id',1).unstack().fillna(0)
-        dfmi.to_csv('count_by_mdc.csv')
-        
         
     def mk_mdc_msdrg_table(self, mdc, columns):
         
@@ -118,7 +113,7 @@ class Bundle(BuildBundle):
             
             self.log("Processing MDC "+mdc)
 
-            q = "SELECT id, oshpd_id, dschyear as year,  msdrg FROM pdd_puf_c WHERE mdc = '{}' limit 20000".format(mdc)
+            q = "SELECT id, oshpd_id, dschyear as year,  msdrg FROM pdd_puf_c WHERE mdc = '{}'".format(mdc)
 
             df = in_p.select(q).pandas
            
@@ -138,6 +133,9 @@ class Bundle(BuildBundle):
             with p.inserter() as ins:
                 for r in dfr.sort('oshpd_id').itertuples(index=False):
                     d =  dict(zip(dfr.columns, r))
+
+                    # They are all hospitals, so they should all have a '106' type code
+                    d['oshpd_id'] = '106' + str(d['oshpd_id']).zfill(6)
 
                     ins.insert(d)
                     lr(table_name)

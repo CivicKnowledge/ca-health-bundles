@@ -1,4 +1,4 @@
 
-# {about_title}
+# {{about.title}}
 
-{about_summary}
+{{about.summary}}

@@ -1,15 +1,27 @@
 about:
     access: restricted
+    footnote: null
     grain: facility
     groups: []
     license: ckdbl
+    processed: null
     rights: public
+    source: null
     space: California
     subject: null
-    summary: null
+    summary: This dataset provides a simple cross walk using Office of Statewide Health
+        Planning and Development (OSHPD) assigned licensed facility identification
+        numbers linked with matched California Department of Public Health (CDPH),
+        Licensing and Certification facility lists based on license number.  This
+        is not a comprehensive matched list, facility identification numbers that
+        did not match are also included from both the OSHPD and CDPH lists.  Facility
+        Status or Facility Level designations may explain some OSHPD non-matches,
+        for additional information contact OSHPD directly.  Please contact CDPH directly
+        for more information regarding un-matched facility identifiers that do not
+        have corresponding OSHPD identifiers.
     tags: []
     time: null
-    title: null
+    title: Licensed Facility Cross Walk
 contact_bundle:
     creator:
         email: eric@sandiegodata.org
@@ -40,20 +52,28 @@ identity:
     btime: null
     dataset: facilities
     id: d03U
-    revision: 2
+    revision: 4
     source: oshpd.ca.gov
     subset: null
     type: null
     variation: cross
-    version: 0.0.2
+    version: 0.0.4
 names:
-    fqname: oshpd.ca.gov-facilities-cross-0.0.2~d03U002
+    fqname: oshpd.ca.gov-facilities-cross-0.0.4~d03U004
     name: oshpd.ca.gov-facilities-cross
-    vid: d03U002
-    vname: oshpd.ca.gov-facilities-cross-0.0.2
+    vid: d03U004
+    vname: oshpd.ca.gov-facilities-cross-0.0.4
 process: {}
 versions:
     2:
         date: '2015-04-27T18:10:14.546568'
         description: Setting new access remotes
         version: 0.0.2
+    3:
+        date: '2015-05-18T09:44:14.890201'
+        description: 'Updating file. '
+        version: 0.0.3
+    4:
+        date: '2015-05-18T13:07:51.444311'
+        description: Added title
+        version: 0.0.4

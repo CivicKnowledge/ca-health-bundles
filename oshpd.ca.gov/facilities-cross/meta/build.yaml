@@ -6,4 +6,8 @@ sources:
         space: California
         time: 2015
         url: https://chhs.data.ca.gov/api/views/tthg-z4mf/rows.csv
+    meta:
+        filetype: socrata/json
+        is_loadable: false
+        url: https://chhs.data.ca.gov/api/views/tthg-z4mf
 views: {}

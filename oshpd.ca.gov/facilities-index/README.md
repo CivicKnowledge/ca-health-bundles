@@ -1,3 +1,3 @@
-# None
+# OSHPD Health Care Facilities Index
 
-None
+Index of health care facilities, based on OSHPD&apos;s official list, via {{dependencies.facilities}}.

@@ -1,5 +1,6 @@
 build: {}
 dependencies:
+    cross: oshpd.ca.gov-facilities-cross-facility_cross
     facilities: oshpd.ca.gov-facilities-facilities
     geoids: oshpd.ca.gov-facilities-facilities_geoids
 views: {}

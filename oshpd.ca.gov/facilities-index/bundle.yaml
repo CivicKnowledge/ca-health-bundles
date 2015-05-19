@@ -1,18 +1,23 @@
 about:
     access: public
     footnote: null
-    grain: null
+    grain: counties
     groups: []
     license: null
-    processed: null
+    processed: The partitions {{dependencies.facilities}} and {{dependencies.geoids}}
+        are joined and copied to a new partition, with a table that includes the GVID
+        for the county and both the six and nine character versions of the OSHPD facility
+        ID.
     rights: null
-    source: null
-    space: null
+    source: '{{contact_source.creator.org}} via the bundles {{dependencies.facilities}}
+        and {{dependencies.geoids}}.'
+    space: California
     subject: null
-    summary: null
+    summary: Index of health care facilities, based on OSHPD&apos;s official list,
+        via {{dependencies.facilities}}.
     tags: []
     time: null
-    title: null
+    title: OSHPD Health Care Facilities Index
 contact_bundle:
     creator:
         email: eric@civicknowledge.com

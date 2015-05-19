@@ -1,7 +1,18 @@
 documentation:
-    main: "\n# None\n\nNone\n\n\n\nI used the following sources of data and included\
-        \ all records whether matched or unmatched.  The Licensed Facility Listing\
-        \ Report for all types of facilities (http://hfcis.cdph.ca.gov/Reports/GenerateReport.aspx?rpt=FacilityListing),\
+    footnote: null
+    main: "\n# Licensed Facility Cross Walk\n\nThis dataset provides a simple cross\
+        \ walk using Office of Statewide Health Planning and Development (OSHPD) assigned\
+        \ licensed facility identification numbers linked with matched California\
+        \ Department of Public Health (CDPH), Licensing and Certification facility\
+        \ lists based on license number.  This is not a comprehensive matched list,\
+        \ facility identification numbers that did not match are also included from\
+        \ both the OSHPD and CDPH lists.  Facility Status or Facility Level designations\
+        \ may explain some OSHPD non-matches, for additional information contact OSHPD\
+        \ directly.  Please contact CDPH directly for more information regarding un-matched\
+        \ facility identifiers that do not have corresponding OSHPD identifiers.\n\
+        \n\n\nI used the following sources of data and included all records whether\
+        \ matched or unmatched.  The Licensed Facility Listing Report for all types\
+        \ of facilities (http://hfcis.cdph.ca.gov/Reports/GenerateReport.aspx?rpt=FacilityListing),\
         \ the CDPH Facility list that is on the Open Data Portal  (https://cdph.data.ca.gov/Facilities-and-Services/Healthcare-Facility-Locations/n8ju-ifrh)\
         \ and OSHPDs Licensed Facility Dimension table from our data warehouse (which\
         \ is more comprehensive than the facility lists on OSHPDs website -  http://www.oshpd.ca.gov/hid/Products/Listings.html)\
@@ -23,7 +34,20 @@ documentation:
         \ identifying numbers, etc. all lend to the multiple matches you will see\
         \ in the attached spreadsheet.  It's a daunting task you are attempting and\
         \ I wish you well. "
+    processed: ''
     readme: '# None
 
 
         None'
+    source: ''
+    summary: This dataset provides a simple cross walk using Office of Statewide Health
+        Planning and Development (OSHPD) assigned licensed facility identification
+        numbers linked with matched California Department of Public Health (CDPH),
+        Licensing and Certification facility lists based on license number.  This
+        is not a comprehensive matched list, facility identification numbers that
+        did not match are also included from both the OSHPD and CDPH lists.  Facility
+        Status or Facility Level designations may explain some OSHPD non-matches,
+        for additional information contact OSHPD directly.  Please contact CDPH directly
+        for more information regarding un-matched facility identifiers that do not
+        have corresponding OSHPD identifiers.
+    title: Licensed Facility Cross Walk

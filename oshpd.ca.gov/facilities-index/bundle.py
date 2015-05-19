@@ -16,18 +16,31 @@ class Bundle(LoaderBundle):
     @property
     def row_generator(self):
         """A row generator function that joins two library tables"""
+        c = self.library.dep('cross').partition
         f = self.library.dep('facilities').partition
         g = self.library.dep('geoids').partition
         
-        atch_name = f.attach(g)
+        c.attach(f,'f')
+        c.attach(g,'g')
+        
+        """
+        """
         
         # There are multiple entries for each facility, so take the most recent
-        q = """SELECT * FROM facilities AS f 
-        LEFT JOIN {}.facilities_geoids  AS fg ON f.id = fg.facilities_id 
-        group by oshpd_id order by year desc
-        """.format(atch_name)
+        q = """SELECT DISTINCT cross.oshpd_id, cross.oshpd_license_number, cross.oshpd_facility_status, cross.cdph_od_facid, 
+        cross.l_c_provider_number, cross.l_c_facility_id, cross.oshpd_facility_number, cross.oshpd_perm_id, 
+        cross.oshpd_facility_level, cross.parent_oshpd_id, cross.l_c_license_number,
+        fac.total_number_beds, fac.facility_status_date, fac.dba_city, fac.facility_name, fac.county_name, 
+        fac.license_type_desc, fac.license_category_desc, fac.dba_zip_code, fac.er_service_level_desc, 
+        fac.facility_status_desc, fac.county_code, fac.type, fac.dba_address1,
+        geo.*
+        FROM facility_cross AS cross
+        LEFT JOIN f.facilities AS fac ON cross.oshpd_id = fac.oshpd_id
+        LEFT JOIN g.facilities_geoids  AS geo ON fac.id = geo.facilities_id 
+        WHERE cross.oshpd_id IS NOT NULL GROUP BY cross.oshpd_id ORDER BY year desc """
         
-        row_proxy = f.query(q)
+        
+        row_proxy = c.query(q)
         
         def rrg():
 
@@ -43,7 +56,7 @@ class Bundle(LoaderBundle):
    
     def build_modify_row(self, row_gen, p, source, row):
 
-        row['type_code'], row['oshpd_short_id'] = row['oshpd_id'][:3], row['oshpd_id'][3:]
+        row['type_code'] = row['oshpd_id'][:3]
 
         del row['id']
         
@@ -56,6 +69,7 @@ class Bundle(LoaderBundle):
 
         return True
         
+    
 
         
         
