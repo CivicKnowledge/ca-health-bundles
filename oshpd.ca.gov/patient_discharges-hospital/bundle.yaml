@@ -2,9 +2,10 @@ about:
     access: restricted
     footnote: null
     grain: facility
-    groups: []
+    groups: 
+        - Health
     license: restricted
-    processed: 'Records loaded from {{dependencies.pddpuf.ref}} are addregated by
+    processed: 'Records loaded from {{dependencies.pddpuf.ref}} are aggregated by
         hospital and split into tables based on MDC MS-DRG and other variabes. '
     rights: restricted
     source: '{{contact_source.creator.org}} processed by {{contact_bundle.creator.source}}'
@@ -13,7 +14,7 @@ about:
     summary: Patient discharge records, aggregated to hospitals.
     tags: []
     time: p2010e2013
-    title: Patient Discharge Data, Public Use File
+    title: Patient Discharge Data, Public Use File, By Hospital
 contact_bundle:
     creator:
         email: eric@civicknowledge.com

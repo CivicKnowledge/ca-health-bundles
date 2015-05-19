@@ -51,17 +51,17 @@ identity:
     btime: null
     dataset: facilities
     id: d041
-    revision: 4
+    revision: 5
     source: oshpd.ca.gov
     subset: index
     type: null
     variation: null
-    version: 0.0.4
+    version: 0.0.5
 names:
-    fqname: oshpd.ca.gov-facilities-index-0.0.4~d041004
+    fqname: oshpd.ca.gov-facilities-index-0.0.5~d041005
     name: oshpd.ca.gov-facilities-index
-    vid: d041004
-    vname: oshpd.ca.gov-facilities-index-0.0.4
+    vid: d041005
+    vname: oshpd.ca.gov-facilities-index-0.0.5
 process: {}
 versions:
     2:
@@ -76,3 +76,7 @@ versions:
         date: '2015-05-16T21:40:36.420786'
         description: 'Put facilities)id back. '
         version: 0.0.4
+    5:
+        date: '2015-05-19T14:53:05.518986'
+        description: 'Adding title to main table. '
+        version: 0.0.5
