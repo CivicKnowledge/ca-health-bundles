@@ -1,31 +1,38 @@
-table,seq,column,is_pk,is_fk,id,type,i4,ui1,size,description,proto_vid,d_index,d_orig_proto_vid
-facilities_index,1,id,1,,t04101,INTEGER,,,,Index for California health care facilities that have an OSHPD id,,,
-facilities_index,2,oshpd_id,,,c04101002,VARCHAR,,1,9,"A unique nine digit identifier assigned to each facility by the Office of Statewide Health Planning and Development (OSHPD).The first three digits indicate the type of facility, the next two digits indicate the county in which the facility is located.The last fourdigits are unique within each county.   See oshod_id_6 for the 6 digit code.",c0010k002,,oshpd_facility.oshpd_id
-facilities_index,3,type,,,c04101003,VARCHAR,,,10,Type string. See type_code for the numeric code.,,,
-facilities_index,4,facility_name,,,c04101004,VARCHAR,,,60,Facility Name,,,
-facilities_index,5,dba_address1,,,c04101005,VARCHAR,,,40,Facility address,,,
-facilities_index,6,dba_city,,,c04101006,VARCHAR,,,21,City of facility location,,,
-facilities_index,7,dba_zip_code,,,c04101007,INTEGER,,,5,Zip Code,,,
-facilities_index,8,county_code,,,c04101008,INTEGER,,,2,FIPS Code for county of facility location,,,
-facilities_index,9,county_name,,,c04101009,VARCHAR,,,15,Name of county  of facility location,,,
-facilities_index,10,facility_status_desc,,,c0410100a,VARCHAR,,,8,Status of facility,,,
-facilities_index,11,facility_status_date,,,c0410100b,DATE,,,,Data of last status,,,
-facilities_index,12,license_type_desc,,,c0410100c,VARCHAR,,,26,Type of license,,,
-facilities_index,13,license_category_desc,,,c0410100d,VARCHAR,,,33,License category,,,
-facilities_index,14,er_service_level_desc,,,c0410100e,VARCHAR,,,25,ER Service level,,,
-facilities_index,15,total_number_beds,,,c0410100f,VARCHAR,,,4,Total number of beds,,,
-facilities_index,16,blockgroup_gvid,,c03x09003,c0410100g,VARCHAR,,,12,GeoID of 2012 blockgroup of facility,c0010e003,census.gov-index-blockgroups-0.0.5:gvid,blockgroups.gvid
-facilities_index,17,tract_gvid,,c03x08003,c0410100h,VARCHAR,,,11,GeoID of 2012 tract of facility,c0010d003,census.gov-index-tracts-0.0.5:gvid,tracts.gvid
-facilities_index,18,county_gvid,,c03x04003,c0410100i,VARCHAR,,,6,GeoID of 2012 county of facility,c00109003,census.gov-index-counties-0.0.5:gvid,counties.gvid
-facilities_index,19,type_code,,c0410100k,c0410100j,VARCHAR,1,,3,"Three digit prefix to the full code, a numeric code for the type name",c0010k005,oshpd.ca.gov-facilities-index-facilities_index-0.0.3:type_code,oshpd_facilities.type_code
-facilities_index,20,oshpd_license_number,,,c0410100k,VARCHAR,,,9,"The facility license number assigned by
+table,seq,column,is_pk,is_fk,id,type,ui1,size,description,proto_vid,d_index,d_orig_proto_vid
+facilities_index,1,id,1,,t04101,INTEGER,,4,Index for California health care facilities that have an OSHPD id,,,
+facilities_index,2,oshpd_id,,,c04101002,VARCHAR,1,9,"A unique nine digit identifier assigned to each facility by the Office of Statewide Health Planning and Development (OSHPD).The first three digits indicate the type of facility, the next two digits indicate the county in which the facility is located.The last fourdigits are unique within each county.   See oshod_id_6 for the 6 digit code.",c0010k002,,oshpd_facilities.oshpd_id
+,,,,,,,,,,,,
+facilities_index_year,1,id,1,,t04102,INTEGER,,,Index for California health care facilities that have an OSHPD id,,,
+facilities_index_year,2,oshpd_id,,c04101002,c04102002,VARCHAR,1,9,"A unique nine digit identifier assigned to each facility by the Office of Statewide Health Planning and Development (OSHPD).The first three digits indicate the type of facility, the next two digits indicate the county in which the facility is located.The last fourdigits are unique within each county.   See oshod_id_6 for the 6 digit code.",c0010k002,,oshpd_facilities.oshpd_id
+facilities_index_year,3,year,,,c04102003,INTEGER,1,4,,c0010k003,,oshpd_facilities.year
+,,,,,,,,,,,,
+facilities,1,id,1,,t04103,INTEGER,,,"List of OSHPD defined facilities, with details about each facility and links to other agency identifies.",,,
+facilities,2,oshpd_id,,c04101002,c04103002,VARCHAR,1,9,"A unique nine digit identifier assigned to each facility by the Office of Statewide Health Planning and Development (OSHPD).The first three digits indicate the type of facility, the next two digits indicate the county in which the facility is located.The last fourdigits are unique within each county.   See oshod_id_6 for the 6 digit code.",c0010k002,oshpd.ca.gov-facilities-index-facilities_index-0.0.5:oshpd_id,oshpd_facilities.oshpd_id
+facilities,3,type,,,c04103003,VARCHAR,,10,Type string. See type_code for the numeric code.,,,
+facilities,4,facility_name,,,c04103004,VARCHAR,,60,Facility Name,,,
+facilities,5,dba_address1,,,c04103005,VARCHAR,,40,Facility address,,,
+facilities,6,dba_city,,,c04103006,VARCHAR,,21,City of facility location,,,
+facilities,7,dba_zip_code,,,c04103007,INTEGER,,5,Zip Code,,,
+facilities,8,county_code,,,c04103008,INTEGER,,2,FIPS Code for county of facility location,,,
+facilities,9,county_name,,,c04103009,VARCHAR,,15,Name of county  of facility location,,,
+facilities,10,facility_status_desc,,,c0410300a,VARCHAR,,8,Status of facility,,,
+facilities,11,facility_status_date,,,c0410300b,DATE,,,Data of last status,,,
+facilities,12,license_type_desc,,,c0410300c,VARCHAR,,26,Type of license,,,
+facilities,13,license_category_desc,,,c0410300d,VARCHAR,,33,License category,,,
+facilities,14,er_service_level_desc,,,c0410300e,VARCHAR,,25,ER Service level,,,
+facilities,15,total_number_beds,,,c0410300f,VARCHAR,,4,Total number of beds,,,
+facilities,16,blockgroup_gvid,,c03x09003,c0410300g,VARCHAR,,12,GeoID of 2012 blockgroup of facility,c0010e003,census.gov-index-blockgroups-0.0.5:gvid,blockgroups.gvid
+facilities,17,tract_gvid,,c03x08003,c0410300h,VARCHAR,,11,GeoID of 2012 tract of facility,c0010d003,census.gov-index-tracts-0.0.5:gvid,tracts.gvid
+facilities,18,county_gvid,,c03x04003,c0410300i,VARCHAR,,6,GeoID of 2012 county of facility,c00109003,census.gov-index-counties-0.0.5:gvid,counties.gvid
+facilities,19,type_code,,c0410100k,c0410300j,VARCHAR,,3,"Three digit prefix to the full code, a numeric code for the type name",c0010k005,oshpd.ca.gov-facilities-index-facilities_index-0.0.3:type_code,oshpd_facilities.type_code
+facilities,20,oshpd_license_number,,,c0410300k,VARCHAR,,9,"The facility license number assigned by
 the California Department of Public Health (CDPH), Licensing & Certification section to the person, persons, firm, partnership, association, corporation, political subdivision of the State, or other governmental agency to whom a license has been issued to operate a health facility or agency.OSHPD collects and stores the information from the license in its Licensed Facility Information System (LFIS).This identifier may or may not match the L&C License Number column.",c03U01002,,
-facilities_index,21,oshpd_facility_number,,,c0410100l,VARCHAR,,,6,A unique sixdigit identifier assigned to each facility by the Office of Statewide Health Planning and Development (OSHPD).The first two digits indicate the county in which the facility is located. The last fourdigits are unique within each county.,c03U01004,,
-facilities_index,22,oshpd_perm_id,,,c0410100m,VARCHAR,,,5,A unique fivedigit identifier assigned to each facility by the Office of Statewide Health Planning and Development (OSHPD).The first digit indicates the type of facility.The last fourdigits are unique within each type.,c03U01005,,
-facilities_index,23,oshpd_facility_level,,,c0410100n,VARCHAR,,,22,"Designated on the facility license as level of business operation: Parent Facility, Consolidated Facility, Distinct Part Facility, Branch",c03U01006,,
-facilities_index,24,parent_oshpd_id,,,c0410100o,VARCHAR,,,9,"A unique ninedigit identifier assigned to each facility by the Office of Statewide Health Planning and Development (OSHPD).The first three digits indicate the type of facility, the next two digits indicate the county in which the facility is located.The last fourdigits are unique within each county.These may be different from the OSHPD ID based on OSHPD Facility Level.",c03U01007,,
-facilities_index,25,oshpd_facility_status,,,c0410100p,VARCHAR,,,18,"Status of facility: Open, Closed, Suspense, Under Construction",c03U01008,,
-facilities_index,26,l_c_license_number,,,c0410100q,VARCHAR,,,9,"The facility license number assigned by the California Department of Public Health (CDPH) to the person, persons, firm, partnership, association, corporation, political subdivision of the State, or other governmental agency to whom a license has been issued to operate a health facility or agency. (Used to verify match with OSHPD License Number).This identifier may or may not match the OSHPD License Number column.",c03U01009,,
-facilities_index,27,l_c_facility_id,,,c0410100r,VARCHAR,,,9,"A unique identifier assigned by the California Department of Public Health (CDPH), Licensing & Certification section. FACID is the primary key from the FACILITY table used to track facility information for all facilities stored in the Electronic Licensing Management System (ELMS) for CDPH Center of Healthcare Quality, Licensing and Certification Program.FACID can be used to link this file's facility attributes to the following Open Data files: Healthcare Facility Services and Healthcare Facility Bed Types and Counts. This identifier may or may not match the CDPH_OD_FACID column.",c03U0100a,,
-facilities_index,28,cdph_od_facid,,,c0410100s,VARCHAR,,,9,A unique identifier assigned by the California Department of Public Health (CDPH). (Used to verify match with L&C Facility ID). Derived from the Healthcare Facility Locations dataset available at: https://cdph.data.ca.gov/FacilitiesandServices/HealthcareFacility Locations/n8juifrh This identifier is may or may not match the L&C Facility ID column.,c03U0100b,,
-facilities_index,29,l_c_provider_number,,,c0410100t,VARCHAR,,,7,"A unique identifier assigned by the California Department of Public Health (CDPH), Licensing & Certification section.",c03U0100c,,
+facilities,21,oshpd_facility_number,,,c0410300l,VARCHAR,,6,A unique sixdigit identifier assigned to each facility by the Office of Statewide Health Planning and Development (OSHPD).The first two digits indicate the county in which the facility is located. The last fourdigits are unique within each county.,c03U01004,,
+facilities,22,oshpd_perm_id,,,c0410300m,VARCHAR,,5,A unique fivedigit identifier assigned to each facility by the Office of Statewide Health Planning and Development (OSHPD).The first digit indicates the type of facility.The last fourdigits are unique within each type.,c03U01005,,
+facilities,23,oshpd_facility_level,,,c0410300n,VARCHAR,,22,"Designated on the facility license as level of business operation: Parent Facility, Consolidated Facility, Distinct Part Facility, Branch",c03U01006,,
+facilities,24,parent_oshpd_id,,,c0410300o,VARCHAR,,9,"A unique ninedigit identifier assigned to each facility by the Office of Statewide Health Planning and Development (OSHPD).The first three digits indicate the type of facility, the next two digits indicate the county in which the facility is located.The last fourdigits are unique within each county.These may be different from the OSHPD ID based on OSHPD Facility Level.",c03U01007,,
+facilities,25,oshpd_facility_status,,,c0410300p,VARCHAR,,18,"Status of facility: Open, Closed, Suspense, Under Construction",c03U01008,,
+facilities,26,l_c_license_number,,,c0410300q,VARCHAR,,9,"The facility license number assigned by the California Department of Public Health (CDPH) to the person, persons, firm, partnership, association, corporation, political subdivision of the State, or other governmental agency to whom a license has been issued to operate a health facility or agency. (Used to verify match with OSHPD License Number).This identifier may or may not match the OSHPD License Number column.",c03U01009,,
+facilities,27,l_c_facility_id,,,c0410300r,VARCHAR,,9,"A unique identifier assigned by the California Department of Public Health (CDPH), Licensing & Certification section. FACID is the primary key from the FACILITY table used to track facility information for all facilities stored in the Electronic Licensing Management System (ELMS) for CDPH Center of Healthcare Quality, Licensing and Certification Program.FACID can be used to link this file's facility attributes to the following Open Data files: Healthcare Facility Services and Healthcare Facility Bed Types and Counts. This identifier may or may not match the CDPH_OD_FACID column.",c03U0100a,,
+facilities,28,cdph_od_facid,,,c0410300s,VARCHAR,,9,A unique identifier assigned by the California Department of Public Health (CDPH). (Used to verify match with L&C Facility ID). Derived from the Healthcare Facility Locations dataset available at: https://cdph.data.ca.gov/FacilitiesandServices/HealthcareFacility Locations/n8juifrh This identifier is may or may not match the L&C Facility ID column.,c03U0100b,,
+facilities,29,l_c_provider_number,,,c0410300t,VARCHAR,,7,"A unique identifier assigned by the California Department of Public Health (CDPH), Licensing & Certification section.",c03U0100c,,

@@ -39,7 +39,6 @@ class Bundle(LoaderBundle):
         LEFT JOIN g.facilities_geoids  AS geo ON fac.id = geo.facilities_id 
         WHERE cross.oshpd_id IS NOT NULL GROUP BY cross.oshpd_id ORDER BY year desc """
         
-        
         row_proxy = c.query(q)
         
         def rrg():
@@ -61,15 +60,49 @@ class Bundle(LoaderBundle):
         del row['id']
         
     def build(self):
+        from ambry.util.datestimes import expand_to_years
+        
+        # First build the full table, with all of the OSHPD ids, names, etc. 
+        
+        self.log("Build full facilities data set")
+        facilities = self.partitions.find_or_new(table='facilities')
+        facilities.clean()
+        
+        self.build_from_row_gen(self.row_generator, facilities)
 
+        facilities.close()
+
+        # Then build the index, which has just the OSHPD ids. 
+        self.log("Build the index without years")
         p = self.partitions.find_or_new(table='facilities_index')
         p.clean()
         
-        self.build_from_row_gen(self.row_generator, p)
+        with p.inserter() as ins:
+            for  row in facilities.rows:
+                ins.insert(row)
+            
+        p.close()
+
+        # Now build the index with years
+        self.log("Build the index with years")
+        p = self.partitions.find_or_new(table='facilities_index_year', time=self.metadata.about.time)
+        p.clean()
+
+        with p.inserter() as ins:
+            for row in facilities.rows:
+                row = dict(row)
+                del row['id']
+                for year in expand_to_years(self.metadata.about.time):   
+                    row['year'] = year
+                    ins.insert(row)
+
+
+        p.close()
+    
 
         return True
         
-    
+  
 
         
         

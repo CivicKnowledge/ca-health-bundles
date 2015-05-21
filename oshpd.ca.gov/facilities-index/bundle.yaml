@@ -16,7 +16,7 @@ about:
     summary: Index of health care facilities, based on OSHPD&apos;s official list,
         via {{dependencies.facilities}}.
     tags: []
-    time: null
+    time: 2010e2014
     title: OSHPD Health Care Facilities Index
 contact_bundle:
     creator:
@@ -51,17 +51,17 @@ identity:
     btime: null
     dataset: facilities
     id: d041
-    revision: 5
+    revision: 6
     source: oshpd.ca.gov
     subset: index
     type: null
     variation: null
-    version: 0.0.5
+    version: 0.0.6
 names:
-    fqname: oshpd.ca.gov-facilities-index-0.0.5~d041005
+    fqname: oshpd.ca.gov-facilities-index-0.0.6~d041006
     name: oshpd.ca.gov-facilities-index
-    vid: d041005
-    vname: oshpd.ca.gov-facilities-index-0.0.5
+    vid: d041006
+    vname: oshpd.ca.gov-facilities-index-0.0.6
 process: {}
 versions:
     2:
@@ -80,3 +80,7 @@ versions:
         date: '2015-05-19T14:53:05.518986'
         description: 'Adding title to main table. '
         version: 0.0.5
+    6:
+        date: '2015-05-20T15:10:38.344493'
+        description: Adding year index
+        version: 0.0.6
