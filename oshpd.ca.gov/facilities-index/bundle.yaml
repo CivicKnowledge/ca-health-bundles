@@ -51,17 +51,17 @@ identity:
     btime: null
     dataset: facilities
     id: d041
-    revision: 6
+    revision: 7
     source: oshpd.ca.gov
     subset: index
     type: null
     variation: null
-    version: 0.0.6
+    version: 0.0.7
 names:
-    fqname: oshpd.ca.gov-facilities-index-0.0.6~d041006
+    fqname: oshpd.ca.gov-facilities-index-0.0.7~d041007
     name: oshpd.ca.gov-facilities-index
-    vid: d041006
-    vname: oshpd.ca.gov-facilities-index-0.0.6
+    vid: d041007
+    vname: oshpd.ca.gov-facilities-index-0.0.7
 process: {}
 versions:
     2:
@@ -84,3 +84,8 @@ versions:
         date: '2015-05-20T15:10:38.344493'
         description: Adding year index
         version: 0.0.6
+    7:
+        date: '2015-05-21T08:52:20.125374'
+        description: 'Reducing to only one facility_index table, which always has
+            year. '
+        version: 0.0.7

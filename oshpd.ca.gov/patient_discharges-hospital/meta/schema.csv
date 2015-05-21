@@ -1,36 +1,36 @@
 table,seq,column,is_pk,is_fk,id,type,size,description,proto_vid,derivedfrom,d_aggvar,d_index,d_orig_proto_vid
 pdd_summary_mdc,1,id,1,,t03W01,INTEGER,,"Patient Discharge counts, aggregated on the mdc variable",,,,,
-pdd_summary_mdc,2,oshpd_id,,c04101002,c03W01002,VARCHAR,9,"Hospital Identification Number. A unique six-digit identifier assigned to each facility by the Office of Statewide Health Planning and Development. The first two digits indicate the county in which the facility is located. The last four digits are unique within each county. Appendix F - Counts by Facility (Discharges) (PDD) lists facility ID number, name, and number of discharges.",c0010k002,,,oshpd.ca.gov-facilities-index-facilities_index-0.0.2:oshpd_id,oshpd_facility.oshpd_id
-pdd_summary_mdc,3,year,,,c03W01003,INTEGER,4,Discharge Year. The year the patient was discharged.,c0010k003,,,,oshpd_facility.year
+pdd_summary_mdc,2,oshpd_id,,c04101002,c03W01002,VARCHAR,9,"Hospital Identification Number. A unique six-digit identifier assigned to each facility by the Office of Statewide Health Planning and Development. The first two digits indicate the county in which the facility is located. The last four digits are unique within each county. Appendix F - Counts by Facility (Discharges) (PDD) lists facility ID number, name, and number of discharges.",c0010k002,,,oshpd.ca.gov-facilities-index-facilities_index-0.0.7:oshpd_id,oshpd_facilities.oshpd_id
+pdd_summary_mdc,3,year,,c04101003,c03W01003,INTEGER,4,Discharge Year. The year the patient was discharged.,c0010k003,,,oshpd.ca.gov-facilities-index-facilities_index-0.0.7:year,oshpd_facilities.year
 pdd_summary_mdc,4,mdc,,,c03W01004,VARCHAR,2,"Major Diagnostic Category (MDC). MDC code (for example, 22). The Major Diagnostic Categories (MDC) are formed by dividing all possible principal diagnoses (from ICD-9) into 25 mutually exclusive diagnosis groupings. The diagnoses in each MDC correspond to a single organ system or etiology and, in general, are associated with a particular medical specialty. MDC 1 to MDC 23 are grouped according to principal diagnosis. Patients are assigned to MDC 24 (Multiple Significant Trauma) with at least two significant trauma diagnosis codes (either as principal or secondary) from different body site categories. Patients assigned to MDC 25 (HIV Infections) must have a principal diagnosis of an HIV Infection or a principal diagnosis of a significant HIV related condition and a secondary diagnosis of an HIV Infection. Some discharges are associated with procedures that are resource intensive and may be associated with multiple diagnosis domains (for example, transplants, MS-DRG 001-017), or procedures that are unrelated to the principal diagnosis (MS-DRG 981-989). These records are assigned to a variety of MDCs, based on the principal diagnosis instead of the MDC associated with the designated DRG. A MDC of 00 is assigned to records that are ungroupable. Ungroupable records include those where the principal diagnosis is not an existing ICD-9-CM code or the sex code does not logically relate to the diagnosis or procedure. For a list of MDC codes and labels see Appendix I - Major Diagnostic Categories (MDC). Note that MDC codes and their associated labels potentially change across years and year-specific code-label crosswalk lists must be used.",,,1,,
 pdd_summary_mdc,5,count,,,c03W01005,INTEGER,4,Count of records,,c03V0200l,,,
 ,,,,,,,,,,,,,
 pdd_summary_msdrg,1,id,1,,t03W02,INTEGER,,"Patient Discharge counts, aggregated on the msdrg variable",,,,,
-pdd_summary_msdrg,2,oshpd_id,,c04101002,c03W02002,VARCHAR,9,"Hospital Identification Number. A unique six-digit identifier assigned to each facility by the Office of Statewide Health Planning and Development. The first two digits indicate the county in which the facility is located. The last four digits are unique within each county. Appendix F - Counts by Facility (Discharges) (PDD) lists facility ID number, name, and number of discharges.",c0010k002,,,oshpd.ca.gov-facilities-index-facilities_index-0.0.2:oshpd_id,oshpd_facility.oshpd_id
-pdd_summary_msdrg,3,year,,,c03W02003,INTEGER,4,Discharge Year. The year the patient was discharged.,c0010k003,,,,oshpd_facility.year
+pdd_summary_msdrg,2,oshpd_id,,c04101002,c03W02002,VARCHAR,9,"Hospital Identification Number. A unique six-digit identifier assigned to each facility by the Office of Statewide Health Planning and Development. The first two digits indicate the county in which the facility is located. The last four digits are unique within each county. Appendix F - Counts by Facility (Discharges) (PDD) lists facility ID number, name, and number of discharges.",c0010k002,,,oshpd.ca.gov-facilities-index-facilities_index-0.0.7:oshpd_id,oshpd_facilities.oshpd_id
+pdd_summary_msdrg,3,year,,c04101003,c03W02003,INTEGER,4,Discharge Year. The year the patient was discharged.,c0010k003,,,oshpd.ca.gov-facilities-index-facilities_index-0.0.7:year,oshpd_facilities.year
 pdd_summary_msdrg,4,msdrg,,,c03W02004,VARCHAR,3,"Medicare Severity-Diagnosis Related Group (MS-DRG). MS-DRG code (for example, 028). One MS-DRG is assigned to each inpatient stay. The MS-DRGs are assigned using the principal diagnosis and additional diagnoses, the principal procedure and additional procedures, sex, and discharge status. For a list of MS-DRG codes and labels see Appendix J - Medicare Severity-Diagnosis Related Groups (MS-DRG). Also see the MS-DRG Grouper Version variable (grouper).",,,1,,
 pdd_summary_msdrg,5,count,,,c03W02005,INTEGER,4,Count of records,,c03V0200m,,,
 ,,,,,,,,,,,,,
 pdd_summary_diag_p,1,id,1,,t03W03,INTEGER,,"Patient Discharge counts, aggregated on the diag_p variable",,,,,
-pdd_summary_diag_p,2,oshpd_id,,c04101002,c03W03002,VARCHAR,9,"Hospital Identification Number. A unique six-digit identifier assigned to each facility by the Office of Statewide Health Planning and Development. The first two digits indicate the county in which the facility is located. The last four digits are unique within each county. Appendix F - Counts by Facility (Discharges) (PDD) lists facility ID number, name, and number of discharges.",c0010k002,,,oshpd.ca.gov-facilities-index-facilities_index-0.0.2:oshpd_id,oshpd_facility.oshpd_id
-pdd_summary_diag_p,3,year,,,c03W03003,INTEGER,4,Discharge Year. The year the patient was discharged.,c0010k003,,,,oshpd_facility.year
+pdd_summary_diag_p,2,oshpd_id,,c04101002,c03W03002,VARCHAR,9,"Hospital Identification Number. A unique six-digit identifier assigned to each facility by the Office of Statewide Health Planning and Development. The first two digits indicate the county in which the facility is located. The last four digits are unique within each county. Appendix F - Counts by Facility (Discharges) (PDD) lists facility ID number, name, and number of discharges.",c0010k002,,,oshpd.ca.gov-facilities-index-facilities_index-0.0.7:oshpd_id,oshpd_facilities.oshpd_id
+pdd_summary_diag_p,3,year,,c04101003,c03W03003,INTEGER,4,Discharge Year. The year the patient was discharged.,c0010k003,,,oshpd.ca.gov-facilities-index-facilities_index-0.0.7:year,oshpd_facilities.year
 pdd_summary_diag_p,4,diag_p,,,c03W03004,VARCHAR,5,"Principal Diagnosis. The condition established, after study, to be the chief cause of the admission of the patient to the hospital for care. Diagnoses are coded according to the ICD-9-CM.",,,1,,
 pdd_summary_diag_p,5,count,,,c03W03005,INTEGER,4,Count of records,,c03V0200n,,,
 ,,,,,,,,,,,,,
 pdd_summary_poa_p,1,id,1,,t03W04,INTEGER,,"Patient Discharge counts, aggregated on the poa_p variable",,,,,
-pdd_summary_poa_p,2,oshpd_id,,c04101002,c03W04002,VARCHAR,9,"Hospital Identification Number. A unique six-digit identifier assigned to each facility by the Office of Statewide Health Planning and Development. The first two digits indicate the county in which the facility is located. The last four digits are unique within each county. Appendix F - Counts by Facility (Discharges) (PDD) lists facility ID number, name, and number of discharges.",c0010k002,,,oshpd.ca.gov-facilities-index-facilities_index-0.0.2:oshpd_id,oshpd_facility.oshpd_id
-pdd_summary_poa_p,3,year,,,c03W04003,INTEGER,4,Discharge Year. The year the patient was discharged.,c0010k003,,,,oshpd_facility.year
+pdd_summary_poa_p,2,oshpd_id,,c04101002,c03W04002,VARCHAR,9,"Hospital Identification Number. A unique six-digit identifier assigned to each facility by the Office of Statewide Health Planning and Development. The first two digits indicate the county in which the facility is located. The last four digits are unique within each county. Appendix F - Counts by Facility (Discharges) (PDD) lists facility ID number, name, and number of discharges.",c0010k002,,,oshpd.ca.gov-facilities-index-facilities_index-0.0.7:oshpd_id,oshpd_facilities.oshpd_id
+pdd_summary_poa_p,3,year,,c04101003,c03W04003,INTEGER,4,Discharge Year. The year the patient was discharged.,c0010k003,,,oshpd.ca.gov-facilities-index-facilities_index-0.0.7:year,oshpd_facilities.year
 pdd_summary_poa_p,4,poa_p,,,c03W04004,VARCHAR,25,"Present on Admission (POA)  Principal Diagnosis. A condition is considered present on admission (POA) if it is identified in the history and physical examination or documented in the current inpatient medical records (e.g., emergency room, initial progress, initial nursing assessment, clinic/office notes). Facilities were required to begin POA reporting for all discharges on or after July 1, 2008.",,,1,,
 pdd_summary_poa_p,5,count,,,c03W04005,INTEGER,5,Count of records,,c03V0200o,,,
 ,,,,,,,,,,,,,
 pdd_mdc_00,1,id,1,,t03W05,INTEGER,,"MSDRGs counts per hosiptal, per year, for MDC 00",,,,,
-pdd_mdc_00,2,oshpd_id,,c04101002,c03W05002,VARCHAR,,OSHPD facility id,c0010k002,,,oshpd.ca.gov-facilities-index-facilities_index-0.0.3:oshpd_id,oshpd_facilities.oshpd_id
-pdd_mdc_00,3,year,,,c03W05003,INTEGER,,Year of discharge,c0010k003,,,,oshpd_facilities.year
+pdd_mdc_00,2,oshpd_id,,c04101002,c03W05002,VARCHAR,,OSHPD facility id,c0010k002,,,oshpd.ca.gov-facilities-index-facilities_index-0.0.7:oshpd_id,oshpd_facilities.oshpd_id
+pdd_mdc_00,3,year,,c04101003,c03W05003,INTEGER,,Year of discharge,c0010k003,,,oshpd.ca.gov-facilities-index-facilities_index-0.0.7:year,oshpd_facilities.year
 pdd_mdc_00,4,msdrg_999,,,c03W05004,INTEGER,,Counts for MS-DRG 999,,,,,
 ,,,,,,,,,,,,,
 pdd_mdc_01,1,id,1,,t03W06,INTEGER,,"MSDRGs counts per hosiptal, per year, for MDC 01",,,,,
-pdd_mdc_01,2,oshpd_id,,c04101002,c03W06002,VARCHAR,9,OSHPD facility id,c0010k002,,,oshpd.ca.gov-facilities-index-facilities_index-0.0.3:oshpd_id,oshpd_facilities.oshpd_id
-pdd_mdc_01,3,year,,,c03W06003,INTEGER,4,Year of discharge,c0010k003,,,,oshpd_facilities.year
+pdd_mdc_01,2,oshpd_id,,c04101002,c03W06002,VARCHAR,9,OSHPD facility id,c0010k002,,,oshpd.ca.gov-facilities-index-facilities_index-0.0.7:oshpd_id,oshpd_facilities.oshpd_id
+pdd_mdc_01,3,year,,c04101003,c03W06003,INTEGER,4,Year of discharge,c0010k003,,,oshpd.ca.gov-facilities-index-facilities_index-0.0.7:year,oshpd_facilities.year
 pdd_mdc_01,4,msdrg_003,,,c03W06004,INTEGER,2,Counts for MS-DRG 003,,,,,
 pdd_mdc_01,5,msdrg_004,,,c03W06005,INTEGER,2,Counts for MS-DRG 004,,,,,
 pdd_mdc_01,6,msdrg_014,,,c03W06006,INTEGER,1,Counts for MS-DRG 014,,,,,
@@ -120,8 +120,8 @@ pdd_mdc_01,89,msdrg_988,,,c03W0601r,INTEGER,1,Counts for MS-DRG 988,,,,,
 pdd_mdc_01,90,msdrg_989,,,c03W0601s,INTEGER,1,Counts for MS-DRG 989,,,,,
 ,,,,,,,,,,,,,
 pdd_mdc_02,1,id,1,,t03W07,INTEGER,,"MSDRGs counts per hosiptal, per year, for MDC 02",,,,,
-pdd_mdc_02,2,oshpd_id,,c04101002,c03W07002,VARCHAR,9,OSHPD facility id,c0010k002,,,oshpd.ca.gov-facilities-index-facilities_index-0.0.3:oshpd_id,oshpd_facilities.oshpd_id
-pdd_mdc_02,3,year,,,c03W07003,INTEGER,4,Year of discharge,c0010k003,,,,oshpd_facilities.year
+pdd_mdc_02,2,oshpd_id,,c04101002,c03W07002,VARCHAR,9,OSHPD facility id,c0010k002,,,oshpd.ca.gov-facilities-index-facilities_index-0.0.7:oshpd_id,oshpd_facilities.oshpd_id
+pdd_mdc_02,3,year,,c04101003,c03W07003,INTEGER,4,Year of discharge,c0010k003,,,oshpd.ca.gov-facilities-index-facilities_index-0.0.7:year,oshpd_facilities.year
 pdd_mdc_02,4,msdrg_003,,,c03W07004,INTEGER,1,Counts for MS-DRG 003,,,,,
 pdd_mdc_02,5,msdrg_004,,,c03W07005,INTEGER,1,Counts for MS-DRG 004,,,,,
 pdd_mdc_02,6,msdrg_009,,,c03W07006,INTEGER,1,Counts for MS-DRG 009,,,,,
@@ -148,8 +148,8 @@ pdd_mdc_02,26,msdrg_988,,,c03W0700q,INTEGER,1,Counts for MS-DRG 988,,,,,
 pdd_mdc_02,27,msdrg_989,,,c03W0700r,INTEGER,1,Counts for MS-DRG 989,,,,,
 ,,,,,,,,,,,,,
 pdd_mdc_03,1,id,1,,t03W08,INTEGER,,"MSDRGs counts per hosiptal, per year, for MDC 03",,,,,
-pdd_mdc_03,2,oshpd_id,,c04101002,c03W08002,VARCHAR,9,OSHPD facility id,c0010k002,,,oshpd.ca.gov-facilities-index-facilities_index-0.0.3:oshpd_id,oshpd_facilities.oshpd_id
-pdd_mdc_03,3,year,,,c03W08003,INTEGER,4,Year of discharge,c0010k003,,,,oshpd_facilities.year
+pdd_mdc_03,2,oshpd_id,,c04101002,c03W08002,VARCHAR,9,OSHPD facility id,c0010k002,,,oshpd.ca.gov-facilities-index-facilities_index-0.0.7:oshpd_id,oshpd_facilities.oshpd_id
+pdd_mdc_03,3,year,,c04101003,c03W08003,INTEGER,4,Year of discharge,c0010k003,,,oshpd.ca.gov-facilities-index-facilities_index-0.0.7:year,oshpd_facilities.year
 pdd_mdc_03,4,msdrg_003,,,c03W08004,INTEGER,1,Counts for MS-DRG 003,,,,,
 pdd_mdc_03,5,msdrg_004,,,c03W08005,INTEGER,1,Counts for MS-DRG 004,,,,,
 pdd_mdc_03,6,msdrg_011,,,c03W08006,INTEGER,2,Counts for MS-DRG 011,,,,,
@@ -189,8 +189,8 @@ pdd_mdc_03,39,msdrg_988,,,c03W0800D,INTEGER,1,Counts for MS-DRG 988,,,,,
 pdd_mdc_03,40,msdrg_989,,,c03W0800E,INTEGER,1,Counts for MS-DRG 989,,,,,
 ,,,,,,,,,,,,,
 pdd_mdc_04,1,id,1,,t03W09,INTEGER,,"MSDRGs counts per hosiptal, per year, for MDC 04",,,,,
-pdd_mdc_04,2,oshpd_id,,c04101002,c03W09002,VARCHAR,9,OSHPD facility id,c0010k002,,,oshpd.ca.gov-facilities-index-facilities_index-0.0.3:oshpd_id,oshpd_facilities.oshpd_id
-pdd_mdc_04,3,year,,,c03W09003,INTEGER,4,Year of discharge,c0010k003,,,,oshpd_facilities.year
+pdd_mdc_04,2,oshpd_id,,c04101002,c03W09002,VARCHAR,9,OSHPD facility id,c0010k002,,,oshpd.ca.gov-facilities-index-facilities_index-0.0.7:oshpd_id,oshpd_facilities.oshpd_id
+pdd_mdc_04,3,year,,c04101003,c03W09003,INTEGER,4,Year of discharge,c0010k003,,,oshpd.ca.gov-facilities-index-facilities_index-0.0.7:year,oshpd_facilities.year
 pdd_mdc_04,4,msdrg_002,,,c03W09004,INTEGER,1,Counts for MS-DRG 002,,,,,
 pdd_mdc_04,5,msdrg_003,,,c03W09005,INTEGER,1,Counts for MS-DRG 003,,,,,
 pdd_mdc_04,6,msdrg_004,,,c03W09006,INTEGER,2,Counts for MS-DRG 004,,,,,
@@ -245,8 +245,8 @@ pdd_mdc_04,54,msdrg_988,,,c03W0900S,INTEGER,1,Counts for MS-DRG 988,,,,,
 pdd_mdc_04,55,msdrg_989,,,c03W0900T,INTEGER,1,Counts for MS-DRG 989,,,,,
 ,,,,,,,,,,,,,
 pdd_mdc_05,1,id,1,,t03W0a,INTEGER,,"MSDRGs counts per hosiptal, per year, for MDC 05",,,,,
-pdd_mdc_05,2,oshpd_id,,c04101002,c03W0a002,VARCHAR,9,OSHPD facility id,c0010k002,,,oshpd.ca.gov-facilities-index-facilities_index-0.0.3:oshpd_id,oshpd_facilities.oshpd_id
-pdd_mdc_05,3,year,,,c03W0a003,INTEGER,4,Year of discharge,c0010k003,,,,oshpd_facilities.year
+pdd_mdc_05,2,oshpd_id,,c04101002,c03W0a002,VARCHAR,9,OSHPD facility id,c0010k002,,,oshpd.ca.gov-facilities-index-facilities_index-0.0.7:oshpd_id,oshpd_facilities.oshpd_id
+pdd_mdc_05,3,year,,c04101003,c03W0a003,INTEGER,4,Year of discharge,c0010k003,,,oshpd.ca.gov-facilities-index-facilities_index-0.0.7:year,oshpd_facilities.year
 pdd_mdc_05,4,msdrg_003,,,c03W0a004,INTEGER,1,Counts for MS-DRG 003,,,,,
 pdd_mdc_05,5,msdrg_004,,,c03W0a005,INTEGER,1,Counts for MS-DRG 004,,,,,
 pdd_mdc_05,6,msdrg_016,,,c03W0a006,INTEGER,1,Counts for MS-DRG 016,,,,,
@@ -346,8 +346,8 @@ pdd_mdc_05,99,msdrg_988,,,c03W0a01B,INTEGER,1,Counts for MS-DRG 988,,,,,
 pdd_mdc_05,100,msdrg_989,,,c03W0a01C,INTEGER,1,Counts for MS-DRG 989,,,,,
 ,,,,,,,,,,,,,
 pdd_mdc_06,1,id,1,,t03W0b,INTEGER,,"MSDRGs counts per hosiptal, per year, for MDC 06",,,,,
-pdd_mdc_06,2,oshpd_id,,c04101002,c03W0b002,VARCHAR,9,OSHPD facility id,c0010k002,,,oshpd.ca.gov-facilities-index-facilities_index-0.0.3:oshpd_id,oshpd_facilities.oshpd_id
-pdd_mdc_06,3,year,,,c03W0b003,INTEGER,4,Year of discharge,c0010k003,,,,oshpd_facilities.year
+pdd_mdc_06,2,oshpd_id,,c04101002,c03W0b002,VARCHAR,9,OSHPD facility id,c0010k002,,,oshpd.ca.gov-facilities-index-facilities_index-0.0.7:oshpd_id,oshpd_facilities.oshpd_id
+pdd_mdc_06,3,year,,c04101003,c03W0b003,INTEGER,4,Year of discharge,c0010k003,,,oshpd.ca.gov-facilities-index-facilities_index-0.0.7:year,oshpd_facilities.year
 pdd_mdc_06,4,msdrg_003,,,c03W0b004,INTEGER,1,Counts for MS-DRG 003,,,,,
 pdd_mdc_06,5,msdrg_004,,,c03W0b005,INTEGER,1,Counts for MS-DRG 004,,,,,
 pdd_mdc_06,6,msdrg_326,,,c03W0b006,INTEGER,2,Counts for MS-DRG 326,,,,,
@@ -419,8 +419,8 @@ pdd_mdc_06,71,msdrg_988,,,c03W0b019,INTEGER,1,Counts for MS-DRG 988,,,,,
 pdd_mdc_06,72,msdrg_989,,,c03W0b01a,INTEGER,1,Counts for MS-DRG 989,,,,,
 ,,,,,,,,,,,,,
 pdd_mdc_07,1,id,1,,t03W0c,INTEGER,,"MSDRGs counts per hosiptal, per year, for MDC 07",,,,,
-pdd_mdc_07,2,oshpd_id,,c04101002,c03W0c002,VARCHAR,9,OSHPD facility id,c0010k002,,,oshpd.ca.gov-facilities-index-facilities_index-0.0.3:oshpd_id,oshpd_facilities.oshpd_id
-pdd_mdc_07,3,year,,,c03W0c003,INTEGER,4,Year of discharge,c0010k003,,,,oshpd_facilities.year
+pdd_mdc_07,2,oshpd_id,,c04101002,c03W0c002,VARCHAR,9,OSHPD facility id,c0010k002,,,oshpd.ca.gov-facilities-index-facilities_index-0.0.7:oshpd_id,oshpd_facilities.oshpd_id
+pdd_mdc_07,3,year,,c04101003,c03W0c003,INTEGER,4,Year of discharge,c0010k003,,,oshpd.ca.gov-facilities-index-facilities_index-0.0.7:year,oshpd_facilities.year
 pdd_mdc_07,4,msdrg_003,,,c03W0c004,INTEGER,1,Counts for MS-DRG 003,,,,,
 pdd_mdc_07,5,msdrg_004,,,c03W0c005,INTEGER,1,Counts for MS-DRG 004,,,,,
 pdd_mdc_07,6,msdrg_005,,,c03W0c006,INTEGER,2,Counts for MS-DRG 005,,,,,
@@ -469,8 +469,8 @@ pdd_mdc_07,48,msdrg_987,,,c03W0c00M,INTEGER,1,Counts for MS-DRG 987,,,,,
 pdd_mdc_07,49,msdrg_988,,,c03W0c00N,INTEGER,1,Counts for MS-DRG 988,,,,,
 ,,,,,,,,,,,,,
 pdd_mdc_08,1,id,1,,t03W0d,INTEGER,,"MSDRGs counts per hosiptal, per year, for MDC 08",,,,,
-pdd_mdc_08,2,oshpd_id,,c04101002,c03W0d002,VARCHAR,9,OSHPD facility id,c0010k002,,,oshpd.ca.gov-facilities-index-facilities_index-0.0.3:oshpd_id,oshpd_facilities.oshpd_id
-pdd_mdc_08,3,year,,,c03W0d003,INTEGER,4,Year of discharge,c0010k003,,,,oshpd_facilities.year
+pdd_mdc_08,2,oshpd_id,,c04101002,c03W0d002,VARCHAR,9,OSHPD facility id,c0010k002,,,oshpd.ca.gov-facilities-index-facilities_index-0.0.7:oshpd_id,oshpd_facilities.oshpd_id
+pdd_mdc_08,3,year,,c04101003,c03W0d003,INTEGER,4,Year of discharge,c0010k003,,,oshpd.ca.gov-facilities-index-facilities_index-0.0.7:year,oshpd_facilities.year
 pdd_mdc_08,4,msdrg_003,,,c03W0d004,INTEGER,1,Counts for MS-DRG 003,,,,,
 pdd_mdc_08,5,msdrg_004,,,c03W0d005,INTEGER,1,Counts for MS-DRG 004,,,,,
 pdd_mdc_08,6,msdrg_012,,,c03W0d006,INTEGER,1,Counts for MS-DRG 012,,,,,
@@ -581,8 +581,8 @@ pdd_mdc_08,110,msdrg_987,,,c03W0d01M,INTEGER,1,Counts for MS-DRG 987,,,,,
 pdd_mdc_08,111,msdrg_989,,,c03W0d01N,INTEGER,1,Counts for MS-DRG 989,,,,,
 ,,,,,,,,,,,,,
 pdd_mdc_09,1,id,1,,t03W0e,INTEGER,,"MSDRGs counts per hosiptal, per year, for MDC 09",,,,,
-pdd_mdc_09,2,oshpd_id,,c04101002,c03W0e002,VARCHAR,9,OSHPD facility id,c0010k002,,,oshpd.ca.gov-facilities-index-facilities_index-0.0.3:oshpd_id,oshpd_facilities.oshpd_id
-pdd_mdc_09,3,year,,,c03W0e003,INTEGER,4,Year of discharge,c0010k003,,,,oshpd_facilities.year
+pdd_mdc_09,2,oshpd_id,,c04101002,c03W0e002,VARCHAR,9,OSHPD facility id,c0010k002,,,oshpd.ca.gov-facilities-index-facilities_index-0.0.7:oshpd_id,oshpd_facilities.oshpd_id
+pdd_mdc_09,3,year,,c04101003,c03W0e003,INTEGER,4,Year of discharge,c0010k003,,,oshpd.ca.gov-facilities-index-facilities_index-0.0.7:year,oshpd_facilities.year
 pdd_mdc_09,4,msdrg_001,,,c03W0e004,INTEGER,1,Counts for MS-DRG 001,,,,,
 pdd_mdc_09,5,msdrg_003,,,c03W0e005,INTEGER,1,Counts for MS-DRG 003,,,,,
 pdd_mdc_09,6,msdrg_004,,,c03W0e006,INTEGER,1,Counts for MS-DRG 004,,,,,
@@ -628,8 +628,8 @@ pdd_mdc_09,45,msdrg_988,,,c03W0e00J,INTEGER,1,Counts for MS-DRG 988,,,,,
 pdd_mdc_09,46,msdrg_989,,,c03W0e00K,INTEGER,1,Counts for MS-DRG 989,,,,,
 ,,,,,,,,,,,,,
 pdd_mdc_10,1,id,1,,t03W0f,INTEGER,,"MSDRGs counts per hosiptal, per year, for MDC 10",,,,,
-pdd_mdc_10,2,oshpd_id,,c04101002,c03W0f002,VARCHAR,9,OSHPD facility id,c0010k002,,,oshpd.ca.gov-facilities-index-facilities_index-0.0.3:oshpd_id,oshpd_facilities.oshpd_id
-pdd_mdc_10,3,year,,,c03W0f003,INTEGER,4,Year of discharge,c0010k003,,,,oshpd_facilities.year
+pdd_mdc_10,2,oshpd_id,,c04101002,c03W0f002,VARCHAR,9,OSHPD facility id,c0010k002,,,oshpd.ca.gov-facilities-index-facilities_index-0.0.7:oshpd_id,oshpd_facilities.oshpd_id
+pdd_mdc_10,3,year,,c04101003,c03W0f003,INTEGER,4,Year of discharge,c0010k003,,,oshpd.ca.gov-facilities-index-facilities_index-0.0.7:year,oshpd_facilities.year
 pdd_mdc_10,4,msdrg_003,,,c03W0f004,INTEGER,1,Counts for MS-DRG 003,,,,,
 pdd_mdc_10,5,msdrg_004,,,c03W0f005,INTEGER,1,Counts for MS-DRG 004,,,,,
 pdd_mdc_10,6,msdrg_005,,,c03W0f006,INTEGER,1,Counts for MS-DRG 005,,,,,
@@ -677,8 +677,8 @@ pdd_mdc_10,47,msdrg_988,,,c03W0f00L,INTEGER,1,Counts for MS-DRG 988,,,,,
 pdd_mdc_10,48,msdrg_989,,,c03W0f00M,INTEGER,1,Counts for MS-DRG 989,,,,,
 ,,,,,,,,,,,,,
 pdd_mdc_11,1,id,1,,t03W0g,INTEGER,,"MSDRGs counts per hosiptal, per year, for MDC 11",,,,,
-pdd_mdc_11,2,oshpd_id,,c04101002,c03W0g002,VARCHAR,9,OSHPD facility id,c0010k002,,,oshpd.ca.gov-facilities-index-facilities_index-0.0.3:oshpd_id,oshpd_facilities.oshpd_id
-pdd_mdc_11,3,year,,,c03W0g003,INTEGER,4,Year of discharge,c0010k003,,,,oshpd_facilities.year
+pdd_mdc_11,2,oshpd_id,,c04101002,c03W0g002,VARCHAR,9,OSHPD facility id,c0010k002,,,oshpd.ca.gov-facilities-index-facilities_index-0.0.7:oshpd_id,oshpd_facilities.oshpd_id
+pdd_mdc_11,3,year,,c04101003,c03W0g003,INTEGER,4,Year of discharge,c0010k003,,,oshpd.ca.gov-facilities-index-facilities_index-0.0.7:year,oshpd_facilities.year
 pdd_mdc_11,4,msdrg_003,,,c03W0g004,INTEGER,1,Counts for MS-DRG 003,,,,,
 pdd_mdc_11,5,msdrg_004,,,c03W0g005,INTEGER,1,Counts for MS-DRG 004,,,,,
 pdd_mdc_11,6,msdrg_005,,,c03W0g006,INTEGER,1,Counts for MS-DRG 005,,,,,
@@ -737,8 +737,8 @@ pdd_mdc_11,58,msdrg_988,,,c03W0g00W,INTEGER,1,Counts for MS-DRG 988,,,,,
 pdd_mdc_11,59,msdrg_989,,,c03W0g00X,INTEGER,1,Counts for MS-DRG 989,,,,,
 ,,,,,,,,,,,,,
 pdd_mdc_12,1,id,1,,t03W0h,INTEGER,,"MSDRGs counts per hosiptal, per year, for MDC 12",,,,,
-pdd_mdc_12,2,oshpd_id,,c04101002,c03W0h002,VARCHAR,9,OSHPD facility id,c0010k002,,,oshpd.ca.gov-facilities-index-facilities_index-0.0.3:oshpd_id,oshpd_facilities.oshpd_id
-pdd_mdc_12,3,year,,,c03W0h003,INTEGER,4,Year of discharge,c0010k003,,,,oshpd_facilities.year
+pdd_mdc_12,2,oshpd_id,,c04101002,c03W0h002,VARCHAR,9,OSHPD facility id,c0010k002,,,oshpd.ca.gov-facilities-index-facilities_index-0.0.7:oshpd_id,oshpd_facilities.oshpd_id
+pdd_mdc_12,3,year,,c04101003,c03W0h003,INTEGER,4,Year of discharge,c0010k003,,,oshpd.ca.gov-facilities-index-facilities_index-0.0.7:year,oshpd_facilities.year
 pdd_mdc_12,4,msdrg_003,,,c03W0h004,INTEGER,1,Counts for MS-DRG 003,,,,,
 pdd_mdc_12,5,msdrg_004,,,c03W0h005,INTEGER,1,Counts for MS-DRG 004,,,,,
 pdd_mdc_12,6,msdrg_009,,,c03W0h006,INTEGER,1,Counts for MS-DRG 009,,,,,
@@ -773,8 +773,8 @@ pdd_mdc_12,34,msdrg_988,,,c03W0h00y,INTEGER,1,Counts for MS-DRG 988,,,,,
 pdd_mdc_12,35,msdrg_989,,,c03W0h00z,INTEGER,1,Counts for MS-DRG 989,,,,,
 ,,,,,,,,,,,,,
 pdd_mdc_13,1,id,1,,t03W0i,INTEGER,,"MSDRGs counts per hosiptal, per year, for MDC 13",,,,,
-pdd_mdc_13,2,oshpd_id,,c04101002,c03W0i002,VARCHAR,9,OSHPD facility id,c0010k002,,,oshpd.ca.gov-facilities-index-facilities_index-0.0.3:oshpd_id,oshpd_facilities.oshpd_id
-pdd_mdc_13,3,year,,,c03W0i003,INTEGER,4,Year of discharge,c0010k003,,,,oshpd_facilities.year
+pdd_mdc_13,2,oshpd_id,,c04101002,c03W0i002,VARCHAR,9,OSHPD facility id,c0010k002,,,oshpd.ca.gov-facilities-index-facilities_index-0.0.7:oshpd_id,oshpd_facilities.oshpd_id
+pdd_mdc_13,3,year,,c04101003,c03W0i003,INTEGER,4,Year of discharge,c0010k003,,,oshpd.ca.gov-facilities-index-facilities_index-0.0.7:year,oshpd_facilities.year
 pdd_mdc_13,4,msdrg_003,,,c03W0i004,INTEGER,1,Counts for MS-DRG 003,,,,,
 pdd_mdc_13,5,msdrg_734,,,c03W0i005,INTEGER,2,Counts for MS-DRG 734,,,,,
 pdd_mdc_13,6,msdrg_735,,,c03W0i006,INTEGER,2,Counts for MS-DRG 735,,,,,
@@ -809,8 +809,8 @@ pdd_mdc_13,34,msdrg_988,,,c03W0i00y,INTEGER,1,Counts for MS-DRG 988,,,,,
 pdd_mdc_13,35,msdrg_989,,,c03W0i00z,INTEGER,1,Counts for MS-DRG 989,,,,,
 ,,,,,,,,,,,,,
 pdd_mdc_14,1,id,1,,t03W0j,INTEGER,,"MSDRGs counts per hosiptal, per year, for MDC 14",,,,,
-pdd_mdc_14,2,oshpd_id,,c04101002,c03W0j002,VARCHAR,9,OSHPD facility id,c0010k002,,,oshpd.ca.gov-facilities-index-facilities_index-0.0.3:oshpd_id,oshpd_facilities.oshpd_id
-pdd_mdc_14,3,year,,,c03W0j003,INTEGER,4,Year of discharge,c0010k003,,,,oshpd_facilities.year
+pdd_mdc_14,2,oshpd_id,,c04101002,c03W0j002,VARCHAR,9,OSHPD facility id,c0010k002,,,oshpd.ca.gov-facilities-index-facilities_index-0.0.7:oshpd_id,oshpd_facilities.oshpd_id
+pdd_mdc_14,3,year,,c04101003,c03W0j003,INTEGER,4,Year of discharge,c0010k003,,,oshpd.ca.gov-facilities-index-facilities_index-0.0.7:year,oshpd_facilities.year
 pdd_mdc_14,4,msdrg_765,,,c03W0j004,INTEGER,3,Counts for MS-DRG 765,,,,,
 pdd_mdc_14,5,msdrg_766,,,c03W0j005,INTEGER,3,Counts for MS-DRG 766,,,,,
 pdd_mdc_14,6,msdrg_767,,,c03W0j006,INTEGER,3,Counts for MS-DRG 767,,,,,
@@ -833,8 +833,8 @@ pdd_mdc_14,22,msdrg_989,,,c03W0j00m,INTEGER,1,Counts for MS-DRG 989,,,,,
 pdd_mdc_14,23,msdrg_998,,,c03W0j00n,INTEGER,1,Counts for MS-DRG 998,,,,,
 ,,,,,,,,,,,,,
 pdd_mdc_15,1,id,1,,t03W0k,INTEGER,,"MSDRGs counts per hosiptal, per year, for MDC 15",,,,,
-pdd_mdc_15,2,oshpd_id,,c04101002,c03W0k002,VARCHAR,9,OSHPD facility id,c0010k002,,,oshpd.ca.gov-facilities-index-facilities_index-0.0.3:oshpd_id,oshpd_facilities.oshpd_id
-pdd_mdc_15,3,year,,,c03W0k003,INTEGER,4,Year of discharge,c0010k003,,,,oshpd_facilities.year
+pdd_mdc_15,2,oshpd_id,,c04101002,c03W0k002,VARCHAR,9,OSHPD facility id,c0010k002,,,oshpd.ca.gov-facilities-index-facilities_index-0.0.7:oshpd_id,oshpd_facilities.oshpd_id
+pdd_mdc_15,3,year,,c04101003,c03W0k003,INTEGER,4,Year of discharge,c0010k003,,,oshpd.ca.gov-facilities-index-facilities_index-0.0.7:year,oshpd_facilities.year
 pdd_mdc_15,4,msdrg_003,,,c03W0k004,INTEGER,1,Counts for MS-DRG 003,,,,,
 pdd_mdc_15,5,msdrg_789,,,c03W0k005,INTEGER,3,Counts for MS-DRG 789,,,,,
 pdd_mdc_15,6,msdrg_790,,,c03W0k006,INTEGER,3,Counts for MS-DRG 790,,,,,
@@ -845,8 +845,8 @@ pdd_mdc_15,10,msdrg_794,,,c03W0k00a,INTEGER,4,Counts for MS-DRG 794,,,,,
 pdd_mdc_15,11,msdrg_795,,,c03W0k00b,INTEGER,4,Counts for MS-DRG 795,,,,,
 ,,,,,,,,,,,,,
 pdd_mdc_16,1,id,1,,t03W0l,INTEGER,,"MSDRGs counts per hosiptal, per year, for MDC 16",,,,,
-pdd_mdc_16,2,oshpd_id,,c04101002,c03W0l002,VARCHAR,9,OSHPD facility id,c0010k002,,,oshpd.ca.gov-facilities-index-facilities_index-0.0.3:oshpd_id,oshpd_facilities.oshpd_id
-pdd_mdc_16,3,year,,,c03W0l003,INTEGER,4,Year of discharge,c0010k003,,,,oshpd_facilities.year
+pdd_mdc_16,2,oshpd_id,,c04101002,c03W0l002,VARCHAR,9,OSHPD facility id,c0010k002,,,oshpd.ca.gov-facilities-index-facilities_index-0.0.7:oshpd_id,oshpd_facilities.oshpd_id
+pdd_mdc_16,3,year,,c04101003,c03W0l003,INTEGER,4,Year of discharge,c0010k003,,,oshpd.ca.gov-facilities-index-facilities_index-0.0.7:year,oshpd_facilities.year
 pdd_mdc_16,4,msdrg_003,,,c03W0l004,INTEGER,1,Counts for MS-DRG 003,,,,,
 pdd_mdc_16,5,msdrg_004,,,c03W0l005,INTEGER,1,Counts for MS-DRG 004,,,,,
 pdd_mdc_16,6,msdrg_005,,,c03W0l006,INTEGER,1,Counts for MS-DRG 005,,,,,
@@ -880,8 +880,8 @@ pdd_mdc_16,33,msdrg_988,,,c03W0l00x,INTEGER,1,Counts for MS-DRG 988,,,,,
 pdd_mdc_16,34,msdrg_989,,,c03W0l00y,INTEGER,1,Counts for MS-DRG 989,,,,,
 ,,,,,,,,,,,,,
 pdd_mdc_17,1,id,1,,t03W0m,INTEGER,,"MSDRGs counts per hosiptal, per year, for MDC 17",,,,,
-pdd_mdc_17,2,oshpd_id,,c04101002,c03W0m002,VARCHAR,9,OSHPD facility id,c0010k002,,,oshpd.ca.gov-facilities-index-facilities_index-0.0.3:oshpd_id,oshpd_facilities.oshpd_id
-pdd_mdc_17,3,year,,,c03W0m003,INTEGER,4,Year of discharge,c0010k003,,,,oshpd_facilities.year
+pdd_mdc_17,2,oshpd_id,,c04101002,c03W0m002,VARCHAR,9,OSHPD facility id,c0010k002,,,oshpd.ca.gov-facilities-index-facilities_index-0.0.7:oshpd_id,oshpd_facilities.oshpd_id
+pdd_mdc_17,3,year,,c04101003,c03W0m003,INTEGER,4,Year of discharge,c0010k003,,,oshpd.ca.gov-facilities-index-facilities_index-0.0.7:year,oshpd_facilities.year
 pdd_mdc_17,4,msdrg_003,,,c03W0m004,INTEGER,1,Counts for MS-DRG 003,,,,,
 pdd_mdc_17,5,msdrg_004,,,c03W0m005,INTEGER,1,Counts for MS-DRG 004,,,,,
 pdd_mdc_17,6,msdrg_009,,,c03W0m006,INTEGER,3,Counts for MS-DRG 009,,,,,
@@ -921,8 +921,8 @@ pdd_mdc_17,39,msdrg_848,,,c03W0m00D,INTEGER,3,Counts for MS-DRG 848,,,,,
 pdd_mdc_17,40,msdrg_849,,,c03W0m00E,INTEGER,2,Counts for MS-DRG 849,,,,,
 ,,,,,,,,,,,,,
 pdd_mdc_18,1,id,1,,t03W0n,INTEGER,,"MSDRGs counts per hosiptal, per year, for MDC 18",,,,,
-pdd_mdc_18,2,oshpd_id,,c04101002,c03W0n002,VARCHAR,9,OSHPD facility id,c0010k002,,,oshpd.ca.gov-facilities-index-facilities_index-0.0.3:oshpd_id,oshpd_facilities.oshpd_id
-pdd_mdc_18,3,year,,,c03W0n003,INTEGER,4,Year of discharge,c0010k003,,,,oshpd_facilities.year
+pdd_mdc_18,2,oshpd_id,,c04101002,c03W0n002,VARCHAR,9,OSHPD facility id,c0010k002,,,oshpd.ca.gov-facilities-index-facilities_index-0.0.7:oshpd_id,oshpd_facilities.oshpd_id
+pdd_mdc_18,3,year,,c04101003,c03W0n003,INTEGER,4,Year of discharge,c0010k003,,,oshpd.ca.gov-facilities-index-facilities_index-0.0.7:year,oshpd_facilities.year
 pdd_mdc_18,4,msdrg_003,,,c03W0n004,INTEGER,1,Counts for MS-DRG 003,,,,,
 pdd_mdc_18,5,msdrg_004,,,c03W0n005,INTEGER,2,Counts for MS-DRG 004,,,,,
 pdd_mdc_18,6,msdrg_853,,,c03W0n006,INTEGER,3,Counts for MS-DRG 853,,,,,
@@ -944,8 +944,8 @@ pdd_mdc_18,21,msdrg_871,,,c03W0n00l,INTEGER,4,Counts for MS-DRG 871,,,,,
 pdd_mdc_18,22,msdrg_872,,,c03W0n00m,INTEGER,3,Counts for MS-DRG 872,,,,,
 ,,,,,,,,,,,,,
 pdd_mdc_19,1,id,1,,t03W0o,INTEGER,,"MSDRGs counts per hosiptal, per year, for MDC 19",,,,,
-pdd_mdc_19,2,oshpd_id,,c04101002,c03W0o002,VARCHAR,9,OSHPD facility id,c0010k002,,,oshpd.ca.gov-facilities-index-facilities_index-0.0.3:oshpd_id,oshpd_facilities.oshpd_id
-pdd_mdc_19,3,year,,,c03W0o003,INTEGER,4,Year of discharge,c0010k003,,,,oshpd_facilities.year
+pdd_mdc_19,2,oshpd_id,,c04101002,c03W0o002,VARCHAR,9,OSHPD facility id,c0010k002,,,oshpd.ca.gov-facilities-index-facilities_index-0.0.7:oshpd_id,oshpd_facilities.oshpd_id
+pdd_mdc_19,3,year,,c04101003,c03W0o003,INTEGER,4,Year of discharge,c0010k003,,,oshpd.ca.gov-facilities-index-facilities_index-0.0.7:year,oshpd_facilities.year
 pdd_mdc_19,4,msdrg_876,,,c03W0o004,INTEGER,1,Counts for MS-DRG 876,,,,,
 pdd_mdc_19,5,msdrg_880,,,c03W0o005,INTEGER,2,Counts for MS-DRG 880,,,,,
 pdd_mdc_19,6,msdrg_881,,,c03W0o006,INTEGER,3,Counts for MS-DRG 881,,,,,
@@ -957,8 +957,8 @@ pdd_mdc_19,11,msdrg_886,,,c03W0o00b,INTEGER,2,Counts for MS-DRG 886,,,,,
 pdd_mdc_19,12,msdrg_887,,,c03W0o00c,INTEGER,2,Counts for MS-DRG 887,,,,,
 ,,,,,,,,,,,,,
 pdd_mdc_20,1,id,1,,t03W0p,INTEGER,,"MSDRGs counts per hosiptal, per year, for MDC 20",,,,,
-pdd_mdc_20,2,oshpd_id,,c04101002,c03W0p002,VARCHAR,9,OSHPD facility id,c0010k002,,,oshpd.ca.gov-facilities-index-facilities_index-0.0.3:oshpd_id,oshpd_facilities.oshpd_id
-pdd_mdc_20,3,year,,,c03W0p003,INTEGER,4,Year of discharge,c0010k003,,,,oshpd_facilities.year
+pdd_mdc_20,2,oshpd_id,,c04101002,c03W0p002,VARCHAR,9,OSHPD facility id,c0010k002,,,oshpd.ca.gov-facilities-index-facilities_index-0.0.7:oshpd_id,oshpd_facilities.oshpd_id
+pdd_mdc_20,3,year,,c04101003,c03W0p003,INTEGER,4,Year of discharge,c0010k003,,,oshpd.ca.gov-facilities-index-facilities_index-0.0.7:year,oshpd_facilities.year
 pdd_mdc_20,4,msdrg_003,,,c03W0p004,INTEGER,1,Counts for MS-DRG 003,,,,,
 pdd_mdc_20,5,msdrg_004,,,c03W0p005,INTEGER,1,Counts for MS-DRG 004,,,,,
 pdd_mdc_20,6,msdrg_894,,,c03W0p006,INTEGER,2,Counts for MS-DRG 894,,,,,
@@ -974,8 +974,8 @@ pdd_mdc_20,15,msdrg_988,,,c03W0p00f,INTEGER,1,Counts for MS-DRG 988,,,,,
 pdd_mdc_20,16,msdrg_989,,,c03W0p00g,INTEGER,1,Counts for MS-DRG 989,,,,,
 ,,,,,,,,,,,,,
 pdd_mdc_21,1,id,1,,t03W0q,INTEGER,,"MSDRGs counts per hosiptal, per year, for MDC 21",,,,,
-pdd_mdc_21,2,oshpd_id,,c04101002,c03W0q002,VARCHAR,9,OSHPD facility id,c0010k002,,,oshpd.ca.gov-facilities-index-facilities_index-0.0.3:oshpd_id,oshpd_facilities.oshpd_id
-pdd_mdc_21,3,year,,,c03W0q003,INTEGER,4,Year of discharge,c0010k003,,,,oshpd_facilities.year
+pdd_mdc_21,2,oshpd_id,,c04101002,c03W0q002,VARCHAR,9,OSHPD facility id,c0010k002,,,oshpd.ca.gov-facilities-index-facilities_index-0.0.7:oshpd_id,oshpd_facilities.oshpd_id
+pdd_mdc_21,3,year,,c04101003,c03W0q003,INTEGER,4,Year of discharge,c0010k003,,,oshpd.ca.gov-facilities-index-facilities_index-0.0.7:year,oshpd_facilities.year
 pdd_mdc_21,4,msdrg_001,,,c03W0q004,INTEGER,1,Counts for MS-DRG 001,,,,,
 pdd_mdc_21,5,msdrg_003,,,c03W0q005,INTEGER,1,Counts for MS-DRG 003,,,,,
 pdd_mdc_21,6,msdrg_004,,,c03W0q006,INTEGER,1,Counts for MS-DRG 004,,,,,
@@ -1014,8 +1014,8 @@ pdd_mdc_21,38,msdrg_988,,,c03W0q00C,INTEGER,1,Counts for MS-DRG 988,,,,,
 pdd_mdc_21,39,msdrg_989,,,c03W0q00D,INTEGER,1,Counts for MS-DRG 989,,,,,
 ,,,,,,,,,,,,,
 pdd_mdc_22,1,id,1,,t03W0r,INTEGER,,"MSDRGs counts per hosiptal, per year, for MDC 22",,,,,
-pdd_mdc_22,2,oshpd_id,,c04101002,c03W0r002,VARCHAR,9,OSHPD facility id,c0010k002,,,oshpd.ca.gov-facilities-index-facilities_index-0.0.3:oshpd_id,oshpd_facilities.oshpd_id
-pdd_mdc_22,3,year,,,c03W0r003,INTEGER,4,Year of discharge,c0010k003,,,,oshpd_facilities.year
+pdd_mdc_22,2,oshpd_id,,c04101002,c03W0r002,VARCHAR,9,OSHPD facility id,c0010k002,,,oshpd.ca.gov-facilities-index-facilities_index-0.0.7:oshpd_id,oshpd_facilities.oshpd_id
+pdd_mdc_22,3,year,,c04101003,c03W0r003,INTEGER,4,Year of discharge,c0010k003,,,oshpd.ca.gov-facilities-index-facilities_index-0.0.7:year,oshpd_facilities.year
 pdd_mdc_22,4,msdrg_003,,,c03W0r004,INTEGER,2,Counts for MS-DRG 003,,,,,
 pdd_mdc_22,5,msdrg_004,,,c03W0r005,INTEGER,1,Counts for MS-DRG 004,,,,,
 pdd_mdc_22,6,msdrg_927,,,c03W0r006,INTEGER,2,Counts for MS-DRG 927,,,,,
@@ -1026,8 +1026,8 @@ pdd_mdc_22,10,msdrg_934,,,c03W0r00a,INTEGER,2,Counts for MS-DRG 934,,,,,
 pdd_mdc_22,11,msdrg_935,,,c03W0r00b,INTEGER,3,Counts for MS-DRG 935,,,,,
 ,,,,,,,,,,,,,
 pdd_mdc_23,1,id,1,,t03W0s,INTEGER,,"MSDRGs counts per hosiptal, per year, for MDC 23",,,,,
-pdd_mdc_23,2,oshpd_id,,c04101002,c03W0s002,VARCHAR,9,OSHPD facility id,c0010k002,,,oshpd.ca.gov-facilities-index-facilities_index-0.0.3:oshpd_id,oshpd_facilities.oshpd_id
-pdd_mdc_23,3,year,,,c03W0s003,INTEGER,4,Year of discharge,c0010k003,,,,oshpd_facilities.year
+pdd_mdc_23,2,oshpd_id,,c04101002,c03W0s002,VARCHAR,9,OSHPD facility id,c0010k002,,,oshpd.ca.gov-facilities-index-facilities_index-0.0.7:oshpd_id,oshpd_facilities.oshpd_id
+pdd_mdc_23,3,year,,c04101003,c03W0s003,INTEGER,4,Year of discharge,c0010k003,,,oshpd.ca.gov-facilities-index-facilities_index-0.0.7:year,oshpd_facilities.year
 pdd_mdc_23,4,msdrg_003,,,c03W0s004,INTEGER,1,Counts for MS-DRG 003,,,,,
 pdd_mdc_23,5,msdrg_004,,,c03W0s005,INTEGER,1,Counts for MS-DRG 004,,,,,
 pdd_mdc_23,6,msdrg_939,,,c03W0s006,INTEGER,2,Counts for MS-DRG 939,,,,,
@@ -1042,8 +1042,8 @@ pdd_mdc_23,14,msdrg_950,,,c03W0s00e,INTEGER,2,Counts for MS-DRG 950,,,,,
 pdd_mdc_23,15,msdrg_951,,,c03W0s00f,INTEGER,3,Counts for MS-DRG 951,,,,,
 ,,,,,,,,,,,,,
 pdd_mdc_24,1,id,1,,t03W0t,INTEGER,,"MSDRGs counts per hosiptal, per year, for MDC 24",,,,,
-pdd_mdc_24,2,oshpd_id,,c04101002,c03W0t002,VARCHAR,9,OSHPD facility id,c0010k002,,,oshpd.ca.gov-facilities-index-facilities_index-0.0.3:oshpd_id,oshpd_facilities.oshpd_id
-pdd_mdc_24,3,year,,,c03W0t003,INTEGER,4,Year of discharge,c0010k003,,,,oshpd_facilities.year
+pdd_mdc_24,2,oshpd_id,,c04101002,c03W0t002,VARCHAR,9,OSHPD facility id,c0010k002,,,oshpd.ca.gov-facilities-index-facilities_index-0.0.7:oshpd_id,oshpd_facilities.oshpd_id
+pdd_mdc_24,3,year,,c04101003,c03W0t003,INTEGER,4,Year of discharge,c0010k003,,,oshpd.ca.gov-facilities-index-facilities_index-0.0.7:year,oshpd_facilities.year
 pdd_mdc_24,4,msdrg_955,,,c03W0t004,INTEGER,2,Counts for MS-DRG 955,,,,,
 pdd_mdc_24,5,msdrg_956,,,c03W0t005,INTEGER,2,Counts for MS-DRG 956,,,,,
 pdd_mdc_24,6,msdrg_957,,,c03W0t006,INTEGER,2,Counts for MS-DRG 957,,,,,

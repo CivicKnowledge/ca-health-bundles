@@ -1,9 +1,12 @@
 about:
     access: restricted
+    footnote: null
     grain: null
     groups: []
     license: ckdbl
+    processed: null
     rights: public
+    source: null
     space: California
     subject: null
     summary: Prevention Quality Indicators (PQIs) identify hospital admissions (age
@@ -25,7 +28,9 @@ contact_bundle:
         name: Eric Busboom
         url: http://www.sandiegodata.org
 contact_source:
-    creator: {}
+    creator:
+        org: Office of Statewide Health Planning and Development
+        url: http://oshpd.ca.gov/
     maintainer: {}
 external_documentation:
     dataset:

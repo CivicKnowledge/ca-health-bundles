@@ -29,8 +29,6 @@ class RowIntuiter(RowSpecIntuiter):
 class Bundle(ExcelBuildBundle):
     ''' '''
 
-    prefix_headers = ['id','year','county_gvid','facility_index_id']
-
     @staticmethod
     def  int_caster(v):
         """Remove commas from numbers"""
@@ -97,7 +95,9 @@ class Bundle(ExcelBuildBundle):
     @property
     @memoize
     def facilities_map(self):
-        return { r['facility_name'].lower(): dict(r) for r in  self.library.dep('facilities').partition.rows}
+
+        return { r['facility_name'].lower(): dict(r) 
+                 for r in  self.library.dep('facility_info').partition.rows if r['facility_name']}
         
     @property
     @memoize
@@ -106,8 +106,9 @@ class Bundle(ExcelBuildBundle):
         
         d = defaultdict(set)
         
-        for r in  self.library.dep('facilities').partition.rows:
-             d[r['county_gvid']].add(r['facility_name'].lower())
+        for r in  self.library.dep('facility_info').partition.rows:
+            if r['facility_name']:
+                d[r['county_gvid']].add(r['facility_name'].lower())
 
         return d
 
@@ -135,14 +136,12 @@ class Bundle(ExcelBuildBundle):
                 row['matched_hospital_name'] = matches[0].title()
                 row['oshpd_id'] = self.facilities_map[matches[0]]['oshpd_id']
             else:
-                self.error("Failed to get OSHPD_ID for "+hn)
+                self.warn("Failed to get OSHPD_ID for "+hn)
         
         else:
-            self.error("Failed to get OSHPD_ID for "+hn)
+            self.warn("Failed to get OSHPD_ID for "+hn)
         
-        
-        
-
+  
         
     
         

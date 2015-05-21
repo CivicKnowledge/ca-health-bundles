@@ -2,6 +2,6 @@
     table: facilities
 -   name: oshpd.ca.gov-facilities-index-facilities_index
     table: facilities_index
--   name: oshpd.ca.gov-facilities-index-facilities_index_year-2010e2014
-    table: facilities_index_year
+-   name: oshpd.ca.gov-facilities-index-facilities_index-2010e2014
+    table: facilities_index
     time: 2010e2014

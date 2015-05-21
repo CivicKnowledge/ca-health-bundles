@@ -1,9 +1,12 @@
 about:
     access: restricted
+    footnote: null
     grain: hospital
     groups: []
     license: ckdbl
+    processed: null
     rights: public
+    source: null
     space: California
     subject: healthcare quality
     summary: of 11 Hospital Inpatient Quality Indicators (Inpatient Quality Indicators,
@@ -24,7 +27,9 @@ contact_bundle:
         name: Eric Busboom
         url: http://www.sandiegodata.org
 contact_source:
-    creator: {}
+    creator:
+        org: Office of Statewide Health Planning and Development
+        url: http://oshpd.ca.gov/
     maintainer: {}
 external_documentation:
     about_ahrq:

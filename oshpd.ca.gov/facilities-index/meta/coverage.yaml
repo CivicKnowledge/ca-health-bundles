@@ -8,6 +8,7 @@ coverage:
     - 2qZZZZZZZZZZ
     - counties
     time:
+    - null
     - 2010
     - 2011
     - 2012

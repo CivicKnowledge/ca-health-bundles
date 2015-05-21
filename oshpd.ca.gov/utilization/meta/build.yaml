@@ -14,6 +14,7 @@ sources:
             - 3
         segment: 2
         table: hosp_util
+        time: 2008
         url: http://www.oshpd.ca.gov/hid/Products/Hospitals/Utilization/Text_pdf_files/Hospital/Annual_Utilization/Hosp08_util_data_FINAL.xls
     Hosp09_util_data_Final:
         description: Hospital Utilization
@@ -26,6 +27,7 @@ sources:
             - 3
         segment: 2
         table: hosp_util
+        time: 2009
         url: http://www.oshpd.ca.gov/hid/Products/Hospitals/Utilization/Text_pdf_files/Hospital/Annual_Utilization/Hosp09_util_data_Final.xls
     Hosp10_util_data_FINAL:
         description: Hospital Utilization
@@ -38,6 +40,7 @@ sources:
             - 3
         segment: 2
         table: hosp_util
+        time: 2010
         url: http://www.oshpd.ca.gov/hid/Products/Hospitals/Utilization/Text_pdf_files/Hospital/Annual_Utilization/Hosp10_util_data_FINAL.xlsx
     Hosp11_util_data_Final:
         description: Hospital Utilization
@@ -50,6 +53,7 @@ sources:
             - 3
         segment: 2
         table: hosp_util
+        time: 2011
         url: http://www.oshpd.ca.gov/hid/Products/Hospitals/Utilization/Text_pdf_files/Hospital/Annual_Utilization/Hosp11_util_data_Final.xlsx
     Hosp12_util_data_FINAL:
         description: Hospital Utilization
@@ -62,6 +66,7 @@ sources:
             - 3
         segment: 2
         table: hosp_util
+        time: 2011
         url: http://www.oshpd.ca.gov/hid/Products/Hospitals/Utilization/Text_pdf_files/Hospital/Annual_Utilization/Hosp12_util_data_FINAL.xlsx
     Hosp13_util_data_FINAL:
         description: Hospital Utilization
@@ -74,5 +79,6 @@ sources:
             - 3
         segment: 2
         table: hosp_util
+        time: 2013
         url: http://www.oshpd.ca.gov/hid/Products/Hospitals/Utilization/Text_pdf_files/Hospital/Annual_Utilization/Hosp13_util_data_FINAL.xlsx
 views: {}

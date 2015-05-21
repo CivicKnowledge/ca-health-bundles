@@ -5,7 +5,8 @@ build:
         xlrd: xlrd
 dependencies:
     counties: census.gov-index-counties
-    facilities: civicknowledge.com-index-health_facilities-ca-facility_index
+    facility_index: oshpd.ca.gov-facilities-index-facilities_index-2010e2014
+    facility_info: oshpd.ca.gov-facilities-index-facilities
 extract: {}
 sources:
     2005Util:

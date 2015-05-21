@@ -11,17 +11,11 @@ class Bundle(ExcelBuildBundle):
 
     @staticmethod
     def latin_decode(v):
+        """ A Caster for decoding hospital names"""
         from unidecode import unidecode
         
         return unidecode(v.decode('latin1'))
 
-    @memoize
-    def counties_map(self):
-        counties = { r['name'].replace(" County, California",''): r['gvid'] 
-                     for r in  self.library.dep('counties').partition.rows  if int(r['state'] == 6)}
-
-        return counties
-  
     def meta_combine_tables(self):
         
         self.prepare()
@@ -59,16 +53,7 @@ class Bundle(ExcelBuildBundle):
         
         return True
         
-    def build_modify_row(self, row_gen, p, source, row):
-        
-        row['year'] = int(source.time)
-        #row['hospital'] = row['hospital'].decode('latin1')
-        
-        if row['county']:
-            row['county_gvid'] = self.counties_map[row['county'].lower()]
     
-
-        
     def build_summary(self):
         """Use Pandas to sum hospital records to counties."""
         for table_name in ('utilization', "volume"):
@@ -87,51 +72,65 @@ class Bundle(ExcelBuildBundle):
                     
                     if row['gvid']:
                         ins.insert(row)
-     
+                        
+    @property
     @memoize
-    def name_link_dicts(self):
-        """Create a set of dictionaries that group facilities by county, for matching"""
-        facilities = self.library.dep('facilities').partition
+    def county_map(self):
+        return { r['name'].replace(" County, California",'').lower(): r['gvid'] 
+                     for r in  self.library.dep('counties').partition.rows  if int(r['state'] == 6)}
         
-        fac_by_county = {}
-        fac_all = []
         
-        for row  in facilities.rows:
-            if row['county_gvid'] not in fac_by_county:
-                fac_by_county[row['county_gvid']] = []
-            
-            ids = (row['id'], row['oshpd_id'], row['cdph_id'])
-            
-            if row['oshpd_name']:
-                fac_by_county[row['county_gvid']].append((row['oshpd_name'], ids))
-                fac_all.append((row['oshpd_name'], ids))
-            
-            if row['cdph_name']:
-                fac_by_county[row['county_gvid']].append((row['cdph_name'], ids))
-                fac_all.append((row['cdph_name'], ids))
-        
-        return fac_by_county, fac_all
-        
-    def match_name(self, county, n):
-        """Match hospital names by name and county"""
-        from fuzzywuzzy import fuzz
-        scores = []
-        
-        fac_by_county, fac_all = self.name_link_dicts()
-         
-        cfac = fac_by_county[county]
-        
-        for e in cfac:
+    @property
+    @memoize
+    def facilities_map(self):
 
-            score = fuzz.ratio(n, e[0])
+        return { r['facility_name'].lower(): dict(r) 
+                 for r in  self.library.dep('facility_info').partition.rows if r['facility_name']}
         
-            if score >= 80:
-                scores.append( (score, e[0], e[1]))
+    @property
+    @memoize
+    def hospital_names_by_county(self):
+        from collections import defaultdict
+        
+        d = defaultdict(set)
+        
+        for r in  self.library.dep('facility_info').partition.rows:
+            if r['facility_name']:
+                d[r['county_gvid']].add(r['facility_name'].lower())
 
-        if scores:
-            scores = sorted(scores, key = lambda x : x[0])
-            return scores[0]
-            
+        return d
+
+
+    def build_modify_row(self, row_gen, p, source, row):
+        from difflib import get_close_matches
+        
+        row['year'] = int(source.time)
+        #row['hospital'] = row['hospital'].decode('latin1')
+        
+        if row['county']:
+            row['county_gvid'] = self.county_map[row['county'].lower()]
         else:
-            return None
+            row['county_gvid'] = None
+
+        hn = row['hospital_name'].lower()
+        
+        if hn in self.facilities_map:
+            row['oshpd_id'] = self.facilities_map[hn]['oshpd_id']
+           
+        elif row['county_gvid']:
+            matches =  get_close_matches(hn,self.hospital_names_by_county[row['county_gvid']])
+            
+            if matches:
+                row['matched_hospital_name'] = matches[0].title()
+                row['oshpd_id'] = self.facilities_map[matches[0]]['oshpd_id']
+            else:
+                self.warn("Failed to get OSHPD_ID for "+hn)
+        
+        else:
+            self.warn("Failed to get OSHPD_ID for "+hn)
+                        
+     
+
+        
+
                   

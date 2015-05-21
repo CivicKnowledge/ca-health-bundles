@@ -2,8 +2,8 @@ about:
     access: restricted
     footnote: null
     grain: facility
-    groups: 
-        - Health
+    groups:
+    - Health
     license: restricted
     processed: 'Records loaded from {{dependencies.pddpuf.ref}} are aggregated by
         hospital and split into tables based on MDC MS-DRG and other variabes. '
@@ -47,17 +47,17 @@ identity:
     btime: null
     dataset: patient_discharges
     id: d03W
-    revision: 3
+    revision: 4
     source: oshpd.ca.gov
     subset: hospital
     type: null
     variation: null
-    version: 0.0.3
+    version: 0.0.4
 names:
-    fqname: oshpd.ca.gov-patient_discharges-hospital-0.0.3~d03W003
+    fqname: oshpd.ca.gov-patient_discharges-hospital-0.0.4~d03W004
     name: oshpd.ca.gov-patient_discharges-hospital
-    vid: d03W003
-    vname: oshpd.ca.gov-patient_discharges-hospital-0.0.3
+    vid: d03W004
+    vname: oshpd.ca.gov-patient_discharges-hospital-0.0.4
 process: {}
 versions:
     2:
@@ -68,3 +68,7 @@ versions:
         date: '2015-05-19T11:46:49.015073'
         description: Require recent facilities index
         version: 0.0.3
+    4:
+        date: '2015-05-21T10:56:31.264157'
+        description: Updating protos
+        version: 0.0.4

@@ -1,14 +1,14 @@
 documentation:
     footnote: null
-    main: "\n# Patient Discharge Data, Public Use File\n\nPatient discharge records,\
-        \ aggregated to hospitals.\n\nThe partition with the ``pdd_summary_msdrg``\
+    main: "\n# Patient Discharge Data, Public Use File, By Hospital\n\nPatient discharge\
+        \ records, aggregated to hospitals.\n\nThe partition with the ``pdd_summary_msdrg``\
         \ table with no grain summarizes the counts for each MSDRG for the all years,\
         \ while the partitions with the ``pdd_summary_msdrg`` and grains summarize\
         \ counts for only the MDC in the name of the grain. Note that MS-DRG codes\
         \ less than 20 and codes greater than 977 are not uniquely associated with\
         \ MDC codes, so those MS-DRG codes may appear in multiple partitions. \n\n\
         One 6-digit OHSPD id could not be resolved to a 9 digit id: ``334457``.\n\n"
-    processed: 'Records loaded from  are addregated by hospital and split into tables
+    processed: 'Records loaded from  are aggregated by hospital and split into tables
         based on MDC MS-DRG and other variabes. '
     readme: '# Patient Discharge Data, Public Use File
 
@@ -16,4 +16,4 @@ documentation:
         Patient discharge records, aggregated to hospitals.'
     source: 'Office of Statewide Health Planning and Development processed by '
     summary: Patient discharge records, aggregated to hospitals.
-    title: Patient Discharge Data, Public Use File
+    title: Patient Discharge Data, Public Use File, By Hospital

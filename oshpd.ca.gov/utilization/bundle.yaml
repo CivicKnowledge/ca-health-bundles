@@ -1,9 +1,12 @@
 about:
     access: restricted
+    footnote: null
     grain: null
     groups: []
     license: ckdbl
+    processed: null
     rights: public
+    source: null
     space: California
     subject: null
     summary: Counts of a variety of types of hospital procedures, from an extract
@@ -23,7 +26,9 @@ contact_bundle:
         name: Eric Busboom
         url: http://www.sandiegodata.org
 contact_source:
-    creator: {}
+    creator:
+        org: Office of Statewide Health Planning and Development
+        url: http://oshpd.ca.gov/
     maintainer: {}
 external_documentation:
     data_notes:
@@ -41,20 +46,24 @@ identity:
     btime: null
     dataset: utilization
     id: d03D
-    revision: 2
+    revision: 3
     source: oshpd.ca.gov
     subset: null
     type: null
     variation: null
-    version: 0.0.2
+    version: 0.0.3
 names:
-    fqname: oshpd.ca.gov-utilization-0.0.2~d03D002
+    fqname: oshpd.ca.gov-utilization-0.0.3~d03D003
     name: oshpd.ca.gov-utilization
-    vid: d03D002
-    vname: oshpd.ca.gov-utilization-0.0.2
+    vid: d03D003
+    vname: oshpd.ca.gov-utilization-0.0.3
 process: {}
 versions:
     2:
         date: '2015-04-27T18:10:15.747200'
         description: Setting new access remotes
         version: 0.0.2
+    3:
+        date: '2015-05-21T08:25:21.412661'
+        description: Added protos for index
+        version: 0.0.3

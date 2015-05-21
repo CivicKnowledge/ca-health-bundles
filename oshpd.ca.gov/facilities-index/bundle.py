@@ -85,7 +85,7 @@ class Bundle(LoaderBundle):
 
         # Now build the index with years
         self.log("Build the index with years")
-        p = self.partitions.find_or_new(table='facilities_index_year', time=self.metadata.about.time)
+        p = self.partitions.find_or_new(table='facilities_index', time=self.metadata.about.time)
         p.clean()
 
         with p.inserter() as ins:
