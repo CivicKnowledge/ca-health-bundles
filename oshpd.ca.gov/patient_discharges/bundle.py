@@ -62,7 +62,7 @@ class Bundle(LoaderBundle):
             
             for row in p_in.rows:
                 nr = { k:sub(k,v) for k,v in row.items() }
-                
+ 
                 e = ins.insert(nr)
                 
                 lr("Build codes")
