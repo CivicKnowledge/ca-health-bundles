@@ -15,6 +15,10 @@ class Bundle(ExcelBuildBundle):
         except ValueError:
             return v
 
+    @staticmethod
+    def excel_date(v):
+        pass # We'll be overwriting this func when the workbook datemode is known. 
+
     def build_modify_row(self, row_gen, p, source, row):
         
         row['year'] = int(source.time)
@@ -39,4 +43,19 @@ class Bundle(ExcelBuildBundle):
         self.schema.write_schema()
         
         return r
+        
+    
+    def row_gen_for_source(self, source_name):
+        """ Total hack to set the datemode for excel date conversion. """
+        
+        rg = super(Bundle, self).row_gen_for_source(source_name)
+        
+
+        self.excel_date = rg.make_date_caster()
+        
+        return rg
+        
+        
+        
+        
         
