@@ -57,6 +57,9 @@ class Bundle(LoaderBundle):
 
         row['type_code'] = row['oshpd_id'][:3]
 
+        if 'facilities_id' in row: # Just the last part of the OSHPD id, i think. 
+            del row['facilities_id']
+
         del row['id']
         
     def build(self):
