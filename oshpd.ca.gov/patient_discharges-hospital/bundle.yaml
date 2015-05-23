@@ -47,17 +47,17 @@ identity:
     btime: null
     dataset: patient_discharges
     id: d03W
-    revision: 4
+    revision: 5
     source: oshpd.ca.gov
     subset: hospital
     type: null
     variation: null
-    version: 0.0.4
+    version: 0.0.5
 names:
-    fqname: oshpd.ca.gov-patient_discharges-hospital-0.0.4~d03W004
+    fqname: oshpd.ca.gov-patient_discharges-hospital-0.0.5~d03W005
     name: oshpd.ca.gov-patient_discharges-hospital
-    vid: d03W004
-    vname: oshpd.ca.gov-patient_discharges-hospital-0.0.4
+    vid: d03W005
+    vname: oshpd.ca.gov-patient_discharges-hospital-0.0.5
 process: {}
 versions:
     2:
@@ -72,3 +72,7 @@ versions:
         date: '2015-05-21T10:56:31.264157'
         description: Updating protos
         version: 0.0.4
+    5:
+        date: '2015-05-22T20:25:27.497829'
+        description: Onemore try with indexes and proto updates
+        version: 0.0.5
