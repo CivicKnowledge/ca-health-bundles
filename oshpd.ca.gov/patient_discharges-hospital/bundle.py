@@ -63,7 +63,7 @@ class Bundle(BuildBundle):
         out_p = self.partitions.new_partition(table = 'pdd_summary_{}'.format(v))
         out_p.clean()
         
-        lr = self.init_log_rate(1000)
+        lr = self.init_log_rate(10000)
         
         with out_p.inserter() as ins:
             for r in dfg.sort(['oshpd_id','count'], ascending = False).itertuples(index=False):
