@@ -1,21 +1,17 @@
 documentation:
     footnote: null
-    main: "\n# Inpatient Mortality Indicators\n\nThe Inpatient Mortality Indicators\
-        \ (IMIs) are a subset of the AHRQ quality indicators that measure in-hospital\
-        \ mortality. They include medical conditions and procedures for which mortality\
-        \ rates may vary significantly across institutions. Evidence suggests that\
-        \ high mortality may be associated with deficiencies in the quality of hospital\
-        \ care provided.\n\n## Notes\n\nAlthough the source of this data is OSHPD,\
-        \ the names of the hospitals don't link exactly to the OSHPD facilities list.\
-        \ Instead, they are connected to the CDPH facilities list, from bundle cdph.ca.gov-facilities.\n\
-        \nHowever, they match well enough to the OSHPD list that nearly all of the\
-        \ entries can be assigned an OSHPD facility id. When the ``oshpd_id`` column\
-        \ is set from an inexact hospital name match, the name of the matched facility\
-        \ is stored in the ``matched_hospital_name`` column. If the ``oshpd_id`` field\
-        \ is empty, the ``matched_hospital_name`` should also be empty, indicating\
-        \ that the entry was not matched to a facility in the OSHSPD facility index.\
-        \ If the ``matched_hospital_name`` field is empty, but ``oshpd_id`` is set,\
-        \ it means that the hospital was matched on an exact name. \n\n"
+    main: "\n# {about.title}\n\n{about.summary}\n\n## Notes\n\nAlthough the source\
+        \ of this data is OSHPD, the names of the hospitals don't link exactly to\
+        \ the OSHPD facilities list. Instead, they are connected to the CDPH facilities\
+        \ list, from bundle cdph.ca.gov-facilities.\n\nHowever, they match well enough\
+        \ to the OSHPD list that nearly all of the entries can be assigned an OSHPD\
+        \ facility id. When the ``oshpd_id`` column is set from an inexact hospital\
+        \ name match, the name of the matched facility is stored in the ``matched_hospital_name``\
+        \ column. If the ``oshpd_id`` field is empty, the ``matched_hospital_name``\
+        \ should also be empty, indicating that the entry was not matched to a facility\
+        \ in the OSHSPD facility index. If the ``matched_hospital_name`` field is\
+        \ empty, but ``oshpd_id`` is set, it means that the hospital was matched on\
+        \ an exact name. \n\n"
     processed: ''
     readme: '# Inpatient Mortality Indicators
 

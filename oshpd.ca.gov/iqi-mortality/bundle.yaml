@@ -73,17 +73,17 @@ identity:
     btime: null
     dataset: iqi
     id: d03p
-    revision: 6
+    revision: 7
     source: oshpd.ca.gov
     subset: mortality
     type: null
     variation: null
-    version: 0.0.6
+    version: 0.0.7
 names:
-    fqname: oshpd.ca.gov-iqi-mortality-0.0.6~d03p006
+    fqname: oshpd.ca.gov-iqi-mortality-0.0.7~d03p007
     name: oshpd.ca.gov-iqi-mortality
-    vid: d03p006
-    vname: oshpd.ca.gov-iqi-mortality-0.0.6
+    vid: d03p007
+    vname: oshpd.ca.gov-iqi-mortality-0.0.7
 process: {}
 versions:
     2:
@@ -106,3 +106,7 @@ versions:
         date: '2015-05-21T13:14:39.674411'
         description: Improving protos
         version: 0.0.6
+    7:
+        date: '2015-05-22T20:55:27.792145'
+        description: Yet more work on indexes and protos
+        version: 0.0.7
