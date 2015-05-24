@@ -1,0 +1,279 @@
+build: {}
+dependencies: {}
+sources:
+    edcare:
+        comment: null
+        conversion: null
+        dd_url: null
+        description: ED Care
+        file: null
+        filetype: null
+        foreign_key: null
+        grain: null
+        is_loadable: null
+        row_data: null
+        row_spec:
+            data_end_line: null
+            data_start_line: 3
+            header_comment_lines:
+            - 0
+            header_lines:
+            - 1
+            - 2
+        segment: 8
+        space: California
+        table: null
+        time: 2014
+        title: null
+        url: http://ds.civicknowledge.org.s3.amazonaws.com/calqualitycare.org/Public%20Reports%202014Q3.xlsx
+    experience:
+        comment: null
+        conversion: null
+        dd_url: null
+        description: Patient Experience
+        file: null
+        filetype: null
+        foreign_key: null
+        grain: null
+        is_loadable: null
+        row_data: null
+        row_spec:
+            data_end_line: null
+            data_start_line: 3
+            header_comment_lines:
+            - 0
+            header_lines:
+            - 1
+            - 2
+        segment: 1
+        space: California
+        table: null
+        time: 2014
+        title: null
+        url: http://ds.civicknowledge.org.s3.amazonaws.com/calqualitycare.org/Public%20Reports%202014Q3.xlsx
+    heartcond:
+        comment: null
+        conversion: null
+        dd_url: null
+        description: Heart Conditions
+        file: null
+        filetype: null
+        foreign_key: null
+        grain: null
+        is_loadable: null
+        row_data: null
+        row_spec:
+            data_end_line: null
+            data_start_line: 3
+            header_comment_lines:
+            - 0
+            header_lines:
+            - 1
+            - 2
+        segment: 4
+        space: California
+        table: null
+        time: 2014
+        title: null
+        url: http://ds.civicknowledge.org.s3.amazonaws.com/calqualitycare.org/Public%20Reports%202014Q3.xlsx
+    hospitals:
+        comment: null
+        conversion: null
+        dd_url: null
+        description: Hospital Characteristics
+        file: null
+        filetype: null
+        foreign_key: null
+        grain: null
+        is_loadable: null
+        row_data: null
+        row_spec:
+            data_end_line: null
+            data_start_line: 3
+            header_comment_lines:
+            - 0
+            header_lines:
+            - 1
+            - 2
+        segment: 10
+        space: California
+        table: null
+        time: 2014
+        title: null
+        url: http://ds.civicknowledge.org.s3.amazonaws.com/calqualitycare.org/Public%20Reports%202014Q3.xlsx
+    lung:
+        comment: null
+        conversion: null
+        dd_url: null
+        description: Lung Conditions
+        file: null
+        filetype: null
+        foreign_key: null
+        grain: null
+        is_loadable: null
+        row_data: null
+        row_spec:
+            data_end_line: null
+            data_start_line: 3
+            header_comment_lines:
+            - 0
+            header_lines:
+            - 1
+            - 2
+        segment: 6
+        space: California
+        table: null
+        time: 2014
+        title: null
+        url: http://ds.civicknowledge.org.s3.amazonaws.com/calqualitycare.org/Public%20Reports%202014Q3.xlsx
+    measures:
+        comment: null
+        conversion: null
+        dd_url: null
+        description: Measure Characteristics
+        file: null
+        filetype: null
+        foreign_key: null
+        grain: null
+        is_loadable: null
+        row_data: null
+        row_spec:
+            data_end_line: null
+            data_start_line: 3
+            header_comment_lines:
+            - 0
+            header_lines:
+            - 1
+            - 2
+        segment: 9
+        space: California
+        table: null
+        time: 2014
+        title: null
+        url: http://ds.civicknowledge.org.s3.amazonaws.com/calqualitycare.org/Public%20Reports%202014Q3.xlsx
+    motherbaby:
+        comment: null
+        conversion: null
+        dd_url: null
+        description: Mother and Baby
+        file: null
+        filetype: null
+        foreign_key: null
+        grain: null
+        is_loadable: null
+        row_data: null
+        row_spec:
+            data_end_line: null
+            data_start_line: 3
+            header_comment_lines:
+            - 0
+            header_lines:
+            - 1
+            - 2
+        segment: 5
+        space: California
+        table: null
+        time: 2014
+        title: null
+        url: http://ds.civicknowledge.org.s3.amazonaws.com/calqualitycare.org/Public%20Reports%202014Q3.xlsx
+    other:
+        comment: null
+        conversion: null
+        dd_url: null
+        description: Other Conditions
+        file: null
+        filetype: null
+        foreign_key: null
+        grain: null
+        is_loadable: null
+        row_data: null
+        row_spec:
+            data_end_line: null
+            data_start_line: 3
+            header_comment_lines:
+            - 0
+            header_lines:
+            - 1
+            - 2
+        segment: 7
+        space: California
+        table: null
+        time: 2014
+        title: null
+        url: http://ds.civicknowledge.org.s3.amazonaws.com/calqualitycare.org/Public%20Reports%202014Q3.xlsx
+    perf_sum:
+        comment: null
+        conversion: null
+        dd_url: null
+        description: Performance Summary
+        file: null
+        filetype: null
+        foreign_key: null
+        grain: null
+        is_loadable: null
+        row_data: null
+        row_spec:
+            data_end_line: null
+            data_start_line: 3
+            header_comment_lines:
+            - 0
+            header_lines:
+            - 1
+            - 2
+        segment: 0
+        space: California
+        table: null
+        time: 2014
+        title: null
+        url: http://ds.civicknowledge.org.s3.amazonaws.com/calqualitycare.org/Public%20Reports%202014Q3.xlsx
+    readmissions:
+        comment: null
+        conversion: null
+        dd_url: null
+        description: Readmissions
+        file: null
+        filetype: null
+        foreign_key: null
+        grain: null
+        is_loadable: null
+        row_data: null
+        row_spec:
+            data_end_line: null
+            data_start_line: 3
+            header_comment_lines:
+            - 0
+            header_lines:
+            - 1
+            - 2
+        segment: 2
+        space: California
+        table: null
+        time: 2014
+        title: null
+        url: http://ds.civicknowledge.org.s3.amazonaws.com/calqualitycare.org/Public%20Reports%202014Q3.xlsx
+    safety:
+        comment: null
+        conversion: null
+        dd_url: null
+        description: Patient Safety
+        file: null
+        filetype: null
+        foreign_key: null
+        grain: null
+        is_loadable: null
+        row_data: null
+        row_spec:
+            data_end_line: null
+            data_start_line: 3
+            header_comment_lines:
+            - 0
+            header_lines:
+            - 1
+            - 2
+        segment: 3
+        space: California
+        table: null
+        time: 2014
+        title: null
+        url: http://ds.civicknowledge.org.s3.amazonaws.com/calqualitycare.org/Public%20Reports%202014Q3.xlsx
+views: {}

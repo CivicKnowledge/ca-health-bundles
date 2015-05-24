@@ -1,0 +1,61 @@
+about:
+    access: restricted
+    footnote: null
+    grain: hospital
+    groups: []
+    license: null
+    processed: null
+    rights: null
+    source: '{{contact_source.creator.org}}, public report spreasheet, 2014Q3. '
+    space: California
+    subject: null
+    summary: A variety of measures of performance and patient staisfaction for California
+        hospitals.
+    tags: []
+    time: 2014
+    title: Hospital Performance and Satisfaction Measures
+contact_bundle:
+    creator:
+        email: eric@civicknowledge.com
+        name: Eric Busboom
+        org: Civic Knowledge
+        url: http://civicknowledge.com
+    maintainer: {}
+contact_source:
+    creator:
+        org: CalQualityCare.org - Quality Health Care in California
+        url: http://calqualitycare.org
+    maintainer: {}
+external_documentation:
+    dataset:
+        description: Main webpage for the dataset.
+        source: null
+        title: Dataset Page
+        url: http://example.com
+    documentation:
+        description: The primary documentation file
+        source: null
+        title: Main Documentation
+        url: http://example.com
+    download:
+        description: Web page that links to the source files.
+        source: null
+        title: Download Page
+        url: http://example.com
+identity:
+    bspace: null
+    btime: null
+    dataset: performance
+    id: d043
+    revision: 1
+    source: calqualitycare.org
+    subset: null
+    type: null
+    variation: null
+    version: 0.0.1
+names:
+    fqname: calqualitycare.org-performance-0.0.1~d043001
+    name: calqualitycare.org-performance
+    vid: d043001
+    vname: calqualitycare.org-performance-0.0.1
+process: {}

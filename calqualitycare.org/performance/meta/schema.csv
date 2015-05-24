@@ -1,0 +1,229 @@
+table,seq,column,is_pk,is_fk,id,type,size,description
+perf_sum,1,id,1,,t04301,INTEGER,,Performance Summary
+perf_sum,2,oshpd_id,,,c04301002,INTEGER,9,OSHPD_ID
+perf_sum,3,medicare_id,,,c04301003,INTEGER,5,MEDICARE_ID
+perf_sum,4,hospital_name,,,c04301004,VARCHAR,70,HOSPITAL NAME
+perf_sum,5,patient_experience_hospital_rating,,,c04301005,VARCHAR,14,Patient Experience Hospital Rating
+perf_sum,6,re_hosp_italizations_hospitalwide_readmission_rate,,,c04301006,VARCHAR,14,Re-hosp italizations Hospitalwide Readmission Rate
+perf_sum,7,patient_safety_surgical_care_measures_composite,,,c04301007,VARCHAR,14,Patient Safety Surgical Care Measures Composite
+perf_sum,8,patient_safety_unplanned_surgical_wound_reopening,,,c04301008,VARCHAR,14,Patient Safety Unplanned Surgical Wound Reopening
+perf_sum,9,patient_safety_death_after_serious_treatable_complication,,,c04301009,VARCHAR,14,Patient Safety Death after Serious Treatable Complication
+perf_sum,10,patient_safety_accidental_lung_puncture,,,c0430100a,VARCHAR,10,Patient Safety Accidental Lung Puncture
+perf_sum,11,heart_attack_death_rate,,,c0430100b,VARCHAR,14,Heart Attack Death Rate
+perf_sum,12,heart_attack_quality_of_care_composite,,,c0430100c,VARCHAR,14,Heart Attack Quality of Care Composite
+perf_sum,13,heart_attack_timeliness_of_care_composite,,,c0430100d,VARCHAR,14,Heart Attack Timeliness of care Composite
+perf_sum,14,heart_attack_readmission_rate,,,c0430100e,VARCHAR,14,Heart Attack Readmission Rate
+perf_sum,15,heart_bypass_surgery_death_rate,,,c0430100f,VARCHAR,10,Heart Bypass Surgery Death Rate
+perf_sum,16,heart_bypass_surgery_internal_mammary_artery_usage_rate,,,c0430100g,VARCHAR,10,Heart Bypass Surgery Internal Mammary Artery Usage Rate
+perf_sum,17,heart_bypass_surgery_postoperative_stroke_rate,,,c0430100h,VARCHAR,10,Heart Bypass Surgery Postoperative Stroke Rate
+perf_sum,18,heart_failure_death_rate,,,c0430100i,VARCHAR,14,Heart Failure Death Rate
+perf_sum,19,heart_failure_quality_of_care,,,c0430100j,VARCHAR,14,Heart Failure Quality of Care
+perf_sum,20,heart_failure_readmission_rate,,,c0430100k,VARCHAR,14,Heart Failure Readmission Rate
+perf_sum,21,mother_baby_ntsv_c_section_rate,,,c0430100l,VARCHAR,14,Mother & Baby NTSV C-Section Rate
+perf_sum,22,mother_baby_breastfeeding_rate,,,c0430100m,VARCHAR,14,Mother & Baby Breastfeeding Rate
+perf_sum,23,mother_baby_episiotomy_rate,,,c0430100n,VARCHAR,14,Mother & Baby Episiotomy Rate
+perf_sum,24,mother_baby_vbac_routinely_available,,,c0430100o,VARCHAR,14,Mother & Baby VBAC Routinely Available
+perf_sum,25,lung_conditions_death_rate,,,c0430100p,VARCHAR,14,Lung Conditions Death Rate
+perf_sum,26,lung_conditions_quality_of_care_composite,,,c0430100q,VARCHAR,14,Lung Conditions Quality of Care Composite
+perf_sum,27,lung_conditions_readmission_rate,,,c0430100r,VARCHAR,14,Lung Conditions Readmission Rate
+perf_sum,28,surgeries_other_conditions_abdominal_aortic_aneurysm_repair_number_of_cases,,,c0430100s,VARCHAR,17,Surgeries/Other Conditions Abdominal Aortic Aneurysm Repair - Number of Cases
+perf_sum,29,surgeries_other_conditions_esophageal_resection_number_of_cases,,,c0430100t,VARCHAR,17,Surgeries/Other Conditions Esophageal Resection - Number of Cases
+perf_sum,30,surgeries_other_conditions_pancreatic_resection_number_of_cases,,,c0430100u,VARCHAR,17,Surgeries/Other Conditions Pancreatic Resection - Number of Cases
+perf_sum,31,surgeries_other_conditions_percutaneous_coronary_intervention_pci_number_of_cases,,,c0430100v,VARCHAR,17,Surgeries/Other Conditions Percutaneous coronary intervention (PCI) - Number of Cases
+perf_sum,32,surgeries_other_conditions_acute_stroke_mortality,,,c0430100w,VARCHAR,10,Surgeries/Other Conditions Acute Stroke - Mortality
+perf_sum,33,surgeries_other_conditions_craniotomy_mortality_rate,,,c0430100x,VARCHAR,10,Surgeries/Other Conditions Craniotomy - Mortality Rate
+perf_sum,34,surgeries_other_conditions_gastrointestinal_hemorrhage_mortality_rate,,,c0430100y,VARCHAR,10,Surgeries/Other Conditions Gastrointestinal Hemorrhage - Mortality Rate
+perf_sum,35,surgeries_other_conditions_hip_fracture_mortality_rate,,,c0430100z,VARCHAR,10,Surgeries/Other Conditions Hip Fracture Mortality Rate
+perf_sum,36,surgeries_other_conditions_hip_or_knee_surgery_readmission_rate,,,c0430100A,VARCHAR,14,Surgeries/Other Conditions Hip or Knee Surgery Readmission Rate
+perf_sum,37,surgeries_other_conditions_hip_or_knee_surgery_complication_rate,,,c0430100B,VARCHAR,14,Surgeries/Other Conditions Hip or Knee Surgery Complication Rate
+,,,,,,,,
+measures,1,id,1,,t04302,INTEGER,,Measure Characteristics
+measures,2,domain,,,c04302002,VARCHAR,19,Domain
+measures,3,measure_description,,,c04302003,VARCHAR,103,Measure Description
+measures,4,data_source,,,c04302004,VARCHAR,21,Data Source
+measures,5,measure_from_date,,,c04302005,INTEGER,5,Measure from Date
+measures,6,measure_thru_date,,,c04302006,INTEGER,5,Measure thru Date
+measures,7,lower_is_better,,,c04302007,VARCHAR,2,Lower is Better
+measures,8,national_average,,,c04302008,REAL,,National Average
+measures,9,state_average,,,c04302009,REAL,,State Average
+,,,,,,,,
+readmissions,1,id,1,,t04303,INTEGER,,Readmissions
+readmissions,2,oshpd_id,,,c04303002,INTEGER,9,OSHPD_ID
+readmissions,3,medicare_id,,,c04303003,INTEGER,5,MEDICARE_ID
+readmissions,4,hospital_name,,,c04303004,VARCHAR,70,HOSPITAL NAME
+readmissions,5,hospitalwide_readmission_rate_denominator,,,c04303005,INTEGER,5,Hospitalwide Readmission Rate Denominator
+readmissions,6,hospitalwide_readmission_rate_score,,,c04303006,REAL,,Hospitalwide Readmission Rate Score [%]
+readmissions,7,hospitalwide_readmission_rate_rating,,,c04303007,VARCHAR,13,Hospitalwide Readmission Rate Rating
+,,,,,,,,
+experience,1,id,1,,t04304,INTEGER,,Patient Experience
+experience,2,oshpd_id,,,c04304002,INTEGER,9,OSHPD_ID
+experience,3,medicare_id,,,c04304003,INTEGER,5,MEDICARE_ID
+experience,4,hospital_name,,,c04304004,VARCHAR,70,HOSPITAL NAME
+experience,5,hospital_rating_denominator,,,c04304005,VARCHAR,20,Hospital Rating Denominator
+experience,6,hospital_rating_score,,,c04304006,INTEGER,2,Hospital Rating Score [%]
+experience,7,hospital_rating_rating,,,c04304007,VARCHAR,14,Hospital Rating Rating
+experience,8,would_recommend_hospital_score,,,c04304008,INTEGER,2,Would Recommend Hospital Score [%]
+experience,9,received_information_and_education_score,,,c04304009,INTEGER,2,Received information and education Score [%]
+experience,10,nurses_communicated_well_score,,,c0430400a,INTEGER,2,Nurses communicated well Score [%]
+experience,11,doctors_communicated_well_score,,,c0430400b,INTEGER,3,Doctors communicated well Score [%]
+experience,12,help_received_score,,,c0430400c,INTEGER,2,Help received Score [%]
+experience,13,pain_well_controlled_score,,,c0430400d,INTEGER,2,Pain well controlled Score [%]
+experience,14,staff_explained_medicine_score,,,c0430400e,INTEGER,2,Staff explained medicine Score [%]
+experience,15,patient_room_and_bathroom_was_clean_score,,,c0430400f,INTEGER,2,Patient room and bathroom was clean Score [%]
+experience,16,quiet_at_night_score,,,c0430400g,INTEGER,3,Quiet at night Score [%]
+,,,,,,,,
+motherbaby,1,id,1,,t04305,INTEGER,,Mother and Baby
+motherbaby,2,oshpd_id,,,c04305002,INTEGER,9,OSHPD_ID
+motherbaby,3,medicare_id,,,c04305003,INTEGER,5,MEDICARE_ID
+motherbaby,4,hospital_name,,,c04305004,VARCHAR,70,HOSPITAL NAME
+motherbaby,5,ntsv_c_section_rate_denominator,,,c04305005,INTEGER,4,NTSV C-Section Rate Denominator
+motherbaby,6,ntsv_c_section_rate_score,,,c04305006,REAL,,NTSV C-Section Rate Score [%]
+motherbaby,7,ntsv_c_section_rate_rating,,,c04305007,VARCHAR,14,NTSV C-Section Rate Rating
+motherbaby,8,breastfeeding_rate_denominator,,,c04305008,INTEGER,4,Breastfeeding Rate Denominator
+motherbaby,9,breastfeeding_rate_score,,,c04305009,REAL,,Breastfeeding Rate Score [%]
+motherbaby,10,breastfeeding_rate_rating,,,c0430500a,VARCHAR,14,Breastfeeding Rate Rating
+motherbaby,11,episiotomy_rate_denominator,,,c0430500b,INTEGER,4,Episiotomy Rate Denominator
+motherbaby,12,episiotomy_rate_score,,,c0430500c,REAL,,Episiotomy Rate Score [%]
+motherbaby,13,episiotomy_rate_rating,,,c0430500d,VARCHAR,14,Episiotomy Rate Rating
+motherbaby,14,vbac_rate_denominator,,,c0430500e,INTEGER,4,VBAC Rate Denominator
+motherbaby,15,vbac_rate_score,,,c0430500f,REAL,,VBAC Rate Score [%]
+motherbaby,16,vbac_routinely_available_yes_no,,,c0430500g,VARCHAR,3,VBAC Routinely Available Yes/No
+,,,,,,,,
+other,1,id,1,,t04306,INTEGER,,Other Conditions
+other,2,oshpd_id,,,c04306002,INTEGER,9,OSHPD_ID
+other,3,medicare_id,,,c04306003,INTEGER,5,MEDICARE_ID
+other,4,hospital_name,,,c04306004,VARCHAR,70,HOSPITAL NAME
+other,5,abdominal_aortic_aneurysm_repair_death_rate_number_of_cases,,,c04306005,INTEGER,2,Abdominal Aortic Aneurysm Repair Death Rate Number of Cases
+other,6,abdominal_aortic_aneurysm_repair_death_rate_rating,,,c04306006,VARCHAR,17,Abdominal Aortic Aneurysm Repair Death Rate Rating
+other,7,abdominal_aortic_aneurysm_repair_death_rate_score,,,c04306007,REAL,,Abdominal Aortic Aneurysm Repair Death Rate Score [%]
+other,8,esophageal_resection_death_rate_number_of_cases,,,c04306008,VARCHAR,4,Esophageal Resection Death Rate Number of Cases
+other,9,esophageal_resection_death_rate_rating,,,c04306009,VARCHAR,17,Esophageal Resection Death Rate Rating
+other,10,esophageal_resection_death_rate_score,,,c0430600a,VARCHAR,4,Esophageal Resection Death Rate Score [%]
+other,11,pancreatic_resection_death_rate_number_of_cases,,,c0430600b,VARCHAR,4,Pancreatic Resection Death Rate Number of Cases
+other,12,pancreatic_resection_death_rate_rating,,,c0430600c,VARCHAR,17,Pancreatic Resection Death Rate Rating
+other,13,pancreatic_resection_death_rate_score,,,c0430600d,VARCHAR,4,Pancreatic Resection Death Rate Score [%]
+other,14,percutaneous_coronary_intervention_pci_death_rate_number_of_cases,,,c0430600e,INTEGER,4,Percutaneous coronary intervention (PCI) - Death Rate Number of Cases
+other,15,percutaneous_coronary_intervention_pci_death_rate_rating,,,c0430600f,VARCHAR,17,Percutaneous coronary intervention (PCI) - Death Rate Rating
+other,16,percutaneous_coronary_intervention_pci_death_rate_score,,,c0430600g,REAL,,Percutaneous coronary intervention (PCI) - Death Rate Score [%]
+other,17,acute_stroke_death_rate_denominator,,,c0430600h,INTEGER,3,Acute Stroke Death Rate Denominator
+other,18,acute_stroke_death_rate_score,,,c0430600i,REAL,,Acute Stroke Death Rate Score [%]
+other,19,acute_stroke_death_rate_rating,,,c0430600j,VARCHAR,10,Acute Stroke Death Rate Rating
+other,20,craniotomy_death_rate_denominator,,,c0430600k,INTEGER,4,Craniotomy Death Rate Denominator
+other,21,craniotomy_death_rate_score,,,c0430600l,REAL,,Craniotomy Death Rate Score [%]
+other,22,craniotomy_death_rate_rating,,,c0430600m,VARCHAR,10,Craniotomy Death Rate Rating
+other,23,gastrointestinal_hemorrhage_death_rate_denominator,,,c0430600n,INTEGER,3,Gastrointestinal Hemorrhage Death Rate Denominator
+other,24,gastrointestinal_hemorrhage_death_rate_score,,,c0430600o,REAL,,Gastrointestinal Hemorrhage Death Rate Score [%]
+other,25,gastrointestinal_hemorrhage_death_rate_rating,,,c0430600p,VARCHAR,10,Gastrointestinal Hemorrhage Death Rate Rating
+other,26,hip_fracture_death_rate_denominator,,,c0430600q,INTEGER,3,Hip Fracture Death Rate Denominator
+other,27,hip_fracture_death_rate_score,,,c0430600r,REAL,,Hip Fracture Death Rate Score [%]
+other,28,hip_fracture_death_rate_rating,,,c0430600s,VARCHAR,10,Hip Fracture Death Rate Rating
+other,29,hip_or_knee_surgery_readmission_rate_denominator,,,c0430600t,INTEGER,4,Hip or Knee Surgery Readmission Rate Denominator
+other,30,hip_or_knee_surgery_readmission_rate_score,,,c0430600u,REAL,,Hip or Knee Surgery Readmission Rate Score [%]
+other,31,hip_or_knee_surgery_readmission_rate_rating,,,c0430600v,VARCHAR,14,Hip or Knee Surgery Readmission Rate Rating
+other,32,hip_or_knee_surgery_complication_rate_denominator,,,c0430600w,INTEGER,4,Hip or Knee Surgery Complication Rate Denominator
+other,33,hip_or_knee_surgery_complication_rate_score,,,c0430600x,REAL,,Hip or Knee Surgery Complication Rate Score [%]
+other,34,hip_or_knee_surgery_complication_rate_rating,,,c0430600y,VARCHAR,13,Hip or Knee Surgery Complication Rate Rating
+,,,,,,,,
+lung,1,id,1,,t04307,INTEGER,,Lung Conditions
+lung,2,oshpd_id,,,c04307002,INTEGER,9,OSHPD_ID
+lung,3,medicare_id,,,c04307003,INTEGER,5,MEDICARE_ID
+lung,4,hospital_name,,,c04307004,VARCHAR,70,HOSPITAL NAME
+lung,5,pneumonia_death_rate_denominator,,,c04307005,INTEGER,4,Pneumonia Death Rate Denominator
+lung,6,pneumonia_death_rate_score,,,c04307006,REAL,,Pneumonia Death Rate Score [%]
+lung,7,pneumonia_death_rate_rating,,,c04307007,VARCHAR,14,Pneumonia Death Rate Rating
+lung,8,quality_of_care_composite_score,,,c04307008,INTEGER,3,Quality of Care Composite Score [%]
+lung,9,quality_of_care_composite_rating,,,c04307009,VARCHAR,14,Quality of Care Composite Rating
+lung,10,blood_culture_taken_before_antiobiotics_administered_denominator,,,c0430700a,INTEGER,3,Blood Culture taken before antiobiotics administered Denominator
+lung,11,blood_culture_taken_before_antiobiotics_administered_score,,,c0430700b,INTEGER,3,Blood Culture taken before antiobiotics administered Score [%]
+lung,12,initial_antibiotic_consistenet_with_current_recommendations_denominator,,,c0430700c,INTEGER,3,Initial antibiotic consistenet with current recommendations Denominator
+lung,13,initial_antibiotic_consistenet_with_current_recommendations_score,,,c0430700d,INTEGER,3,Initial antibiotic consistenet with current recommendations Score [%]
+lung,14,pneumonia_readmission_rate_denominator,,,c0430700e,INTEGER,4,Pneumonia Readmission Rate Denominator
+lung,15,pneumonia_readmission_rate_score,,,c0430700f,REAL,,Pneumonia Readmission Rate Score [%]
+lung,16,pneumonia_readmission_rate_rating,,,c0430700g,VARCHAR,13,Pneumonia Readmission Rate Rating
+,,,,,,,,
+heartcond,1,id,1,,t04308,INTEGER,,Heart Conditions
+heartcond,2,oshpd_id,,,c04308002,INTEGER,9,OSHPD_ID
+heartcond,3,medicare_id,,,c04308003,INTEGER,5,MEDICARE_ID
+heartcond,4,hospital_name,,,c04308004,VARCHAR,70,HOSPITAL NAME
+heartcond,5,death_rate_denominator,,,c04308005,INTEGER,4,Death Rate Denominator
+heartcond,6,death_rate_score,,,c04308006,REAL,,Death Rate Score [%]
+heartcond,7,death_rate_rating,,,c04308007,VARCHAR,14,Death Rate Rating
+heartcond,8,quality_of_care_composite_score,,,c04308008,INTEGER,3,Quality of Care Composite Score [%]
+heartcond,9,quality_of_care_composite_rating,,,c04308009,VARCHAR,14,Quality of Care Composite Rating
+heartcond,10,aspirin_prescribed_at_discharge_denominator,,,c0430800a,INTEGER,4,Aspirin prescribed at discharge Denominator
+heartcond,11,aspirin_prescribed_at_discharge_score,,,c0430800b,INTEGER,3,Aspirin prescribed at discharge Score [%]
+heartcond,12,statins_prescribed_at_discharge_denominator,,,c0430800c,INTEGER,4,Statins prescribed at discharge Denominator
+heartcond,13,statins_prescribed_at_discharge_score,,,c0430800d,INTEGER,3,Statins prescribed at discharge Score [%]
+heartcond,14,timeliness_of_care_composite_score,,,c0430800e,INTEGER,3,Timeliness of Care Composite Score [%]
+heartcond,15,timeliness_of_care_composite_rating,,,c0430800f,VARCHAR,14,Timeliness of Care Composite Rating
+heartcond,16,anti_clotting_therapy_within_30_minutes_denominator,,,c0430800g,VARCHAR,2,Anti-clotting therapy within 30 minutes Denominator
+heartcond,17,anti_clotting_therapy_within_30_minutes_score,,,c0430800h,VARCHAR,2,Anti-clotting therapy within 30 minutes Score [%]
+heartcond,18,pci_within_90_minutes_denominator,,,c0430800i,INTEGER,3,PCI within 90 minutes Denominator
+heartcond,19,pci_within_90_minutes_score,,,c0430800j,INTEGER,3,PCI within 90 minutes Score [%]
+heartcond,20,readmission_rate_denominator,,,c0430800k,INTEGER,4,Readmission Rate Denominator
+heartcond,21,readmission_rate_score,,,c0430800l,REAL,,Readmission Rate Score [%]
+heartcond,22,readmission_rate_rating,,,c0430800m,VARCHAR,14,Readmission Rate Rating
+heartcond,23,internal_mammary_artery_usage_rate_denominator,,,c0430800n,INTEGER,3,Internal Mammary Artery Usage Rate Denominator
+heartcond,24,internal_mammary_artery_usage_rate_score,,,c0430800o,REAL,,Internal Mammary Artery Usage Rate Score [%]
+heartcond,25,internal_mammary_artery_usage_rate_rating,,,c0430800p,VARCHAR,10,Internal Mammary Artery Usage Rate Rating
+heartcond,26,postoperative_stroke_rate_denominator,,,c0430800q,INTEGER,4,Postoperative Stroke Rate Denominator
+heartcond,27,postoperative_stroke_rate_score,,,c0430800r,REAL,,Postoperative Stroke Rate Score [%]
+heartcond,28,postoperative_stroke_rate_rating,,,c0430800s,VARCHAR,10,Postoperative Stroke Rate Rating
+heartcond,29,severity_of_heart_failure_evaluated_denominator,,,c0430800t,INTEGER,4,Severity of heart failure evaluated Denominator
+heartcond,30,severity_of_heart_failure_evaluated_score,,,c0430800u,INTEGER,3,Severity of heart failure evaluated Score [%]
+heartcond,31,clear_instructions_given_prior_to_discharge_denominator,,,c0430800v,INTEGER,3,Clear instructions given prior to discharge Denominator
+heartcond,32,clear_instructions_given_prior_to_discharge_score,,,c0430800w,INTEGER,3,Clear instructions given prior to discharge Score [%]
+heartcond,33,ace_arbs_given_denominator,,,c0430800x,INTEGER,3,ACE/ARBs given Denominator
+heartcond,34,ace_arbs_given_score,,,c0430800y,INTEGER,3,ACE/ARBs given Score [%]
+,,,,,,,,
+edcare,1,id,1,,t04309,INTEGER,,ED Care
+edcare,2,oshpd_id,,,c04309002,INTEGER,9,OSHPD_ID
+edcare,3,medicare_id,,,c04309003,INTEGER,5,MEDICARE_ID
+edcare,4,hospital_name,,,c04309004,VARCHAR,70,HOSPITAL NAME
+edcare,5,time_in_ed_before_being_admitted_denominator,,,c04309005,INTEGER,4,Time in ED before being admitted Denominator
+edcare,6,time_in_ed_before_being_admitted_score_minutes,,,c04309006,INTEGER,3,Time in ED before being admitted Score [minutes]
+edcare,7,time_in_ed_before_being_sent_home_denominator,,,c04309007,INTEGER,5,Time in ED before being sent home Denominator
+edcare,8,time_in_ed_before_being_sent_home_score_minutes,,,c04309008,INTEGER,3,Time in ED before being sent home Score [minutes]
+edcare,9,time_in_ed_before_being_seen_denominator,,,c04309009,INTEGER,5,Time in ED before being seen Denominator
+edcare,10,time_in_ed_before_being_seen_score_minutes,,,c0430900a,INTEGER,3,Time in ED before being seen Score [minutes]
+edcare,11,patients_who_left_ed_without_being_seen_denominator,,,c0430900b,INTEGER,6,Patients who left ED without being seen Denominator
+edcare,12,patients_who_left_ed_without_being_seen_score,,,c0430900c,INTEGER,2,Patients who left ED without being seen Score [%]
+,,,,,,,,
+safety,1,id,1,,t0430a,INTEGER,,Patient Safety
+safety,2,oshpd_id,,,c0430a002,INTEGER,9,OSHPD_ID
+safety,3,medicare_id,,,c0430a003,INTEGER,5,MEDICARE_ID
+safety,4,hospital_name,,,c0430a004,VARCHAR,70,HOSPITAL NAME
+safety,5,surgical_care_measures_composite_score,,,c0430a005,INTEGER,3,Surgical Care Measures Composite Score [%]
+safety,6,surgical_care_measures_composite_rating,,,c0430a006,VARCHAR,14,Surgical Care Measures Composite Rating
+safety,7,appropriate_timing_of_antibiotic_denominator,,,c0430a007,INTEGER,4,Appropriate timing of antibiotic Denominator
+safety,8,appropriate_timing_of_antibiotic_score,,,c0430a008,INTEGER,3,Appropriate timing of antibiotic Score [%]
+safety,9,use_of_appropriate_antibiotic_denominator,,,c0430a009,INTEGER,4,Use of appropriate antibiotic Denominator
+safety,10,use_of_appropriate_antibiotic_score,,,c0430a00a,INTEGER,3,Use of appropriate antibiotic Score [%]
+safety,11,appropriate_discontinuation_of_antibiotic_denominator,,,c0430a00b,INTEGER,4,Appropriate discontinuation of antibiotic Denominator
+safety,12,appropriate_discontinuation_of_antibiotic_score,,,c0430a00c,INTEGER,3,Appropriate discontinuation of antibiotic Score [%]
+safety,13,urinary_catheter_removed_denominator,,,c0430a00d,INTEGER,4,Urinary catheter removed Denominator
+safety,14,urinary_catheter_removed_score,,,c0430a00e,INTEGER,3,Urinary catheter removed Score [%]
+safety,15,blood_clot_prevention_denominator,,,c0430a00f,INTEGER,4,Blood-clot prevention Denominator
+safety,16,blood_clot_prevention_score,,,c0430a00g,INTEGER,3,Blood-clot prevention Score [%]
+safety,17,beta_blockers_continued_denominator,,,c0430a00h,INTEGER,4,Beta-blockers continued Denominator
+safety,18,beta_blockers_continued_score,,,c0430a00i,INTEGER,3,Beta-blockers continued Score [%]
+safety,19,unplanned_surgical_wound_reopening_denominator,,,c0430a00j,VARCHAR,3,Unplanned Surgical Wound Reopening Denominator
+safety,20,unplanned_surgical_wound_reopening_score,,,c0430a00k,REAL,,Unplanned Surgical Wound Reopening Score [%]
+safety,21,unplanned_surgical_wound_reopening_rating,,,c0430a00l,VARCHAR,14,Unplanned Surgical Wound Reopening Rating
+safety,22,death_after_serious_treatable_complication_denominator,,,c0430a00m,VARCHAR,3,Death after Serious Treatable Complication Denominator
+safety,23,death_after_serious_treatable_complication_score,,,c0430a00n,REAL,,Death after Serious Treatable Complication Score [%]
+safety,24,death_after_serious_treatable_complication_rating,,,c0430a00o,VARCHAR,14,Death after Serious Treatable Complication Rating
+safety,25,accidental_lung_puncture_denominator,,,c0430a00p,VARCHAR,3,Accidental Lung Puncture Denominator
+safety,26,accidental_lung_puncture_score,,,c0430a00q,REAL,,Accidental Lung Puncture Score [%]
+safety,27,accidental_lung_puncture_rating,,,c0430a00r,VARCHAR,9,Accidental Lung Puncture Rating
+,,,,,,,,
+hospitals,1,id,1,,t0430b,INTEGER,,Hospital Characteristics
+hospitals,2,oshpd_id,,,c0430b002,INTEGER,9,OSHPD ID
+hospitals,3,cms_id,,,c0430b003,INTEGER,5,CMS ID
+hospitals,4,hospital_name,,,c0430b004,VARCHAR,70,Hospital Name
+hospitals,5,address,,,c0430b005,VARCHAR,29,Address
+hospitals,6,city,,,c0430b006,VARCHAR,20,City
+hospitals,7,state,,,c0430b007,VARCHAR,3,State
+hospitals,8,zip_code,,,c0430b008,INTEGER,5,Zip Code
+hospitals,9,phone,,,c0430b009,VARCHAR,15,Phone
+hospitals,10,website,,,c0430b00a,VARCHAR,87,Website
