@@ -1,12 +1,12 @@
-"name","description","table","segment","time","space","start_line","end_line","comment_lines","header_lines","url"
-"perf_sum","Performance Summary",,0,2014,"California",3,,0,"1,2","http://ds.civicknowledge.org.s3.amazonaws.com/calqualitycare.org/Public%20Reports%202014Q3.xlsx"
-"experience","Patient Experience",,1,2014,"California",3,,0,"1,2","http://ds.civicknowledge.org.s3.amazonaws.com/calqualitycare.org/Public%20Reports%202014Q3.xlsx"
-"readmissions","Readmissions",,2,2014,"California",3,,0,"1,2","http://ds.civicknowledge.org.s3.amazonaws.com/calqualitycare.org/Public%20Reports%202014Q3.xlsx"
-"safety","Patient Safety",,3,2014,"California",3,,0,"1,2","http://ds.civicknowledge.org.s3.amazonaws.com/calqualitycare.org/Public%20Reports%202014Q3.xlsx"
-"heartcond","Heart Conditions",,4,2014,"California",3,,0,"1,2","http://ds.civicknowledge.org.s3.amazonaws.com/calqualitycare.org/Public%20Reports%202014Q3.xlsx"
-"motherbaby","Mother and Baby",,5,2014,"California",3,,0,"1,2","http://ds.civicknowledge.org.s3.amazonaws.com/calqualitycare.org/Public%20Reports%202014Q3.xlsx"
-"lung","Lung Conditions",,6,2014,"California",3,,0,"1,2","http://ds.civicknowledge.org.s3.amazonaws.com/calqualitycare.org/Public%20Reports%202014Q3.xlsx"
-"other","Other Conditions",,7,2014,"California",3,,0,"1,2","http://ds.civicknowledge.org.s3.amazonaws.com/calqualitycare.org/Public%20Reports%202014Q3.xlsx"
-"edcare","ED Care",,8,2014,"California",3,,0,"1,2","http://ds.civicknowledge.org.s3.amazonaws.com/calqualitycare.org/Public%20Reports%202014Q3.xlsx"
-"measures","Measure Characteristics",,9,2014,"California",3,,0,"1,2","http://ds.civicknowledge.org.s3.amazonaws.com/calqualitycare.org/Public%20Reports%202014Q3.xlsx"
-"hospitals","Hospital Characteristics",,10,2014,"California",3,,0,"1,2","http://ds.civicknowledge.org.s3.amazonaws.com/calqualitycare.org/Public%20Reports%202014Q3.xlsx"
+name,title,table,segment,time,space,grain,start_line,end_line,comment_lines,header_lines,description,url
+perf_sum,Performance Summary,,0,2014,California,,3,,0,"1,2",,http://ds.civicknowledge.org.s3.amazonaws.com/calqualitycare.org/Public%20Reports%202014Q3.xlsx
+experience,Patient Experience,,1,2014,California,,3,,0,"1,2",,http://ds.civicknowledge.org.s3.amazonaws.com/calqualitycare.org/Public%20Reports%202014Q3.xlsx
+readmissions,Readmissions,,2,2014,California,,3,,0,"1,2",,http://ds.civicknowledge.org.s3.amazonaws.com/calqualitycare.org/Public%20Reports%202014Q3.xlsx
+safety,Patient Safety,,3,2014,California,,3,,0,"1,2",,http://ds.civicknowledge.org.s3.amazonaws.com/calqualitycare.org/Public%20Reports%202014Q3.xlsx
+heartcond,Heart Conditions,,4,2014,California,,3,,0,"1,2",,http://ds.civicknowledge.org.s3.amazonaws.com/calqualitycare.org/Public%20Reports%202014Q3.xlsx
+motherbaby,Mother and Baby,,5,2014,California,,3,,0,"1,2",,http://ds.civicknowledge.org.s3.amazonaws.com/calqualitycare.org/Public%20Reports%202014Q3.xlsx
+lung,Lung Conditions,,6,2014,California,,3,,0,"1,2",,http://ds.civicknowledge.org.s3.amazonaws.com/calqualitycare.org/Public%20Reports%202014Q3.xlsx
+other,Other Conditions,,7,2014,California,,3,,0,"1,2",,http://ds.civicknowledge.org.s3.amazonaws.com/calqualitycare.org/Public%20Reports%202014Q3.xlsx
+edcare,ED Care,,8,2014,California,,3,,0,"1,2",,http://ds.civicknowledge.org.s3.amazonaws.com/calqualitycare.org/Public%20Reports%202014Q3.xlsx
+measures,Measure Characteristics,,9,2014,California,,3,,0,"1,2",,http://ds.civicknowledge.org.s3.amazonaws.com/calqualitycare.org/Public%20Reports%202014Q3.xlsx
+hospitals,Hospital Characteristics,,10,2014,California,,3,,0,"1,2",,http://ds.civicknowledge.org.s3.amazonaws.com/calqualitycare.org/Public%20Reports%202014Q3.xlsx

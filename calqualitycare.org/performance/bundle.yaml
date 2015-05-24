@@ -10,7 +10,7 @@ about:
     space: California
     subject: null
     summary: A variety of measures of performance and patient staisfaction for California
-        hospitals.
+        hospitals, used in the [CalQualityCare](http://www.calqualitycare.org/) website.
     tags: []
     time: 2014
     title: Hospital Performance and Satisfaction Measures
@@ -28,20 +28,11 @@ contact_source:
     maintainer: {}
 external_documentation:
     dataset:
-        description: Main webpage for the dataset.
+        description: Website for CalQualityCare. Data in this bundle were prepared
+            for use on this website.
         source: null
-        title: Dataset Page
-        url: http://example.com
-    documentation:
-        description: The primary documentation file
-        source: null
-        title: Main Documentation
-        url: http://example.com
-    download:
-        description: Web page that links to the source files.
-        source: null
-        title: Download Page
-        url: http://example.com
+        title: CalQualityCare Website
+        url: http://www.calqualitycare.org/
 identity:
     bspace: null
     btime: null
