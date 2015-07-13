@@ -1,14 +1,14 @@
 about:
     access: restricted
     footnote: null
-    grain: null
+    grain: hospital
     groups: []
     license: ckdbl
     processed: null
     rights: public
     source: null
     space: California
-    subject: null
+    subject: 
     summary: Prevention Quality Indicators (PQIs) identify hospital admissions (age
         18 and over) that evidence suggests may have been avoided through access to
         high-quality outpatient care. The PQIs are also called 'ambulatory care-sensitive
@@ -16,7 +16,7 @@ about:
         quality of the healthcare system as a whole, especially ambulatory care, in
         preventing hospitalizations due to potentially avoidable medical complications.
     tags: []
-    time: null
+    time: 2005/2013
     title: Prevention Quality Indicators (PQIs)
 contact_bundle:
     creator:

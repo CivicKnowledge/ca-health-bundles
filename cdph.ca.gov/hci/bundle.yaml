@@ -1,0 +1,53 @@
+about:
+    access: restricted
+    footnote: null
+    grain: null
+    groups: []
+    license: null
+    processed: null
+    rights: null
+    source: null
+    space: null
+    subject: null
+    summary: The goal of HCI is to enhance public health by providing data, a standardized
+        set of  statistical measures, and tools that a broad array of sectors can
+        use for planning healthy communities and evaluating the impact of plans, projects,
+        policy, and environmental changes on community health.
+    tags: []
+    time: null
+    title: Healthy Communities Data and Indicators Project (HCI)
+contact_bundle:
+    creator:
+        email: eric@civicknowledge.com
+        name: Eric Busboom
+        org: Civic Knowledge
+        url: http://civicknowledge.com
+    maintainer: {}
+contact_source:
+    creator:
+        org: California Department of Public Health
+        url: http://cdph.ca.gov/
+    maintainer: {}
+external_documentation:
+    dataset:
+        description: Main webpage for the dataset.
+        source: null
+        title: Dataset Page
+        url: http://www.cdph.ca.gov/programs/Pages/HealthyCommunityIndicators.aspx
+identity:
+    bspace: null
+    btime: null
+    dataset: hci
+    id: d04p
+    revision: 1
+    source: cdph.ca.gov
+    subset: null
+    type: null
+    variation: null
+    version: 0.0.1
+names:
+    fqname: cdph.ca.gov-hci-0.0.1~d04p001
+    name: cdph.ca.gov-hci
+    vid: d04p001
+    vname: cdph.ca.gov-hci-0.0.1
+process: {}
