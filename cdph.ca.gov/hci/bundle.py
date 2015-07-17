@@ -11,6 +11,11 @@ class Bundle(BuildBundle):
 
         super(Bundle, self).__init__(directory)
 
+    def download(self):
+        
+        for source in self.sources():
+            print source
+
     def build(self):
 
         return True
