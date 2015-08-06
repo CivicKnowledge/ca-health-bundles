@@ -1,4 +1,5 @@
-build: {}
+build:
+    requirements: {}
 dependencies: {}
 sources:
     abuse_neglect:
@@ -246,63 +247,6 @@ sources:
         row_spec: {}
         url: http://www.cdph.ca.gov/programs/Documents/HCI_MilesByOccurrence_39_CA_CO_PL_RE_10-3-13.xls
         urlfiletype: null
-    neighborhood_change_al:
-        comment: null
-        conversion: null
-        dd_url: null
-        description: 'Neighborhood Change: 10-year change in number of households
-            by income and race-ethnicity, State, Counties, Regions, County Divisions,
-            Census tracts (Alameda-Lake)'
-        encoding: null
-        file: null
-        foreign_key: null
-        is_loadable: null
-        row_data: null
-        row_spec: {}
-        url: http://www.cdph.ca.gov/programs/Documents/HCI_NeighborhoodChange_772_CARECOCDPLCT_Alameda-Lake_24APR15.zip
-        urlfiletype: null
-    neighborhood_change_ls:
-        comment: null
-        conversion: null
-        dd_url: null
-        description: 'Neighborhood Change: 10-year change in number of households
-            by income and race-ethnicity, Census tracts (Lassen-Sacramento)'
-        encoding: null
-        file: null
-        foreign_key: null
-        is_loadable: null
-        row_data: null
-        row_spec: {}
-        url: http://www.cdph.ca.gov/programs/Documents/HCI_NeighborhoodChange_772_CT_Lassen-Sacramento_24APR15.zip
-        urlfiletype: null
-    neighborhood_change_sy:
-        comment: null
-        conversion: null
-        dd_url: null
-        description: 'Neighborhood Change: 10-year change in number of households
-            by income and race-ethnicity, Census tracts (San Benito-Yuba)'
-        encoding: null
-        file: null
-        foreign_key: null
-        is_loadable: null
-        row_data: null
-        row_spec: {}
-        url: http://www.cdph.ca.gov/programs/Documents/HCI_NeighborhoodChange_772_CT_SanBenito-Yuba_24APR15.zip
-        urlfiletype: null
-    open_space:
-        comment: null
-        conversion: null
-        dd_url: null
-        description: 'Access to Parks: Percent of residents within 1/2 mile of a park,
-            beach, or open space'
-        encoding: null
-        file: null
-        foreign_key: null
-        is_loadable: null
-        row_data: null
-        row_spec: {}
-        url: http://www.cdph.ca.gov/programs/Documents/ParkBeachOpen10_output4-12-13.zip
-        urlfiletype: null
     ozone:
         comment: null
         conversion: null
@@ -385,33 +329,6 @@ sources:
         row_data: null
         row_spec: {}
         url: http://www.cdph.ca.gov/programs/Documents/RailFerryBus10_SANDAG_Output8-29-13.xls
-        urlfiletype: null
-    registered_voters:
-        comment: null
-        conversion: null
-        dd_url: null
-        description: 'Voter Registration/Participation: Percent of the eligible population
-            registered to vote and the percent who voted in statewide elections'
-        encoding: null
-        file: null
-        foreign_key: null
-        is_loadable: null
-        row_data: null
-        row_spec: {}
-        url: http://www.cdph.ca.gov/programs/Documents/HCI_RegisteredVoters_653_CA_CO_RE_PL_CT_5-1-14.zip
-        urlfiletype: null
-    shapefiles:
-        comment: null
-        conversion: null
-        dd_url: null
-        description: Shape files for HCI datasets
-        encoding: null
-        file: null
-        foreign_key: null
-        is_loadable: null
-        row_data: null
-        row_spec: {}
-        url: http://www.cdph.ca.gov/programs/Documents/HCIShapeFiles.zip
         urlfiletype: null
     traffic_fatalities_an:
         comment: null
