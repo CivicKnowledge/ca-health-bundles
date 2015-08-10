@@ -138,48 +138,6 @@ sources:
         row_spec: {}
         url: http://www.cdph.ca.gov/programs/Documents/HCI_HouseholdType_746_CT_Napa-Yuba_24APR15.zip
         urlfiletype: null
-    housing_cost_an:
-        comment: null
-        conversion: null
-        dd_url: null
-        description: 'Housing Cost Burden: Percent of households incurring housing
-            cost burdens, Alameda-Nevada Counties, State, Regions'
-        encoding: null
-        file: null
-        foreign_key: null
-        is_loadable: null
-        row_data: null
-        row_spec: {}
-        url: http://www.cdph.ca.gov/programs/Documents/HCI_ACS_CHAS_RaceIncome_HousingCostBurden_CT_PL_CO_RE_ST-A-N-7-30-14.zip
-        urlfiletype: null
-    housing_cost_os:
-        comment: null
-        conversion: null
-        dd_url: null
-        description: 'Housing Cost Burden: Percent of households incurring housing
-            cost burdens, Orange-Sutter Counties'
-        encoding: null
-        file: null
-        foreign_key: null
-        is_loadable: null
-        row_data: null
-        row_spec: {}
-        url: http://www.cdph.ca.gov/programs/Documents/HCI_ACS_CHAS_RaceIncome_HousingCostBurden_CT_PL_CO-O-S-7-30-14.zip
-        urlfiletype: null
-    housing_cost_ty:
-        comment: null
-        conversion: null
-        dd_url: null
-        description: 'Housing Cost Burden: Percent of households incurring housing
-            cost burdens, Tehama-Yuba Counties'
-        encoding: null
-        file: null
-        foreign_key: null
-        is_loadable: null
-        row_data: null
-        row_spec: {}
-        url: http://www.cdph.ca.gov/programs/Documents/HCI_ACS_CHAS_RaceIncome_HousingCostBurden_CT_PL_CO-T-Y-7-30-14.zip
-        urlfiletype: null
     income_inequality:
         comment: null
         conversion: null
@@ -273,62 +231,6 @@ sources:
         row_data: null
         row_spec: {}
         url: http://www.cdph.ca.gov/programs/Documents/HCI_PovertyRate_754_CT_PL_CO_RE_CA_1-22-14.zip
-        urlfiletype: null
-    public_transit_bay:
-        comment: null
-        conversion: null
-        dd_url: null
-        description: 'Public Transit Access: Percent of population residing within
-            1/2 mile of a major transit stop, Bay Area'
-        encoding: null
-        file: null
-        foreign_key: null
-        is_loadable: null
-        row_data: null
-        row_spec: {}
-        url: http://www.cdph.ca.gov/programs/Documents/RailFerryBus10_MTC_Output_11-15-13.xls
-        urlfiletype: null
-    public_transit_sac:
-        comment: null
-        conversion: null
-        dd_url: null
-        description: 'Public Transit Access: Percent of population residing within
-            1/2 mile of a major transit stop, Sacramento County Area'
-        encoding: null
-        file: null
-        foreign_key: null
-        is_loadable: null
-        row_data: null
-        row_spec: {}
-        url: http://www.cdph.ca.gov/programs/Documents/RailFerryBus10_SACOG_Output-11-26-13.xls
-        urlfiletype: null
-    public_transit_sc:
-        comment: null
-        conversion: null
-        dd_url: null
-        description: 'Public Transit Access: Percent of population residing within
-            1/2 mile of a major transit stop, Southern California'
-        encoding: null
-        file: null
-        foreign_key: null
-        is_loadable: null
-        row_data: null
-        row_spec: {}
-        url: http://www.cdph.ca.gov/programs/Documents/RailFerryBus10_SCAG_Output9-5-13.xls
-        urlfiletype: null
-    public_transit_sd:
-        comment: null
-        conversion: null
-        dd_url: null
-        description: 'Public Transit Access: Percent of population residing within
-            1/2 mile of a major transit stop, San Diego'
-        encoding: null
-        file: null
-        foreign_key: null
-        is_loadable: null
-        row_data: null
-        row_spec: {}
-        url: http://www.cdph.ca.gov/programs/Documents/RailFerryBus10_SANDAG_Output8-29-13.xls
         urlfiletype: null
     traffic_fatalities_an:
         comment: null
