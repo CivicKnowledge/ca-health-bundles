@@ -331,6 +331,62 @@ sources:
         row_spec: {}
         url: http://www.cdph.ca.gov/programs/Documents/HCI_PovertyRate_754_CT_PL_CO_RE_CA_1-22-14.zip
         urlfiletype: null
+    public_transit_bay:
+        comment: null
+        conversion: null
+        dd_url: null
+        description: 'Public Transit Access: Percent of population residing within
+            1/2 mile of a major transit stop, Bay Area'
+        encoding: null
+        file: null
+        foreign_key: null
+        is_loadable: null
+        row_data: null
+        row_spec: {}
+        url: http://www.cdph.ca.gov/programs/Documents/RailFerryBus10_MTC_Output_11-15-13.xls
+        urlfiletype: null
+    public_transit_sac:
+        comment: null
+        conversion: null
+        dd_url: null
+        description: 'Public Transit Access: Percent of population residing within
+            1/2 mile of a major transit stop, Sacramento County Area'
+        encoding: null
+        file: null
+        foreign_key: null
+        is_loadable: null
+        row_data: null
+        row_spec: {}
+        url: http://www.cdph.ca.gov/programs/Documents/RailFerryBus10_SACOG_Output-11-26-13.xls
+        urlfiletype: null
+    public_transit_sc:
+        comment: null
+        conversion: null
+        dd_url: null
+        description: 'Public Transit Access: Percent of population residing within
+            1/2 mile of a major transit stop, Southern California'
+        encoding: null
+        file: null
+        foreign_key: null
+        is_loadable: null
+        row_data: null
+        row_spec: {}
+        url: http://www.cdph.ca.gov/programs/Documents/RailFerryBus10_SCAG_Output9-5-13.xls
+        urlfiletype: null
+    public_transit_sd:
+        comment: null
+        conversion: null
+        dd_url: null
+        description: 'Public Transit Access: Percent of population residing within
+            1/2 mile of a major transit stop, San Diego County'
+        encoding: null
+        file: null
+        foreign_key: null
+        is_loadable: null
+        row_data: null
+        row_spec: {}
+        url: http://www.cdph.ca.gov/programs/Documents/RailFerryBus10_SANDAG_Output8-29-13.xls
+        urlfiletype: null
     registered_voters:
         comment: null
         conversion: null
