@@ -139,6 +139,48 @@ sources:
         row_spec: {}
         url: http://www.cdph.ca.gov/programs/Documents/HCI_HouseholdType_746_CT_Napa-Yuba_24APR15.zip
         urlfiletype: null
+    housing_cost_an:
+        comment: null
+        conversion: null
+        dd_url: null
+        description: Percent of households incurring housing cost burdens, Alameda-Nevada
+            Counties, State, Regions.
+        encoding: null
+        file: null
+        foreign_key: null
+        is_loadable: null
+        row_data: null
+        row_spec: {}
+        url: http://www.cdph.ca.gov/programs/Documents/HCI_ACS_CHAS_RaceIncome_HousingCostBurden_CT_PL_CO_RE_ST-A-N-7-30-14.zip
+        urlfiletype: null
+    housing_cost_os:
+        comment: null
+        conversion: null
+        dd_url: null
+        description: Percent of households incurring housing cost burdens, Orange-Sutter
+            Counties
+        encoding: null
+        file: null
+        foreign_key: null
+        is_loadable: null
+        row_data: null
+        row_spec: {}
+        url: http://www.cdph.ca.gov/programs/Documents/HCI_ACS_CHAS_RaceIncome_HousingCostBurden_CT_PL_CO-O-S-7-30-14.zip
+        urlfiletype: null
+    housing_cost_ty:
+        comment: null
+        conversion: null
+        dd_url: null
+        description: Percent of households incurring housing cost burdens, Tehama-Yuba
+            Counties Counties, State, Regions.
+        encoding: null
+        file: null
+        foreign_key: null
+        is_loadable: null
+        row_data: null
+        row_spec: {}
+        url: http://www.cdph.ca.gov/programs/Documents/HCI_ACS_CHAS_RaceIncome_HousingCostBurden_CT_PL_CO-T-Y-7-30-14.zip
+        urlfiletype: null
     income_inequality:
         comment: null
         conversion: null
@@ -210,8 +252,7 @@ sources:
         comment: null
         conversion: null
         dd_url: null
-        description: 10-year change in number of households by income and race-ethnicity.
-            State, Counties, Regions, County Divisions, Census tracts (Alameda-Lake).
+        description: 10-year change in number of households by income and race-ethnicity, State, Counties, Regions, County Divisions, Census tracts (Alameda-Lake).
         encoding: null
         file: null
         filetype: xls
@@ -225,8 +266,7 @@ sources:
         comment: null
         conversion: null
         dd_url: null
-        description: 10-year change in number of households by income and race-ethnicity.
-            Census tracts (Lassen-Sacramento).
+        description: 10-year change in number of households by income and race-ethnicity, Census tracts (Lassen-Sacramento).
         encoding: null
         file: null
         filetype: xls
@@ -240,8 +280,7 @@ sources:
         comment: null
         conversion: null
         dd_url: null
-        description: 10-year change in number of households by income and race-ethnicity.
-            Census tracts (San Benito-Yuba)
+        description: 10-year change in number of households by income and race-ethnicity, Census tracts (San Benito-Yuba)
         encoding: null
         file: null
         filetype: xls
