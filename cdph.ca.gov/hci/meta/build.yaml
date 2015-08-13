@@ -3,6 +3,60 @@ build:
 dependencies:
     counties: census.gov-index-counties
 sources:
+    abuse_neglect:
+        comment: null
+        conversion: null
+        dd_url: null
+        description: Children reported with neglect or physical or sexual abuse
+        encoding: null
+        file: null
+        foreign_key: null
+        is_loadable: null
+        row_data: null
+        row_spec: {}
+        url: http://www.cdph.ca.gov/programs/Documents/HCI_AbuseNeglectChildren_741_CT_PL_CO_RE_CA-24-4-15.xlsx
+        urlfiletype: null
+    air_quality:
+        comment: null
+        conversion: null
+        dd_url: null
+        description: 'Average Ambient PM2.5 Concentration   '
+        encoding: null
+        file: null
+        foreign_key: null
+        is_loadable: null
+        row_data: null
+        row_spec: {}
+        url: http://www.cdph.ca.gov/programs/Documents/PM25_zcta_place_co_region_ca4-14-13.xls
+        urlfiletype: null
+    alcohol_outlets_an:
+        comment: null
+        conversion: null
+        dd_url: null
+        description: 'Proximity to Alcohol Outlets: Percent of the population within
+            1/4 mile of alcohol outlets, Alameda-Nevada'
+        encoding: null
+        file: null
+        foreign_key: null
+        is_loadable: null
+        row_data: null
+        row_spec: {}
+        url: http://www.cdph.ca.gov/programs/Documents/HCI_AlcoholOutletsQ_774_CA_RE_CO_CD_PL_CT-A-N-5-16-14.zip
+        urlfiletype: null
+    alcohol_outlets_oy:
+        comment: null
+        conversion: null
+        dd_url: null
+        description: 'Proximity to Alcohol Outlets: Percent of the population within
+            1/4 mile of alcohol outlets, Orange-Yuba'
+        encoding: null
+        file: null
+        foreign_key: null
+        is_loadable: null
+        row_data: null
+        row_spec: {}
+        url: http://www.cdph.ca.gov/programs/Documents/HCI_AlcoholOutletsQ_774_CO_CD_PL_CT-O-Y-5-16-14.zip
+        urlfiletype: null
     food_affordability:
         comment: null
         conversion: null
@@ -44,6 +98,47 @@ sources:
         row_spec: {}
         url: http://www.cdph.ca.gov/programs/Documents/ed_attain_ge_hs_output04-14-13.zip
         urlfiletype: null
+    household_crowding:
+        comment: null
+        conversion: null
+        dd_url: null
+        description: 'Household Crowding: Percent of household overcrowding and severe
+            overcrowding'
+        encoding: null
+        file: null
+        foreign_key: null
+        is_loadable: null
+        row_data: null
+        row_spec: {}
+        url: http://www.cdph.ca.gov/programs/Documents/HCI_CHAS_IncomeCrowding_PL_CO_RE_ST.xls
+        urlfiletype: null
+    household_type:
+        comment: null
+        conversion: null
+        dd_url: null
+        description: 'Household Type: household by type of family and head of household'
+        encoding: null
+        file: null
+        foreign_key: null
+        is_loadable: null
+        row_data: null
+        row_spec: {}
+        url: http://www.cdph.ca.gov/programs/Documents/HCI_HouseholdType_746_CARECOCDPLCT_Alameda-Monterey_24APR15.zip
+        urlfiletype: null
+    household_type_tracts:
+        comment: null
+        conversion: null
+        dd_url: null
+        description: 'Household Type: household by type of family and head of household,
+            Census tracts (Napa-Yuba)'
+        encoding: null
+        file: null
+        foreign_key: null
+        is_loadable: null
+        row_data: null
+        row_spec: {}
+        url: http://www.cdph.ca.gov/programs/Documents/HCI_HouseholdType_746_CT_Napa-Yuba_24APR15.zip
+        urlfiletype: null
     income_inequality:
         comment: null
         conversion: null
@@ -57,6 +152,59 @@ sources:
         row_data: null
         row_spec: {}
         url: http://www.cdph.ca.gov/programs/Documents/gini_place_county_region_st3-26-14.xlsx
+        urlfiletype: null
+    jobs_employed_ratio:
+        comment: null
+        conversion: null
+        dd_url: null
+        description: Jobs to Employed Residents Ratio
+        encoding: null
+        file: null
+        foreign_key: null
+        is_loadable: null
+        row_data: null
+        row_spec: {}
+        url: http://www.cdph.ca.gov/programs/Documents/HCI_JobsMatch_PL-MS-CO_769_4-24-15.xlsx
+        urlfiletype: null
+    jobs_housing_ratio:
+        comment: null
+        conversion: null
+        dd_url: null
+        description: Jobs to Housing Ratio
+        encoding: null
+        file: null
+        foreign_key: null
+        is_loadable: null
+        row_data: null
+        row_spec: {}
+        url: http://www.cdph.ca.gov/programs/Documents/HCI_JobHouseRatio_PL-MS-CO-768-4-24-15.xlsx
+        urlfiletype: null
+    living_wage:
+        comment: null
+        conversion: null
+        dd_url: null
+        description: 'Living Wage (single mother with children and married couple
+            with children) '
+        encoding: null
+        file: null
+        foreign_key: null
+        is_loadable: null
+        row_data: null
+        row_spec: {}
+        url: http://www.cdph.ca.gov/programs/Documents/HCI_Living_Wage_770_PL_CO_RE_CA_9-29-13.xls
+        urlfiletype: null
+    miles_traveled:
+        comment: null
+        conversion: null
+        dd_url: null
+        description: 'Miles per capita by car, public transit, and walk/bicycle '
+        encoding: null
+        file: null
+        foreign_key: null
+        is_loadable: null
+        row_data: null
+        row_spec: {}
+        url: http://www.cdph.ca.gov/programs/Documents/HCI_MilesByOccurrence_39_CA_CO_PL_RE_10-3-13.xls
         urlfiletype: null
     open_space:
         comment: null
@@ -72,6 +220,87 @@ sources:
         row_spec: {}
         url: http://www.cdph.ca.gov/programs/Documents/ParkBeachOpen10_output4-12-13.zip
         urlfiletype: null
+    ozone:
+        comment: null
+        conversion: null
+        dd_url: null
+        description: 'Annual Average Number of Unhealthy Days of Ozone Air Pollution   '
+        encoding: null
+        file: null
+        foreign_key: null
+        is_loadable: null
+        row_data: null
+        row_spec: {}
+        url: http://www.cdph.ca.gov/programs/Documents/ozone_zcta_place_co_region_ca4-14-13.xls
+        urlfiletype: null
+    poverty_rate:
+        comment: null
+        conversion: null
+        dd_url: null
+        description: 'Poverty Rate: Overall, Concentrated, and Child (under 18 years
+            of age)'
+        encoding: null
+        file: null
+        foreign_key: null
+        is_loadable: null
+        row_data: null
+        row_spec: {}
+        url: http://www.cdph.ca.gov/programs/Documents/HCI_PovertyRate_754_CT_PL_CO_RE_CA_1-22-14.zip
+        urlfiletype: null
+    registered_voters:
+        comment: null
+        conversion: null
+        dd_url: null
+        description: Percent of the eligible population registered to vote and the
+            percent who voted in statewide elections
+        encoding: null
+        file: null
+        foreign_key: null
+        is_loadable: null
+        row_data: null
+        row_spec: {}
+        url: http://www.cdph.ca.gov/programs/Documents/HCI_RegisteredVoters_653_CA_CO_RE_PL_CT_5-1-14.zip
+        urlfiletype: null
+    traffic_fatalities_an:
+        comment: null
+        conversion: null
+        dd_url: null
+        description: Severe and fatal road traffic injuriesAlameda-Nevada Counties,
+            State, Regions
+        encoding: null
+        file: null
+        foreign_key: null
+        is_loadable: null
+        row_data: null
+        row_spec: {}
+        url: http://www.cdph.ca.gov/programs/Documents/HCI_RoadTrafficInjuries_753_CT_PL_CO_RE_R4_CA-12-17-13_A-N.zip
+        urlfiletype: null
+    traffic_fatalities_oy:
+        comment: null
+        conversion: null
+        dd_url: null
+        description: Severe and fatal road traffic injuries, Orange-Yuba counties
+        encoding: null
+        file: null
+        foreign_key: null
+        is_loadable: null
+        row_data: null
+        row_spec: {}
+        url: http://www.cdph.ca.gov/programs/Documents/HCI_RoadTrafficInjuries_753_CT_PL_CO_12-17-13_O-Y.zip
+        urlfiletype: null
+    transport_work:
+        comment: null
+        conversion: null
+        dd_url: null
+        description: ' Percent of residents mode of transportation to work'
+        encoding: null
+        file: null
+        foreign_key: null
+        is_loadable: null
+        row_data: null
+        row_spec: {}
+        url: http://www.cdph.ca.gov/programs/Documents/HCI_Transportation2Work_42_CT_PL_CO_RE_ST_12-12-13-revised.zip
+        urlfiletype: null
     unemployment:
         comment: null
         conversion: null
@@ -84,5 +313,60 @@ sources:
         row_data: null
         row_spec: {}
         url: http://www.cdph.ca.gov/programs/Documents/HCI_Unemployment_290_CA_RE_CO_CD_PL_CT-5-22-14.zip
+        urlfiletype: null
+    unsafe_water:
+        comment: null
+        conversion: null
+        dd_url: null
+        description: 'Unsafe Drinking Water: Percent of the population served by Community
+            Water Systems not meeting Safe Drinking Water Act  regulations'
+        encoding: null
+        file: null
+        foreign_key: null
+        is_loadable: null
+        row_data: null
+        row_spec: {}
+        url: http://www.cdph.ca.gov/programs/Documents/HCI_DrinkingWater_CA_RE_CO_CD_PL_CT-A-N-6-19-14.zip
+        urlfiletype: null
+    unsafe_water_oy:
+        comment: null
+        conversion: null
+        dd_url: null
+        description: 'Unsafe Drinking Water: Percent of the population served by Community
+            Water Systems not meeting Safe Drinking Water Act  regulations, Orange-Yuba
+            Counties'
+        encoding: null
+        file: null
+        foreign_key: null
+        is_loadable: null
+        row_data: null
+        row_spec: {}
+        url: http://www.cdph.ca.gov/programs/Documents/HCI_DrinkingWater_CA_RE_CO_CD_PL_CT-O-Y-6-19-14.zip
+        urlfiletype: null
+    violent_crime:
+        comment: null
+        conversion: null
+        dd_url: null
+        description: 'Number of Violent Crimes per 1,000 population  '
+        encoding: null
+        file: null
+        foreign_key: null
+        is_loadable: null
+        row_data: null
+        row_spec: {}
+        url: http://www.cdph.ca.gov/programs/Documents/UCR_city_county_region2006_2010_04-14-13.xls
+        urlfiletype: null
+    walk_bicycyle:
+        comment: null
+        conversion: null
+        dd_url: null
+        description: Percent of residents by time walking and bicycling
+        encoding: null
+        file: null
+        foreign_key: null
+        is_loadable: null
+        row_data: null
+        row_spec: {}
+        url: http://www.cdph.ca.gov/programs/Documents/HCI_Walk_Bicycle_778_PL_CO_RE_CA-3-26-14.xlsx
         urlfiletype: null
 views: {}
