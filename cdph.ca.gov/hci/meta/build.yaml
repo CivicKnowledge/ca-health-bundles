@@ -252,7 +252,8 @@ sources:
         comment: null
         conversion: null
         dd_url: null
-        description: 10-year change in number of households by income and race-ethnicity, State, Counties, Regions, County Divisions, Census tracts (Alameda-Lake).
+        description: 10-year change in number of households by income and race-ethnicity,
+            State, Counties, Regions, County Divisions, Census tracts (Alameda-Lake).
         encoding: null
         file: null
         filetype: xls
@@ -266,7 +267,8 @@ sources:
         comment: null
         conversion: null
         dd_url: null
-        description: 10-year change in number of households by income and race-ethnicity, Census tracts (Lassen-Sacramento).
+        description: 10-year change in number of households by income and race-ethnicity,
+            Census tracts (Lassen-Sacramento).
         encoding: null
         file: null
         filetype: xls
@@ -280,7 +282,8 @@ sources:
         comment: null
         conversion: null
         dd_url: null
-        description: 10-year change in number of households by income and race-ethnicity, Census tracts (San Benito-Yuba)
+        description: 10-year change in number of households by income and race-ethnicity,
+            Census tracts (San Benito-Yuba)
         encoding: null
         file: null
         filetype: xls
@@ -441,6 +444,19 @@ sources:
         row_spec: {}
         url: http://www.cdph.ca.gov/programs/Documents/HCI_Transportation2Work_42_CT_PL_CO_RE_ST_12-12-13-revised.zip
         urlfiletype: null
+    unemployment:
+        comment: null
+        conversion: null
+        dd_url: null
+        description: Unemployment Rate
+        encoding: null
+        file: null
+        foreign_key: null
+        is_loadable: null
+        row_data: null
+        row_spec: {}
+        url: http://www.cdph.ca.gov/programs/Documents/HCI_Unemployment_290_CA_RE_CO_CD_PL_CT-5-22-14.zip
+        urlfiletype: null
     unsafe_water:
         comment: null
         conversion: null
@@ -469,19 +485,6 @@ sources:
         row_data: null
         row_spec: {}
         url: http://www.cdph.ca.gov/programs/Documents/HCI_DrinkingWater_CA_RE_CO_CD_PL_CT-O-Y-6-19-14.zip
-        urlfiletype: null
-    unemployment:
-        comment: null
-        conversion: null
-        dd_url: null
-        description: Unemployment Rate
-        encoding: null
-        file: null
-        foreign_key: null
-        is_loadable: null
-        row_data: null
-        row_spec: {}
-        url: http://www.cdph.ca.gov/programs/Documents/HCI_Unemployment_290_CA_RE_CO_CD_PL_CT-5-22-14.zip
         urlfiletype: null
     violent_crime:
         comment: null
